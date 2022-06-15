@@ -2,7 +2,6 @@
 
 function parse_dictionary () {
   $.csv.toArray("reading_plan/Sample_Bible_Reading_Program.csv");
-  console.log("hi");
 }
 
 
@@ -25,44 +24,52 @@ function open_reading(reading) {
     //parse_dictionary();
     var date = new Date();
 
-    var monthCompensation = 0; // compensate for number of days before month (0 indexed)
+    var month_compensation = 0; // compensate for number of days before month (0 indexed)
 
-    var currMonth = parseInt(date.getMonth());
-    switch (currMonth) {
+    var curr_month = parseInt(date.getMonth());
+    var curr_year = parseInt(date.getFullYear());
+    switch (curr_month) {
 
+      /*cases are in descending order without breaks so that on a given month all
+      previous months are taken into account*/
       case 11:
-        monthCompensation += 30
+        month_compensation += 30
       case 10:
-        monthCompensation += 31
+        month_compensation += 31
       case 9:
-        monthCompensation += 30
+        month_compensation += 30
 
       case 8:
-        monthCompensation += 31
+        month_compensation += 31
 
       case 7:
-        monthCompensation += 31
+        month_compensation += 31
 
       case 6:
-        monthCompensation += 30
+        month_compensation += 30
 
       case 5:
-        monthCompensation += 31
+        month_compensation += 31
 
 
       case 4:
-        monthCompensation += 30
+        month_compensation += 30
 
       case 3:
-        monthCompensation += 31
+        month_compensation += 31
 
 
       case 2:
 
-        monthCompensation += 28;//if leap year rip just nead to change
+        month_compensation += 28;//if leap year nead to add a year
+
+        /*checking for leap year*/
+        if(is_leap_year(curr_year)) {
+          month_compensation += 1;
+        }
 
       case 1:
-        monthCompensation += 31;
+        month_compensation += 31;
 
 
       case 0:
@@ -72,10 +79,23 @@ function open_reading(reading) {
         break;
 
     }
-    var correspondingDay = date.getDate()-parseInt(reading.id)+monthCompensation;
-    window.location.href = "reading_plan/"+correspondingDay+".html";
-    parse_dictionary();
+    var corresponding_day = date.getDate()-parseInt(reading.id)+month_compensation;
+    window.location.href = "reading_plan/"+corresponding_day+".html";
+    // parse_dictionary();
     //window.location.href='reading_plan/todays_reading.html';
+}
+
+function is_leap_year(curr_year) {
+  if(curr_year%4 == 0) {
+    if(curr_year%100 == 0 &&
+      curr_year%400 != 0) { //year divisible by 100 but not 400
+      return false;
+    }
+    else {
+      return true;
+    }
+  }
+  return false;
 }
 
 function open_chapter(n, book_name) {
