@@ -8,6 +8,22 @@ function parse_dictionary () {
 
 /*
 
+POTENTIAL AUTOMATING IDEA:
+
+for automation consider ripping from bible file using calc and modifying innerhtml of a
+container div?
+
+1. formula for day# -> book and chapter?
+- pretty hardcody
+- consider maintaining a schedule table within the app?
+
+2. modifying innerHTML
+
+
+*/
+
+/*
+
 Functionality: Returns the corresponding reaing for the day
 
 */
