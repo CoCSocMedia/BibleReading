@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Exodus</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="exodus-33"><a onclick="open_chapter('top', '2-exodus.html')">Exodus 33</a></h4>
+  <p><sup><b>1</b></sup> Then Jehovah spoke to Moses, Depart; go up from here, you and the people whom you have brought up out of the land of Egypt, to the land of which I swore to Abraham, to Isaac, and to Jacob, saying, To your seed I will give it.<br><br>
+     <sup><b>2</b></sup> And I will send an Angel before you; and I will drive out the Canaanites, the Amorites, and the Hittites, and the Perizzites, the Hivites, and the Jebusites.<br><br>
+     <sup><b>3</b></sup> <i>Go up</i> to a land flowing with milk and honey; for I will not go up in your midst, lest I consume you in the way, for you are a stiff-necked people.<br><br>
+     <sup><b>4</b></sup> And when the people heard this evil word, they mourned, and no one put on his ornaments.<br><br>
+     <sup><b>5</b></sup> Now Jehovah had said to Moses, Say to the children of Israel, You are a stiff-necked people; if I were to go up in your midst for one moment, I would consume you. Now therefore put off your ornaments from you, and I will decide what to do to you.<br><br>
+     <sup><b>6</b></sup> Thus the children of Israel were stripped of their ornaments from Mount Horeb <i>onward.</i><br><br>
+     <sup><b>7</b></sup> Now Moses would take the tent and pitch it outside the camp, some distance from the camp; and he called it the tent of meeting. And everyone who sought Jehovah went out to the tent of meeting, which was outside the camp.<br><br>
+     <sup><b>8</b></sup> And whenever Moses went out to the tent, all the people would rise up and stand, every man at the entrance of his tent, and gaze after Moses, until he entered the tent.<br><br>
+     <sup><b>9</b></sup> And whenever Moses entered the tent, the pillar of cloud would descend and stay at the entrance of the tent, and <i>Jehovah</i> would speak with Moses.<br><br>
+     <sup><b>10</b></sup> When all the people saw the pillar of cloud standing at the entrance of the tent, all the people would rise up and worship, every man at the entrance of his tent.<br><br>
+     <sup><b>11</b></sup> And Jehovah would speak to Moses face to face, just as a man speaks to his companion. And Moses would return to the camp, but his attendant Joshua the son of Nun, a young man, would not depart out of the tent.<br><br>
+     <sup><b>12</b></sup> And Moses said to Jehovah, See, You say to me, Bring up this people; but You have not let me know whom You will send with me. Yet You have said, I know you by name, and you have also found favor in My sight.<br><br>
+     <sup><b>13</b></sup> Now therefore if I have found favor in Your sight, please let me know now Your ways, that I may know You, so that I may continue to find favor in Your sight. Consider also that this nation is Your people.<br><br>
+     <sup><b>14</b></sup> And He said, My presence shall go <i>with you,</i> and I will give you rest.<br><br>
+     <sup><b>15</b></sup> And he said to Him, If Your presence does not go <i>with us,</i> do not bring us up from here.<br><br>
+     <sup><b>16</b></sup> For how then shall it be known that I have found favor in Your sight, I and Your people? Is it not by Your going with us, so that we, I and Your people, are distinct from all the <i>other</i> people who are on the face of the earth?<br><br>
+     <sup><b>17</b></sup> And Jehovah said to Moses, I will do this thing also that you have spoken; for you have found favor in My sight, and I know you by name.<br><br>
+     <sup><b>18</b></sup> And he said, Please show me Your glory.<br><br>
+     <sup><b>19</b></sup> And He said, I will make all My goodness pass before you, and I will proclaim the name of Jehovah before you; and I will be gracious to whom I will be gracious, and I will have compassion on whom I will have compassion.<br><br>
+     <sup><b>20</b></sup> But He said, You cannot see My face, for no man shall see Me and live.<br><br>
+     <sup><b>21</b></sup> Then Jehovah said, Here, there is a place by Me, and you shall stand upon the rock;<br><br>
+     <sup><b>22</b></sup> And while My glory passes by, I will put you in a cleft of the rock, and I will cover you with My hand until I have passed by.<br><br>
+     <sup><b>23</b></sup> And I will take away My hand, and you will see My back; but My face shall not be seen.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
