@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/13-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Leviticus</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="leviticus-2"><a onclick="open_chapter('top', '3-leviticus.html')">Leviticus 2</a></h4>
+  <p><sup><b>1</b></sup> And when anyone presents an offering of a meal offering to Jehovah, his offering shall be of fine flour; and he shall pour oil on it and put frankincense on it.<br><br>
+     <sup><b>2</b></sup> Then he shall bring it to Aaron’s sons the priests, and he shall take from it his handful of its fine flour and of its oil with all its frankincense. And the priest shall burn <i>it</i> <i>as</i> its memorial portion on the altar, an offering by fire, a satisfying fragrance to Jehovah.<br><br>
+     <sup><b>3</b></sup> And what is left of the meal offering shall be Aaron’s and his sons’; it is <i>a thing</i> most holy of Jehovah’s offerings by fire.<br><br>
+     <sup><b>4</b></sup> And when you present an offering of a meal offering baked in the oven, <i>it shall be</i> of fine flour, unleavened cakes mingled with oil or unleavened wafers anointed with oil.<br><br>
+     <sup><b>5</b></sup> And if your offering is a meal offering <i>baked</i> on a flat plate, it shall be of fine flour mingled with oil, unleavened.<br><br>
+     <sup><b>6</b></sup> You shall break it in pieces and pour oil on it; it is a meal offering.<br><br>
+     <sup><b>7</b></sup> And if your offering is a meal offering <i>made</i> in a pot, it shall be made of fine flour with oil.<br><br>
+     <sup><b>8</b></sup> And you shall bring to Jehovah the meal offering that is made of these things and present it to the priest, and he shall bring it to the altar.<br><br>
+     <sup><b>9</b></sup> And the priest shall take up from the meal offering its memorial portion and shall burn <i>it</i> on the altar, an offering by fire, a satisfying fragrance to Jehovah.<br><br>
+     <sup><b>10</b></sup> And that which is left of the meal offering shall be Aaron’s and his sons’; it is a thing most holy of Jehovah’s offerings by fire.<br><br>
+     <sup><b>11</b></sup> No meal offering that you present to Jehovah shall be made with leaven, for you shall not burn any leaven or any honey as an offering by fire to Jehovah.<br><br>
+     <sup><b>12</b></sup> You may present them to Jehovah, as an offering of firstfruits, but they shall not be offered up for a satisfying fragrance on the altar.<br><br>
+     <sup><b>13</b></sup> And every offering of your meal offering you shall season with salt, and you shall not omit the salt of the covenant of your God from your meal offering; with all your offerings you shall present salt.<br><br>
+     <sup><b>14</b></sup> And if you present a meal offering of firstfruits to Jehovah, you shall present for the meal offering of your firstfruits new grain roasted with fire, crushed grain of the fresh ear.<br><br>
+     <sup><b>15</b></sup> And you shall put oil on it and place frankincense on it; it is a meal offering.<br><br>
+     <sup><b>16</b></sup> And the priest shall burn <i>as</i> its memorial portion some of its crushed grain and some of its oil, with all its frankincense, as an offering by fire to Jehovah.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('leviticus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
