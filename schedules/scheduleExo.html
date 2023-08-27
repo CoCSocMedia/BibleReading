@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- UIkit & Custom CSS -->
+      <link rel="stylesheet" type="text/css" href="../styles/style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+      <!-- UIkit & Custom JS -->
+      <script type="text/javascript" src="../scripts/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+      <!-- Google JQuery -->
+      <script type="text/javascript" src="../scripts/jquery-3.4.1.min.js"></script>
+
+      <title>Bible</title>
+  </head>
+
+  <body>
+    <!-- Get Reading Plan JSON -->
+    <script>
+      /* Set Reading Plan from local JSON file and current Date */
+      /* JSON: "date": "2020-08-26T05:00:00.000Z" */
+      var date = new Date();
+      $.getJSON('../reading_plan/reading_plan.json', function(data) {
+          for (var i = 0; i < data.length; i++) {
+              /* Match Today's Date */
+              var reading_plan_array_split = (data[i].date).split("-");
+              var get_day = reading_plan_array_split[2].split("T");
+              reading_plan_array_split[2] = get_day[0];
+              /* Formatted: ["YEAR", "MONTH", "DAY"] */
+              var year = date.getFullYear().toString();
+              var month = date.getMonth() + 1;
+              if (month < 10) {
+                  month = "0" + month;
+              }
+              var day = date.getDate();
+              if (day < 10) {
+                  day = "0" + day;
+              }
+
+              if (reading_plan_array_split[0] === year.toString() &&
+                  reading_plan_array_split[1] === month.toString() &&
+                  reading_plan_array_split[2] === day.toString()) {
+                  for (var j = 0; j < 15; j++) {
+                      var reading_id = j;
+                      var reading_split = data[i - j].reading.split(";");
+
+                      /* NT Title */
+                      var nt_split = reading_split[0].split(" ");
+                      if (nt_split[0] === "1" || nt_split[0] === "2" || nt_split[0] === "2") {
+                          nt_split[0] += " " + nt_split[1];
+                          nt_split[1] = nt_split[2];
+                          nt_split.splice(-1, 1)
+                      }
+                      var nt_book_title = get_full_book_name(nt_split[0]);
+                      nt_split[0] = nt_book_title;
+
+                      /* OT Title */
+                      var ot_split = reading_split[1].split(" ");
+                      ot_split.shift();
+                      if (ot_split[0] === "1" || ot_split[0] === "2") {
+                          ot_split[0] += " " + ot_split[1];
+                          ot_split[1] = ot_split[2];
+                          ot_split.splice(-1, 1)
+                      }
+                      var ot_book_title = get_full_book_name(ot_split[0]);
+                      ot_split[0] = ot_book_title;
+
+                      /* Add to Screen and sessionStorage */
+                      var full_title = nt_split.join(" ") + "; " + ot_split.join(" ");
+                      document.getElementById(reading_id).getElementsByTagName('p')[0].innerHTML = full_title;
+                  }
+              }
+
+          }
+
+      });
+    </script>
+
+
+
+    <!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+
+        <div class="uk-width-1-2">
+          <button type="button" class="top_button" onclick="location.href='../index.html'">Bible</button>
+        </div>
+        <div class="uk-width-1-2">
+          <button type="button" class="top_button" onclick="location.href='scheduleNT.html'">NT Plan</button>
+        </div>
+        <div class="uk-width-1-2">
+          <button type="button" class="top_button active">Exo Plan</button>
+        </div>
+			</nav>
+		</div>
+
+
+
+
+		<!-- Reading Plan -->
+
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 1</p>
+              <h4 id="day-1" style = "font-size: 15pt">8/27-9/2</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week1_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 1-2</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 2</p>
+              <h4 id="day-1" style = "font-size: 15pt">9/3-9/9</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week2_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 3-4</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 3</p>
+              <h4 id="day-1" style = "font-size: 15pt">9/10-9/16</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week3_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 5-6</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 4</p>
+              <h4 id="day-1" style = "font-size: 15pt">9/17-9/23</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week4_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 7-8</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 5</p>
+              <h4 id="day-1" style = "font-size: 15pt">9/24-9/30</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week5_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 9-10</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 6</p>
+              <h4 id="day-1" style = "font-size: 15pt">10/1-10/7</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week6_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 11-12</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 7</p>
+              <h4 id="day-1" style = "font-size: 15pt">10/8-10/14</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week7_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 13-14</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 8</p>
+              <h4 id="day-1" style = "font-size: 15pt">10/5-10/21</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week8_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 15-16</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 9</p>
+              <h4 id="day-1" style = "font-size: 15pt">10/22-10/28</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week9_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 17-18</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 10</p>
+              <h4 id="day-1" style = "font-size: 15pt">10/29-11/4</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week10_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 19-20</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 11</p>
+              <h4 id="day-1" style = "font-size: 15pt">11/5-11/11</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week11_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 21-22</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 12</p>
+              <h4 id="day-1" style = "font-size: 15pt">11/12-11/18</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week12_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 23-24</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 13</p>
+              <h4 id="day-1" style = "font-size: 15pt">11/19-11/25</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week13_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 25-26</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 14</p>
+              <h4 id="day-1" style = "font-size: 15pt">11/26-12/2</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week14_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 27-28</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 15</p>
+              <h4 id="day-1" style = "font-size: 15pt">12/3-12/9</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week15_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 29-30</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 16</p>
+              <h4 id="day-1" style = "font-size: 15pt">12/10-12/16</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week16_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 31-32</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 17</p>
+              <h4 id="day-1" style = "font-size: 15pt">12/17-12/23</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week17_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 33-34</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 18</p>
+              <h4 id="day-1" style = "font-size: 15pt">12/24-12/30</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week18_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 35-36</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 19</p>
+              <h4 id="day-1" style = "font-size: 15pt">12/31-1/6</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week19_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 37-38</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="uk-text-center uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-width-1-5 date-card">
+            <div class="uk-card uk-card-default uk-text-small">
+              <p id="week-1" style = "font-size: 10pt">Week 20</p>
+              <h4 id="day-1" style = "font-size: 15pt">1/7-1/13</h4>
+            </div>
+        </div>
+        <div class="uk-width-4-5">
+            <button type="button" class="todays-reading-button" id="0" onclick="location.href='week20_reading.html'">
+                <div class="todays-reading-button-titles">
+                    <h5 id="dayOfWeek-0">Exodus 39-40</h5>
+                </div>
+                <img src="https://img.icons8.com/ios-filled/24/000000/forward.png"/>
+            </button>
+        </div>
+    </div>
+
+
+
+
+  </body>
+</html>

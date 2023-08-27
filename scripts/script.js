@@ -36,7 +36,6 @@ Functionality: Returns the corresponding reaing for the day
 function open_reading(reading) {
     sessionStorage.setItem('reading', reading.getElementsByTagName('p')[0].innerHTML);
     //console.log(reading.getElementsByTagName('p')[0].innerHTML);
-    console.log(reading);
     //parse_dictionary();
     var date = new Date();
 
@@ -96,7 +95,7 @@ function open_reading(reading) {
 
     }
     var corresponding_day = date.getDate()-parseInt(reading.id)+month_compensation;
-    window.location.href = "reading_plan/"+corresponding_day+".html";
+    window.location.href = "daily_reading_plan/"+corresponding_day+".html";
     // parse_dictionary();
     //window.location.href='reading_plan/todays_reading.html';
 }
