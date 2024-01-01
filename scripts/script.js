@@ -95,6 +95,9 @@ function open_reading(reading) {
 
     }
     var corresponding_day = date.getDate()-parseInt(reading.id)+month_compensation;
+    if(corresponding_day<=0) {
+      corresponding_day+=365;
+    }
     window.location.href = "daily_reading_plan/"+corresponding_day+".html";
     // parse_dictionary();
     //window.location.href='reading_plan/todays_reading.html';
