@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Leviticus</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="leviticus-12"><a onclick="open_chapter('top', '3-leviticus.html')">Leviticus 12</a></h4>
+  <p><sup><b>1</b></sup> Then Jehovah spoke to Moses, saying,<br><br>
+     <sup><b>2</b></sup> Speak to the children of Israel, saying, If a woman conceives seed and bears a male child, then she shall be unclean seven days; as in the days of her menstruation, she shall be unclean.<br><br>
+     <sup><b>3</b></sup> And on the eighth day the flesh of his foreskin shall be circumcised.<br><br>
+     <sup><b>4</b></sup> And she shall remain in the blood of <i>her</i> purifying thirty-three days; she shall not touch any sanctified thing, nor come into the sanctuary, until the days of her purifying are fulfilled.<br><br>
+     <sup><b>5</b></sup> But if she bears a female, then she shall be unclean two weeks, as in her impurity; and she shall remain in the blood of <i>her</i> purifying sixty-six days.<br><br>
+     <sup><b>6</b></sup> And when the days of her purifying are fulfilled, for a son or for a daughter, she shall bring a year old lamb for a burnt offering, and a young pigeon or a turtledove for a sin offering to the priest to the entrance of the Tent of Meeting.<br><br>
+     <sup><b>7</b></sup> And he shall present it before Jehovah and make expiation for her, and she shall be cleansed from the flow of her blood. This is the law for her who bears a child, whether male or female.<br><br>
+     <sup><b>8</b></sup> And if she cannot afford a lamb, then she shall take two turtledoves or two young pigeons, one for a burnt offering and the other for a sin offering. And the priest shall make expiation for her, and she shall be clean.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('leviticus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
