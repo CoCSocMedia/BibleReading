@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Deuteronomy</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="deuteronomy-25"><a onclick="open_chapter('top', '5-deuteronomy.html')">Deuteronomy 25</a></h4>
+  <p><sup><b>1</b></sup> If there is a dispute between men, and they approach the court, and <i>the judges</i> judge them, they shall justify the righteous and condemn the wicked.<br><br>
+     <sup><b>2</b></sup> And if the wicked man is worthy of beating, the judge shall make him lie down and have him beaten before him as is sufficient for his wickedness, by number.<br><br>
+     <sup><b>3</b></sup> Forty blows he may give him; he shall not exceed, lest, in exceeding, he beat him beyond these with many blows and your brother be degraded before your eyes.<br><br>
+     <sup><b>4</b></sup> You shall not muzzle an ox while it treads out <i>grain.</i><br><br>
+     <sup><b>5</b></sup> If brothers dwell together, and one of them dies, and he has no son, the wife of the deceased man shall not become the wife of a stranger outside <i>the family;</i> her husband’s brother shall go in unto her and take her as his wife, and he shall do the duty of a husband’s brother for her.<br><br>
+     <sup><b>6</b></sup> And the firstborn whom she bears shall assume the name of his deceased brother, so that his name is not blotted out of Israel.<br><br>
+     <sup><b>7</b></sup> And if the man does not desire to take his brother’s wife, his brother’s wife shall go up to the gate to the elders and say, My husband’s brother refuses to raise up a name in Israel to his brother; he is not willing to do the duty of a husband’s brother for me.<br><br>
+     <sup><b>8</b></sup> Then the elders of his city shall call him and speak to him. And <i>if</i> he persists and says, I do not desire to take her;<br><br>
+     <sup><b>9</b></sup> Then his brother’s wife shall draw near to him in the sight of the elders and remove his sandal from off his foot, and she shall spit in his face and respond and say, Thus shall it be done to the man who does not build up his brother’s house.<br><br>
+     <sup><b>10</b></sup> And his name shall be called in Israel, The house of him whose sandal has been removed.<br><br>
+     <sup><b>11</b></sup> When <i>two</i> men fight together, a man and his brother, and the wife of the one comes near to rescue her husband from the hand of him who is beating him, and she puts forth her hand and takes hold of his private parts;<br><br>
+     <sup><b>12</b></sup> Then you shall cut off her hand; your eye shall not pity <i>her.</i><br><br>
+     <sup><b>13</b></sup> You shall not have in your bag differing weights, one heavy and one light.<br><br>
+     <sup><b>14</b></sup> You shall not have in your house differing measures, one large and one small.<br><br>
+     <sup><b>15</b></sup> A full and righteous weight you shall have, <i>and</i> a full and righteous measure you shall have, in order that your days may be extended upon the land which Jehovah your God is giving you.<br><br>
+     <sup><b>16</b></sup> For everyone who does these things, everyone who does unrighteousness, is an abomination to Jehovah your God.<br><br>
+     <sup><b>17</b></sup> Remember what Amalek did to you on the way when you came out of Egypt,<br><br>
+     <sup><b>18</b></sup> That he met you on the way and struck you at the rear, <i>struck</i> all those who were worn out at your rear, when you were faint and weary; and he did not fear God.<br><br>
+     <sup><b>19</b></sup> Therefore when Jehovah your God gives you rest from all your enemies surrounding <i>you,</i> in the land which Jehovah your God is giving you as an inheritance to possess, you shall blot out the memory of Amalek from under heaven; you shall not forget.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('dueteronomy-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
