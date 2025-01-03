@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Judges</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="judges-14"><a onclick="open_chapter('top', '7-judges.html')">Judges 14</a></h4>
+  <p><sup><b>1</b></sup> And Samson went down to Timnah, and he saw a woman in Timnah from the daughters of the Philistines.<br><br>
+     <sup><b>2</b></sup> And he went up and told his father and mother and said, I have seen a woman in Timnah from the daughters of the Philistines. Now therefore get her for me as a wife.<br><br>
+     <sup><b>3</b></sup> But his father and mother said to him, Is there no woman among the daughters of your brothers or among all my people, that you must go and get a woman of the uncircumcised Philistines? And Samson said to his father, Get her for me, for she pleases me.<br><br>
+     <sup><b>4</b></sup> But his father and mother did not know this was of Jehovah, for He was looking for an opportunity against the Philistines. Now at that time the Philistines ruled over Israel.<br><br>
+     <sup><b>5</b></sup> So Samson went down with his father and mother to Timnah. And as they came to the vineyards of Timnah, suddenly a young lion roared against him.<br><br>
+     <sup><b>6</b></sup> And the Spirit of Jehovah rushed upon him, and he tore it apart as one might tear a kid apart with his bare hands. And he did not tell his father and mother what he had done.<br><br>
+     <sup><b>7</b></sup> And he went down and spoke to the woman, and she pleased Samson.<br><br>
+     <sup><b>8</b></sup> Then after some time, while he was returning to get her, he turned aside to see the carcass of the lion. And there it was, with a swarm of bees in the lion’s body, and honey.<br><br>
+     <sup><b>9</b></sup> And he scraped <i>it</i> out into his hands and went away, eating <i>it</i> as he went. And he came to his father and mother and gave them <i>some,</i> and they ate <i>it;</i> but he did not tell them that he had scraped the honey from the body of the lion.<br><br>
+     <sup><b>10</b></sup> And his father went down to the woman; and Samson held a feast there, for so the young men used to do.<br><br>
+     <sup><b>11</b></sup> And when they saw him, they brought thirty companions to be with him.<br><br>
+     <sup><b>12</b></sup> And Samson said to them, Let me now put forth a riddle to you. If you fully explain it to me within the seven days of the feast and find <i>it</i> out, I will give you thirty fine linen garments and thirty changes of clothing;<br><br>
+     <sup><b>13</b></sup> But if you cannot explain <i>it</i> to me, you shall give me thirty fine linen garments and thirty changes of clothing. And they said to him, Put forth your riddle, let us hear it.<br><br>
+     <sup><b>14</b></sup> And he said to them, / Out of the eater came forth food, / And out of the strong came forth sweetness.And they could not explain the riddle after three days.<br><br>
+     <sup><b>15</b></sup> Then on the fourth day they said to Samson’s wife, Entice your husband to explain the riddle to us; otherwise we will burn you and your father’s house with fire. Have you invited us <i>here</i> in order to impoverish us? Is it not <i>so?</i><br><br>
+     <sup><b>16</b></sup> So Samson’s wife wept before him and said, You only hate me, and you do not love me: You have put forth a riddle to the children of my people, but you have not explained <i>it</i> to me. And he said to her, Look, I have not explained <i>it</i> to my own father and mother. Should I then explain <i>it</i> to you?<br><br>
+     <sup><b>17</b></sup> And she wept before him <i>the rest of</i> the seven days that they had the feast. But on the seventh day he explained <i>it</i> to her, for she pressed him. Then she explained the riddle to the children of her people.<br><br>
+     <sup><b>18</b></sup> And the men of the city said to him on the seventh day before sunset,What is sweeter than honey, / And what is stronger than a lion?And he said to them,If you had not plowed with my heifer, / You would not have found out my riddle.<br><br>
+     <sup><b>19</b></sup> Then the Spirit of Jehovah rushed upon him; and he went down to Ashkelon and struck thirty men among them; and he took their clothing and gave the changes <i>of clothing</i> to those who had explained the riddle. And his anger burned, and he went up to his father’s house.<br><br>
+     <sup><b>20</b></sup> And Samson’s wife was <i>given</i> to his best man, who had been his friend.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('judges-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
