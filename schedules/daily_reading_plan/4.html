@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Judges</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="judges-15"><a onclick="open_chapter('top', '7-judges.html')">Judges 15</a></h4>
+  <p><sup><b>1</b></sup> Then after some time, during the days of the wheat harvest, Samson visited his wife with a kid. And he said, Let me go into the chamber to my wife; but her father would not allow him to go in.<br><br>
+     <sup><b>2</b></sup> And her father said, I surely thought that you utterly hated her, so I gave her to your best man. Is not her younger sister better than she? Let her be yours instead of her.<br><br>
+     <sup><b>3</b></sup> Then Samson said to them, This time I will be blameless with regard to the Philistines when I do them harm.<br><br>
+     <sup><b>4</b></sup> And Samson went and caught three hundred foxes; and he took torches and turned <i>the foxes</i> tail to tail and put one torch in between <i>every</i> two tails.<br><br>
+     <sup><b>5</b></sup> Then he set the torches on fire and sent <i>the foxes</i> into the Philistines’ standing grain and burned up the shocks and the standing grain as well as the vineyards <i>and</i> the olive groves.<br><br>
+     <sup><b>6</b></sup> And the Philistines said, Who has done this? And they said, Samson, the son-in-law of the Timnite, because he took his wife and gave her to his best man. And the Philistines went up and burned her and her father with fire.<br><br>
+     <sup><b>7</b></sup> And Samson said to them, If this is how you act, I will surely take revenge on you, and then I will stop.<br><br>
+     <sup><b>8</b></sup> And he struck them hip and thigh, a great slaughter. And he went down and dwelt in the cleft of the rock of Etam.<br><br>
+     <sup><b>9</b></sup> And the Philistines rose up and encamped in Judah, and they spread out against Lehi.<br><br>
+     <sup><b>10</b></sup> And the men of Judah said, Why have you come up against us? And they said, We have come up to bind Samson, so that we can do to him as he has done to us.<br><br>
+     <sup><b>11</b></sup> Then three thousand men of Judah went down to the cleft of the rock of Etam; and they said to Samson, Do you not know that the Philistines rule over us? Then what is this that you have done to us? And he said to them, As they have done to me, so I have done to them.<br><br>
+     <sup><b>12</b></sup> And they said to him, We have come down to bind you up so that we can deliver you into the hand of the Philistines. And Samson said to them, Swear to me that you will not fall upon me yourselves.<br><br>
+     <sup><b>13</b></sup> And they spoke to him, saying, No, we will only bind you and deliver you into their hand, but we certainly will not put you to death. And they bound him with two new ropes and brought him up from the rock.<br><br>
+     <sup><b>14</b></sup> When he came into Lehi, the Philistines came shouting to meet him. And the Spirit of Jehovah rushed upon him, and the ropes that were on his arms became like flax when it burns in fire; and his bonds melted from off his hands.<br><br>
+     <sup><b>15</b></sup> And he found a fresh jawbone of an ass; and he stretched out his hand and took it, and struck a thousand men with it.<br><br>
+     <sup><b>16</b></sup> And Samson said, / With the jawbone of an ass, / A heap upon a double heap; / With the jawbone of an ass, / I have struck a thousand men <i>dead.</i><br><br>
+     <sup><b>17</b></sup> And when he finished speaking, he cast the jawbone from his hand; and he called that place Ramath-lehi.<br><br>
+     <sup><b>18</b></sup> And he was very thirsty, and he called on Jehovah, saying, You have granted this great victory by the hand of Your servant. And will I now die of thirst and fall into the hand of the uncircumcised?<br><br>
+     <sup><b>19</b></sup> But God broke open the hollow place that is in Lehi, and water came forth from it. And when he drank, his spirit returned and he was revived; therefore he called the name of that place En-hakkore, which is in Lehi to this day.<br><br>
+     <sup><b>20</b></sup> And he judged Israel in the days of the Philistines twenty years.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('judges-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

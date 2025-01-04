@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Judges</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="judges-17"><a onclick="open_chapter('top', '7-judges.html')">Judges 17</a></h4>
+  <p><sup><b>1</b></sup> Now there was a man from the hill country of Ephraim whose name was Micah.<br><br>
+     <sup><b>2</b></sup> And he said to his mother, The eleven hundred pieces of silver that were taken from you, about which you uttered a curse and spoke it in my hearing — look, the silver is with me; I took it. And his mother said, Blessed of Jehovah be my son!<br><br>
+     <sup><b>3</b></sup> And he returned the eleven hundred pieces of silver to his mother; and his mother said, I do consecrate the silver to Jehovah from my hand to my son to make a sculptured idol and a molten image. Now therefore I will return it to you.<br><br>
+     <sup><b>4</b></sup> And when he returned the silver to his mother, his mother took two hundred pieces of silver and gave them to the founder, who made them into a sculptured idol and a molten image. And it was in the house of Micah.<br><br>
+     <sup><b>5</b></sup> And the man Micah had a house of gods; and he made an ephod and teraphim, and consecrated one of his sons to become his priest.<br><br>
+     <sup><b>6</b></sup> In those days there was no king in Israel; everyone did that which was right in his own eyes.<br><br>
+     <sup><b>7</b></sup> And there was a young man from Bethlehem in Judah, of the family of Judah, who was a Levite; and he was a sojourner there.<br><br>
+     <sup><b>8</b></sup> And the man left the city Bethlehem in Judah to dwell wherever he could find <i>a place.</i> And he came to the hill country of Ephraim, to the house of Micah, as he made his way.<br><br>
+     <sup><b>9</b></sup> And Micah said to him, Where do you come from? And he said to him, I am a Levite from Bethlehem in Judah, and I am traveling in order to dwell wherever I can find <i>a place.</i><br><br>
+     <sup><b>10</b></sup> And Micah said to him, Stay with me, and be a father and a priest to me; and I will give you ten pieces of silver a year and an array of clothing and your food. So the Levite went <i>with him.</i><br><br>
+     <sup><b>11</b></sup> And the Levite was content to stay with the man; and the young man was to him like one of his sons.<br><br>
+     <sup><b>12</b></sup> And Micah consecrated the Levite; and the young man became his priest and was in the house of Micah.<br><br>
+     <sup><b>13</b></sup> Then Micah said, Now I know that Jehovah will prosper me, because the Levite has become my priest.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('judges-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
