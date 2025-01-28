@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/12-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Samuel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1samuel-29"><a onclick="open_chapter('top', '9-1samuel.html')">1 Samuel 29</a></h4>
+  <p><sup><b>1</b></sup> And the Philistines gathered all their camps together at Aphek; and Israel encamped by the spring that is in Jezreel.<br><br>
+     <sup><b>2</b></sup> And the lords of the Philistines passed on by hundreds and by thousands; and David and his men passed on at the rear with Achish.<br><br>
+     <sup><b>3</b></sup> And the princes of the Philistines said, What are these Hebrews <i>doing here?</i> And Achish said to the princes of the Philistines, Is this not David, the servant of Saul the king of Israel, who has been with me these days, or <i>even</i> these years? And I have found nothing <i>wrong</i> in him since the day he deserted <i>to me</i> to this day.<br><br>
+     <sup><b>4</b></sup> But the princes of the Philistines were angry with him. And the princes of the Philistines said to him, Make the man go back, that he may return to his place that you have assigned him, so that he does not go down with us into the battle and does not become our adversary in the battle. For with what might this man reconcile himself to his master? Will it not be with the heads of these men?<br><br>
+     <sup><b>5</b></sup> Is this not David, of whom they sang to one another in dances, saying,Saul has struck down his thousands; / But David, his ten thousands?<br><br>
+     <sup><b>6</b></sup> And Achish called David and said to him, <i>As</i> Jehovah lives, you are upright, and it is acceptable in my sight that you go forth and come in with me in the camp; for I have not found evil in you since the day you came to me to this day. But you are not acceptable to the lords.<br><br>
+     <sup><b>7</b></sup> Now therefore return and go in peace, so that you do not do anything displeasing to the lords of the Philistines.<br><br>
+     <sup><b>8</b></sup> And David said to Achish, But what have I done? And what <i>wrong</i> have you found in your servant since the day I began to be with you to this day, that I should not go and fight against the enemies of my lord the king?<br><br>
+     <sup><b>9</b></sup> And Achish answered and said to David, I know that you are as acceptable to me as an angel of God; nevertheless the princes of the Philistines have said, He shall not go up with us into the battle.<br><br>
+     <sup><b>10</b></sup> Now therefore rise up early in the morning with your master’s servants who came with you; indeed rise up early in the morning, and when you have daylight, go.<br><br>
+     <sup><b>11</b></sup> So David rose up early, he and his men, to go in the morning, to return into the land of the Philistines. And the Philistines went up to Jezreel.<br><br>
+  </p>
+</div>
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1samuel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

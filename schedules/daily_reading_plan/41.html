@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/10-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Samuel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1samuel-27"><a onclick="open_chapter('top', '9-1samuel.html')">1 Samuel 27</a></h4>
+  <p><sup><b>1</b></sup> And David said in his heart, I will now one day perish at the hand of Saul. There is nothing better for me than to escape into the land of the Philistines; then Saul will despair of seeking me any longer within all the territory of Israel. Thus I will escape from his hand.<br><br>
+     <sup><b>2</b></sup> So David rose up and crossed over, he and the six hundred men who were with him, to Achish the son of Maoch, the king of Gath.<br><br>
+     <sup><b>3</b></sup> And David and his men remained with Achish in Gath, he and his men, each man with his household: David and his two wives, Ahinoam the Jezreelite and Abigail the wife of Nabal, the Carmelite.<br><br>
+     <sup><b>4</b></sup> And it was told Saul that David had fled to Gath, so he no longer sought him.<br><br>
+     <sup><b>5</b></sup> And David said to Achish, If now I have found favor in your sight, let me be given a place in one of the country towns; and I will dwell there. For why should your servant dwell in the royal city with you?<br><br>
+     <sup><b>6</b></sup> So Achish gave him Ziklag that day; therefore Ziklag belongs to the kings of Judah to this day.<br><br>
+     <sup><b>7</b></sup> And the length of time that David remained in the country of the Philistines was a year and four months.<br><br>
+     <sup><b>8</b></sup> Now David and his men went up and attacked the Geshurites and the Girzites and the Amalekites, for they were the inhabitants of the land from of old, as you go to Shur and unto the land of Egypt.<br><br>
+     <sup><b>9</b></sup> And David struck the land; and he left neither man nor woman alive but took the sheep and the oxen and the asses and the camels and the clothing. Then he returned and came to Achish.<br><br>
+     <sup><b>10</b></sup> Then Achish said, Against whom have you conducted an attack today? And David said, Against the south of Judah and against the south of the Jerahmeelites and against the south of the Kenites.<br><br>
+     <sup><b>11</b></sup> Now David left neither man nor woman alive to be brought to Gath, for he said, Perhaps they will tell of us, saying, Thus did David do. And such was his custom as long as he dwelt in the country of the Philistines.<br><br>
+     <sup><b>12</b></sup> And Achish trusted David, saying, He has made himself utterly odious to his people Israel; therefore he shall be my servant forever.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1samuel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
