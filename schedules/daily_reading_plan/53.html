@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/22-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Samuel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2samuel-8"><a onclick="open_chapter('top', '10-2samuel.html')">2 Samuel 8</a></h4>
+  <p><sup><b>1</b></sup> And after this David struck the Philistines and subdued them. And David took control of the chief city out of the hand of the Philistines.<br><br>
+     <sup><b>2</b></sup> And he struck Moab. And making them lie down on the ground, he measured them with a measuring line; and he measured out two lengths <i>of them</i> to be put to death and one full length to be kept alive. And the Moabites became servants to David and brought tribute.<br><br>
+     <sup><b>3</b></sup> Then David struck Hadadezer the son of Rehob, the king of Zobah, when he went to recover his power at the River.<br><br>
+     <sup><b>4</b></sup> And David took from him a thousand seven hundred horsemen and twenty thousand foot soldiers. And David hamstrung all the chariot horses but left <i>enough</i> of them for a hundred chariots.<br><br>
+     <sup><b>5</b></sup> And when the Syrians of Damascus came to help Hadadezer the king of Zobah, David struck twenty-two thousand men among the Syrians.<br><br>
+     <sup><b>6</b></sup> And David put garrisons among the Syrians of Damascus, and the Syrians became servants to David and brought tribute. And Jehovah preserved David wherever he went.<br><br>
+     <sup><b>7</b></sup> And David took the shields of gold that were with the servants of Hadadezer and brought them to Jerusalem.<br><br>
+     <sup><b>8</b></sup> And from Betah and Berothai, cities of Hadadezer, King David took very much bronze.<br><br>
+     <sup><b>9</b></sup> Then when Toi the king of Hamath heard that David had struck down all the army of Hadadezer,<br><br>
+     <sup><b>10</b></sup> Toi sent Joram his son to King David to greet him and congratulate him for fighting against Hadadezer and striking him down, for Hadadezer had been at war with Toi. And in Joram’s hand were articles of silver and of gold and of bronze.<br><br>
+     <sup><b>11</b></sup> King David consecrated these also to Jehovah along with the silver and gold that he consecrated from all the nations that he had subdued:<br><br>
+     <sup><b>12</b></sup> From the Syrians and from the Moabites and from the children of Ammon and from the Philistines and from the Amalekites and from the spoil of Hadadezer the son of Rehob, the king of Zobah.<br><br>
+     <sup><b>13</b></sup> And David made a name <i>for himself</i> when he returned from striking down the Syrians in the Valley of Salt, <i>that is,</i> eighteen thousand men.<br><br>
+     <sup><b>14</b></sup> And he put garrisons in Edom; throughout all Edom he put garrisons; and all the Edomites became servants to David. And Jehovah preserved David wherever he went.<br><br>
+     <sup><b>15</b></sup> So David reigned over all Israel, and David executed justice and righteousness for all his people.<br><br>
+     <sup><b>16</b></sup> And Joab the son of Zeruiah was over the army, and Jehoshaphat the son of Ahilud was recorder.<br><br>
+     <sup><b>17</b></sup> And Zadok the son of Ahitub and Ahimelech the son of Abiathar were priests, and Seraiah was scribe.<br><br>
+     <sup><b>18</b></sup> And Benaiah the son of Jehoiada was over the Cherethites and the Pelethites, and David’s sons were <i>his</i> chief ministers.<br><br>
+  </p>
+</div>
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2samuel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
