@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Kings</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1kings-5"><a onclick="open_chapter('top', '11-1kings.html')">1 Kings 5</a></h4>
+  <p><sup><b>1</b></sup> Now Hiram the king of Tyre sent his servants to Solomon when he heard that they had anointed him king in place of his father, for Hiram had always loved David.<br><br>
+     <sup><b>2</b></sup> And Solomon sent <i>word</i> to Hiram, saying,<br><br>
+     <sup><b>3</b></sup> You know about David my father that he was not able to build a house for the name of Jehovah his God because of the warfare that <i>his enemies</i> surrounded him with, until Jehovah put them under the soles of his feet.<br><br>
+     <sup><b>4</b></sup> But now Jehovah my God has given me rest all around; there is no adversary or evil occurrence.<br><br>
+     <sup><b>5</b></sup> And now I intend to build a house for the name of Jehovah my God according to what Jehovah spoke to David my father, saying, Your son, whom I will put on your throne in your place, he will build the house for My name.<br><br>
+     <sup><b>6</b></sup> Now therefore command that they cut for me cedars from Lebanon. And my servants will be with your servants, and I will give you payment for your servants, according to whatever you say; for you know that among us there is no one who knows how to cut timber like the Sidonians.<br><br>
+     <sup><b>7</b></sup> And when Hiram heard Solomon’s words, he rejoiced greatly and said, Blessed be Jehovah this day, who has given David a wise son over this great people.<br><br>
+     <sup><b>8</b></sup> And Hiram sent <i>word</i> to Solomon, saying, I have heard <i>the message</i> which you have sent me. I will do all your desire concerning cedar timber and cypress timber.<br><br>
+     <sup><b>9</b></sup> My servants will bring <i>them</i> down from Lebanon to the sea, and I will make them into rafts <i>to go</i> by sea to the place that you direct me; and I will break them apart there, and you can carry <i>them</i> off. And you can fulfill my desire by giving food to my household.<br><br>
+     <sup><b>10</b></sup> So Hiram gave Solomon cedar timber and cypress timber, all that he desired.<br><br>
+     <sup><b>11</b></sup> And Solomon gave Hiram twenty thousand cors of wheat as food for his household and twenty cors of the finest oil; this did Solomon give to Hiram year by year.<br><br>
+     <sup><b>12</b></sup> And Jehovah gave Solomon wisdom, as He had promised him; and there was peace between Hiram and Solomon, and the two of them made a treaty.<br><br>
+     <sup><b>13</b></sup> And King Solomon levied forced labor out of all Israel, and the forced labor amounted to thirty thousand men.<br><br>
+     <sup><b>14</b></sup> And he sent them to Lebanon, ten thousand a month by courses: one month they were in Lebanon, and two months they were at home. And Adoniram was over the forced labor.<br><br>
+     <sup><b>15</b></sup> And Solomon had seventy thousand burden bearers and eighty thousand stonecutters in the mountains,<br><br>
+     <sup><b>16</b></sup> Besides Solomon’s three thousand three hundred chief officers over the work, who directed the people who did the work.<br><br>
+     <sup><b>17</b></sup> And the king commanded, and they quarried great stones, costly stones, in order to lay the foundation of the house with hewn stone.<br><br>
+     <sup><b>18</b></sup> And Solomon’s builders and Hiram’s builders and the Gebalites fashioned <i>the stone</i> and prepared the timber and the stones in order to build the house.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1kings-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
