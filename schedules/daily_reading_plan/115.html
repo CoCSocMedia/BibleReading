@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/25-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Kings</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2kings-24"><a onclick="open_chapter('top', '12-2kings.html')">2 Kings 24</a></h4>
+  <p><sup><b>1</b></sup> In his days Nebuchadnezzar the king of Babylon came up, and Jehoiakim became his servant for three years; then he turned and rebelled against him.<br><br>
+     <sup><b>2</b></sup> And Jehovah sent against him bands of the Chaldeans and bands of the Syrians and bands of the Moabites and bands of the children of Ammon; and He sent them against Judah to destroy it, according to the word of Jehovah, which He spoke through his servants the prophets.<br><br>
+     <sup><b>3</b></sup> Surely <i>it was</i> at the command of Jehovah <i>that this</i> came to pass against Judah, to remove <i>them</i> out of His sight because of the sins of Manasseh, according to all that he had done,<br><br>
+     <sup><b>4</b></sup> And also for the innocent blood that he shed; for he filled Jerusalem with innocent blood; and Jehovah would not forgive.<br><br>
+     <sup><b>5</b></sup> And the rest of the acts of Jehoiakim and all that he did, are they not written in the book of the chronicles of the kings of Judah?<br><br>
+     <sup><b>6</b></sup> And Jehoiakim slept with his fathers. And Jehoiachin his son reigned in his place.<br><br>
+     <sup><b>7</b></sup> And the king of Egypt did not come out of his land again, for the king of Babylon had taken all that belonged to the king of Egypt from the brook of Egypt to the river Euphrates.<br><br>
+     <sup><b>8</b></sup> Jehoiachin was eighteen years old when he began to reign, and he reigned three months in Jerusalem; and the name of his mother was Nehushta, the daughter of Elnathan from Jerusalem.<br><br>
+     <sup><b>9</b></sup> And he did what was evil in the sight of Jehovah, according to all that his father had done.<br><br>
+     <sup><b>10</b></sup> At that time the servants of Nebuchadnezzar the king of Babylon went up to Jerusalem, and the city came under siege.<br><br>
+     <sup><b>11</b></sup> And Nebuchadnezzar the king of Babylon came against the city while his servants were besieging it.<br><br>
+     <sup><b>12</b></sup> And Jehoiachin the king of Judah went out to the king of Babylon, he and his mother and his servants and his captains and his eunuchs; and the king of Babylon took him in the eighth year of his reign.<br><br>
+     <sup><b>13</b></sup> And he brought out from there all the treasures of the house of Jehovah and the treasures of the king’s house. And he cut in pieces all the golden vessels which Solomon the king of Israel had made in Jehovah’s temple, as Jehovah had said.<br><br>
+     <sup><b>14</b></sup> And he carried away into exile all Jerusalem and all the captains and all the mighty men of valor, ten thousand captives, and all the craftsmen and smiths. None remained except the poorest people of the land.<br><br>
+     <sup><b>15</b></sup> And he carried Jehoiachin away into exile to Babylon; and the king’s mother and the king’s wives and his eunuchs and the leading men of the land, he carried away into exile from Jerusalem to Babylon.<br><br>
+     <sup><b>16</b></sup> And all the seven thousand men of valor and the one thousand craftsmen and smiths, all mighty men fit for war, even these the king of Babylon carried away into exile to Babylon.<br><br>
+     <sup><b>17</b></sup> Then the king of Babylon made Jehoiachin’s uncle Mattaniah king in his place, and he changed his name to Zedekiah.<br><br>
+     <sup><b>18</b></sup> Zedekiah was twenty-one years old when he began to reign, and he reigned eleven years in Jerusalem; and his mother’s name was Hamutal, the daughter of Jeremiah, from Libnah.<br><br>
+     <sup><b>19</b></sup> And he did what was evil in the sight of Jehovah, according to all that Jehoiakim had done.<br><br>
+     <sup><b>20</b></sup> For <i>it was</i> through the anger of Jehovah <i>that this</i> came to pass in Jerusalem and in Judah until He cast them out from His presence. And Zedekiah rebelled against the king of Babylon.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2kings-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
