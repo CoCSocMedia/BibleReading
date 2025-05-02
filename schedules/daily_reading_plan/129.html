@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/9-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Chronicles</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1chronicles-13"><a onclick="open_chapter('top', '13-1chronicles.html')">1 Chronicles 13</a></h4>
+  <p><sup><b>1</b></sup> And David took counsel with the captains of the thousands and of the hundreds, with every leader.<br><br>
+     <sup><b>2</b></sup> And David said to all the congregation of Israel, If it seems good to you, and it is from Jehovah our God, let us send far and wide to our brothers who remain in all the land of Israel and <i>to</i> the priests and the Levites who are with them in their cities with pasture lands, that they may gather themselves to us.<br><br>
+     <sup><b>3</b></sup> And let us bring back the Ark of our God to ourselves, for we did not inquire of it in the days of Saul.<br><br>
+     <sup><b>4</b></sup> And all the congregation said that they would do so, for the matter was right in the sight of all the people.<br><br>
+     <sup><b>5</b></sup> And David gathered all Israel together from the Shihor of Egypt even to the entrance of Hamath to bring the Ark of God from Kiriath-jearim.<br><br>
+     <sup><b>6</b></sup> And David went up with all Israel to Baalah, <i>that is,</i> to Kiriath-jearim, which is Judah’s, to bring up from there the Ark of God, of Jehovah, who is enthroned <i>between</i> the cherubim, which is called <i>by</i> the Name;<br><br>
+     <sup><b>7</b></sup> And they set the Ark of God upon a new cart from the house of Abinadab, and Uzzah and Ahio drove the cart.<br><br>
+     <sup><b>8</b></sup> And David and all Israel played before God with all <i>their</i> strength, even with songs and with lyres and with harps and with tambourines and with cymbals and with trumpets.<br><br>
+     <sup><b>9</b></sup> And when they came to Chidon’s threshing floor, Uzzah stretched out his hand to take hold of the Ark; for the oxen had stumbled.<br><br>
+     <sup><b>10</b></sup> And the anger of Jehovah was kindled against Uzzah, and He struck him because he stretched out his hand to the Ark; and he died there before God.<br><br>
+     <sup><b>11</b></sup> And David was angry because Jehovah had broken forth with an outburst upon Uzzah, and he called that place Perez-uzzah, <i>as it is</i> to this day.<br><br>
+     <sup><b>12</b></sup> And David was afraid of God that day, saying, How shall I bring the Ark of God to myself?<br><br>
+     <sup><b>13</b></sup> So David did not remove the Ark to himself to the city of David, but he carried it aside into the house of Obed-edom the Gittite.<br><br>
+     <sup><b>14</b></sup> And the Ark of God remained with the house of Obed-edom in his house three months, and Jehovah blessed the house of Obed-edom and all that he had.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1chronicles-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
