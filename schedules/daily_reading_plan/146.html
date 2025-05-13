@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/26-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Chronicles</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+
+  <h4 id="2chronicles-1"><a onclick="open_chapter('top', '14-2chronicles.html')">2 Chronicles 1</a></h4>
+  <p><sup><b>1</b></sup> And Solomon the son of David was strengthened in his kingdom, and Jehovah his God was with him and magnified him exceedingly.<br><br>
+     <sup><b>2</b></sup> And Solomon spoke to all Israel, to the captains of thousands and of hundreds and to the judges and to every leader of all Israel, the heads of the fathers’ <i>houses.</i><br><br>
+     <sup><b>3</b></sup> And Solomon and all the assembly with him went up to the high place that was in Gibeon, for the Tent of Meeting of God was there, which Moses the servant of Jehovah had made in the wilderness.<br><br>
+     <sup><b>4</b></sup> However David had brought up the Ark of God from Kiriath-jearim to <i>the place that</i> David had prepared for it, for he had pitched a tent for it in Jerusalem.<br><br>
+     <sup><b>5</b></sup> And the bronze altar that Bezalel the son of Uri, the son of Hur, had made was there before the tabernacle of Jehovah, and Solomon and the assembly inquired at it.<br><br>
+     <sup><b>6</b></sup> And Solomon went up there before Jehovah to the bronze altar, which was at the Tent of Meeting, and he offered upon it one thousand burnt offerings.<br><br>
+     <sup><b>7</b></sup> During that night God appeared to Solomon and said to him, Ask what I should give you.<br><br>
+     <sup><b>8</b></sup> And Solomon said to God, You have shown great lovingkindness to David my father and have made me king in his place.<br><br>
+     <sup><b>9</b></sup> And now, O Jehovah God, may Your promise to David my father be fulfilled, for You have made me king over a people as numerous as the dust of the earth.<br><br>
+     <sup><b>10</b></sup> Now give me wisdom and knowledge, that I may go out and come in before this people; for who can judge this great people of Yours?<br><br>
+     <sup><b>11</b></sup> Then God said to Solomon, Because this is on your heart and you have not asked for riches, wealth, or honor, nor for the life of those who hate you, nor have you even asked for long life, but have asked for wisdom and knowledge for yourself so that you may judge My people over whom I have made you king;<br><br>
+     <sup><b>12</b></sup> Wisdom and knowledge are granted to you; and riches and wealth and honor I will give you, such as no kings who were before you have had, nor any after you will have.<br><br>
+     <sup><b>13</b></sup> Then Solomon came to Jerusalem from the high place that was in Gibeon, from the Tent of Meeting; and he reigned over Israel.<br><br>
+     <sup><b>14</b></sup> And Solomon gathered chariots and horsemen together; and he had one thousand four hundred chariots and twelve thousand horsemen, which he stationed in the chariot cities and with the king at Jerusalem.<br><br>
+     <sup><b>15</b></sup> And the king caused silver and gold to be as plentiful as stones in Jerusalem; and cedars, like the sycamores that are in the lowlands.<br><br>
+     <sup><b>16</b></sup> And the horses that Solomon had came from Egypt and from Kue; the king’s traders bought <i>them</i> from Kue at a fixed price.<br><br>
+     <sup><b>17</b></sup> And they could import from Egypt a chariot for six hundred shekels of silver and a horse for one hundred fifty shekels, and thus they brought <i>them</i> out to all the kings of the Hittites and the kings of Syria by their own means.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2chronicles-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
