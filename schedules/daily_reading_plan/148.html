@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Chronicles</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2chronicles-3"><a onclick="open_chapter('top', '14-2chronicles.html')">2 Chronicles 3</a></h4>
+  <p><sup><b>1</b></sup> And Solomon began to build the house of Jehovah in Jerusalem on Mount Moriah, where He had appeared to David his father, at the place that David prepared, on the threshing floor of Ornan the Jebusite.<br><br>
+     <sup><b>2</b></sup> And he began to build on the second day of the second month in the fourth year of his reign.<br><br>
+     <sup><b>3</b></sup> And these are the foundations which Solomon laid to build the house of God. The length in cubits, according to the former standard, was sixty cubits, and <i>it was</i> twenty cubits wide.<br><br>
+     <sup><b>4</b></sup> And the portico that was at the front was as long as the width of the house, twenty cubits; and its height was one hundred twenty <i>cubits.</i> And he overlaid it within with pure gold.<br><br>
+     <sup><b>5</b></sup> And the greater house he overlaid with cypress wood, and he overlaid it with fine gold and put palm trees and chains on it.<br><br>
+     <sup><b>6</b></sup> And he adorned the house with precious stones for beauty, and the gold was gold from Parvaim.<br><br>
+     <sup><b>7</b></sup> And he overlaid the house — the beams, the thresholds, and its walls and its doors — with gold; and he carved cherubim on the walls.<br><br>
+     <sup><b>8</b></sup> And he made the house of the Holy of Holies; its length, across the width of the house, was twenty cubits, and its width was twenty cubits; and he overlaid it with fine gold <i>amounting</i> to six hundred talents.<br><br>
+     <sup><b>9</b></sup> And the weight of the nails was fifty shekels of gold, and the upper chambers he overlaid with gold.<br><br>
+     <sup><b>10</b></sup> And he made two cherubim of sculptured work in the house of the Holy of Holies, and they overlaid them with gold.<br><br>
+     <sup><b>11</b></sup> And the wingspan of the cherubim was twenty cubits; the wing of one, of five cubits, touched the wall of the house, and <i>its</i> other wing, of five cubits, touched the wing of the other cherub.<br><br>
+     <sup><b>12</b></sup> And the wing of the other cherub, of five cubits, touched the wall of the house, and its other wing, of five cubits, was attached to the wing of the first cherub.<br><br>
+     <sup><b>13</b></sup> The wings of these cherubim were spread out twenty cubits <i>in length;</i> and they stood on their feet, and their faces were toward the house.<br><br>
+     <sup><b>14</b></sup> And he made the veil of blue and purple and crimson <i>cloth</i> and fine linen, and he put cherubim upon it.<br><br>
+     <sup><b>15</b></sup> And at the front of the house he made two pillars, thirty-five cubits high; and the capital that was on the top of each was five cubits <i>high.</i><br><br>
+     <sup><b>16</b></sup> And he made chains in the innermost sanctuary and set <i>them</i> on the tops of the pillars, and he made one hundred pomegranates and put them on the chains.<br><br>
+     <sup><b>17</b></sup> And he erected the pillars in front of the temple, one on the right and one on the left; and he called the name of the one on the right Jachin and the name of the one on the left Boaz.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2chronicles-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
