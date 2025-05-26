@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/30-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Chronicles</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2chronicles-5"><a onclick="open_chapter('top', '14-2chronicles.html')">2 Chronicles 5</a></h4>
+  <p><sup><b>1</b></sup> Thus all the work that Solomon did for the house of Jehovah was finished. And Solomon brought in the things that David his father had sanctified, even the silver and the gold and all the vessels, <i>and</i> he put <i>them</i> in the treasuries of the house of God.<br><br>
+     <sup><b>2</b></sup> Then Solomon assembled the elders of Israel <i>and</i> all the heads of the tribes, the leaders of the fathers’ <i>houses</i> of the children of Israel, to Jerusalem in order to bring up the Ark of the Covenant of Jehovah from the city of David, which is Zion.<br><br>
+     <sup><b>3</b></sup> And all the men of Israel assembled themselves before the king at the feast, which is <i>in</i> the seventh month.<br><br>
+     <sup><b>4</b></sup> And when all the elders of Israel came, the Levites took up the Ark.<br><br>
+     <sup><b>5</b></sup> And they brought up the Ark and the Tent of Meeting and all the holy vessels that were in the tent; the priests and Levites brought them up.<br><br>
+     <sup><b>6</b></sup> And King Solomon and all the assembly of Israel, who had assembled before him before the Ark, were sacrificing sheep and oxen which could not be counted or numbered for multitude.<br><br>
+     <sup><b>7</b></sup> And the priests brought the Ark of the Covenant of Jehovah to its place, into the innermost sanctuary of the house, into the Holy of Holies under the wings of the cherubim.<br><br>
+     <sup><b>8</b></sup> And the cherubim spread out <i>their</i> wings over the place of the Ark, and the cherubim covered the Ark and its poles overhead.<br><br>
+     <sup><b>9</b></sup> And the poles extended out, so that the ends of the poles could be seen <i>coming out</i> from the Ark before the innermost sanctuary, but they were not seen outside; and they are there to this day.<br><br>
+     <sup><b>10</b></sup> There was nothing in the Ark except the two tablets, which Moses put <i>there</i> at Horeb when Jehovah made a covenant with the children of Israel when they came out of Egypt.<br><br>
+     <sup><b>11</b></sup> And when the priests came out of the Holy Place (for all the priests who were present had sanctified themselves without regard to their divisions),<br><br>
+     <sup><b>12</b></sup> All the Levitical singers, Asaph, Heman, Jeduthun, and their sons and their brothers clothed in fine linen, with cymbals and with harps and lyres, were standing east of the altar; and one hundred twenty priests who blew the trumpets were with them.<br><br>
+     <sup><b>13</b></sup> And when the trumpeters and the singers were one to make <i>themselves</i> heard with one voice in praising and in giving thanks to Jehovah, and when they lifted up <i>their</i> voice with trumpets and with cymbals and with musical instruments in praise to Jehovah, <i>saying,</i> For He is good, for His lovingkindness is forever; then the house, the house of Jehovah, was filled with a cloud.<br><br>
+     <sup><b>14</b></sup> And the priests were not able to stand and minister because of the cloud, for the glory of Jehovah filled the house of God.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2chronicles-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

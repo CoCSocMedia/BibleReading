@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/29-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Chronicles</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2chronicles-4"><a onclick="open_chapter('top', '14-2chronicles.html')">2 Chronicles 4</a></h4>
+  <p><sup><b>1</b></sup> And he made an altar of bronze; its length was twenty cubits, and its width was twenty cubits, and its height was ten cubits.<br><br>
+     <sup><b>2</b></sup> And he made the molten sea, ten cubits from brim to brim, fully round; and it was five cubits high, and a line of thirty cubits encompassed it.<br><br>
+     <sup><b>3</b></sup> And under it there were figures of oxen all around, encircling it, for ten cubits, surrounding the sea all around; the oxen were cast in two rows when they were cast.<br><br>
+     <sup><b>4</b></sup> It stood upon twelve oxen, three facing north and three facing west and three facing south and three facing east; and the sea was upon them, and all their hindquarters were within.<br><br>
+     <sup><b>5</b></sup> And it was a handbreadth thick; and its brim was like the work of a cup’s brim, <i>like</i> the flower of a lily; it could hold three thousand baths.<br><br>
+     <sup><b>6</b></sup> And he made ten basins in which to wash, to rinse the things for the burnt offering, and he set five on the right and five on the left; but the sea was for the priests to wash in.<br><br>
+     <sup><b>7</b></sup> Then he made the ten golden lampstands according to the ordinance for them, and he put <i>them</i> in the temple, five on the right and five on the left.<br><br>
+     <sup><b>8</b></sup> And he made ten tables and placed <i>them</i> in the temple, five on the right and five on the left; and he made one hundred golden bowls.<br><br>
+     <sup><b>9</b></sup> And he made the court of the priests and the great court and the doors of the court, and he overlaid their doors with bronze.<br><br>
+     <sup><b>10</b></sup> And he put the sea on the right side <i>of the house,</i> on the east side southward.<br><br>
+     <sup><b>11</b></sup> And Huram made the pots and the shovels and the bowls. Thus Huram finished doing the work that he was doing for King Solomon in the house of God:<br><br>
+     <sup><b>12</b></sup> The two pillars and the bowls and the two capitals that were at the top of the pillars and the two networks to cover the two bowls of the capitals that were at the top of the pillars;<br><br>
+     <sup><b>13</b></sup> And the four hundred pomegranates for the two networks, two rows of pomegranates for each network, to cover the two bowls of the capitals that were on the pillars.<br><br>
+     <sup><b>14</b></sup> He also made the bases, and he made the basins upon the bases;<br><br>
+     <sup><b>15</b></sup> And the one sea and the twelve oxen under it.<br><br>
+     <sup><b>16</b></sup> And the pots and the shovels and the forks and all their vessels that Huram-abi made for King Solomon for the house of Jehovah were of burnished bronze.<br><br>
+     <sup><b>17</b></sup> The king cast them in the plain of the Jordan, in the clay ground between Succoth and Zeredah.<br><br>
+     <sup><b>18</b></sup> And Solomon made all these vessels in great number, for the weight of bronze could not be ascertained.<br><br>
+     <sup><b>19</b></sup> And Solomon made all the vessels that were in the house of God: the golden altar; and the tables upon which the bread of the Presence was <i>put;</i><br><br>
+     <sup><b>20</b></sup> And the lampstands and their lamps of pure gold to burn according to their ordinance before the innermost sanctuary;<br><br>
+     <sup><b>21</b></sup> And the flowers and the lamps and the tongs, of gold, of purest gold;<br><br>
+     <sup><b>22</b></sup> And the snuffers and the bowls and the small cups and the firepans, of pure gold; and the entrance of the house, its innermost doors for the Holy of Holies, and the doors of the house of the temple, of gold.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2chronicles-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

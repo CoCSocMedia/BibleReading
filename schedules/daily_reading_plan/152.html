@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Chronicles</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2chronicles-7"><a onclick="open_chapter('top', '14-2chronicles.html')">2 Chronicles 7</a></h4>
+  <p><sup><b>1</b></sup> And when Solomon had finished praying, the fire came down from heaven and devoured the burnt offering and the sacrifices; and the glory of Jehovah filled the house.<br><br>
+     <sup><b>2</b></sup> And the priests were not able to enter the house of Jehovah, for the glory of Jehovah filled the house of Jehovah.<br><br>
+     <sup><b>3</b></sup> And all the children of Israel, seeing the fire coming down and the glory of Jehovah upon the house, bowed down on the pavement with their faces to the ground and worshipped and thanked Jehovah, <i>saying,</i> For He is good; for His lovingkindness <i>endures</i> forever.<br><br>
+     <sup><b>4</b></sup> And the king and all the people offered sacrifices before Jehovah.<br><br>
+     <sup><b>5</b></sup> And King Solomon offered a sacrifice of twenty-two thousand oxen and one hundred twenty thousand sheep. Thus the king and all the people dedicated the house of God.<br><br>
+     <sup><b>6</b></sup> And the priests stood at their posts and the Levites with the musical instruments of Jehovah, which David the king had made for praising Jehovah (for His lovingkindness <i>endures</i> forever) whenever David praised with their help. And the priests sounded the trumpets opposite them, and all Israel was standing.<br><br>
+     <sup><b>7</b></sup> And Solomon sanctified the middle of the court that was before the house of Jehovah, for there he offered the burnt offering and the fat of peace offerings because the bronze altar which Solomon had made was not able to receive the burnt offering and the meal offering and the fat.<br><br>
+     <sup><b>8</b></sup> And Solomon held a feast at that time for seven days, and all Israel with him, a very great congregation, from the entrance of Hamath to the Brook of Egypt.<br><br>
+     <sup><b>9</b></sup> And on the eighth day they held a solemn assembly, for they held the dedication of the altar seven days and the feast seven days;<br><br>
+     <sup><b>10</b></sup> And on the twenty-third day of the seventh month he sent the people away to their tents, rejoicing and happy in heart for the goodness that Jehovah had shown to David and to Solomon and to Israel His people.<br><br>
+     <sup><b>11</b></sup> Thus Solomon finished the house of Jehovah and the king’s house; and all that had come up in Solomon’s heart to do in the house of Jehovah and in his own house he successfully accomplished.<br><br>
+     <sup><b>12</b></sup> And Jehovah appeared to Solomon in the night and said to him, I have heard your prayer and have chosen this place for Myself as a house of sacrifice.<br><br>
+     <sup><b>13</b></sup> If I shut up the heavens so that there is no rain, or if I command the locust to devour the land, or if I send pestilence among My people,<br><br>
+     <sup><b>14</b></sup> And My people, who are called by My name, humble themselves and pray and seek My face and turn from their evil ways; then I will hear from heaven and forgive their sin and heal their land.<br><br>
+     <sup><b>15</b></sup> Now My eyes will be open and My ears attentive to the prayer from this place.<br><br>
+     <sup><b>16</b></sup> For now I have chosen and have sanctified this house, that My name may be there forever; and My eyes and My heart will be there continually.<br><br>
+     <sup><b>17</b></sup> And as for you, if you walk before Me, as David your father walked, and do according to all that I have commanded you and keep My statutes and My ordinances;<br><br>
+     <sup><b>18</b></sup> Then I will establish the throne of your kingdom, as I covenanted with David your father, saying, You will not lack a man to be ruler in Israel.<br><br>
+     <sup><b>19</b></sup> But if you turn away and forsake My statutes and My commandments that I have put before you, and go and serve other gods and worship them;<br><br>
+     <sup><b>20</b></sup> Then I will pluck them out of My land which I have given them, and this house, which I have sanctified for My name, I will cast out of My sight and make <i>it</i> a proverb and a byword among all the peoples.<br><br>
+     <sup><b>21</b></sup> And <i>concerning</i> this house, which is so high, everyone who passes by it will be astonished and say, Why has Jehovah done this to this land and to this house?<br><br>
+     <sup><b>22</b></sup> And they will say, Because they forsook Jehovah, the God of their fathers, who brought them out of the land of Egypt, and laid hold of other gods, and they worshipped them and served them; therefore He has brought all this evil upon them.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2chronicles-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
