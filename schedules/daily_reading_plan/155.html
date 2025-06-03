@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Chronicles</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2chronicles-10"><a onclick="open_chapter('top', '14-2chronicles.html')">2 Chronicles 10</a></h4>
+  <p><sup><b>1</b></sup> Then Rehoboam went to Shechem, for all Israel had come to Shechem to make him king.<br><br>
+     <sup><b>2</b></sup> And when Jeroboam the son of Nebat heard of <i>it</i> (for he was in Egypt, where he had fled from Solomon the king; and Jeroboam returned from Egypt;<br><br>
+     <sup><b>3</b></sup> And they sent <i>word to him</i> and called him), Jeroboam and all of Israel came and spoke to Rehoboam, saying,<br><br>
+     <sup><b>4</b></sup> Your father made our yoke hard. Now therefore make the hard service of your father and his heavy yoke that he put upon us lighter, and we will serve you.<br><br>
+     <sup><b>5</b></sup> And he said to them, <i>Go away</i> for another three days, then return to me. And the people went away.<br><br>
+     <sup><b>6</b></sup> Then King Rehoboam took counsel with the elders who attended Solomon his father while he was alive, saying, What counsel do you give <i>me</i> to return as an answer to this people?<br><br>
+     <sup><b>7</b></sup> And they spoke to him, saying, If you will be good to this people and please them and speak good words to them, then they will be your servants always.<br><br>
+     <sup><b>8</b></sup> But he forsook the counsel of the elders with which they counseled him and took counsel with the young men who had grown up with him, who attended him.<br><br>
+     <sup><b>9</b></sup> And he said to them, What counsel do you give <i>me</i> that we may return an answer to this people who have spoken to me, saying, Lighten the yoke that your father put upon us?<br><br>
+     <sup><b>10</b></sup> And the young men who grew up with him spoke with him, saying, Thus shall you say to the people who have spoken to you, saying, Your father made our yoke heavy, but you must make <i>it</i> lighter on us; thus shall you say to them, My little finger is thicker than my father’s loins.<br><br>
+     <sup><b>11</b></sup> And now, whereas my father laid a heavy yoke upon you, I will increase your yoke; my father chastised you with whips, but I <i>will chastise you</i> with scorpions.<br><br>
+     <sup><b>12</b></sup> And Jeroboam and all the people came to Rehoboam on the third day as the king had spoken, saying, Return to me on the third day.<br><br>
+     <sup><b>13</b></sup> And the king answered them harshly; and King Rehoboam forsook the counsel of the elders<br><br>
+     <sup><b>14</b></sup> And spoke to them according to the counsel of the young men, saying, I will make your yoke heavy, and I will add to it; my father chastised you with whips, but I <i>will chastise you</i> with scorpions.<br><br>
+     <sup><b>15</b></sup> So the king did not listen to the people, for this turn of events was of God that Jehovah might establish His word which He had spoken through Ahijah the Shilonite to Jeroboam the son of Nebat.<br><br>
+     <sup><b>16</b></sup> And when all Israel <i>saw</i> that the king would not listen to them, the people returned <i>an answer</i> to the king, saying, What portion do we have in David? Neither do <i>we have</i> an inheritance in the son of Jesse. Each one to your tents, O Israel. Now see to your own house, O David. And all Israel went to their tents.<br><br>
+     <sup><b>17</b></sup> But as for the children of Israel who dwelt in the cities of Judah, Rehoboam reigned over them.<br><br>
+     <sup><b>18</b></sup> Then King Rehoboam sent Hadoram, who was over the forced labor, and the children of Israel stoned him to death. And King Rehoboam made haste to get up into his chariot and flee to Jerusalem.<br><br>
+     <sup><b>19</b></sup> So Israel has rebelled against the house of David until this day.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2chronicles-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
