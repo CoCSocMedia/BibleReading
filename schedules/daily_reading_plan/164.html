@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/13-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Chronicles</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2chronicles-19"><a onclick="open_chapter('top', '14-2chronicles.html')">2 Chronicles 19</a></h4>
+  <p><sup><b>1</b></sup> Then Jehoshaphat the king of Judah returned to his house in Jerusalem in peace.<br><br>
+     <sup><b>2</b></sup> And Jehu the son of Hanani the seer went out to meet him; and he said to King Jehoshaphat, Should you help the wicked and love those who hate Jehovah? Because of this matter wrath has come upon you from Jehovah.<br><br>
+     <sup><b>3</b></sup> Nevertheless there are some good things found in you, for you have purged the Asherahs out of the land and have set your heart to pursue God.<br><br>
+     <sup><b>4</b></sup> And Jehoshaphat dwelt in Jerusalem. And he went out again among the people, from Beer-sheba to the hill country of Ephraim, and brought them back to Jehovah, the God of their fathers.<br><br>
+     <sup><b>5</b></sup> And he set up judges in the land throughout all the fortified cities of Judah, city by city.<br><br>
+     <sup><b>6</b></sup> And he said to the judges, Consider what you are doing, for you judge not for man but for Jehovah, and <i>He is</i> with you in pronouncing judgment.<br><br>
+     <sup><b>7</b></sup> Now therefore let the fear of Jehovah be upon you; be careful how you act, for there is no iniquity with Jehovah our God, nor respect of persons, nor the taking of bribes.<br><br>
+     <sup><b>8</b></sup> And also in Jerusalem Jehoshaphat set up some of the Levites and priests and heads of the fathers’ <i>houses</i> in Israel for the judgment of Jehovah and for disputes. And they came back to Jerusalem.<br><br>
+     <sup><b>9</b></sup> And he commanded them, saying, Thus shall you do in the fear of Jehovah, faithfully and with a perfect heart.<br><br>
+     <sup><b>10</b></sup> And for every dispute that comes to you from among your brothers who dwell in their cities, whether concerning bloodshed or concerning law or commandment, statute or ordinance, you shall warn them, so that they are not guilty before Jehovah and so that wrath does not come upon you and your brothers. Thus shall you act, and you will not be guilty.<br><br>
+     <sup><b>11</b></sup> And now Amariah the chief priest is over you in all matters concerning Jehovah; and Zebadiah the son of Ishmael, the ruler of the house of Judah, <i>is over you</i> in all matters concerning the king. And the Levites <i>will serve</i> before you as officers. Be strong and take action, and may Jehovah be with the good.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2chronicles-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

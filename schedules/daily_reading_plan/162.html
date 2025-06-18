@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Chronicles</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2chronicles-17"><a onclick="open_chapter('top', '14-2chronicles.html')">2 Chronicles 17</a></h4>
+  <p><sup><b>1</b></sup> And Jehoshaphat his son reigned in his place, and he strengthened himself against Israel.<br><br>
+     <sup><b>2</b></sup> And he put forces in all the fortified cities of Judah and put garrisons in the land of Judah and in the cities of Ephraim that Asa his father had taken.<br><br>
+     <sup><b>3</b></sup> And Jehovah was with Jehoshaphat because he walked in the former ways of David his father; and he did not pursue the Baals<br><br>
+     <sup><b>4</b></sup> But pursued the God of his father and walked in His commandments and did not <i>do</i> as Israel had done.<br><br>
+     <sup><b>5</b></sup> Therefore Jehovah established the kingdom in his hand. And all Judah gave tribute to Jehoshaphat, and he had riches and honor in abundance.<br><br>
+     <sup><b>6</b></sup> And his heart was exalted in the ways of Jehovah; and even more, he removed the high places and the Asherahs from Judah.<br><br>
+     <sup><b>7</b></sup> And in the third year of his reign he sent his officials Ben-hail and Obadiah and Zechariah and Nethanel and Micaiah to teach in the cities of Judah;<br><br>
+     <sup><b>8</b></sup> And with them <i>he sent</i> the Levites Shemaiah and Nethaniah and Zebadiah and Asahel and Shemiramoth and Jehonathan and Adonijah and Tobijah and Tob-adonijah, the Levites; and with them, Elishama and Jehoram, the priests.<br><br>
+     <sup><b>9</b></sup> And they taught in Judah, having the book of the law of Jehovah; and they went around all the cities of Judah and taught among the people.<br><br>
+     <sup><b>10</b></sup> And the fear of Jehovah was upon all the kingdoms of the lands that were around Judah, and they waged no war against Jehoshaphat.<br><br>
+     <sup><b>11</b></sup> And some of the Philistines would bring presents to Jehoshaphat and silver as tribute; even the Arabians would bring him flocks, seven thousand seven hundred rams and seven thousand seven hundred male goats.<br><br>
+     <sup><b>12</b></sup> And Jehoshaphat grew exceedingly great, and he built fortresses and store cities in Judah.<br><br>
+     <sup><b>13</b></sup> And he conducted many works in the cities of Judah and had men of war, mighty men of valor, in Jerusalem.<br><br>
+     <sup><b>14</b></sup> And this was the muster of them according to their fathers’ house: of Judah, the captains of thousands: Adnah the captain, and with him three hundred thousand mighty men of valor;<br><br>
+     <sup><b>15</b></sup> And next to him was Jehohanan the captain, and with him two hundred eighty thousand;<br><br>
+     <sup><b>16</b></sup> And next to him was Amasiah the son of Zichri, who offered himself willingly to Jehovah, and with him two hundred thousand mighty men of valor.<br><br>
+     <sup><b>17</b></sup> And of Benjamin: Eliada, a mighty man of valor, and with him two hundred thousand men armed with bow and shield;<br><br>
+     <sup><b>18</b></sup> And next to him was Jehozabad, and with him one hundred eighty thousand armed for war.<br><br>
+     <sup><b>19</b></sup> These were those who served the king, besides those whom the king had put in the fortified cities throughout all Judah.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2chronicles-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

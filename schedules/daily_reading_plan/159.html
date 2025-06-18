@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Chronicles</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2chronicles-14"><a onclick="open_chapter('top', '14-2chronicles.html')">2 Chronicles 14</a></h4>
+  <p><sup><b>1</b></sup> And Abijah slept with his fathers, and they buried him in the city of David. And Asa his son reigned in his place. In his days the land was quiet for ten years.<br><br>
+     <sup><b>2</b></sup> And Asa did what was good and upright in the sight of Jehovah his God;<br><br>
+     <sup><b>3</b></sup> For he removed the foreign altars and the high places and smashed the pillars and hewed down the Asherahs,<br><br>
+     <sup><b>4</b></sup> And he commanded Judah to pursue Jehovah, the God of their fathers, and perform the law and the commandment.<br><br>
+     <sup><b>5</b></sup> And from all the cities of Judah he removed the high places and the incense altars. And the kingdom was quiet before him.<br><br>
+     <sup><b>6</b></sup> And he built fortress cities in Judah; for the land was quiet and there was no war against him during those years, because Jehovah had given him rest.<br><br>
+     <sup><b>7</b></sup> For he said to Judah, Let us build these cities and put around <i>them</i> walls with towers, gates, and bars. The land is still before us because we have pursued Jehovah our God; we have pursued <i>Him,</i> and He has given us rest all around. So they built and prospered.<br><br>
+     <sup><b>8</b></sup> And Asa had an army of three hundred thousand from Judah who bore shields and spears and of two hundred eighty thousand from Benjamin who bore hand shields and drew bows; all these were mighty men of valor.<br><br>
+     <sup><b>9</b></sup> And Zerah the Cushite went out to them with an army of one million men and three hundred chariots, and he came to Mareshah.<br><br>
+     <sup><b>10</b></sup> And Asa went out before him and set the battle in array in the valley of Zephathah at Mareshah.<br><br>
+     <sup><b>11</b></sup> And Asa called out to Jehovah his God and said, O Jehovah, there is none besides You to help <i>us,</i> between the mighty and those without strength. Help us, O Jehovah our God, for we trust in You, and in Your name we have come against this multitude. O Jehovah, You are our God; do not let mortal man prevail against You.<br><br>
+     <sup><b>12</b></sup> And Jehovah struck the Cushites before Asa and before Judah, and the Cushites fled.<br><br>
+     <sup><b>13</b></sup> And Asa and the people who were with him pursued them as far as Gerar; and so many of the Cushites fell that they could not recover, for they were shattered before Jehovah and before His army. And they carried away very much spoil.<br><br>
+     <sup><b>14</b></sup> And they struck all the cities surrounding Gerar, for the fear of Jehovah was upon them. And they plundered all the cities, for there was much plunder in them.<br><br>
+     <sup><b>15</b></sup> And they also struck the cattle tents and carried away sheep in abundance and camels, and they returned to Jerusalem.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2chronicles-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

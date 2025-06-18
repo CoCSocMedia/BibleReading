@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/9-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Chronicles</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2chronicles-15"><a onclick="open_chapter('top', '14-2chronicles.html')">2 Chronicles 15</a></h4>
+  <p><sup><b>1</b></sup> And the Spirit of God came upon Azariah the son of Oded.<br><br>
+     <sup><b>2</b></sup> And he went out to meet Asa and said to him, Hear me, Asa and all Judah and Benjamin: Jehovah is with you while you are with Him; and if you pursue Him, He will be found by you; but if you forsake Him, He will forsake you.<br><br>
+     <sup><b>3</b></sup> Now for a long time Israel has been without the true God and without a teaching priest and without law.<br><br>
+     <sup><b>4</b></sup> But in their distress they turned to Jehovah the God of Israel and sought Him, and He was found by them.<br><br>
+     <sup><b>5</b></sup> For in those times there was no peace to him who went out or to him who came in, for great afflictions were upon all the inhabitants of the lands.<br><br>
+     <sup><b>6</b></sup> For they were crushed, nation against nation and city against city, for God afflicted them with every distress.<br><br>
+     <sup><b>7</b></sup> But you be strong and do not let your hands fail, for there is reward for your labor.<br><br>
+     <sup><b>8</b></sup> And when Asa heard these words, that is, the prophecy of Oded the prophet, he strengthened himself and put away the detestable things from all the land of Judah and Benjamin and from the cities that he had taken in the hill country of Ephraim. And he restored the altar of Jehovah, which was before the portico of Jehovah.<br><br>
+     <sup><b>9</b></sup> And he gathered all Judah and Benjamin and the sojourners with them from Ephraim and Manasseh and Simeon, for many from Israel threw in <i>their lot</i> with him when they saw that Jehovah his God was with him.<br><br>
+     <sup><b>10</b></sup> So they gathered themselves at Jerusalem in the third month in the fifteenth year of the reign of Asa.<br><br>
+     <sup><b>11</b></sup> And they sacrificed to Jehovah on that day from the spoil they had brought, seven hundred oxen and seven thousand sheep.<br><br>
+     <sup><b>12</b></sup> And they entered into a covenant to pursue Jehovah, the God of their fathers, with all their heart and with all their soul,<br><br>
+     <sup><b>13</b></sup> And <i>covenanted that</i> anyone who did not pursue Jehovah the God of Israel would be put to death, whether small or great, whether man or woman.<br><br>
+     <sup><b>14</b></sup> And they swore to Jehovah with a loud voice and with shouting and with trumpets and with horns.<br><br>
+     <sup><b>15</b></sup> And all Judah rejoiced over the oath, for with all their heart they swore and with all their desire they sought Him. And He was found by them, and Jehovah gave them rest all around.<br><br>
+     <sup><b>16</b></sup> And he also removed Maacah, the mother of Asa the king, from being queen mother because she had made for Asherah an abominable image; and Asa cut down her abominable image and crushed <i>it</i> to powder and burned <i>it</i> at the brook Kidron.<br><br>
+     <sup><b>17</b></sup> But the high places were not taken away from Israel; otherwise Asa’s heart was perfect all his days.<br><br>
+     <sup><b>18</b></sup> And he brought into the house of God the things that his father had sanctified and that he had sanctified — silver and gold and vessels.<br><br>
+     <sup><b>19</b></sup> And there was no war until the thirty-fifth year of Asa’s reign.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2chronicles-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
