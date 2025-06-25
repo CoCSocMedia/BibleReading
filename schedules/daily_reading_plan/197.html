@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/16-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Nehemiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="nehemiah-6"><a onclick="open_chapter('top', '16-nehemiah.html')">Nehemiah 6</a></h4>
+  <p><sup><b>1</b></sup> And when it was reported to Sanballat and Tobiah and Geshem the Arabian and the rest of our enemies that I had built the wall and that no breach remained in it (though as yet I had not set up the doors in the gates),<br><br>
+     <sup><b>2</b></sup> Sanballat and Geshem sent <i>word</i> to me, saying, Come; let us meet together among the villages in the plain of Ono. But they intended to do me harm.<br><br>
+     <sup><b>3</b></sup> And I sent messengers to them, saying, I am doing a great work and cannot come down. Why should the work cease while I leave it to come down to you?<br><br>
+     <sup><b>4</b></sup> And they sent <i>word</i> to me four times in this way, and I answered them in this way.<br><br>
+     <sup><b>5</b></sup> Then Sanballat sent his servant to me in this way the fifth time, with an open letter in his hand,<br><br>
+     <sup><b>6</b></sup> In which was written: It is reported among the nations, and Geshem says <i>it,</i> that you and the Jews intend to rebel; therefore you are building the wall. And, according to these words, you are to be their king.<br><br>
+     <sup><b>7</b></sup> And you have also set up prophets to declare in Jerusalem concerning you, saying, There is a king in Judah! And now a report will be made to the king according to these words. Come now therefore, and let us take counsel together.<br><br>
+     <sup><b>8</b></sup> Then I sent <i>word</i> to him, saying, None of these things that you are saying have happened; rather you have invented them in your own heart.<br><br>
+     <sup><b>9</b></sup> For all of them tried to frighten us, thinking, Their hands will be weakened from working, and it will not be done. But now strengthen my hands!<br><br>
+     <sup><b>10</b></sup> And I went to the house of Shemaiah the son of Delaiah, the son of Mehetabel, who had shut himself up. And he said, Let us meet together in the house of God, within the temple; and let us shut the doors of the temple, for they are coming to slay you; indeed at night they are coming to slay you.<br><br>
+     <sup><b>11</b></sup> But I said, Should a man like me flee? And who, <i>being</i> like me, would go into the temple to save his life? I will not go in.<br><br>
+     <sup><b>12</b></sup> Then I perceived that surely God had not sent him but that he spoke this prophecy against me and that Tobiah and Sanballat had hired him.<br><br>
+     <sup><b>13</b></sup> He had been hired for this reason, that I would be frightened and that I would act in such a way as to sin; then they would have <i>cause</i> for an evil report in order to reproach me.<br><br>
+     <sup><b>14</b></sup> Remember, O my God, Tobiah and Sanballat according to these works of theirs, and also the prophetess Noadiah and the rest of the prophets, who tried to frighten me.<br><br>
+     <sup><b>15</b></sup> So the wall was completed on the twenty-fifth day of <i>the month</i> of Elul, in fifty-two days.<br><br>
+     <sup><b>16</b></sup> And when all our enemies heard of <i>it,</i> all the nations that surrounded us were afraid and fell very low in their own eyes, for they knew that this work was done <i>with the help</i> of our God.<br><br>
+     <sup><b>17</b></sup> Moreover in those days the nobles of Judah sent many letters unto Tobiah, and <i>the letters</i> of Tobiah came to them;<br><br>
+     <sup><b>18</b></sup> For many in Judah were sworn to his cause because he was the son-in-law of Shecaniah the son of Arah; and his son Jehohanan had taken the daughter of Meshullam the son of Berechiah as <i>his</i> wife.<br><br>
+     <sup><b>19</b></sup> They also spoke of his good deeds before me and reported my words to him. <i>And</i> Tobiah sent letters to intimidate me.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('Nehemiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

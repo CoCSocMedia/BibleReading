@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Nehemiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+
+  <h4 id="nehemiah-1"><a onclick="open_chapter('top', '16-nehemiah.html')">Nehemiah 1</a></h4>
+  <p><sup><b>1</b></sup> The words of Nehemiah the son of Hacaliah. Now in the month Chislev, in the twentieth year, while I was in Susa the capital,<br><br>
+     <sup><b>2</b></sup> Hanani, one of my brothers, came, he and some men from Judah; and I asked them about the Jews who had escaped, who were left from the captivity, and about Jerusalem.<br><br>
+     <sup><b>3</b></sup> And they said to me, The remnant who are left from the captivity there in the province are in an exceedingly bad state and reproach, and the wall of Jerusalem is broken down and its gates have been burned with fire.<br><br>
+     <sup><b>4</b></sup> And when I heard these words, I sat down and wept, and I mourned for some days; and I fasted and prayed before the God of heaven,<br><br>
+     <sup><b>5</b></sup> And said, I beseech You, O Jehovah the God of heaven, the great and awesome God, who keeps covenant and lovingkindness with those who love Him and keep His commandments:<br><br>
+     <sup><b>6</b></sup> Let Your ear be attentive and Your eyes open to hear the prayer of Your servant, which I pray before You now day and night, concerning the children of Israel, Your servants, while I confess the sins of the children of Israel that we have sinned against You. Indeed, I and the house of my father have sinned;<br><br>
+     <sup><b>7</b></sup> We have been most corrupt toward You and have not kept the commandments and the statutes and the ordinances that You commanded Moses Your servant.<br><br>
+     <sup><b>8</b></sup> Remember now the word that You commanded Moses Your servant, saying, If you are unfaithful, I will scatter you among the peoples;<br><br>
+     <sup><b>9</b></sup> But if you return to Me and keep My commandments and perform them, though your outcasts are under the ends of heaven, from there I will gather them and bring them to the place where I have chosen to cause My name to dwell.<br><br>
+     <sup><b>10</b></sup> Now these are Your servants and Your people, whom You have redeemed by Your great power and by Your strong hand.<br><br>
+     <sup><b>11</b></sup> I beseech You, O Lord, let Your ear be attentive to the prayer of Your servant and to the prayer of Your servants, who take delight in fearing Your name; and cause Your servant to prosper today, and grant him <i>to find</i> compassion before this man. Now I was cupbearer to the king.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('Nehemiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
