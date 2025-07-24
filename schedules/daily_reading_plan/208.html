@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Esther</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="esther-4"><a onclick="open_chapter('top', '17-esther.html')">Esther 4</a></h4>
+  <p><sup><b>1</b></sup> Now when Mordecai learned about all that had been done, Mordecai rent his clothes and put on sackcloth and ashes; and he went out into the midst of the city and wailed loudly and bitterly.<br><br>
+     <sup><b>2</b></sup> And he went up to the entrance of the king’s gate, for no one was to enter the king’s gate clothed in sackcloth.<br><br>
+     <sup><b>3</b></sup> And throughout every province, wherever the king’s commandment and his decree came, there was great mourning among the Jews, with fasting and weeping and wailing; many lay in sackcloth and ashes.<br><br>
+     <sup><b>4</b></sup> And Esther’s maids and her eunuchs came and told her, and the queen was greatly distressed. And she sent garments to clothe Mordecai, so that he might remove his sackcloth from him; but he would not accept <i>them.</i><br><br>
+     <sup><b>5</b></sup> Then Esther called for Hathach, <i>one</i> of the king’s eunuchs, whom he had appointed to <i>serve</i> her, and she commanded him <i>to go out</i> to Mordecai to find out what this was and why it was.<br><br>
+     <sup><b>6</b></sup> So Hathach went out to Mordecai at the open square of the city in front of the king’s gate.<br><br>
+     <sup><b>7</b></sup> And Mordecai told him all that had happened to him and the exact sum of money that Haman had promised to pay into the king’s treasuries for the destruction of the Jews.<br><br>
+     <sup><b>8</b></sup> And he also gave him a copy of the written decree which was issued in Susa for their destruction, that he might show Esther and tell her about <i>it</i> and charge her to go in to the king to supplicate him and make a request for her people before him.<br><br>
+     <sup><b>9</b></sup> And Hathach came and told Esther Mordecai’s words.<br><br>
+     <sup><b>10</b></sup> Then Esther spoke to Hathach and ordered him to <i>answer</i> Mordecai:<br><br>
+     <sup><b>11</b></sup> All the king’s servants and the people of the king’s provinces know that for any man or woman who comes in to the king at the inner court who has not been called for, there is but one law, that he be put to death, unless the king holds out his scepter of gold to him that he may live; and I have not been called to come in to the king during these <i>past</i> thirty days.<br><br>
+     <sup><b>12</b></sup> And they told Mordecai Esther’s words.<br><br>
+     <sup><b>13</b></sup> Then Mordecai told <i>them</i> to reply to Esther, Do not imagine that in the king’s palace you will escape any more than all the Jews.<br><br>
+     <sup><b>14</b></sup> For if you remain silent at this time, relief and deliverance for the Jews will arise from some other place, and you and your father’s house will perish. And who knows whether you have not come to the kingdom for such a time as this?<br><br>
+     <sup><b>15</b></sup> Then Esther told <i>them</i> to reply to Mordecai,<br><br>
+     <sup><b>16</b></sup> Go; assemble all the Jews who are to be found in Susa, and fast for me; and do not eat or drink for three days, night or day; I also and my maids will fast in the same way. And so will I go in to the king, which is not according to the law; and if I perish, I perish.<br><br>
+     <sup><b>17</b></sup> So Mordecai went his way and did according to all that Esther had commanded him.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('Esther-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
