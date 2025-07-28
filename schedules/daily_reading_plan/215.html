@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Job</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+
+  <h4 id="job-1"><a onclick="open_chapter('top', '18-job.html')">Job 1</a></h4>
+  <p><sup><b>1</b></sup> There was a man in the land of Uz whose name was Job; and this man was perfect and upright, and he feared God and turned away from evil.<br><br>
+     <sup><b>2</b></sup> And seven sons and three daughters were born to him.<br><br>
+     <sup><b>3</b></sup> And his possessions were seven thousand sheep and three thousand camels and five hundred yoke of oxen and five hundred female donkeys and a great many servants; and this man was greater than all the sons of the east.<br><br>
+     <sup><b>4</b></sup> And his sons would go and hold feasts in each one’s house, each on his own day, and they would send <i>word</i> and invite their three sisters to eat and drink with them.<br><br>
+     <sup><b>5</b></sup> And when the days of feasting ran their course, Job would send <i>word</i> and sanctify them; and he would rise early in the morning and offer burnt offerings according to the number of them all; for Job said, Perhaps my children have sinned and have cursed God in their heart. Job did this continually.<br><br>
+     <sup><b>6</b></sup> Then one day, when the sons of God came to present themselves before Jehovah, Satan also came among them.<br><br>
+     <sup><b>7</b></sup> And Jehovah said to Satan, Where have you come from? And Satan answered Jehovah and said, From roving the earth and going about in it.<br><br>
+     <sup><b>8</b></sup> And Jehovah said to Satan, Have you considered My servant Job? For there is none like him on the earth, a perfect and upright man, who fears God and turns away from evil.<br><br>
+     <sup><b>9</b></sup> Then Satan answered Jehovah and said, Does Job fear God without cause?<br><br>
+     <sup><b>10</b></sup> Have You not set a hedge around him and his household and all that he has? You have blessed the work of his hands, so that his possessions are spread throughout the land.<br><br>
+     <sup><b>11</b></sup> But stretch forth Your hand and touch all that he has, and he will surely curse You to Your face.<br><br>
+     <sup><b>12</b></sup> And Jehovah said to Satan, Here is all that he has, in your hand; only do not stretch forth your hand against him. And Satan went forth from Jehovah’s presence.<br><br>
+     <sup><b>13</b></sup> Then one day, when his sons and daughters were eating and drinking wine in the house of their firstborn brother,<br><br>
+     <sup><b>14</b></sup> A messenger came to Job and said, The oxen were plowing, and the donkeys were feeding beside them;<br><br>
+     <sup><b>15</b></sup> And the Sabeans fell <i>upon them</i> and took them away, and they struck the servants with the edge of the sword; and I alone have escaped to relate <i>these things</i> to you.<br><br>
+     <sup><b>16</b></sup> While this one was still speaking, another came and said, The fire of God has fallen from heaven and burned up the sheep and the servants and devoured them; and I alone have escaped to relate <i>these things</i> to you.<br><br>
+     <sup><b>17</b></sup> While this one was still speaking, another came and said, The Chaldeans formed three companies and raided the camels and took them, and they struck the servants with the edge of the sword; and I alone have escaped to relate <i>these things</i> to you.<br><br>
+     <sup><b>18</b></sup> While this one was still speaking, another came and said, Your sons and your daughters were eating and drinking wine in the house of their firstborn brother;<br><br>
+     <sup><b>19</b></sup> And suddenly a great wind came from beyond the desert and struck the four corners of the house, so that it fell upon the young people and they died; and I alone have escaped to relate <i>these things</i> to you.<br><br>
+     <sup><b>20</b></sup> Then Job rose up and tore his clothes and shaved his head and fell to the earth and worshipped.<br><br>
+     <sup><b>21</b></sup> And he said, / Naked I came out of my mother’s womb, / And naked I will return there. / Jehovah gives and Jehovah takes away; / Blessed be the name of Jehovah.<br><br>
+     <sup><b>22</b></sup> In all this Job did not sin, nor did he charge God with unseemliness.<br><br>
+  </p>
+</div>
+
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('job-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

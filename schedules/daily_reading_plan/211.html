@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/30-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Esther</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="esther-7"><a onclick="open_chapter('top', '17-esther.html')">Esther 7</a></h4>
+  <p><sup><b>1</b></sup> So the king and Haman went in to feast with Esther the queen.<br><br>
+     <sup><b>2</b></sup> And the king said again unto Esther on the second day during the banquet of wine, What is your petition, Queen Esther? And it shall be granted to you. And what is your request? Even to the half of my kingdom it shall be done.<br><br>
+     <sup><b>3</b></sup> Then Esther the queen answered and said, If I have found favor in your sight, O king, and if it please the king, let my life be given me as my petition, and <i>that of</i> my people as my request;<br><br>
+     <sup><b>4</b></sup> For we have been sold, I and my people, to be destroyed, to be slain, and to perish. And if we had been sold as slaves, men and women, I would have remained silent, for the adversary is not worth the annoyance to the king.<br><br>
+     <sup><b>5</b></sup> Then King Ahasuerus spoke and said to Esther the queen, Who is he, and where is he, who presumes to do so?<br><br>
+     <sup><b>6</b></sup> And Esther said, An adversary and an enemy, this wicked Haman. Then Haman became terrified before the king and the queen.<br><br>
+     <sup><b>7</b></sup> And the king arose in his anger from the banquet of wine <i>and went</i> into the palace garden, and Haman stood up to make a request for his life to Esther the queen; for he saw that harm had been determined against him by the king.<br><br>
+     <sup><b>8</b></sup> And when the king returned from the palace garden into the house of the banquet of wine, Haman was prostrate on the couch where Esther was. Then the king said, Will he even humble the queen in front of me in this house? When the word went forth from the king’s mouth, they covered Haman’s face.<br><br>
+     <sup><b>9</b></sup> Then Harbonah, one of the eunuchs who were before the king, said, And also there is the gallows standing in Haman’s house, fifty cubits high, which Haman has made for Mordecai, who spoke good on behalf of the king. And the king said, Hang him on it.<br><br>
+     <sup><b>10</b></sup> So they hanged Haman on the gallows that he had prepared for Mordecai. Then the king’s anger subsided.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('Esther-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
