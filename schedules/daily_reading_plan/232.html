@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/19-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Job</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="job-18"><a onclick="open_chapter('top', '18-job.html')">Job 18</a></h4>
+  <p><sup><b>1</b></sup> Then Bildad the Shuhite answered and said,<br><br>
+     <sup><b>2</b></sup> How long will you hunt for words? / Consider, and afterward we will speak.<br><br>
+     <sup><b>3</b></sup> Why are we considered <i>to be</i> like beasts / And have become unclean in your eyes?<br><br>
+     <sup><b>4</b></sup> You who tear yourself in your anger, / Will the earth be forsaken for your sake, / Or will the rock be removed from its place?<br><br>
+     <sup><b>5</b></sup> Indeed the light of the wicked goes out, / And the flame of his fire does not shine.<br><br>
+     <sup><b>6</b></sup> The light is darkness in his tent, / And his lamp above him goes out.<br><br>
+     <sup><b>7</b></sup> The steps of his strength are confined, / And his counsel has cast him down.<br><br>
+     <sup><b>8</b></sup> For he has been cast into a net by his own feet, / And he walks about on the webbing of a pitfall.<br><br>
+     <sup><b>9</b></sup> A snare grabs <i>him</i> by the heel; / A trap lays hold on him.<br><br>
+     <sup><b>10</b></sup> A rope is hidden for him on the ground, / And a trap for him, on the path.<br><br>
+     <sup><b>11</b></sup> Terrors frighten him all around / And chase him at his heels.<br><br>
+     <sup><b>12</b></sup> His strength is famished, / And calamity is prepared at his side.<br><br>
+     <sup><b>13</b></sup> It devours the members of his body; / The firstborn of death devours his members.<br><br>
+     <sup><b>14</b></sup> He is rooted out of his tent, in which he trusts; / And he is made to march to the king of terrors.<br><br>
+     <sup><b>15</b></sup> That which is not his dwells in his tent; / Brimstone is scattered upon his habitation.<br><br>
+     <sup><b>16</b></sup> Beneath, his roots are dried up; / And above, his branch is withered.<br><br>
+     <sup><b>17</b></sup> The memory of him perishes from the earth, / And he has no name on the open plain.<br><br>
+     <sup><b>18</b></sup> He is thrust out from the light to the darkness / And driven from the world.<br><br>
+     <sup><b>19</b></sup> He has no posterity and no progeny among his people, / And there are none remaining where he sojourned.<br><br>
+     <sup><b>20</b></sup> Those who come after will be astonished at his day, / As those who went before were horrified.<br><br>
+     <sup><b>21</b></sup> Surely these are the dwellings of the unjust, / And this is the place of him who does not know God.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('job-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

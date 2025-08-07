@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/18-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Job</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="job-16"><a onclick="open_chapter('top', '18-job.html')">Job 16</a></h4>
+  <p><sup><b>1</b></sup> Then Job answered and said,<br><br>
+     <sup><b>2</b></sup> I have heard many such things; / Troubling comforters are you all.<br><br>
+     <sup><b>3</b></sup> Do words of wind have an end? / Or what has provoked you that you <i>so</i> respond?<br><br>
+     <sup><b>4</b></sup> I also could speak like you, / If your soul were in my soul’s stead; / I could join <i>my</i> words together against you / And shake my head at you.<br><br>
+     <sup><b>5</b></sup> I could strengthen you with my mouth, / And the movement of my lips would mitigate <i>your pain.</i><br><br>
+     <sup><b>6</b></sup> If I speak, my pain is not mitigated; / And if I forbear, how much departs from me?<br><br>
+     <sup><b>7</b></sup> But now He has worn me out; / You have desolated all my company.<br><br>
+     <sup><b>8</b></sup> And You have seized me; it is a testimony <i>against me;</i> / And my leanness rises up against me; it testifies to my face.<br><br>
+     <sup><b>9</b></sup> In His wrath He has torn <i>me</i> to pieces and been adverse toward me; / He has gnashed His teeth at me. / My Adversary sharpens His eyes at me.<br><br>
+     <sup><b>10</b></sup> With their mouth they gape at me; / They strike my cheek reproachfully; / They mass themselves together against me.<br><br>
+     <sup><b>11</b></sup> God has delivered me over to the unjust / And cast me down into the hands of the wicked.<br><br>
+     <sup><b>12</b></sup> I was at ease, and He broke me apart; / Indeed He took me by my neck and dashed me to pieces. / And He set me up as His target;<br><br>
+     <sup><b>13</b></sup> His archers surrounded me; / He split open my kidneys and did not desist; / He poured out my gall upon the earth.<br><br>
+     <sup><b>14</b></sup> He broke me open with breach upon breach; / He ran at me like a mighty man <i>of war.</i><br><br>
+     <sup><b>15</b></sup> I have sewn sackcloth upon my skin / And have cast my horn into the dust.<br><br>
+     <sup><b>16</b></sup> My face is reddened with weeping, / And on my eyelids is the shadow of death;<br><br>
+     <sup><b>17</b></sup> Though there is no violence in my hands, / And my prayer is pure.<br><br>
+     <sup><b>18</b></sup> O earth, do not cover my blood; / And let there be no <i>resting</i> place for my crying out.<br><br>
+     <sup><b>19</b></sup> Even now, there in heaven is my Witness, / And He who vouches for me is in the heights.<br><br>
+     <sup><b>20</b></sup> My friends deride me; / My eye pours out tears to God,<br><br>
+     <sup><b>21</b></sup> That He would plead for a man <i>in his case</i> with God / And for a son of man <i>in his case</i> with his neighbor.<br><br>
+     <sup><b>22</b></sup> For when years <i>few</i> in number have come, / I will go the way from which I cannot return.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('job-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

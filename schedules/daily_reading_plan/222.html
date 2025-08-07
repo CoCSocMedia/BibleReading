@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/10-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Job</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="job-8"><a onclick="open_chapter('top', '18-job.html')">Job 8</a></h4>
+  <p><sup><b>1</b></sup> Then Bildad the Shuhite answered and said,<br><br>
+     <sup><b>2</b></sup> How long will you speak these things? / And <i>how long</i> will the words of your mouth be <i>like</i> a mighty wind?<br><br>
+     <sup><b>3</b></sup> Does God pervert justice? / Or does the Almighty pervert righteousness?<br><br>
+     <sup><b>4</b></sup> If your children have sinned against Him, / He has delivered them into the hand of their transgression.<br><br>
+     <sup><b>5</b></sup> If you seek earnestly after God / And make supplication unto the Almighty,<br><br>
+     <sup><b>6</b></sup> If you are pure and upright, / Then surely He will rouse Himself for you / And restore well-being to your righteous habitation.<br><br>
+     <sup><b>7</b></sup> And though your beginning was small, / Your end will be very great.<br><br>
+     <sup><b>8</b></sup> For inquire now of the former generation, / And attend to what their fathers have sought out.<br><br>
+     <sup><b>9</b></sup> For we are of yesterday and know nothing, / Because our days upon the earth are a shadow.<br><br>
+     <sup><b>10</b></sup> Will they not teach you <i>and</i> talk to you / And utter forth words from their heart?<br><br>
+     <sup><b>11</b></sup> Can papyrus shoot up without marsh? / Can reeds grow without water?<br><br>
+     <sup><b>12</b></sup> While it is still in its greenness <i>and</i> not cut down, / It withers before all <i>other</i> grasses.<br><br>
+     <sup><b>13</b></sup> So are the paths of all who forget God; / And the hope of the profane perishes,<br><br>
+     <sup><b>14</b></sup> Whose confidence is cut off, / And whose trust is a spider’s web.<br><br>
+     <sup><b>15</b></sup> He leans upon his house, but it will not stand; / He holds fast to it, but it will not endure.<br><br>
+     <sup><b>16</b></sup> He is full of sap before the sun, / And his shoots go forth over his garden.<br><br>
+     <sup><b>17</b></sup> His roots are entwined around a stone heap; / He looks upon a place of stones.<br><br>
+     <sup><b>18</b></sup> If one destroys him from his place, / Then it denies him, <i>saying,</i> I have not seen you.<br><br>
+     <sup><b>19</b></sup> Indeed, that is the joy of his way; / And others spring forth out of the dust.<br><br>
+     <sup><b>20</b></sup> Indeed, God will not reject a perfect man, / Nor will He support evildoers.<br><br>
+     <sup><b>21</b></sup> He will yet fill your mouth with laughter / And your lips with shouting.<br><br>
+     <sup><b>22</b></sup> Those who hate you will be clothed with shame, / And the tent of the wicked will be no more.<br><br>
+  </p>
+</div>
+
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('job-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

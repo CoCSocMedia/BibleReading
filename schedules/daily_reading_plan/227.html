@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Job</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="job-13"><a onclick="open_chapter('top', '18-job.html')">Job 13</a></h4>
+  <p><sup><b>1</b></sup> Indeed, my eye has seen all <i>this;</i> / My ear has heard and understood it.<br><br>
+     <sup><b>2</b></sup> What you know, I also know; / I am not inferior to you.<br><br>
+     <sup><b>3</b></sup> But I would speak to the Almighty, / And I desire to argue with God.<br><br>
+     <sup><b>4</b></sup> Yet you are plasterers of lies; / Physicians of no value are you all.<br><br>
+     <sup><b>5</b></sup> Oh that you would be altogether silent, / And <i>this</i> would be your wisdom!<br><br>
+     <sup><b>6</b></sup> Hear now my argument, / And hearken to the contentions of my lips.<br><br>
+     <sup><b>7</b></sup> Will you speak wrongly for God / And speak deceitfully for Him?<br><br>
+     <sup><b>8</b></sup> Will you be partial to Him? / Will you contend for God?<br><br>
+     <sup><b>9</b></sup> Will it be well with you when He searches you out? / Or will you deceive Him as one might deceive a man?<br><br>
+     <sup><b>10</b></sup> He will surely reprove you / If you are secretly partial.<br><br>
+     <sup><b>11</b></sup> Will not His majesty make you afraid / And His dread fall on you?<br><br>
+     <sup><b>12</b></sup> Your memorable sayings are proverbs of ashes; / Your defenses are defenses of clay.<br><br>
+     <sup><b>13</b></sup> Be silent before me, and I myself will speak; / And let come on me what may.<br><br>
+     <sup><b>14</b></sup> I will take my flesh in my teeth / And put my life in my hand.<br><br>
+     <sup><b>15</b></sup> Indeed, He will kill me; I have no hope. / Nevertheless I will argue my ways before Him.<br><br>
+     <sup><b>16</b></sup> This also will be my salvation, / That no profane man may come before Him.<br><br>
+     <sup><b>17</b></sup> Hear carefully my words, / And let my declaration be in your ears.<br><br>
+     <sup><b>18</b></sup> Here now, I have arranged my case; / I know that I will be vindicated.<br><br>
+     <sup><b>19</b></sup> Who will contend with me? / For then I would be silent and die.<br><br>
+     <sup><b>20</b></sup> Only do not do two things to me, / Then I will not hide from Your face:<br><br>
+     <sup><b>21</b></sup> Withdraw Your hand far from me, / And do not let Your terror frighten me.<br><br>
+     <sup><b>22</b></sup> Then call, and I will answer; / Or let me speak, and You respond to me.<br><br>
+     <sup><b>23</b></sup> How many are my iniquities and sins? / Make my transgression and my sin known to me.<br><br>
+     <sup><b>24</b></sup> Why do You hide Your face / And consider me as Your enemy?<br><br>
+     <sup><b>25</b></sup> Will You harass a driven leaf / And pursue dry chaff?<br><br>
+     <sup><b>26</b></sup> For You write bitter things against me / And cause me to inherit the iniquities of my youth;<br><br>
+     <sup><b>27</b></sup> And You put my feet in stocks / And mark all my paths; / You set a limit for the soles of my feet.<br><br>
+     <sup><b>28</b></sup> And such a one is like some rotten thing that wastes away, / Like a garment eaten by moths.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('job-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
