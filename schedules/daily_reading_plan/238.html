@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/25-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Job</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="job-24"><a onclick="open_chapter('top', '18-job.html')">Job 24</a></h4>
+  <p><sup><b>1</b></sup> Why are times <i>of judgment</i> not stored up by the Almighty? / And why do those who know Him not see His days?<br><br>
+     <sup><b>2</b></sup> Some remove landmarks; / They seize the flock and pasture <i>them.</i><br><br>
+     <sup><b>3</b></sup> They drive away the donkey of the fatherless / And take the widow’s ox as a pledge.<br><br>
+     <sup><b>4</b></sup> They turn the needy out of the way; / The poor of the land are made to hide together.<br><br>
+     <sup><b>5</b></sup> Indeed, <i>like</i> wild asses in the desert, / They go forth to their work, / Diligently seeking some prey; / The wilderness <i>provides</i> them food for their children.<br><br>
+     <sup><b>6</b></sup> In the field they harvest their fodder, / And they glean the vintage of the wicked.<br><br>
+     <sup><b>7</b></sup> They spend the night naked, without clothing; / And have no covering in the cold.<br><br>
+     <sup><b>8</b></sup> They are wet from the mountain showers, / And for lack of shelter they embrace the rock.<br><br>
+     <sup><b>9</b></sup> Some pluck the fatherless from the breast, / And what the poor has on, as a pledge.<br><br>
+     <sup><b>10</b></sup> They go about naked, without clothing; / And being hungry, they take up the sheaves.<br><br>
+     <sup><b>11</b></sup> Between their walls they press out oil; / They tread the winepresses yet suffer thirst.<br><br>
+     <sup><b>12</b></sup> From the city men groan, / And the soul of the wounded cries out; / Yet God does not regard the folly.<br><br>
+     <sup><b>13</b></sup> These are among those who rebel against the light; / They are not acquainted with its ways, / Nor do they abide in its paths.<br><br>
+     <sup><b>14</b></sup> The murderer rises at dawn; / He kills the poor and the needy; / And at night he is like a thief.<br><br>
+     <sup><b>15</b></sup> The eye of the adulterer also watches for the twilight, / Saying, Not an eye will see me; / And he disguises his face.<br><br>
+     <sup><b>16</b></sup> They dig through houses in the dark; / By day they shut themselves in: / They do not know the light.<br><br>
+     <sup><b>17</b></sup> For morning is to all of them <i>like</i> the shadow of death, / Because they are acquainted with the terrors of the shadow of death.<br><br>
+     <sup><b>18</b></sup> Swift are they upon the face of the waters; / Their portion is cursed in the earth; / There is none who turns toward the vineyards.<br><br>
+     <sup><b>19</b></sup> Drought and heat snatch the snow water, / <i>As</i> Sheol <i>snatches</i> those who have sinned.<br><br>
+     <sup><b>20</b></sup> The womb forgets him; / The worm finds him sweet; / He is remembered no more; / And wrongdoing is broken like a tree.<br><br>
+     <sup><b>21</b></sup> He despoils the barren woman who does not bear, / And does no good for the widow.<br><br>
+     <sup><b>22</b></sup> But <i>God</i> preserves the mighty by His power; / He arises, and no one is certain of life.<br><br>
+     <sup><b>23</b></sup> He grants a man to be secure, and he rests <i>on it;</i> / And His eyes are upon their ways.<br><br>
+     <sup><b>24</b></sup> They are exalted a little while, then they are no more; / And they are brought low; like all <i>others,</i> they are gathered in / And are cut off like the tops of the ears of grain.<br><br>
+     <sup><b>25</b></sup> And if it is not so, then who will prove me a liar / And bring my words to nought?<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('job-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

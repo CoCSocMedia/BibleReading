@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/20-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Job</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="job-19"><a onclick="open_chapter('top', '18-job.html')">Job 19</a></h4>
+  <p><sup><b>1</b></sup> Then Job answered and said,<br><br>
+     <sup><b>2</b></sup> How long will you grieve my soul / And crush me with <i>your</i> words?<br><br>
+     <sup><b>3</b></sup> These ten times you have reproached me; / You are not ashamed to deal wrongly with me.<br><br>
+     <sup><b>4</b></sup> And be it that I have erred, / My error remains with me.<br><br>
+     <sup><b>5</b></sup> If you indeed magnify yourselves against me / And use my reproach in argument against me,<br><br>
+     <sup><b>6</b></sup> Know then that God has subverted my cause / And compassed me about with His net.<br><br>
+     <sup><b>7</b></sup> Indeed, I cry out, Violence! and I am not answered; / I call for help, and there is no justice.<br><br>
+     <sup><b>8</b></sup> He has walled up my way so that I cannot pass; / And He has put darkness upon my paths.<br><br>
+     <sup><b>9</b></sup> He has stripped my glory from me / And taken away the crown on my head.<br><br>
+     <sup><b>10</b></sup> He has broken me all around, and I am gone; / And my hope is plucked up like a tree.<br><br>
+     <sup><b>11</b></sup> He has also kindled His anger against me, / And in Himself He considers me as His adversary.<br><br>
+     <sup><b>12</b></sup> His troops come together / And cast up their highway against me / And encamp all around my tent.<br><br>
+     <sup><b>13</b></sup> He has removed my brothers far from me, / And those who know me are wholly estranged from me.<br><br>
+     <sup><b>14</b></sup> My relatives have failed <i>me,</i> / And my acquaintances have forgotten me.<br><br>
+     <sup><b>15</b></sup> Those who sojourn in my house and my maids consider me as a stranger; / I am a foreigner in their eyes.<br><br>
+     <sup><b>16</b></sup> To my servant I call out, but he does not answer; / I entreat him with my mouth.<br><br>
+     <sup><b>17</b></sup> My breath is strange to my wife; / And my supplications, to the children of my <i>mother’s</i> womb.<br><br>
+     <sup><b>18</b></sup> Even little children despise me: / I arise and they speak against me.<br><br>
+     <sup><b>19</b></sup> All the men whom I take counsel with abhor me, / And those whom I love have turned against me.<br><br>
+     <sup><b>20</b></sup> My bones cleave to my skin and to my flesh, / And I have escaped by the skin of my teeth.<br><br>
+     <sup><b>21</b></sup> Pity me, pity me, O my friends; / For the hand of God has touched me.<br><br>
+     <sup><b>22</b></sup> Why do you persecute me as God does / And are not satisfied with <i>eating</i> my flesh?<br><br>
+     <sup><b>23</b></sup> Oh, that my words were now written! / Oh, that they were inscribed in a book!<br><br>
+     <sup><b>24</b></sup> That with an iron pen and with lead / They were engraved in rock forever!<br><br>
+     <sup><b>25</b></sup> But I know that my Redeemer lives, / And at the last He will stand upon the earth;<br><br>
+     <sup><b>26</b></sup> And after this body of mine is destroyed, / Outside my flesh I will look on God,<br><br>
+     <sup><b>27</b></sup> Whom I, even I, will look on for myself, / And my eyes will see; <i>I,</i> and no other. / My inward parts that long for <i>God</i> are consumed within me.<br><br>
+     <sup><b>28</b></sup> If you say, How will we persecute him? / For the root of the matter is found in him;<br><br>
+     <sup><b>29</b></sup> Be fearful of the sword, / For wrath <i>brings</i> the punishment of the sword, / That you may know that there is a judgment.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('job-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
