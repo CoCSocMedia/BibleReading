@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/30-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Job</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="job-29"><a onclick="open_chapter('top', '18-job.html')">Job 29</a></h4>
+  <p><sup><b>1</b></sup> Then Job again took up his discourse and said,<br><br>
+     <sup><b>2</b></sup> Oh that I were as in the months of old, / As in the days when God watched over me;<br><br>
+     <sup><b>3</b></sup> When His lamp shone over my head, / <i>And</i> by His light I walked through darkness;<br><br>
+     <sup><b>4</b></sup> As I was in the days of my prime, / When intimate counsel with God was over my tent;<br><br>
+     <sup><b>5</b></sup> When the Almighty was yet with me, / <i>And</i> my children were around me;<br><br>
+     <sup><b>6</b></sup> When my steps were bathed in milk, / And the rock poured out for me streams of oil!<br><br>
+     <sup><b>7</b></sup> When I went out to the gate of the city, / When I prepared my seat in the square,<br><br>
+     <sup><b>8</b></sup> The young men saw me and hid themselves, / And the aged rose up <i>and</i> stood.<br><br>
+     <sup><b>9</b></sup> Princes refrained from talking / And laid <i>their</i> hand over their mouth.<br><br>
+     <sup><b>10</b></sup> The voice of the nobles was hushed, / And their tongue stuck to the roof of their mouth.<br><br>
+     <sup><b>11</b></sup> For when the ear heard <i>me,</i> it blessed me; / And when the eye saw <i>me,</i> it bore witness to me;<br><br>
+     <sup><b>12</b></sup> Because I delivered the poor man who cried out, / And the orphan who had no one to help him.<br><br>
+     <sup><b>13</b></sup> The blessing of him who was perishing came upon me, / And I made the widow’s heart shout for joy.<br><br>
+     <sup><b>14</b></sup> I put on righteousness, and it clothed me; / My justice was like a robe and a turban.<br><br>
+     <sup><b>15</b></sup> I was eyes to the blind, / And I was feet to the lame.<br><br>
+     <sup><b>16</b></sup> I was a father to the needy, / And the cause of him whom I did not know I investigated.<br><br>
+     <sup><b>17</b></sup> I broke the jaws of the unjust / And made him drop the prey from his teeth.<br><br>
+     <sup><b>18</b></sup> Then I said, I will die in my nest, / And I will multiply <i>my</i> days like the sand.<br><br>
+     <sup><b>19</b></sup> My root is spread out to the water, / And dew abides on my branch at night.<br><br>
+     <sup><b>20</b></sup> My glory is <i>always</i> new with me, / And my bow is renewed in my hand.<br><br>
+     <sup><b>21</b></sup> <i>Men</i> listened to me and waited, / And they were silent for my counsel.<br><br>
+     <sup><b>22</b></sup> After my words they spoke not again, / And my speech distilled <i>like</i> <i>dew</i> upon them.<br><br>
+     <sup><b>23</b></sup> And they waited for me as for the rain, / And they opened their mouth wide <i>as</i> for the late rain.<br><br>
+     <sup><b>24</b></sup> I smiled on them — they could not believe <i>it;</i> / And they did not cast down the light of my countenance.<br><br>
+     <sup><b>25</b></sup> I chose the way for them and sat as chief, / And I dwelt as a king among the troops, / As one who comforts those who mourn.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('job-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

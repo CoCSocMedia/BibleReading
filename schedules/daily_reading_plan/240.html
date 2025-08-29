@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Job</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="job-26"><a onclick="open_chapter('top', '18-job.html')">Job 26</a></h4>
+  <p><sup><b>1</b></sup> Then Job answered and said,<br><br>
+     <sup><b>2</b></sup> How you have helped him who is without power! / How you have saved the arm of him who is without strength!<br><br>
+     <sup><b>3</b></sup> How you have counseled him who is without wisdom / And have plentifully declared sound knowledge!<br><br>
+     <sup><b>4</b></sup> To whom have you uttered words? / And whose spirit has come forth from you?<br><br>
+     <sup><b>5</b></sup> The deceased are made to tremble / Beneath the waters, and those who inhabit them.<br><br>
+     <sup><b>6</b></sup> Sheol is naked before Him, / And Abaddon has no covering.<br><br>
+     <sup><b>7</b></sup> He stretches out the north over the void; / He hangs the earth upon nothing.<br><br>
+     <sup><b>8</b></sup> He binds up the waters in His thick clouds, / And the cloud is not rent under them.<br><br>
+     <sup><b>9</b></sup> He covers the face of <i>His</i> throne; / He spreads His cloud over it.<br><br>
+     <sup><b>10</b></sup> He drew a circle on the surface of the waters / As a boundary of the light and the darkness.<br><br>
+     <sup><b>11</b></sup> The pillars of heaven shook / And were astounded at His rebuke.<br><br>
+     <sup><b>12</b></sup> By His power He stilled the sea, / And by His understanding He struck down Rahab.<br><br>
+     <sup><b>13</b></sup> By His Spirit the heavens became beauty; / His hand pierced the fleeing serpent.<br><br>
+     <sup><b>14</b></sup> Indeed, these are but the fringes of His ways; / And how small a whisper do we hear of Him! / But as for the thundering of His mightiness, who can comprehend <i>it?</i><br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('job-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
