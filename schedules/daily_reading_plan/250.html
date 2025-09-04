@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Job</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="job-36"><a onclick="open_chapter('top', '18-job.html')">Job 36</a></h4>
+  <p><sup><b>1</b></sup> And Elihu added <i>this</i> and said,<br><br>
+     <sup><b>2</b></sup> Bear with me a little, and I will show you; / For there is more to say for God.<br><br>
+     <sup><b>3</b></sup> I will bring my knowledge from afar / And will ascribe righteousness to my Maker.<br><br>
+     <sup><b>4</b></sup> For truly my words are not false; / One perfect in knowledge is with you.<br><br>
+     <sup><b>5</b></sup> Indeed, God is mighty and does not despise; / <i>He is</i> mighty in strength of understanding.<br><br>
+     <sup><b>6</b></sup> He does not preserve the wicked man alive, / But gives justice to the afflicted.<br><br>
+     <sup><b>7</b></sup> He does not withdraw His eyes from the righteous; / And with kings on the throne, / He sets them forever, and they are exalted.<br><br>
+     <sup><b>8</b></sup> And if they are bound in fetters, / If they are caught in the cords of affliction,<br><br>
+     <sup><b>9</b></sup> He shows them their work / And their transgressions, that they have acted arrogantly.<br><br>
+     <sup><b>10</b></sup> He also opens their ear to instruction / And commands that they return from iniquity.<br><br>
+     <sup><b>11</b></sup> If they hear and serve <i>Him,</i> / They will spend their days in prosperity / And their years in pleasantness.<br><br>
+     <sup><b>12</b></sup> But if they do not hear, they will pass away by the sword / And die without knowledge.<br><br>
+     <sup><b>13</b></sup> But those who are profane in heart lay up anger; / They do not cry for help when He binds them.<br><br>
+     <sup><b>14</b></sup> They die in youth, / And their life <i>ends</i> among the most defiled.<br><br>
+     <sup><b>15</b></sup> He rescues the afflicted by their affliction / And opens their ear through oppression.<br><br>
+     <sup><b>16</b></sup> Indeed He allures you from the jaws of distress / Into a spacious place, where there is no constraint; / And what is upon your table is full of fatness.<br><br>
+     <sup><b>17</b></sup> But you are filled with the judgment of the wicked; / Judgment and litigation have taken hold <i>of you.</i><br><br>
+     <sup><b>18</b></sup> <i>Beware</i> lest wrath allures you into scoffing, / And do not let the greatness of the ransom turn you aside.<br><br>
+     <sup><b>19</b></sup> Will your cry keep <i>you</i> from being in distress, / Or all the forces of <i>your</i> strength?<br><br>
+     <sup><b>20</b></sup> Do not long for the night, / When people are taken from their place.<br><br>
+     <sup><b>21</b></sup> Take heed; do not turn toward iniquity; / For you have chosen this rather than affliction.<br><br>
+     <sup><b>22</b></sup> Indeed, God is exalted in His power: / Who is a teacher like Him?<br><br>
+     <sup><b>23</b></sup> Who has appointed His way for Him? / And who says, You have done wrong?<br><br>
+     <sup><b>24</b></sup> Remember to magnify His work, / Of which men sing.<br><br>
+     <sup><b>25</b></sup> All mankind has gazed on it; / Man beholds <i>it</i> from afar.<br><br>
+     <sup><b>26</b></sup> Indeed, God is great, and we do not know <i>Him;</i> / The number of His years we also cannot search out.<br><br>
+     <sup><b>27</b></sup> For He draws up the drops of water / Which distill into rain from His mist,<br><br>
+     <sup><b>28</b></sup> Which the skies pour down / <i>And</i> drop upon man abundantly.<br><br>
+     <sup><b>29</b></sup> Can they indeed understand the spreading of the clouds, / The thunderings of His pavilion?<br><br>
+     <sup><b>30</b></sup> Indeed, He scatters His lightning around Him / And covers the roots of the sea.<br><br>
+     <sup><b>31</b></sup> For by these He judges the peoples; / He gives food in abundance.<br><br>
+     <sup><b>32</b></sup> He fills <i>His</i> hands with lightning / And commands it to strike the mark.<br><br>
+     <sup><b>33</b></sup> Its noise tells of Him; / The cattle as well <i>tell</i> concerning Him who is coming.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('job-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
