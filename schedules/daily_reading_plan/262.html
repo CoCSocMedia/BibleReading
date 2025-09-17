@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/18-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Job</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-6"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 6</a></h4>
+  <p><sup><b>1</b></sup> O Jehovah, do not rebuke me in Your anger, / Nor chasten me in Your burning wrath.<br><br>
+     <sup><b>2</b></sup> Be gracious to me, O Jehovah, for I am languishing; / Heal me, O Jehovah, for my bones are shaken,<br><br>
+     <sup><b>3</b></sup> And my soul is greatly shaken. / But as for You, O Jehovah, how long?<br><br>
+     <sup><b>4</b></sup> Return, O Jehovah; deliver my soul; / Save me for Your lovingkindness’ sake.<br><br>
+     <sup><b>5</b></sup> For in death there is no remembrance of You; / In Sheol who can give thanks to You?<br><br>
+     <sup><b>6</b></sup> I am weary with my groaning; / Every night I cause my bed to swim; / With my tears I dissolve my couch.<br><br>
+     <sup><b>7</b></sup> My eye is wasted because of grief; / It has aged because of all those who vex me.<br><br>
+     <sup><b>8</b></sup> Depart from me, all you workers of iniquity, / For Jehovah has heard the sound of my weeping.<br><br>
+     <sup><b>9</b></sup> Jehovah has heard my supplication; / Jehovah receives my prayer.<br><br>
+     <sup><b>10</b></sup> All my enemies will be ashamed and greatly dismayed; / They will turn back; they will be put to shame suddenly.<br><br>
+  </p>
+</div>
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('job-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
