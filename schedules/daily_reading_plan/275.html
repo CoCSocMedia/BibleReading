@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/2-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-19"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 19</a></h4>
+  <p><sup><b>1</b></sup> The heavens declare the glory of God, / And the expanse proclaims the work of His hands.<br><br>
+     <sup><b>2</b></sup> Day to day pours forth speech, / And night to night tells out knowledge.<br><br>
+     <sup><b>3</b></sup> There is no speech and there are no words; / Their voice is not heard.<br><br>
+     <sup><b>4</b></sup> In all the earth their line has gone forth, / And their words to the end of the world. / In the heavens He has made a tent for the sun,<br><br>
+     <sup><b>5</b></sup> And he, like a bridegroom, goes forth from his canopy; / He rejoices like a mighty man running the course.<br><br>
+     <sup><b>6</b></sup> His going forth is from the end of the heavens, / And his circuit is unto their ends; / And there is nothing hidden from his heat.<br><br>
+     <sup><b>7</b></sup> The law of Jehovah is perfect, / Restoring the soul; / The testimony of Jehovah is faithful, / Making the simple wise;<br><br>
+     <sup><b>8</b></sup> The precepts of Jehovah are right, / Making the heart joyous; / The commandment of Jehovah is clear, / Enlightening the eyes;<br><br>
+     <sup><b>9</b></sup> The fear of Jehovah is pure, / Enduring forever; / The judgments of Jehovah are truth / <i>And</i> altogether righteous.<br><br>
+     <sup><b>10</b></sup> More to be desired are they than gold, / Even much refined gold; / Sweeter also than honey / And the drippings of the honeycomb.<br><br>
+     <sup><b>11</b></sup> Moreover by them Your servant is warned; / In keeping them there is much reward.<br><br>
+     <sup><b>12</b></sup> Who can discern <i>his</i> errors? / Clear me of my secret faults.<br><br>
+     <sup><b>13</b></sup> Also keep back Your servant from presumptuous sins; / Do not let them have dominion over me; / Then I will be blameless and cleared / Of great transgression.<br><br>
+     <sup><b>14</b></sup> May the words of my mouth and the meditation of my heart / Be acceptable before You, / O Jehovah, my rock and my Redeemer.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
