@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/22-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-39"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 39</a></h4>
+  <p><sup><b>1</b></sup> I said, I will keep my ways, / So that I do not sin with my tongue; / I will keep a muzzle on my mouth / When the wicked are before me.<br><br>
+     <sup><b>2</b></sup> I was dumb and silent; / I held my peace, <i>even</i> from good; / And my pain was stirred up.<br><br>
+     <sup><b>3</b></sup> My heart was hot within me; / While I mused, the fire burned; / I spoke with my tongue:<br><br>
+     <sup><b>4</b></sup> O Jehovah, cause me to know my end, / And the measure of my days, what it is. / May I know how transient I am.<br><br>
+     <sup><b>5</b></sup> Behold, You have made my days as <i>mere</i> handbreadths, / And my lifetime is as nothing before You; / Surely every man at his best is altogether vanity. Selah<br><br>
+     <sup><b>6</b></sup> Surely man goes about as a semblance; / Surely they bustle about in vain: / He heaps up <i>riches</i> yet knows not / Who will gather them.<br><br>
+     <sup><b>7</b></sup> And now what am I waiting for, O Lord? / My hope — it is in You.<br><br>
+     <sup><b>8</b></sup> Deliver me from all my transgressions; / Do not make me the fool’s reproach.<br><br>
+     <sup><b>9</b></sup> I was dumb; I did not open my mouth; / For You have done <i>this.</i><br><br>
+     <sup><b>10</b></sup> Remove Your plague from me; / By the hostility of Your hand I am consumed.<br><br>
+     <sup><b>11</b></sup> With rebukes You chasten a man because of iniquity, / And cause what is desirous to him to disappear like a moth. / Surely every man is vanity. Selah<br><br>
+     <sup><b>12</b></sup> Hear my prayer, O Jehovah; / And give ear to my cry; / Do not hold Your peace at my tears. / For I am a stranger with You, / A sojourner, as all my fathers were.<br><br>
+     <sup><b>13</b></sup> Look away from me, that I may be cheerful, / Before I go away and am no more.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

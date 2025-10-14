@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/23-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-40"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 40</a></h4>
+  <p><sup><b>1</b></sup> I waited patiently on Jehovah, / And He inclined to me / And heard my cry.<br><br>
+     <sup><b>2</b></sup> Then He brought me up out of a pit of destruction, / Out of the miry clay; / And He set my feet upon a rock, / Establishing my steps.<br><br>
+     <sup><b>3</b></sup> Then He put a new song in my mouth, / A praise to our God. / Many see <i>it</i> and fear, / And they trust in Jehovah.<br><br>
+     <sup><b>4</b></sup> Blessed is the man / Who makes Jehovah his trust / And does not turn to the proud / Or to those who turn aside after deception.<br><br>
+     <sup><b>5</b></sup> Many, O Jehovah my God, are the wonderful deeds which You have done / And Your thoughts toward us; / They cannot be set in order unto You. / Were I to declare and speak of them, / They would be too numerous to recount.<br><br>
+     <sup><b>6</b></sup> You do not delight in sacrifice and offering; / You have prepared ears for Me; / You do not require burnt offering and sin offering.<br><br>
+     <sup><b>7</b></sup> Then I said, / Behold, I have come; / In the scroll of the book / It is written concerning Me.<br><br>
+     <sup><b>8</b></sup> I delight in doing Your will, O My God; / Indeed Your law is within My inward parts.<br><br>
+     <sup><b>9</b></sup> I bear tidings of righteousness / In the great congregation. / Behold, I will not withhold My lips; / O Jehovah, You know.<br><br>
+     <sup><b>10</b></sup> I have not hidden Your righteousness / Within My heart; / I have declared Your faithfulness and Your salvation; / I have not concealed Your lovingkindness and Your truth from the great congregation.<br><br>
+     <sup><b>11</b></sup> You, O Jehovah, do not withhold / Your compassions from me; / May Your lovingkindness and Your truth / Preserve me continually.<br><br>
+     <sup><b>12</b></sup> For evils encompass me until they cannot be counted; / My iniquities have so overtaken me / That I cannot see; / They are more numerous than the hairs of my head; / Thus my heart fails me.<br><br>
+     <sup><b>13</b></sup> Be pleased, O Jehovah, to deliver me; / O Jehovah, hasten to help me.<br><br>
+     <sup><b>14</b></sup> May those who seek my life to destroy it / Be put to shame and confounded together; / May those who take delight in my misfortune / Be turned back and humiliated.<br><br>
+     <sup><b>15</b></sup> May those who say to me, Aha! Aha! / Be desolate because of their shame.<br><br>
+     <sup><b>16</b></sup> May all those who seek You / Be glad and rejoice in You; / May those who love Your salvation say continually, / May Jehovah be magnified!<br><br>
+     <sup><b>17</b></sup> But I am poor and needy; / May the Lord think about me. / You are my help and my Deliverer; / O my God, do not delay.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
