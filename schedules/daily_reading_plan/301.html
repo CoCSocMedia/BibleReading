@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-45"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 45</a></h4>
+  <p><sup><b>1</b></sup> My heart overflows with a good matter; / I speak what I have composed concerning the King. / My tongue is the pen of a ready writer.<br><br>
+     <sup><b>2</b></sup> You are fairer than the sons of men; / Grace is poured upon Your lips; / Therefore God has blessed You forever.<br><br>
+     <sup><b>3</b></sup> Gird Your sword upon Your thigh, O mighty One, / <i>In</i> Your majesty and Your splendor.<br><br>
+     <sup><b>4</b></sup> And in Your splendor ride on victoriously / Because of truth and meekness <i>and</i> righteousness; / And let Your right hand teach You awesome deeds.<br><br>
+     <sup><b>5</b></sup> Your arrows are sharp: / The peoples fall under You; / <i>The arrows</i> are in the heart of the King’s enemies.<br><br>
+     <sup><b>6</b></sup> Your throne, O God, is forever and ever; / The scepter of uprightness is the scepter of Your kingdom.<br><br>
+     <sup><b>7</b></sup> You have loved righteousness and hated wickedness; / Therefore God, Your God, has anointed You / With the oil of gladness above Your companions.<br><br>
+     <sup><b>8</b></sup> All Your garments <i>smell</i> of myrrh and aloes, of cassia; / From palaces of ivory, harpstrings have made You glad.<br><br>
+     <sup><b>9</b></sup> The daughters of kings are among Your most prized; / The queen stands at Your right hand in the gold of Ophir.<br><br>
+     <sup><b>10</b></sup> Hear, O daughter, and see; and incline your ear; / And forget your people and your father’s house;<br><br>
+     <sup><b>11</b></sup> Thus the King will desire your beauty. / Because He is your Lord, / Worship Him.<br><br>
+     <sup><b>12</b></sup> And the daughter of Tyre <i>will come</i> with a gift; / The rich among the people will entreat your favor.<br><br>
+     <sup><b>13</b></sup> The king’s daughter is all glorious within <i>the royal abode;</i> / Her garment is a woven work inwrought with gold.<br><br>
+     <sup><b>14</b></sup> She will be led to the King in embroidered <i>clothing;</i> / The virgins behind her, her companions, / Will be brought to You.<br><br>
+     <sup><b>15</b></sup> They will be led with rejoicing and exultation; / They will enter the King’s palace.<br><br>
+     <sup><b>16</b></sup> In the place of Your fathers will be Your sons; / You will make them princes in all the earth.<br><br>
+     <sup><b>17</b></sup> I will cause Your name to be remembered in all generations; / Therefore the peoples will praise You forever and ever.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
