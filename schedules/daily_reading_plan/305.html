@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-49"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 49</a></h4>
+  <p><sup><b>1</b></sup> Hear this, all you peoples; / Give ear, all you inhabitants of the world,<br><br>
+     <sup><b>2</b></sup> Both low and high, / Rich and poor together;<br><br>
+     <sup><b>3</b></sup> My mouth will speak wisdom, / And the meditation of my heart will be that of understanding.<br><br>
+     <sup><b>4</b></sup> I will incline my ear to a parable; / I will disclose my riddle upon the harp.<br><br>
+     <sup><b>5</b></sup> Why should I fear in the days of evil, / When the iniquity of those who supplant me surrounds me,<br><br>
+     <sup><b>6</b></sup> Those who trust in their wealth / And boast in the multitude of their riches?<br><br>
+     <sup><b>7</b></sup> None can by any means redeem <i>his</i> brother / Or give to God a ransom for him<br><br>
+     <sup><b>8</b></sup> (For the redemption of their soul is costly / And must be given up forever),<br><br>
+     <sup><b>9</b></sup> That he would yet live always / <i>And</i> not see corruption.<br><br>
+     <sup><b>10</b></sup> For he will see <i>that</i> wise men die; / The foolish one and the senseless one perish alike / And leave their wealth to others.<br><br>
+     <sup><b>11</b></sup> Their inward thought is that their houses <i>will remain</i> forever, / That their habitations <i>will remain</i> from generation to generation; / They call lands after their own names.<br><br>
+     <sup><b>12</b></sup> But man in honor does not remain; / He is like the beasts that perish.<br><br>
+     <sup><b>13</b></sup> Such is the way of those who are self-confident, / And of those after them who approve of their sayings. Selah<br><br>
+     <sup><b>14</b></sup> Like a flock, they are appointed for Sheol; / Death will shepherd them. / And straight to the grave they will descend, / And their form will be for Sheol to consume / That there be no abode for them.<br><br>
+     <sup><b>15</b></sup> But God will redeem my soul / From the power of Sheol, / For He will receive me. Selah<br><br>
+     <sup><b>16</b></sup> Do not fear when a man becomes rich, / When the glory of his house increases.<br><br>
+     <sup><b>17</b></sup> For when he dies, he will take nothing; / His glory will not descend after him.<br><br>
+     <sup><b>18</b></sup> Though he blessed his soul while he lived — / And <i>men</i> praise you when you do good for yourself —<br><br>
+     <sup><b>19</b></sup> It will go to the generation of his fathers; / They will never see light.<br><br>
+     <sup><b>20</b></sup> A man in honor but without understanding / Is like the beasts that perish.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
