@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/5-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-53"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 53</a></h4>
+  <p><sup><b>1</b></sup> The fool has said in his heart, / There is no God. / They are corrupt and commit abominable deeds; / There is none who does good.<br><br>
+     <sup><b>2</b></sup> God looked down from heaven / Upon the sons of men / To see if there was anyone who had insight, / Who seeks after God.<br><br>
+     <sup><b>3</b></sup> All of them have turned back; / They are together perverse. / There is none who does good; / There is not even one.<br><br>
+     <sup><b>4</b></sup> Have they no knowledge, the workers of iniquity, / Who eat up my people <i>as</i> they would eat up bread / <i>And</i> do not call upon God?<br><br>
+     <sup><b>5</b></sup> There they were in great fear, / Where there was no fear. / For God scattered the bones / Of him who encamped against you. / You put <i>them</i> to shame / Because God has rejected them.<br><br>
+     <sup><b>6</b></sup> Oh that the salvation of Israel might come forth from Zion! / When God turns the captivity of His people, / Jacob will exult, Israel will rejoice.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
