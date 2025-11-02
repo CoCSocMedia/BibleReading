@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/10-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-58"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 58</a></h4>
+  <p><sup><b>1</b></sup> Do you indeed, O judges, speak righteousness? / Do you judge in uprightness, O sons of men?<br><br>
+     <sup><b>2</b></sup> No, in heart you perform injustice; / You weigh out the violence of your hands on earth.<br><br>
+     <sup><b>3</b></sup> The wicked are estranged from the womb; / They err from <i>their</i> birth, speaking lies.<br><br>
+     <sup><b>4</b></sup> Their venom is like the venom of a serpent; / They are like the deaf cobra that has shut its ear,<br><br>
+     <sup><b>5</b></sup> Which does not hear the sound of the charmers / <i>Or</i> the wise spellbinder.<br><br>
+     <sup><b>6</b></sup> O God, break their teeth in their mouth; / Break off the fangs of the young lions, O Jehovah.<br><br>
+     <sup><b>7</b></sup> Let them melt like water that runs off. / When he shoots his arrows, / Let them be as though they were cut off.<br><br>
+     <sup><b>8</b></sup> <i>Let them be</i> like a snail that melts and goes away, / <i>Like</i> a woman’s miscarriage, which by no means sees the sun.<br><br>
+     <sup><b>9</b></sup> Before your pots can feel <i>the fire of</i> the thorns, / Whether green or burning, He will sweep them away.<br><br>
+     <sup><b>10</b></sup> The righteous man will rejoice when he sees vengeance; / He will wash his feet in the blood of the wicked.<br><br>
+     <sup><b>11</b></sup> And men will say, Indeed there is fruit for the righteous man; / Indeed there is a God who judges on earth.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

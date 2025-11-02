@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-59"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 59</a></h4>
+  <p><sup><b>1</b></sup> Deliver me from my enemies, O my God; / Set me on high, <i>secure</i> from those who rise up against me.<br><br>
+     <sup><b>2</b></sup> Deliver me from the workers of iniquity, / And save me from men of bloodshed.<br><br>
+     <sup><b>3</b></sup> For behold, they lie in wait for my soul; / The strong gather themselves against me. / Not because of any transgression of mine nor because of any sin of mine, O Jehovah,<br><br>
+     <sup><b>4</b></sup> Not for any fault <i>of mine,</i> they run and ready themselves; / Awake to meet me, and see.<br><br>
+     <sup><b>5</b></sup> Indeed You, O Jehovah, God of hosts, God of Israel, / Arise to punish all the nations; / Have no mercy upon any who treacherously commit iniquity. Selah<br><br>
+     <sup><b>6</b></sup> They return in the evening; / They growl like a dog / And go around the city.<br><br>
+     <sup><b>7</b></sup> Behold, they belch forth with their mouth; / Swords are in their lips; / For, Who, <i>they say,</i> hears?<br><br>
+     <sup><b>8</b></sup> But You, O Jehovah, laugh at them; / You have all the nations in derision.<br><br>
+     <sup><b>9</b></sup> O my strength, I will watch for You; / For God is my high retreat.<br><br>
+     <sup><b>10</b></sup> My God in His lovingkindness will meet me; / God will let me look <i>triumphantly</i> upon those who lie in wait for me.<br><br>
+     <sup><b>11</b></sup> Do not slay them, lest my people forget; / Scatter them by Your power, and bring them down, / O Lord our shield.<br><br>
+     <sup><b>12</b></sup> For the sin of their mouth, / For the word of their lips, / Let them even be taken in their arrogance, / And because of the cursing and the lying that they speak.<br><br>
+     <sup><b>13</b></sup> Consume <i>them</i> in wrath; consume <i>them</i> so that they are no more; / And <i>men</i> will know that God rules in Jacob / Unto the ends of the earth. Selah<br><br>
+     <sup><b>14</b></sup> They return in the evening; / They growl like a dog / And go around the city.<br><br>
+     <sup><b>15</b></sup> They wander about for food; / And if they are not filled, they linger.<br><br>
+     <sup><b>16</b></sup> But I will sing of Your strength; / And I will joyfully sing of Your lovingkindness in the morning. / For You have been my high retreat / And a refuge in the day of my distress.<br><br>
+     <sup><b>17</b></sup> O my strength, unto You I will sing psalms, / For God is my high retreat, / My God of lovingkindness.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
