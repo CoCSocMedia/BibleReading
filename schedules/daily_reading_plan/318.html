@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/14-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-62"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 62</a></h4>
+  <p><sup><b>1</b></sup> My soul waits in silence for God alone; / My salvation is from Him.<br><br>
+     <sup><b>2</b></sup> He alone is my rock and my salvation, / My high retreat; I will not be greatly shaken.<br><br>
+     <sup><b>3</b></sup> How long will you assail a man / So that you may slay <i>him,</i> all of you, / Like a leaning wall <i>or</i> a tottering fence?<br><br>
+     <sup><b>4</b></sup> They only make plans to thrust him down from his dignity; / They take delight in lies; / With their mouth they bless, / But inwardly they curse. Selah<br><br>
+     <sup><b>5</b></sup> My soul, wait in silence for God alone, / For my expectation is from Him.<br><br>
+     <sup><b>6</b></sup> He alone is my rock and my salvation, / My high retreat; I will not be shaken.<br><br>
+     <sup><b>7</b></sup> On God my salvation and my glory <i>depend;</i> / The rock of my strength, my refuge, is in God.<br><br>
+     <sup><b>8</b></sup> Trust in Him at all times, O people; / Pour out your heart before Him; / God is a refuge to us. Selah<br><br>
+     <sup><b>9</b></sup> Men of low degree are but a vapor; / Men of high degree, a lie. / In the balances they go up; / Together they are <i>less</i> than a vapor.<br><br>
+     <sup><b>10</b></sup> Do not trust in oppression, / And do not vainly hope in robbery; / If wealth increases, / Do not set <i>your</i> heart on <i>it.</i><br><br>
+     <sup><b>11</b></sup> Once has God spoken; / Twice have I heard this, / That strength belongs to God.<br><br>
+     <sup><b>12</b></sup> To You also, O Lord, belongs lovingkindness; / For You repay every man according to his work.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/12-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-60"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 60</a></h4>
+  <p><sup><b>1</b></sup> O God, You have rejected us; You have broken out upon us; / You have been angry. Restore us.<br><br>
+     <sup><b>2</b></sup> You have caused the earth to quake; You have split it open. / Heal the breaks in it, for it totters.<br><br>
+     <sup><b>3</b></sup> You have shown Your people hard things; / You have made us drink wine to stagger <i>us.</i><br><br>
+     <sup><b>4</b></sup> You have given a banner to those who fear You, / To be displayed because of the truth. Selah<br><br>
+     <sup><b>5</b></sup> That Your beloved ones may be delivered, / Save with Your right hand, and answer us.<br><br>
+     <sup><b>6</b></sup> God has spoken in His holiness: I will exult; / I will divide Shechem / And measure out the Valley of Succoth.<br><br>
+     <sup><b>7</b></sup> Gilead is Mine, and Manasseh is Mine, / And Ephraim is the helmet for My head; / Judah is My scepter.<br><br>
+     <sup><b>8</b></sup> Moab is My washbowl; / Upon Edom I will cast My sandal; / Philistia, shout aloud because of Me.<br><br>
+     <sup><b>9</b></sup> Who will bring me into the besieged city? / Who will lead me to Edom?<br><br>
+     <sup><b>10</b></sup> Will not You, O God, who rejected us / And who did not go forth, O God, with our armies?<br><br>
+     <sup><b>11</b></sup> Give us help from the adversary, / For a salvation by man is vain.<br><br>
+     <sup><b>12</b></sup> In God we will do valiantly, / And it is He who will tread down our adversaries.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
