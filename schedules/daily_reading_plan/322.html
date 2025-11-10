@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/18-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-66"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 66</a></h4>
+  <p><sup><b>1</b></sup> Shout joyfully to God, all the earth;<br><br>
+     <sup><b>2</b></sup> Sing forth the glory of His name; / Make glorious His praise.<br><br>
+     <sup><b>3</b></sup> Say to God, How awesome are Your deeds! / Because of the greatness of Your strength, Your enemies come cringing to You.<br><br>
+     <sup><b>4</b></sup> All the earth will worship You / And sing psalms to You; / They will sing psalms to Your name. Selah<br><br>
+     <sup><b>5</b></sup> Come and see the works of God; / He is awesome in <i>His</i> deeds toward the sons of men.<br><br>
+     <sup><b>6</b></sup> He turned the sea into dry land; / Through the river they crossed on foot. / There we rejoiced in Him.<br><br>
+     <sup><b>7</b></sup> He rules by His might forever; / His eyes observe the nations: / Let not the rebellious exalt themselves. Selah<br><br>
+     <sup><b>8</b></sup> Bless our God, O peoples; / And make the voice of His praise heard,<br><br>
+     <sup><b>9</b></sup> Who has kept our soul in life / And does not allow our feet to slip.<br><br>
+     <sup><b>10</b></sup> For You have tried us, O God; / You have refined us as silver is refined.<br><br>
+     <sup><b>11</b></sup> You have brought us into the net; / You have put a heavy burden on our loins.<br><br>
+     <sup><b>12</b></sup> You have made men ride over our heads; / We have gone through fire and water; / But You have brought us forth into abundance.<br><br>
+     <sup><b>13</b></sup> I will come into Your house with burnt offerings; / I will pay my vows to You,<br><br>
+     <sup><b>14</b></sup> Which my lips uttered / And my mouth spoke when I was in distress.<br><br>
+     <sup><b>15</b></sup> I will offer to You burnt offerings of fatlings / With the smoke of rams; / I will offer cattle with goats. Selah<br><br>
+     <sup><b>16</b></sup> Come, hear, all you who fear God, / And I will recount what He has done for my soul.<br><br>
+     <sup><b>17</b></sup> To Him I called out with my mouth, / And He was extolled with my tongue.<br><br>
+     <sup><b>18</b></sup> If I regarded iniquity in my heart, / The Lord did not hear.<br><br>
+     <sup><b>19</b></sup> But indeed God has heard; / He has given heed to the voice of my prayer.<br><br>
+     <sup><b>20</b></sup> Blessed be God, / Who has not turned my prayer away / Nor His lovingkindness from me.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
