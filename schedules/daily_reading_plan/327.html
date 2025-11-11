@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/22-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-71"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 71</a></h4>
+  <p><sup><b>1</b></sup> In You, O Jehovah, do I take refuge; / Never let me be put to shame.<br><br>
+     <sup><b>2</b></sup> In Your righteousness deliver me and rescue me; / Incline Your ear to me and save me.<br><br>
+     <sup><b>3</b></sup> Be to me a rock of habitation <i>for me</i> to come to continually. / You have given command to save me, / For You are my rock and my fortress.<br><br>
+     <sup><b>4</b></sup> My God, rescue me from the hand of the wicked, / From the hand of the unjust and cruel;<br><br>
+     <sup><b>5</b></sup> For You are my hope, O Lord Jehovah, / My trust from my youth.<br><br>
+     <sup><b>6</b></sup> On You I have been sustained since birth; / It was You who took me from my mother’s womb; / My praise is continually of You.<br><br>
+     <sup><b>7</b></sup> I am like a wonder to many, / But You are my strong refuge.<br><br>
+     <sup><b>8</b></sup> My mouth is filled with Your praise, / With Your glory, all day long.<br><br>
+     <sup><b>9</b></sup> Do not cast me off in the time of old age; / When my strength fails, do not forsake me.<br><br>
+     <sup><b>10</b></sup> For my enemies speak concerning me, / And those who watch for my soul take counsel together,<br><br>
+     <sup><b>11</b></sup> Saying, God has forsaken him; / Pursue and lay hold of him, for there is no one to deliver <i>him.</i><br><br>
+     <sup><b>12</b></sup> O God, do not be far away from me; / My God, hasten to help me.<br><br>
+     <sup><b>13</b></sup> May those who are the adversaries to my soul / Be put to shame and consumed; / May those who seek my misfortune / Wrap themselves in reproach and humiliation.<br><br>
+     <sup><b>14</b></sup> But I will hope continually / And will add yet more to all Your praise.<br><br>
+     <sup><b>15</b></sup> My mouth will recount Your righteousness, / Your salvation, all day long; / For I do not know <i>its full</i> numbers.<br><br>
+     <sup><b>16</b></sup> I will come with <i>the proof of</i> the mighty acts of the Lord Jehovah; / I will remind <i>men</i> of Your righteousness, Yours alone.<br><br>
+     <sup><b>17</b></sup> O God, You have taught me from my youth; / And until now I have declared Your wondrous deeds.<br><br>
+     <sup><b>18</b></sup> So even into <i>my</i> old age and grayheadedness, / O God, do not forsake me, / Until I have declared Your strength / Unto the <i>next</i> generation, / Your might unto everyone who is to come.<br><br>
+     <sup><b>19</b></sup> And Your righteousness, O God, is so high, / You who have done great things. / O God, who is like You?<br><br>
+     <sup><b>20</b></sup> You who have shown me / Many great troubles / Will revive me again / And bring me up again / From the depths of the earth.<br><br>
+     <sup><b>21</b></sup> You will increase my greatness / And will turn <i>and</i> comfort me.<br><br>
+     <sup><b>22</b></sup> I will also praise You with the harp, / <i>I will praise</i> Your faithfulness, my God; / I will sing psalms to You with the lyre, / O Holy One of Israel.<br><br>
+     <sup><b>23</b></sup> My lips will give a ringing shout / When I sing psalms to You, / And my soul, which You have redeemed.<br><br>
+     <sup><b>24</b></sup> My tongue also will declare / Your righteousness all day long; / For they are put to shame, for they are confounded, / They who seek my misfortune.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
