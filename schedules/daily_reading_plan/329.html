@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/23-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-73"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 73</a></h4>
+  <p><sup><b>1</b></sup> Surely God is good to Israel, / To those who are pure in heart.<br><br>
+     <sup><b>2</b></sup> But as for me, my feet were nearly turned aside; / My steps had almost slipped.<br><br>
+     <sup><b>3</b></sup> For I was envious of the arrogant, / <i>When</i> I saw the prosperity of the wicked.<br><br>
+     <sup><b>4</b></sup> For they have no pangs in their death, / And their body is well nourished.<br><br>
+     <sup><b>5</b></sup> They do not <i>find themselves</i> in the hardship of men, / Nor are they plagued like <i>other</i> men.<br><br>
+     <sup><b>6</b></sup> Therefore pride is a necklace for them, / Violence covers them like a garment.<br><br>
+     <sup><b>7</b></sup> Their eyes bulge out from fatness; / The imaginations of <i>their</i> heart overflow.<br><br>
+     <sup><b>8</b></sup> They mock and wickedly speak of oppression; / They speak loftily.<br><br>
+     <sup><b>9</b></sup> They set their mouth against the heavens, / And their tongue walks about on the earth.<br><br>
+     <sup><b>10</b></sup> Therefore His people return here, / And waters of abundance are drained by them;<br><br>
+     <sup><b>11</b></sup> And they say, How does God know? / And is there knowledge with the Most High?<br><br>
+     <sup><b>12</b></sup> Behold, these are the wicked; / And always at ease, they heap up riches.<br><br>
+     <sup><b>13</b></sup> Surely I have purified my heart in vain, / And I have washed my hands in innocence.<br><br>
+     <sup><b>14</b></sup> For I have been plagued all day long / And chastened every morning.<br><br>
+     <sup><b>15</b></sup> If I had said, I will speak thus; / Behold, I would have betrayed the generation of Your children.<br><br>
+     <sup><b>16</b></sup> When I considered this in order to understand <i>it,</i> / It was a troublesome task in my sight,<br><br>
+     <sup><b>17</b></sup> Until I went into the sanctuary of God; / <i>Then</i> I perceived their end.<br><br>
+     <sup><b>18</b></sup> Surely You set them in slippery places; / You cast them down into ruins.<br><br>
+     <sup><b>19</b></sup> How they are made desolate in a moment! / They are utterly consumed by terrors.<br><br>
+     <sup><b>20</b></sup> Like a dream, when one awakes, You, O Lord, / Upon arising, will despise their image.<br><br>
+     <sup><b>21</b></sup> When my heart was embittered, / And inwardly I was pricked;<br><br>
+     <sup><b>22</b></sup> I was brutish and knew nothing; / I was <i>like</i> a beast before You.<br><br>
+     <sup><b>23</b></sup> Nevertheless I am continually with You; / You have taken hold of my right hand.<br><br>
+     <sup><b>24</b></sup> You will guide me with Your counsel, / And afterward You will receive me in glory.<br><br>
+     <sup><b>25</b></sup> Whom do I have in heaven <i>but You?</i> / And besides You there is nothing I desire on earth.<br><br>
+     <sup><b>26</b></sup> My flesh and my heart fail, / <i>But</i> God is the rock of my heart and my portion forever.<br><br>
+     <sup><b>27</b></sup> For behold, those who are far from You will perish; / You destroy all who go about as harlots away from You.<br><br>
+     <sup><b>28</b></sup> But as for me, drawing near to God is good for me; / I have made the Lord Jehovah my refuge, / That I may declare all Your works.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
