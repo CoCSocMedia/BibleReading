@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-77"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 77</a></h4>
+  <p><sup><b>1</b></sup> My voice <i>calls out</i> to God, and I will cry out; / My voice <i>calls out</i> to God, and He will give ear to me.<br><br>
+     <sup><b>2</b></sup> In the day of my distress I sought the Lord; / My hand was stretched out in the night, and it did not drop. / My soul refused to be comforted.<br><br>
+     <sup><b>3</b></sup> I remember God, and I moan; / I complain, and my spirit faints. Selah<br><br>
+     <sup><b>4</b></sup> You hold <i>open</i> my eyelids; / I am disturbed and cannot speak.<br><br>
+     <sup><b>5</b></sup> I consider the days of old, / The years of ancient times;<br><br>
+     <sup><b>6</b></sup> I remember my song in the night; / I muse with my own heart, and my spirit carefully searches.<br><br>
+     <sup><b>7</b></sup> Will the Lord cast <i>us</i> off forever, / And will He never be favorable <i>to us</i> again?<br><br>
+     <sup><b>8</b></sup> Has His lovingkindness ceased forever? / Has the promise come to an end for all generations?<br><br>
+     <sup><b>9</b></sup> Has God forgotten to be gracious? / Or has He in anger shut up His compassions? Selah<br><br>
+     <sup><b>10</b></sup> Then I said, This is my infirmity; / <i>But I recall</i> the years of the right hand of the Most High.<br><br>
+     <sup><b>11</b></sup> I will bring to remembrance the deeds of Jehovah, / For I will remember Your wonders from of old.<br><br>
+     <sup><b>12</b></sup> And I will meditate on all that You have done / And muse on Your doings.<br><br>
+     <sup><b>13</b></sup> O God, Your way is in the sanctuary; / Who is so great a god as God?<br><br>
+     <sup><b>14</b></sup> You are the God who does wonders; / You have made known Your strength among the peoples.<br><br>
+     <sup><b>15</b></sup> You redeemed Your people with <i>Your</i> arm, / The sons of Jacob and Joseph. Selah<br><br>
+     <sup><b>16</b></sup> The waters saw You, O God; / The waters saw You; they were afraid; / Indeed the depths trembled.<br><br>
+     <sup><b>17</b></sup> The clouds poured forth water; / The skies sent forth a sound; / Indeed Your arrows went here and there.<br><br>
+     <sup><b>18</b></sup> The sound of Your thunder was in the whirlwind; / Lightning illuminated the world; / The earth trembled and quaked.<br><br>
+     <sup><b>19</b></sup> Your way was in the sea, / And Your paths in the great waters; / And Your footsteps were not known.<br><br>
+     <sup><b>20</b></sup> You led Your people like a flock / By the hand of Moses and Aaron.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

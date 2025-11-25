@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/25-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-75"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 75</a></h4>
+  <p><sup><b>1</b></sup> We give thanks to You, O God; we give thanks, / For Your name is near; <i>men</i> tell of Your wondrous deeds.<br><br>
+     <sup><b>2</b></sup> When I choose the appointed time, / It is I who judge with equity.<br><br>
+     <sup><b>3</b></sup> The earth and all who dwell in it melt; / I have established its pillars. Selah<br><br>
+     <sup><b>4</b></sup> I said to the boastful, Do not boast; / And to the wicked, Do not lift up the horn.<br><br>
+     <sup><b>5</b></sup> Do not lift your horn on high; / Do not speak arrogantly with a <i>haughty</i> neck.<br><br>
+     <sup><b>6</b></sup> For neither from the east nor from the west, / And neither from the south, does exaltation <i>come;</i><br><br>
+     <sup><b>7</b></sup> For God is the Judge: / He puts this one down and exalts that one.<br><br>
+     <sup><b>8</b></sup> For there is a cup in the hand of Jehovah, / And the wine foams; it is full of mixture, / And He pours from it; indeed its dregs will all the wicked of the earth / Drain off <i>and</i> drink up.<br><br>
+     <sup><b>9</b></sup> But as for me, I will declare forever, / I will sing psalms to the God of Jacob.<br><br>
+     <sup><b>10</b></sup> And all the horns of the wicked will I cut off, / <i>But</i> the horns of the righteous man will be exalted.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
