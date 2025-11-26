@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 12/5-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-85"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 85</a></h4>
+  <p><sup><b>1</b></sup> You have been pleased, O Jehovah, with Your land; / You have turned the captivity of Jacob.<br><br>
+     <sup><b>2</b></sup> You have forgiven the iniquity of Your people; / You have covered all their sin. Selah<br><br>
+     <sup><b>3</b></sup> You have taken away all Your wrath; / You have turned from the fierceness of Your anger.<br><br>
+     <sup><b>4</b></sup> Restore us, O God of our salvation, / And cause Your indignation toward us to cease.<br><br>
+     <sup><b>5</b></sup> Will You be angry with us forever? / Will You extend Your anger from generation to generation?<br><br>
+     <sup><b>6</b></sup> Will You not again revive us, / That Your people may rejoice in You?<br><br>
+     <sup><b>7</b></sup> Show us, O Jehovah, Your lovingkindness, / And grant us Your salvation.<br><br>
+     <sup><b>8</b></sup> I will hear what God Jehovah will speak, / For He will speak peace / To His people and to His faithful ones; / But let them not turn again unto folly.<br><br>
+     <sup><b>9</b></sup> Surely His salvation is near to those who fear Him, / That glory may dwell in our land.<br><br>
+     <sup><b>10</b></sup> Lovingkindness and truth have met together; / Righteousness and peace have kissed each other.<br><br>
+     <sup><b>11</b></sup> Truth has sprung forth from the earth, / And righteousness has looked down from heaven.<br><br>
+     <sup><b>12</b></sup> Indeed Jehovah will give what is good, / And our land will give its increase.<br><br>
+     <sup><b>13</b></sup> Righteousness will go before Him / And make His footsteps a way <i>to walk in.</i><br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

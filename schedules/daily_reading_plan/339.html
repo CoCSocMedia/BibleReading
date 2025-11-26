@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 12/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-83"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 83</a></h4>
+  <p><sup><b>1</b></sup> O God, do not keep silent; / Do not be quiet, and do not be still, O God.<br><br>
+     <sup><b>2</b></sup> For, behold, Your enemies are in tumult, / And those who hate You lift up <i>their</i> heads.<br><br>
+     <sup><b>3</b></sup> They devise crafty counsel against Your people, / And conspire against Your hidden ones.<br><br>
+     <sup><b>4</b></sup> They have said, Come and let us destroy them from <i>being</i> a nation, / That the name of Israel may no longer be remembered.<br><br>
+     <sup><b>5</b></sup> For they have conspired together with one heart; / It is against You that they have made an alliance:<br><br>
+     <sup><b>6</b></sup> The tents of Edom and the Ishmaelites, / Moab and the Hagarites,<br><br>
+     <sup><b>7</b></sup> Gebal and Ammon and Amalek, / Philistia along with the inhabitants of Tyre;<br><br>
+     <sup><b>8</b></sup> Assyria is also joined with them; / They have been a help to the children of Lot. Selah<br><br>
+     <sup><b>9</b></sup> Do with them as with Midian, / As with Sisera <i>and</i> Jabin, at the brook Kishon:<br><br>
+     <sup><b>10</b></sup> They were destroyed at Endor; / They became dung for the earth.<br><br>
+     <sup><b>11</b></sup> Make their nobles like Oreb and Zeeb, / And all their princes like Zebah and Zalmunna,<br><br>
+     <sup><b>12</b></sup> Who said, Let us possess for ourselves / The habitations of God.<br><br>
+     <sup><b>13</b></sup> O my God, make them like a tumbleweed, / Like stubble before the wind.<br><br>
+     <sup><b>14</b></sup> Like fire that burns a forest / And like a flame that sets mountains on fire,<br><br>
+     <sup><b>15</b></sup> So pursue them with Your tempest, / And terrify them with Your storm.<br><br>
+     <sup><b>16</b></sup> Fill their faces with shame, / That they may seek Your name, O Jehovah.<br><br>
+     <sup><b>17</b></sup> May they be ashamed and dismayed forever, / And may they be confounded and perish;<br><br>
+     <sup><b>18</b></sup> That they may know that You alone, whose name is Jehovah, / Are the Most High over all the earth.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

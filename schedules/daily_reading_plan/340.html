@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 12/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-84"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 84</a></h4>
+  <p><sup><b>1</b></sup> How lovely are Your tabernacles, / O Jehovah of hosts!<br><br>
+     <sup><b>2</b></sup> My soul longs, indeed even faints, / For the courts of Jehovah; / My heart and my flesh cry out / To the living God.<br><br>
+     <sup><b>3</b></sup> At Your <i>two</i> altars even the sparrow has found a home; / And the swallow, a nest for herself, / Where she may lay her young, / O Jehovah of hosts, my King and my God.<br><br>
+     <sup><b>4</b></sup> Blessed are those who dwell in Your house; / They will yet be praising You. Selah<br><br>
+     <sup><b>5</b></sup> Blessed is the man whose strength is in You, / In whose heart are the highways <i>to</i> <i>Zion.</i><br><br>
+     <sup><b>6</b></sup> Passing through the valley of Baca, / They make it a spring; / Indeed the early rain covers it with blessings.<br><br>
+     <sup><b>7</b></sup> They go from strength to strength; / <i>Each</i> appears before God in Zion.<br><br>
+     <sup><b>8</b></sup> O Jehovah God of hosts, hear my prayer; / Give ear, O God of Jacob. Selah<br><br>
+     <sup><b>9</b></sup> Behold our shield, O God; / And look upon the face of Your anointed.<br><br>
+     <sup><b>10</b></sup> For a day in Your courts is better than a thousand; / I would rather stand at the threshold of the house of my God / Than dwell in the tents of the wicked.<br><br>
+     <sup><b>11</b></sup> For Jehovah God is a sun and a shield; / Jehovah gives grace and glory; / He does not withhold anything good / From those who walk uprightly.<br><br>
+     <sup><b>12</b></sup> O Jehovah of hosts, blessed is the man / Who trusts in You.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
