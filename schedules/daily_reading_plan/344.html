@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 12/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-88"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 88</a></h4>
+  <p><sup><b>1</b></sup> O Jehovah, the God of my salvation, / I have cried out by day and in the night before You.<br><br>
+     <sup><b>2</b></sup> May my prayer come before You; / Incline Your ear to my cry.<br><br>
+     <sup><b>3</b></sup> For my soul is full of troubles, / And my life draws near to Sheol.<br><br>
+     <sup><b>4</b></sup> I am accounted among those who go down into the pit; / I am like a man without any help,<br><br>
+     <sup><b>5</b></sup> Abandoned among the dead, / Like the slain that lie in the grave, / Whom You remember no more, / And they are cut off from Your hand.<br><br>
+     <sup><b>6</b></sup> You have put me in the lowest pit, / In the dark places, in the depths.<br><br>
+     <sup><b>7</b></sup> Your wrath lies heavily upon me, / And You have afflicted me with all Your waves. Selah<br><br>
+     <sup><b>8</b></sup> You have put my acquaintances far from me; / You have made me an abomination to them. / I am shut in and cannot go out.<br><br>
+     <sup><b>9</b></sup> My eye wastes away at the affliction; / I have called out to You, O Jehovah, every day; / I have spread out my hands to You.<br><br>
+     <sup><b>10</b></sup> Will You perform wonders for the dead? / Will the deceased rise up <i>and</i> praise You? Selah<br><br>
+     <sup><b>11</b></sup> Will Your lovingkindness be declared in the grave, / <i>Or</i> Your faithfulness in Abaddon?<br><br>
+     <sup><b>12</b></sup> Will Your wonders be made known in the darkness, / Or Your righteousness in the land of forgetfulness?<br><br>
+     <sup><b>13</b></sup> But I, O Jehovah, have cried out to You; / And in the morning my prayer comes before You.<br><br>
+     <sup><b>14</b></sup> Why, O Jehovah, have You rejected my soul? / <i>Why</i> do You hide Your face from me?<br><br>
+     <sup><b>15</b></sup> I have been afflicted and about to die since my youth; / I bear Your terrors; I am overwhelmed.<br><br>
+     <sup><b>16</b></sup> Your fierce wrath has gone over me; / Your terrors have cut me off.<br><br>
+     <sup><b>17</b></sup> They surrounded me like water all day long; / They altogether encompassed me.<br><br>
+     <sup><b>18</b></sup> You have put far from me / Lover and friend; / My acquaintances are <i>in</i> darkness.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
