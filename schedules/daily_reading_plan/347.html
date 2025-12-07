@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 12/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-91"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 91</a></h4>
+  <p><sup><b>1</b></sup> He who dwells in the secret place of the Most High / Will abide in the shadow of the Almighty.<br><br>
+     <sup><b>2</b></sup> I say of Jehovah, / My refuge and My fortress, / My God in whom I trust!<br><br>
+     <sup><b>3</b></sup> For He will deliver You / From the snare of the fowler, / From the deadly pestilence.<br><br>
+     <sup><b>4</b></sup> With His pinions He will cover You, / And under His wings You will take refuge; / His truth is a shield and a buckler.<br><br>
+     <sup><b>5</b></sup> You will not be afraid of the terror by night, / <i>Or</i> of the arrow that flies by day,<br><br>
+     <sup><b>6</b></sup> <i>Or</i> of the pestilence that walks in darkness, / <i>Or</i> of the destruction that lays waste at noon.<br><br>
+     <sup><b>7</b></sup> A thousand will fall at Your side, / And ten thousand at Your right hand; / <i>But</i> it will not come near to You.<br><br>
+     <sup><b>8</b></sup> You will only look on with Your eyes / And see the recompense of the wicked.<br><br>
+     <sup><b>9</b></sup> For You have made Jehovah, <i>who is</i> my refuge, / <i>Even</i> the Most High, Your habitation;<br><br>
+     <sup><b>10</b></sup> No evil will befall You, / Nor will any plague come near Your tent.<br><br>
+     <sup><b>11</b></sup> For He will give His angels charge concerning You / To keep You in all Your ways.<br><br>
+     <sup><b>12</b></sup> They will bear You up in their hands, / Lest You dash Your foot against a stone.<br><br>
+     <sup><b>13</b></sup> You will tread upon the lion and the cobra; / You will trample the young lion and the serpent.<br><br>
+     <sup><b>14</b></sup> Because He has set His love upon Me, I will rescue Him; / I will set Him on high, because He has known My name.<br><br>
+     <sup><b>15</b></sup> He will call upon Me, and I will answer Him. / I will be with Him in distress; / I will deliver Him and honor Him.<br><br>
+     <sup><b>16</b></sup> With an extension of <i>His</i> days I will satisfy Him, / And I will show Him My salvation.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
