@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 12/19-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-99"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 99</a></h4>
+  <p><sup><b>1</b></sup> Jehovah reigns; let the peoples tremble. / He is enthroned <i>between</i> the cherubim; let the earth shake.<br><br>
+     <sup><b>2</b></sup> Jehovah is great in Zion, / And He is exalted over all the peoples.<br><br>
+     <sup><b>3</b></sup> Let them praise Your great and awesome name — / It is holy —<br><br>
+     <sup><b>4</b></sup> And the strength of the King, <i>who</i> loves justice. / You have established equity; / You have executed / Justice and righteousness in Jacob.<br><br>
+     <sup><b>5</b></sup> Exalt Jehovah our God, / And worship at His footstool; / Holy is He.<br><br>
+     <sup><b>6</b></sup> Moses and Aaron among His priests, / And Samuel among those who called on His name — / They called out to Jehovah, / And He answered them.<br><br>
+     <sup><b>7</b></sup> In the pillar of cloud He spoke to them; / They kept His testimonies and the statute that He gave them.<br><br>
+     <sup><b>8</b></sup> O Jehovah our God, You answered them; / You were a forgiving God to them, / Yet One avenging their deeds.<br><br>
+     <sup><b>9</b></sup> Exalt Jehovah our God, / And worship on His holy mountain; / For holy is Jehovah our God.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
