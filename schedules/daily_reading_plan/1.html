@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-110"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 110</a></h4>
+  <p><sup><b>1</b></sup> Jehovah declares to my Lord, / Sit at My right hand / Until I make Your enemies / Your footstool.<br><br>
+     <sup><b>2</b></sup> Jehovah will send forth / The scepter of Your strength from Zion: / Rule in the midst of Your enemies.<br><br>
+     <sup><b>3</b></sup> Your people will offer themselves willingly / In the day of Your warfare, / In the splendor of <i>their</i> consecration. / Your young men will be to You / Like the dew from the womb of the dawn.<br><br>
+     <sup><b>4</b></sup> Jehovah has sworn, / And He will not change: / You are a Priest forever / According to the order of Melchizedek.<br><br>
+     <sup><b>5</b></sup> The Lord is at Your right hand; / He will shatter kings in the day of His anger.<br><br>
+     <sup><b>6</b></sup> He will execute judgment among the nations; / He will fill <i>the place</i> with corpses; / He will shatter the head / Over a great land.<br><br>
+     <sup><b>7</b></sup> He will drink from the brook by the way; / Therefore He will lift up <i>His</i> head.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
