@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-118"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 118</a></h4>
+  <p><sup><b>1</b></sup> Give thanks to Jehovah, for He is good, / For His lovingkindness is forever.<br><br>
+     <sup><b>2</b></sup> Let Israel say, / His lovingkindness is forever.<br><br>
+     <sup><b>3</b></sup> Let the house of Aaron say, / His lovingkindness is forever.<br><br>
+     <sup><b>4</b></sup> Let those who fear Jehovah say, / His lovingkindness is forever.<br><br>
+     <sup><b>5</b></sup> Out of my distress I called upon Jehovah; / Jehovah answered me <i>and set me</i> in a place broad and free.<br><br>
+     <sup><b>6</b></sup> Jehovah is for me; I will not be afraid. / What can man do to me?<br><br>
+     <sup><b>7</b></sup> Jehovah is for me as my Helper, / And I will see <i>what should happen</i> to those who hate me.<br><br>
+     <sup><b>8</b></sup> It is better to take refuge in Jehovah / Than to trust in man.<br><br>
+     <sup><b>9</b></sup> It is better to take refuge in Jehovah / Than to trust in princes.<br><br>
+     <sup><b>10</b></sup> All nations surrounded me; / In the name of Jehovah I indeed cut them down!<br><br>
+     <sup><b>11</b></sup> They surrounded me; yes, they surrounded me; / In the name of Jehovah I indeed cut them down!<br><br>
+     <sup><b>12</b></sup> They surrounded me like bees; / They were extinguished like a fire of thorns; / In the name of Jehovah I indeed cut them down!<br><br>
+     <sup><b>13</b></sup> I was pushed hard that I might fall; / But Jehovah helped me.<br><br>
+     <sup><b>14</b></sup> Jehovah is my strength and my song, / And He has become my salvation.<br><br>
+     <sup><b>15</b></sup> The voice of rejoicing and salvation / Is in the tents of the righteous. / The right hand of Jehovah does valiantly;<br><br>
+     <sup><b>16</b></sup> The right hand of Jehovah is exalted; / The right hand of Jehovah does valiantly.<br><br>
+     <sup><b>17</b></sup> I will not die, but live, / And declare the works of Jehovah.<br><br>
+     <sup><b>18</b></sup> Jehovah has severely chastened me, / But He has not given me over to death.<br><br>
+     <sup><b>19</b></sup> Open to me the gates of righteousness: / I will enter in through them; I will give thanks to Jehovah.<br><br>
+     <sup><b>20</b></sup> This is the gate of Jehovah; / The righteous shall enter in through it.<br><br>
+     <sup><b>21</b></sup> I will give thanks to You, for You have answered me / And have become my salvation.<br><br>
+     <sup><b>22</b></sup> The stone which the builders rejected / Has become the head of the corner.<br><br>
+     <sup><b>23</b></sup> This is from Jehovah; / It is wonderful in our sight.<br><br>
+     <sup><b>24</b></sup> This is the day that Jehovah has made; / Let us exult and rejoice in it.<br><br>
+     <sup><b>25</b></sup> O Jehovah, do save, we pray! / O Jehovah, do send prosperity, we pray!<br><br>
+     <sup><b>26</b></sup> Blessed is He who comes in the name of Jehovah; / We bless you from the house of Jehovah.<br><br>
+     <sup><b>27</b></sup> Jehovah is God, / And He has given us light; / Bind the sacrifice of the feast with cords / To the horns of the altar.<br><br>
+     <sup><b>28</b></sup> You are my God, and I give thanks to You. / <i>You are</i> my God; I will exalt You.<br><br>
+     <sup><b>29</b></sup> Give thanks to Jehovah, for He is good, / For His lovingkindness is forever.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
