@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/22-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-132"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 132</a></h4>
+  <p><sup><b>1</b></sup> Remember, O Jehovah, for David’s sake / All his afflictions;<br><br>
+     <sup><b>2</b></sup> How he swore to Jehovah / <i>And</i> vowed to the Mighty One of Jacob:<br><br>
+     <sup><b>3</b></sup> I shall not go into the tent of my house; / I shall not go up onto the couch of my bed;<br><br>
+     <sup><b>4</b></sup> I shall not give sleep to my eyes, / Slumber to my eyelids;<br><br>
+     <sup><b>5</b></sup> Until I find a place for Jehovah, / A tabernacle for the Mighty One of Jacob.<br><br>
+     <sup><b>6</b></sup> Behold, we heard of it in Ephrathah; / We found it in the fields of Jaar.<br><br>
+     <sup><b>7</b></sup> We will go into His tabernacle; / We will worship at His footstool.<br><br>
+     <sup><b>8</b></sup> Arise, O Jehovah, unto Your resting place, / You and the Ark of Your strength.<br><br>
+     <sup><b>9</b></sup> Let Your priests be clothed with righteousness, / And let Your faithful ones give a ringing shout.<br><br>
+     <sup><b>10</b></sup> For the sake of David Your servant, / Do not turn away the face of Your Anointed One.<br><br>
+     <sup><b>11</b></sup> Jehovah has sworn unto David in truth; / He will not turn from it: / Of the fruit of your body I will set <i>One</i> upon your throne.<br><br>
+     <sup><b>12</b></sup> If your children keep My covenant / And My testimonies that I will teach them, / Their children also will sit / Upon your throne forever.<br><br>
+     <sup><b>13</b></sup> For Jehovah has chosen Zion; / He has desired it for His habitation.<br><br>
+     <sup><b>14</b></sup> This is My resting place forever; / Here will I dwell, for I have desired it.<br><br>
+     <sup><b>15</b></sup> I will abundantly bless its provision; / I will satisfy its poor with bread.<br><br>
+     <sup><b>16</b></sup> And its priests I will clothe with salvation, / And its faithful ones will shout with a ringing shout.<br><br>
+     <sup><b>17</b></sup> There I will cause a horn of David to shoot forth; / I have prepared a lamp for My anointed one.<br><br>
+     <sup><b>18</b></sup> I will clothe his enemies with shame, / But on him his crown will shine.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
