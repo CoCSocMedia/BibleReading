@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/26-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-140"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 140</a></h4>
+  <p><sup><b>1</b></sup> Deliver me, O Jehovah, from evil men; / From violent men preserve me;<br><br>
+     <sup><b>2</b></sup> Who devise evil schemes in <i>their</i> hearts / <i>And</i> continually stir up wars.<br><br>
+     <sup><b>3</b></sup> They have sharpened their tongues like that of a serpent; / The poison of adders is under their lips. Selah<br><br>
+     <sup><b>4</b></sup> Keep me, O Jehovah, from the hands of the wicked; / From violent men preserve me; / Who devise <i>schemes</i> to thrust me down.<br><br>
+     <sup><b>5</b></sup> The proud have hidden a trap for me and cords; / They have spread a net by the wayside; / They have set snares for me. Selah<br><br>
+     <sup><b>6</b></sup> I said to Jehovah, You are my God; / Give ear, O Jehovah, to the voice of my supplications.<br><br>
+     <sup><b>7</b></sup> O Jehovah Lord, strength of my salvation, / You have covered my head in the day of battle.<br><br>
+     <sup><b>8</b></sup> O Jehovah, do not grant the desires of the wicked man; / Do not let his evil scheme advance, / <i>Lest</i> he be exalted. Selah<br><br>
+     <sup><b>9</b></sup> As for the head of those who surround me, / May the mischief of their own lips cover them.<br><br>
+     <sup><b>10</b></sup> May burning coals drop down upon them; / May they be thrown down into the fire, / Into deep pits, never to rise again.<br><br>
+     <sup><b>11</b></sup> Let no slanderer be established in the land; / Let evil hunt down the violent man speedily.<br><br>
+     <sup><b>12</b></sup> I know that Jehovah will maintain the cause of the afflicted / And justice for the needy.<br><br>
+     <sup><b>13</b></sup> Surely the righteous will give thanks to Your name; / The upright will dwell in Your presence.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-141"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 141</a></h4>
+  <p><sup><b>1</b></sup> O Jehovah, I have called upon You; hasten to me. / Give ear to my voice when I call out to You.<br><br>
+     <sup><b>2</b></sup> Let my prayer be set before You as incense, / The lifting up of my hands as the evening offering.<br><br>
+     <sup><b>3</b></sup> Set a watch, O Jehovah, before my mouth; / Keep the door of my lips.<br><br>
+     <sup><b>4</b></sup> Do not let my heart turn to anything evil, / To practice deeds of wickedness / With men who commit iniquity; / And let me not eat of their delicacies.<br><br>
+     <sup><b>5</b></sup> Let the righteous strike me in kindness and reprove me; / Let not my head refuse oil upon the head, / For still my prayer is against their evil deeds.<br><br>
+     <sup><b>6</b></sup> Their judges are thrown down by the sides of the rock, / And they hear my words, that they are pleasant.<br><br>
+     <sup><b>7</b></sup> As when one plows and breaks up the earth, / Our bones are scattered at the mouth of Sheol.<br><br>
+     <sup><b>8</b></sup> For my eyes are upon You, O Jehovah Lord; / In You I take refuge; do not pour out my soul.<br><br>
+     <sup><b>9</b></sup> Keep me from the trap they have set for me / And <i>from</i> the snares of the workers of iniquity.<br><br>
+     <sup><b>10</b></sup> May the wicked fall into their own nets / While I alone pass by.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

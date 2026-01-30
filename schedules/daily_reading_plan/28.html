@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/26-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-137"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 137</a></h4>
+  <p><sup><b>1</b></sup> By the rivers of Babylon, / There we sat down; indeed, we wept / When we remembered Zion.<br><br>
+     <sup><b>2</b></sup> On the willows in the midst of it / We hung up our lyres,<br><br>
+     <sup><b>3</b></sup> For there our captors required of us songs, / And those who tormented us <i>required of us</i> mirth, <i>saying,</i> / Sing for us / One of the songs of Zion.<br><br>
+     <sup><b>4</b></sup> How can we sing the song of Jehovah / In a foreign land?<br><br>
+     <sup><b>5</b></sup> If I forget you, O Jerusalem, / Let my right hand forget <i>its skill.</i><br><br>
+     <sup><b>6</b></sup> Let my tongue cling to the roof of my mouth, / If I do not remember you, / If I do not prefer Jerusalem / Above my chief joy.<br><br>
+     <sup><b>7</b></sup> Remember, O Jehovah, / Against the children of Edom, / The day of Jerusalem, / Who said, Lay <i>it</i> bare! Lay <i>it</i> bare, / Down to its foundation!<br><br>
+     <sup><b>8</b></sup> O daughter of Babylon, who are to be devastated, / Happy will he be who repays you / The recompense of what you have rendered to us.<br><br>
+     <sup><b>9</b></sup> Happy will he be who seizes your little ones / And dashes them against the rock.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
