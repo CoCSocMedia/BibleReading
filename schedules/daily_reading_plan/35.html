@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-144"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 144</a></h4>
+  <p><sup><b>1</b></sup> Blessed be Jehovah my rock, / Who teaches my hands for war / <i>And</i> my fingers for battle:<br><br>
+     <sup><b>2</b></sup> My <i>Lord of</i> lovingkindness and my fortress, / My high retreat and my Deliverer, / My shield and He in whom I take refuge, / Who subdues my people under me.<br><br>
+     <sup><b>3</b></sup> O Jehovah, what is man, that You take knowledge of him, / <i>And</i> the son of mortal man, that You think of him?<br><br>
+     <sup><b>4</b></sup> Man is like a breath; / His days are like a passing shadow.<br><br>
+     <sup><b>5</b></sup> O Jehovah, bow Your heavens down and descend; / Touch the mountains, and they will smoke.<br><br>
+     <sup><b>6</b></sup> Flash forth lightning, and scatter them; / Send forth Your arrows, and discomfit them.<br><br>
+     <sup><b>7</b></sup> Stretch forth Your hand from on high; / Rescue me and deliver me / From the great waters, / From the hand of foreigners;<br><br>
+     <sup><b>8</b></sup> Whose mouth speaks deceit, / And whose right hand is a right hand of falsehood.<br><br>
+     <sup><b>9</b></sup> O God, I will sing a new song to You; / Upon a harp of ten strings I will sing psalms to You,<br><br>
+     <sup><b>10</b></sup> Who gives salvation to kings, / Who rescues David His servant from the hurtful sword.<br><br>
+     <sup><b>11</b></sup> Rescue me and deliver me from the hand of foreigners, / Whose mouth speaks deceit, / And whose right hand is a right hand of falsehood.<br><br>
+     <sup><b>12</b></sup> May our sons be like plants / Grown up in their youth; / May our daughters be like corner pillars / Hewn out in fashion for a palace;<br><br>
+     <sup><b>13</b></sup> May our barns be full, / Furnishing produce of all kinds; / May our sheep bring forth thousands / And ten thousands in our fields;<br><br>
+     <sup><b>14</b></sup> May our oxen be fully laden; / May there be no breaking in <i>to rob</i> or going forth <i>to fight,</i> / Or outcry in our streets.<br><br>
+     <sup><b>15</b></sup> Blessed are the people who are so; / Blessed are the people whose God is Jehovah.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
