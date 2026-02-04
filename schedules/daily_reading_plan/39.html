@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-148"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 148</a></h4>
+  <p><sup><b>1</b></sup> Hallelujah! / Praise Jehovah from the heavens; / Praise Him in the heights.<br><br>
+     <sup><b>2</b></sup> Praise Him, all His angels; / Praise Him, all His hosts.<br><br>
+     <sup><b>3</b></sup> Praise Him, sun and moon; / Praise Him, all stars of light.<br><br>
+     <sup><b>4</b></sup> Praise Him, you heaven of heavens, / And you waters that are above the heavens.<br><br>
+     <sup><b>5</b></sup> Let them praise the name of Jehovah; / For He commanded, and they were created.<br><br>
+     <sup><b>6</b></sup> And He established them forever and ever; / He gave the decree which shall not pass away.<br><br>
+     <sup><b>7</b></sup> Praise Jehovah from the earth, / You sea monsters and all the depths;<br><br>
+     <sup><b>8</b></sup> Fire and hail, snow and smoke; / Stormy wind that executes His word;<br><br>
+     <sup><b>9</b></sup> Mountains and all hills; / Fruit trees and all cedars;<br><br>
+     <sup><b>10</b></sup> All animals wild and tame; / Creeping things and birds of flight;<br><br>
+     <sup><b>11</b></sup> Kings of the earth and all peoples; / Princes and all judges of the earth;<br><br>
+     <sup><b>12</b></sup> Choice young men as well as virgins; / Old men with young men.<br><br>
+     <sup><b>13</b></sup> Let them praise the name of Jehovah, / For His name alone is exalted; / His glory is above the earth and the heavens.<br><br>
+     <sup><b>14</b></sup> And He has raised up a horn for His people, / The praise of all His faithful ones, / The children of Israel, a people near to Him. / Hallelujah!<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

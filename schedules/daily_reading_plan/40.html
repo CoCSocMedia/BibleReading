@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/9-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-149"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 149</a></h4>
+  <p><sup><b>1</b></sup> Hallelujah! / Sing a new song to Jehovah; / <i>Sing</i> His praise in the congregation of <i>His</i> faithful ones.<br><br>
+     <sup><b>2</b></sup> Let Israel rejoice in his Maker; / Let the children of Zion exult in their King.<br><br>
+     <sup><b>3</b></sup> Let them praise His name with dancing; / Let them sing psalms to Him with the tambourine and the lyre.<br><br>
+     <sup><b>4</b></sup> For Jehovah takes pleasure in His people; / He adorns the lowly with salvation.<br><br>
+     <sup><b>5</b></sup> Let the faithful ones exult in glory; / Let them give a ringing shout upon their beds.<br><br>
+     <sup><b>6</b></sup> Let the high praises of God be in their throats, / And a two-edged sword in their hand,<br><br>
+     <sup><b>7</b></sup> To execute vengeance on the nations / <i>And</i> punishment among the peoples;<br><br>
+     <sup><b>8</b></sup> To bind their kings with fetters / And their nobles with chains of iron;<br><br>
+     <sup><b>9</b></sup> To execute upon them the judgment written. / This honor is for all His faithful ones. / Hallelujah!<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-146"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 146</a></h4>
+  <p><sup><b>1</b></sup> Hallelujah! / Praise Jehovah, O my soul!<br><br>
+     <sup><b>2</b></sup> I will praise Jehovah while I live; / I will sing psalms to my God while I yet have being.<br><br>
+     <sup><b>3</b></sup> Do not trust in princes, / In a son of man, with whom there is no salvation.<br><br>
+     <sup><b>4</b></sup> His breath goes forth; he returns to his earth; / On that day his plans perish.<br><br>
+     <sup><b>5</b></sup> Blessed is the man whose help is the God of Jacob, / Whose hope is in Jehovah his God,<br><br>
+     <sup><b>6</b></sup> Who made heaven and earth / <i>And</i> the sea, and all that is in them; / Who keeps faith forever;<br><br>
+     <sup><b>7</b></sup> Who executes judgment for the oppressed; / Who gives food to the famished. / Jehovah frees the prisoners;<br><br>
+     <sup><b>8</b></sup> Jehovah opens <i>the eyes of</i> the blind; / Jehovah raises up those who are bowed down; / Jehovah loves the righteous;<br><br>
+     <sup><b>9</b></sup> Jehovah preserves the sojourners; / He upholds the orphan and the widow; / But He subverts the way of the wicked.<br><br>
+     <sup><b>10</b></sup> Jehovah will reign forever, / Your God, O Zion, forever and ever. / Hallelujah!<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

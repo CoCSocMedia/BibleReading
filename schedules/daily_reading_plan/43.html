@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/12-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="proverbs-2"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 2</a></h4>
+  <p><sup><b>1</b></sup> My son, if you receive my words / And treasure up my commandments within you,<br><br>
+     <sup><b>2</b></sup> Making your ear attentive to wisdom / And inclining your heart to understanding;<br><br>
+     <sup><b>3</b></sup> Indeed, if you cry out for discernment / And lift up your voice for understanding;<br><br>
+     <sup><b>4</b></sup> If you seek her like silver / And search for her like hidden treasures,<br><br>
+     <sup><b>5</b></sup> Then you will understand the fear of Jehovah / And find the knowledge of God.<br><br>
+     <sup><b>6</b></sup> For Jehovah gives wisdom; / From His mouth <i>come</i> knowledge and understanding;<br><br>
+     <sup><b>7</b></sup> He stores up sound wisdom for the upright; / <i>He is</i> a shield to those who walk in integrity,<br><br>
+     <sup><b>8</b></sup> Guarding the paths of justice / And keeping the way of His faithful ones.<br><br>
+     <sup><b>9</b></sup> Then you will understand righteousness and justice / And equity, <i>indeed,</i> every good path.<br><br>
+     <sup><b>10</b></sup> For wisdom will enter your heart, / And knowledge will be pleasant to your soul;<br><br>
+     <sup><b>11</b></sup> Discretion will watch over you; / Understanding will keep you:<br><br>
+     <sup><b>12</b></sup> To deliver you from the way of evil, / From the man who speaks perverse things,<br><br>
+     <sup><b>13</b></sup> <i>From those</i> who forsake the paths of uprightness / To walk in the ways of darkness,<br><br>
+     <sup><b>14</b></sup> Who rejoice in doing evil / <i>And</i> delight in the perverseness of evil,<br><br>
+     <sup><b>15</b></sup> Whose paths are crooked, / And who are devious in their ways;<br><br>
+     <sup><b>16</b></sup> To deliver you from the strange woman, / From the adulteress who flatters with her words,<br><br>
+     <sup><b>17</b></sup> Who forsakes the companion of her youth / And forgets the covenant of her God;<br><br>
+     <sup><b>18</b></sup> For her house sinks down to death, / And her paths <i>lead</i> to the dead;<br><br>
+     <sup><b>19</b></sup> None who go to her <i>ever</i> return, / Nor do they attain to the paths of life;<br><br>
+     <sup><b>20</b></sup> That you may walk in the way of good men / And keep the paths of the righteous;<br><br>
+     <sup><b>21</b></sup> For the upright will dwell in the land, / And the perfect will remain in it;<br><br>
+     <sup><b>22</b></sup> But the wicked will be cut off from the land, / And the treacherous will be uprooted from it.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

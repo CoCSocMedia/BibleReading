@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+
+  <h4 id="proverbs-1"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 1</a></h4>
+  <p><sup><b>1</b></sup> The proverbs of Solomon the son of David, the king of Israel:<br><br>
+     <sup><b>2</b></sup> For knowing wisdom and instruction; / For discerning words of understanding;<br><br>
+     <sup><b>3</b></sup> For receiving instruction in wise conduct, / Righteousness, justice, and equity;<br><br>
+     <sup><b>4</b></sup> For giving prudence to the simple, / Knowledge and discretion to the young man;<br><br>
+     <sup><b>5</b></sup> That the wise man may hear and increase in learning, / And he who has understanding may acquire sound counsel;<br><br>
+     <sup><b>6</b></sup> For understanding proverb and figure, / The words of the wise and their difficult sayings.<br><br>
+     <sup><b>7</b></sup> The fear of Jehovah is the beginning of knowledge; / Fools despise wisdom and instruction.<br><br>
+     <sup><b>8</b></sup> Hear, my son, the instruction of your father, / And do not reject the teaching of your mother;<br><br>
+     <sup><b>9</b></sup> For they will be a wreath of grace for your head / And ornaments for your neck.<br><br>
+     <sup><b>10</b></sup> My son, if sinners entice you, / Do not consent.<br><br>
+     <sup><b>11</b></sup> If they say, Come with us; let us lie in wait for blood; / Let us ambush the innocent without cause;<br><br>
+     <sup><b>12</b></sup> Let us swallow them alive like Sheol, / And whole, like those who go down into the pit.<br><br>
+     <sup><b>13</b></sup> We will find all <i>manner</i> of precious goods; / We will fill our houses with booty;<br><br>
+     <sup><b>14</b></sup> Throw in your lot with us; / We will all have one purse —<br><br>
+     <sup><b>15</b></sup> My son, do not walk with them on <i>this</i> way; / Keep your foot from their path.<br><br>
+     <sup><b>16</b></sup> For their feet run toward evil, / And they hasten to shed blood.<br><br>
+     <sup><b>17</b></sup> For in vain is the net spread / In the eyes of any bird;<br><br>
+     <sup><b>18</b></sup> Yet they lie in wait for their own blood; / They ambush their own lives!<br><br>
+     <sup><b>19</b></sup> Such are the ways of everyone greedy for gain; / It takes away the life of its owners.<br><br>
+     <sup><b>20</b></sup> Wisdom cries out in the street; / She utters her voice in the open squares.<br><br>
+     <sup><b>21</b></sup> At the head of the tumultuous <i>street</i> she cries; / At the entrance of the gates in the city she utters her sayings:<br><br>
+     <sup><b>22</b></sup> How long, O simple ones, will you love simpleness, / And will scoffers delight themselves in scoffing, / And will fools hate knowledge?<br><br>
+     <sup><b>23</b></sup> Turn yourselves at my reproof — / Immediately I will pour out my spirit on you; / I will make my words known to you.<br><br>
+     <sup><b>24</b></sup> Because I called and you refused; / I stretched out my hand and no one heeded,<br><br>
+     <sup><b>25</b></sup> And you neglected all my counsel / And would have none of my reproof;<br><br>
+     <sup><b>26</b></sup> I also will laugh at your calamity; / I will mock when what you dread comes,<br><br>
+     <sup><b>27</b></sup> When what you dread comes like a storm, / And your calamity comes like a whirlwind, / When distress and anguish come upon you.<br><br>
+     <sup><b>28</b></sup> Then they will call on me, but I will not answer; / They will seek me diligently, but they will not find me.<br><br>
+     <sup><b>29</b></sup> Because they hated knowledge / And did not choose the fear of Jehovah,<br><br>
+     <sup><b>30</b></sup> <i>And</i> would have none of my counsel / <i>And</i> despised all my reproof;<br><br>
+     <sup><b>31</b></sup> They shall eat of the fruit of their own way / And be filled with their own devices.<br><br>
+     <sup><b>32</b></sup> For the turning away of the simple will kill them, / And the prosperity of the foolish will cause them to perish;<br><br>
+     <sup><b>33</b></sup> But he who listens to me will dwell securely / And will live at ease, without the dread of evil.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

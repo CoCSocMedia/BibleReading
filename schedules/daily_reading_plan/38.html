@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/7-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Psalms</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="psalms-147"><a onclick="open_chapter('top', '19-psalms.html')">Psalms 147</a></h4>
+  <p><sup><b>1</b></sup> Hallelujah! / For it is good to sing psalms to our God; / For it is pleasant; praise is fitting.<br><br>
+     <sup><b>2</b></sup> Jehovah builds up Jerusalem; / He gathers the outcasts of Israel.<br><br>
+     <sup><b>3</b></sup> He heals the brokenhearted / And binds up their wounds.<br><br>
+     <sup><b>4</b></sup> He counts the number of the stars; / He calls them all by <i>their</i> names.<br><br>
+     <sup><b>5</b></sup> Great is our Lord, and mighty in power; / His understanding is infinite.<br><br>
+     <sup><b>6</b></sup> Jehovah uplifts the lowly; / He brings the wicked down to the ground.<br><br>
+     <sup><b>7</b></sup> Sing unto Jehovah with thanksgiving; / Sing psalms to our God with the lyre;<br><br>
+     <sup><b>8</b></sup> Who covers the heavens with clouds, / Who prepares rain for the earth, / Who causes grass to grow on the mountains,<br><br>
+     <sup><b>9</b></sup> Who gives to the beast its food, / <i>And</i> to the young ravens who cry.<br><br>
+     <sup><b>10</b></sup> He takes no delight in the strength of horses; / Nor pleasure in the legs of man.<br><br>
+     <sup><b>11</b></sup> Jehovah takes pleasure in those who fear Him, / In those who hope in His lovingkindness.<br><br>
+     <sup><b>12</b></sup> Laud Jehovah, O Jerusalem; / Praise your God, O Zion;<br><br>
+     <sup><b>13</b></sup> For He has strengthened the bars of your gates; / He has blessed your children within you.<br><br>
+     <sup><b>14</b></sup> He makes peace in your borders; / He satisfies you with the finest wheat.<br><br>
+     <sup><b>15</b></sup> He sends forth His command to the earth; / His word runs very swiftly.<br><br>
+     <sup><b>16</b></sup> He gives snow like wool; / He scatters frost like ashes;<br><br>
+     <sup><b>17</b></sup> He casts His hail like crumbs — / Who can stand before His cold?<br><br>
+     <sup><b>18</b></sup> He sends forth His word and melts them; / He causes His wind to blow; the waters flow.<br><br>
+     <sup><b>19</b></sup> He declares His word to Jacob, / His statutes and His ordinances to Israel.<br><br>
+     <sup><b>20</b></sup> He has not dealt so with any <i>other</i> nation; / And as for His ordinances, they have not known them. / Hallelujah!<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('psalms-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
