@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/17-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="proverbs-7"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 7</a></h4>
+  <p><sup><b>1</b></sup> My son, keep my words, / And treasure up my commandments within you.<br><br>
+     <sup><b>2</b></sup> Keep my commandments, and live; / And my teaching, like the apple of your eye.<br><br>
+     <sup><b>3</b></sup> Bind them on your fingers; / Write them on the tablet of your heart.<br><br>
+     <sup><b>4</b></sup> Say to wisdom, You are my sister, / And call understanding <i>your</i> close friend,<br><br>
+     <sup><b>5</b></sup> That they may keep you from the strange woman, / From the adulteress who flatters with her words.<br><br>
+     <sup><b>6</b></sup> For at the window of my house / I looked out through my lattice,<br><br>
+     <sup><b>7</b></sup> And I saw among the simple ones, / I discerned among the youths, / A young man lacking sense,<br><br>
+     <sup><b>8</b></sup> Passing along the street near her corner; / And he takes the way to her house,<br><br>
+     <sup><b>9</b></sup> In the twilight, in the evening of the day, / In the deep of night and darkness.<br><br>
+     <sup><b>10</b></sup> And there <i>comes</i> a woman to meet him, / Dressed as a harlot and cunning of heart.<br><br>
+     <sup><b>11</b></sup> She is rowdy and defiant; / Her feet do not stay at home —<br><br>
+     <sup><b>12</b></sup> Now in the street, now in the squares, / And at every corner she lies in wait.<br><br>
+     <sup><b>13</b></sup> And she grabs him and kisses him; / And with an impudent face she says to him,<br><br>
+     <sup><b>14</b></sup> I had to make offerings; / Today I have paid my vows.<br><br>
+     <sup><b>15</b></sup> Therefore I have come out to meet you, / To earnestly seek your presence; and I have found you.<br><br>
+     <sup><b>16</b></sup> I have decked my couch with coverings, / Colored spreads of the linen of Egypt;<br><br>
+     <sup><b>17</b></sup> I have sprinkled my bed with myrrh, / Aloes, and cinnamon.<br><br>
+     <sup><b>18</b></sup> Come, let us drink our fill of love until the morning; / Let us delight ourselves with love.<br><br>
+     <sup><b>19</b></sup> For my husband is not at home; / He has gone on a long journey.<br><br>
+     <sup><b>20</b></sup> He has taken the money bag with him; / He will come home at the full moon.<br><br>
+     <sup><b>21</b></sup> With her great persuasiveness she beguiles him; / With her smooth talk she compels him.<br><br>
+     <sup><b>22</b></sup> He goes after her immediately, / As an ox goes to the slaughter, / Or as <i>someone in</i> fetters, to the correction of the fool,<br><br>
+     <sup><b>23</b></sup> Until an arrow pierces through his liver. / As a bird hastens to the snare, / So he does not know that this <i>will cost him</i> his life.<br><br>
+     <sup><b>24</b></sup> And now, <i>my</i> sons, listen to me, / And pay attention to the words of my mouth.<br><br>
+     <sup><b>25</b></sup> Do not let your heart turn aside to her ways; / Do not stray into her paths.<br><br>
+     <sup><b>26</b></sup> For many are those whom she has brought down wounded, / And numerous are all who have been slain by her.<br><br>
+     <sup><b>27</b></sup> Her house is the way to Sheol, / Going down to the chambers of death.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

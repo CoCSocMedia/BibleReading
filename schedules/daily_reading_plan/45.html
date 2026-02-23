@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/14-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="proverbs-4"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 4</a></h4>
+  <p><sup><b>1</b></sup> Hear, <i>my</i> sons, the instruction of a father, / And be attentive, that you may gain understanding;<br><br>
+     <sup><b>2</b></sup> For I give you good teaching; / Do not forsake my instruction.<br><br>
+     <sup><b>3</b></sup> For I was a son to my father, / Tender and the only <i>beloved</i> in the sight of my mother.<br><br>
+     <sup><b>4</b></sup> And he taught me and said to me, / Let your heart hold fast to my words; / Keep my commandments and live;<br><br>
+     <sup><b>5</b></sup> Get wisdom; get understanding; / Do not forget nor turn away from the words of my mouth.<br><br>
+     <sup><b>6</b></sup> Do not forsake her, and she will keep you; / Love her, and she will guard you.<br><br>
+     <sup><b>7</b></sup> The beginning of wisdom <i>is this:</i> / Get wisdom; and in all your getting, get understanding.<br><br>
+     <sup><b>8</b></sup> Prize her highly, and she will exalt you; / She will honor you if you embrace her.<br><br>
+     <sup><b>9</b></sup> She will give a garland of grace for your head; / A crown of beauty will she bestow on you.<br><br>
+     <sup><b>10</b></sup> Hear, my son, and receive my words, / And the years of your life will be many.<br><br>
+     <sup><b>11</b></sup> I have taught you in the way of wisdom; / I have led you in the paths of uprightness.<br><br>
+     <sup><b>12</b></sup> When you walk, your steps will not be hindered; / And when you run, you will not stumble.<br><br>
+     <sup><b>13</b></sup> Take hold of instruction; do not let go; / Guard her, for she is your life.<br><br>
+     <sup><b>14</b></sup> Do not enter the path of the wicked, / And do not walk in the way of the evil.<br><br>
+     <sup><b>15</b></sup> Avoid it; do not pass by it; / Turn away from it and pass on by.<br><br>
+     <sup><b>16</b></sup> For they cannot sleep unless they do evil; / And they are robbed of their sleep unless they cause <i>someone</i> to stumble.<br><br>
+     <sup><b>17</b></sup> For they eat the bread of wickedness / And drink the wine of violence.<br><br>
+     <sup><b>18</b></sup> But the path of the righteous is like the light of dawn, / Which shines brighter and brighter until the full day.<br><br>
+     <sup><b>19</b></sup> The way of the wicked is like deep darkness; / They do not know what they stumble over.<br><br>
+     <sup><b>20</b></sup> My son, be attentive to my words; / Incline your ear to my sayings.<br><br>
+     <sup><b>21</b></sup> Do not let them depart from your sight; / Keep them in the midst of your heart.<br><br>
+     <sup><b>22</b></sup> For they are life to those who find them, / And healing to all their flesh.<br><br>
+     <sup><b>23</b></sup> Keep your heart with all vigilance, / For from it are the issues of life.<br><br>
+     <sup><b>24</b></sup> Put away from you crooked speech, / And put perverse talk far from you.<br><br>
+     <sup><b>25</b></sup> Let your eyes look directly ahead, / And let your gaze be straight in front of you.<br><br>
+     <sup><b>26</b></sup> Make straight the path of your feet, / And all your ways will be established.<br><br>
+     <sup><b>27</b></sup> Do not turn to the right or to the left; / Turn your foot away from evil.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

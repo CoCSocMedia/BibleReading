@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/19-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="proverbs-9"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 9</a></h4>
+  <p><sup><b>1</b></sup> Wisdom has built her house; / She has hewn out her seven pillars;<br><br>
+     <sup><b>2</b></sup> She has slaughtered her beasts; / She has mingled her wine; / She has also set her table;<br><br>
+     <sup><b>3</b></sup> She has sent forth her maidens; / She calls from the highest places of the city:<br><br>
+     <sup><b>4</b></sup> Whoever is simple, let him turn in here; / As for him who lacks sense, she says to him,<br><br>
+     <sup><b>5</b></sup> Come, eat of my bread, / And drink of the wine which I have mingled.<br><br>
+     <sup><b>6</b></sup> Forsake foolishness, and live, / And walk in the way of understanding.<br><br>
+     <sup><b>7</b></sup> He who corrects a scorner gets dishonor for himself, / And he who reproves a wicked man blemishes himself.<br><br>
+     <sup><b>8</b></sup> Do not reprove a scorner, lest he hate you; / Reprove a wise man, and he will love you.<br><br>
+     <sup><b>9</b></sup> Impart <i>something</i> to a wise man, and he will become wiser still; / Teach a righteous man, and he will increase in learning.<br><br>
+     <sup><b>10</b></sup> The fear of Jehovah is the beginning of wisdom, / And the knowledge of the Holy One is understanding.<br><br>
+     <sup><b>11</b></sup> For by me your days will be multiplied, / And the years of your life will be increased.<br><br>
+     <sup><b>12</b></sup> If you are wise, you are wise for yourself; / And if you are scornful, you alone will bear it.<br><br>
+     <sup><b>13</b></sup> The woman Foolishness is rowdy; / <i>She is</i> simple and knows nothing.<br><br>
+     <sup><b>14</b></sup> And she sits at the door of her house, / On a seat in the heights of the city,<br><br>
+     <sup><b>15</b></sup> To call to those who pass by, / Who go straight on their ways:<br><br>
+     <sup><b>16</b></sup> Whoever is simple, let him turn in here; / And as for him who lacks sense, she says to him,<br><br>
+     <sup><b>17</b></sup> Stolen waters are sweet, / And bread <i>gotten</i> in secret is pleasant.<br><br>
+     <sup><b>18</b></sup> But he does not know that the dead are there, / That her guests are in the depths of Sheol.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

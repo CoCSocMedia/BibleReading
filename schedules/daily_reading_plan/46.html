@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="proverbs-5"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 5</a></h4>
+  <p><sup><b>1</b></sup> My son, be attentive to my wisdom; / Incline your ear to my understanding,<br><br>
+     <sup><b>2</b></sup> That you may keep discretion, / And your lips may guard knowledge.<br><br>
+     <sup><b>3</b></sup> For the lips of a strange woman drip honey, / And her mouth is smoother than oil;<br><br>
+     <sup><b>4</b></sup> But in the end she is bitter as wormwood, / Sharp as a two-edged sword.<br><br>
+     <sup><b>5</b></sup> Her feet go down to death; / Her steps hold fast to Sheol.<br><br>
+     <sup><b>6</b></sup> She does not make straight the path of life: / Her ways wander, <i>and</i> she does not know <i>it.</i><br><br>
+     <sup><b>7</b></sup> And now, <i>my</i> sons, listen to me, / And do not depart from the words of my mouth.<br><br>
+     <sup><b>8</b></sup> Keep your way far from her, / And do not go near the door of her house;<br><br>
+     <sup><b>9</b></sup> Lest you give your honor to others, / And your years to the cruel;<br><br>
+     <sup><b>10</b></sup> Lest strangers be filled with your wealth, / And your labors <i>go</i> to the house of a foreigner,<br><br>
+     <sup><b>11</b></sup> And you mourn at your end, / When your flesh and your body are consumed,<br><br>
+     <sup><b>12</b></sup> And you say, How I have hated instruction, / And my heart has despised reproof!<br><br>
+     <sup><b>13</b></sup> And I have not listened to the voice of my teachers / Nor inclined my ear to my instructors;<br><br>
+     <sup><b>14</b></sup> I was almost into every evil / In the midst of the congregation and assembly.<br><br>
+     <sup><b>15</b></sup> Drink waters out of your own cistern, / And running water out of your own well.<br><br>
+     <sup><b>16</b></sup> Should your springs be shed forth, / <i>Like</i> streams of water in the streets?<br><br>
+     <sup><b>17</b></sup> Let them be yours alone, / And not for strangers with you.<br><br>
+     <sup><b>18</b></sup> Let your fountain be blessed, / And rejoice in the wife of your youth,<br><br>
+     <sup><b>19</b></sup> A lovely hind and a graceful doe. / Let her breasts satisfy you at all times. / May you be ravished with her love always.<br><br>
+     <sup><b>20</b></sup> For why should you be ravished, my son, with a strange woman / And embrace the bosom of an adulteress?<br><br>
+     <sup><b>21</b></sup> For the ways of a man are before the eyes of Jehovah, / And He ponders all his paths.<br><br>
+     <sup><b>22</b></sup> The wicked man is taken by his own iniquities, / And he is held fast by the cords of his own sin.<br><br>
+     <sup><b>23</b></sup> He will die for lack of instruction, / And in the greatness of his folly he will go astray.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
