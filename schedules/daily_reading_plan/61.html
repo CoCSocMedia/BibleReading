@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/2-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="proverbs-20"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 20</a></h4>
+  <p><sup><b>1</b></sup> Wine is a mocker, strong drink a brawler; / And whoever errs by it does not become wise.<br><br>
+     <sup><b>2</b></sup> The terror of a king is like the roaring of a lion; / He who provokes him to anger sins <i>against</i> his own life.<br><br>
+     <sup><b>3</b></sup> It is an honor for a man to keep away from strife, / But every fool rushes headlong <i>into it.</i><br><br>
+     <sup><b>4</b></sup> The sluggard will not plow because of winter; / Therefore he will beg in harvest and have nothing.<br><br>
+     <sup><b>5</b></sup> Counsel in the heart of man is <i>like</i> deep water, / But a man of understanding will draw it out.<br><br>
+     <sup><b>6</b></sup> Many a man will proclaim his own kindness, / But who can find a faithful man?<br><br>
+     <sup><b>7</b></sup> A righteous man who walks in his integrity, / Blessed are his children after him.<br><br>
+     <sup><b>8</b></sup> A king who sits on the throne of judgment / Scatters away all evil with his eyes.<br><br>
+     <sup><b>9</b></sup> Who can say, I have made my heart clean; / I am pure from my sin?<br><br>
+     <sup><b>10</b></sup> Differing weights and differing measures, / Both of them are an abomination to Jehovah.<br><br>
+     <sup><b>11</b></sup> Even a child makes himself known by his deeds, / Whether his work is pure and whether it is upright.<br><br>
+     <sup><b>12</b></sup> The hearing ear and the seeing eye — / Jehovah has made both of them.<br><br>
+     <sup><b>13</b></sup> Do not love sleep, or else you will come to poverty; / Open your eyes, <i>and</i> be satisfied with bread.<br><br>
+     <sup><b>14</b></sup> It is bad, it is bad, says the buyer; / But when he has gone away, then he boasts <i>in his purchase.</i><br><br>
+     <sup><b>15</b></sup> There is gold and an abundance of corals, / But the lips of knowledge are a precious jewel.<br><br>
+     <sup><b>16</b></sup> Take his garment when <i>he becomes</i> surety for a stranger, / And hold the pledge <i>when he becomes surety</i> for foreigners.<br><br>
+     <sup><b>17</b></sup> The bread of falsehood is sweet to a man, / But afterward his mouth will be filled with gravel.<br><br>
+     <sup><b>18</b></sup> Every plan is established by counsel, / And by sound counsel make war.<br><br>
+     <sup><b>19</b></sup> He who goes about as a gossip reveals secrets; / Therefore do not associate with one who opens his lips wide.<br><br>
+     <sup><b>20</b></sup> Whoever curses his father or his mother, / His lamp will go out in deep darkness.<br><br>
+     <sup><b>21</b></sup> An inheritance gained hurriedly at the beginning / Will not be blessed in the end.<br><br>
+     <sup><b>22</b></sup> Do not say, I will recompense evil; / Wait for Jehovah, and He will save you.<br><br>
+     <sup><b>23</b></sup> Differing weights are an abomination to Jehovah, / And false scales are not good.<br><br>
+     <sup><b>24</b></sup> A man’s steps are <i>ordered</i> by Jehovah; / How then can man understand his own way?<br><br>
+     <sup><b>25</b></sup> It is a snare to a man to rashly say, It is holy, / And after <i>making</i> the vows <i>to begin</i> to consider.<br><br>
+     <sup><b>26</b></sup> A wise king winnows the wicked / And drives the <i>threshing</i> wheel over them.<br><br>
+     <sup><b>27</b></sup> The spirit of man is the lamp of Jehovah, / Searching all the innermost parts of the inner being.<br><br>
+     <sup><b>28</b></sup> Lovingkindness and truth preserve the king, / And his throne is upheld by kindness.<br><br>
+     <sup><b>29</b></sup> The glory of young men is their strength, / And the honor of old men is gray hair.<br><br>
+     <sup><b>30</b></sup> Stripes that wound purge away evil, / And strokes <i>reach</i> the innermost parts of the inner being.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

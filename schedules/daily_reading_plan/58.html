@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="proverbs-17"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 17</a></h4>
+  <p><sup><b>1</b></sup> Better is a dry morsel and quietness with it / Than a house full of feasting with strife.<br><br>
+     <sup><b>2</b></sup> A servant who deals wisely will rule over a son who causes shame, / And will share in the inheritance among brothers.<br><br>
+     <sup><b>3</b></sup> The refining pot is for silver and the furnace for gold, / But Jehovah tries the hearts.<br><br>
+     <sup><b>4</b></sup> An evildoer gives heed to wicked lips, / <i>And</i> a liar gives ear to a mischievous tongue.<br><br>
+     <sup><b>5</b></sup> Whoever mocks the poor reproaches his Maker; / He who rejoices at calamity will not go unpunished.<br><br>
+     <sup><b>6</b></sup> Grandchildren are the crown of old men, / And the glory of children is their fathers.<br><br>
+     <sup><b>7</b></sup> Excellent speech is not fitting for a fool; / Much less are lying lips for a noble man.<br><br>
+     <sup><b>8</b></sup> A bribe is <i>like</i> a precious stone in the eyes of its possessor: / Wherever he turns, he prospers.<br><br>
+     <sup><b>9</b></sup> He who covers a transgression seeks love, / But he who repeats a matter separates close friends.<br><br>
+     <sup><b>10</b></sup> A rebuke strikes deeper into him who has understanding / Than a hundred stripes into a fool.<br><br>
+     <sup><b>11</b></sup> An evil man seeks only rebellion; / Therefore a cruel messenger will be sent against him.<br><br>
+     <sup><b>12</b></sup> Let a bear robbed of her cubs meet a man / Rather than a fool in his folly.<br><br>
+     <sup><b>13</b></sup> Whoever rewards evil for good, / Evil will not depart from his house.<br><br>
+     <sup><b>14</b></sup> The beginning of contention is <i>like</i> letting out water; / Therefore abandon strife before it breaks out.<br><br>
+     <sup><b>15</b></sup> He who justifies the wicked man, and he who condemns the righteous man, / Both of them are an abomination to Jehovah.<br><br>
+     <sup><b>16</b></sup> Why is there a price in the hand of a fool to buy wisdom, / When he has no sense?<br><br>
+     <sup><b>17</b></sup> A friend loves at all times, / And a brother is born for adversity.<br><br>
+     <sup><b>18</b></sup> A man lacking sense gives his hand as a pledge / And becomes surety in the presence of his neighbor.<br><br>
+     <sup><b>19</b></sup> He who loves transgression loves strife; / He who raises high his entrance seeks destruction.<br><br>
+     <sup><b>20</b></sup> He who has a crooked heart finds no good, / And he who has a perverse tongue falls into evil.<br><br>
+     <sup><b>21</b></sup> He who begets a fool <i>does so</i> to his sorrow, / And the father of a fool has no joy.<br><br>
+     <sup><b>22</b></sup> A joyful heart is good medicine, / But a broken spirit dries up the bones.<br><br>
+     <sup><b>23</b></sup> A wicked man receives a bribe from the bosom, / To pervert the ways of justice.<br><br>
+     <sup><b>24</b></sup> Wisdom is before the face of him who has understanding, / But the eyes of a fool are on the ends of the earth.<br><br>
+     <sup><b>25</b></sup> A foolish son is a grief to his father, / And bitterness to her who bore him.<br><br>
+     <sup><b>26</b></sup> To also punish the righteous man is not good, / <i>Nor</i> to strike nobles for <i>their</i> uprightness.<br><br>
+     <sup><b>27</b></sup> He who restrains his words has knowledge, / And he who is cool in spirit is one who has understanding.<br><br>
+     <sup><b>28</b></sup> Even a fool, when he keeps silent, is counted wise; / When he shuts his lips, he is <i>counted</i> prudent.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

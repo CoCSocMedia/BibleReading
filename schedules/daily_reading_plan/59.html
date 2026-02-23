@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="proverbs-18"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 18</a></h4>
+  <p><sup><b>1</b></sup> He who separates himself seeks <i>his own</i> desire / And rages against all sound wisdom.<br><br>
+     <sup><b>2</b></sup> A fool has no delight in understanding, / But only that his heart may reveal itself.<br><br>
+     <sup><b>3</b></sup> When the wicked man comes, contempt also comes; / And with dishonor <i>comes</i> reproach.<br><br>
+     <sup><b>4</b></sup> The words of a man’s mouth are deep waters, / A gushing stream, a fountain of wisdom.<br><br>
+     <sup><b>5</b></sup> To respect the person of the wicked man is not good, / <i>Nor</i> to turn aside the righteous man in judgment.<br><br>
+     <sup><b>6</b></sup> A fool’s lips bring strife, / And his mouth invites blows.<br><br>
+     <sup><b>7</b></sup> A fool’s mouth is his ruin, / And his lips are the snare of his soul.<br><br>
+     <sup><b>8</b></sup> The words of a whisperer are like dainty morsels, / And they go down into the innermost parts of one’s being.<br><br>
+     <sup><b>9</b></sup> He also who is slack in his work / Is brother to him who is a destroyer.<br><br>
+     <sup><b>10</b></sup> The name of Jehovah is a strong tower; / The righteous man runs into it and is safe.<br><br>
+     <sup><b>11</b></sup> The rich man’s substance is his strong city / And like a high wall in his own imagination.<br><br>
+     <sup><b>12</b></sup> Before destruction the heart of man is haughty, / But humility <i>goes</i> before honor.<br><br>
+     <sup><b>13</b></sup> As for him who gives an answer before he hears, / It is folly and shame.<br><br>
+     <sup><b>14</b></sup> The spirit of a man can sustain his sickness, / But a broken spirit who can bear?<br><br>
+     <sup><b>15</b></sup> The heart of one who has understanding acquires knowledge, / And the ear of the wise seeks knowledge.<br><br>
+     <sup><b>16</b></sup> A man’s gift makes room for him / And brings him before great men.<br><br>
+     <sup><b>17</b></sup> The first to plead his case <i>seems</i> just, / <i>Until</i> his neighbor comes and cross-examines him.<br><br>
+     <sup><b>18</b></sup> The lot causes contentions to cease / And decides between the mighty.<br><br>
+     <sup><b>19</b></sup> A brother offended <i>is harder to be gained</i> than a strong city, / And contentions are like the bars of a castle.<br><br>
+     <sup><b>20</b></sup> With the fruit of his mouth a man’s stomach will be satisfied; / With the produce of his lips he will be satisfied.<br><br>
+     <sup><b>21</b></sup> Death and life are in the power of the tongue, / And those who love it will eat its fruit.<br><br>
+     <sup><b>22</b></sup> Whoever finds a wife finds a good thing, / And obtains favor from Jehovah.<br><br>
+     <sup><b>23</b></sup> The poor man utters supplications, / But the rich man answers roughly.<br><br>
+     <sup><b>24</b></sup> A man of <i>many</i> friends <i>comes</i> to destruction, / But there is a <i>true</i> friend that sticks closer than a brother.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
