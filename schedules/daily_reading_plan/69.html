@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/10-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="proverbs-28"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 28</a></h4>
+  <p><sup><b>1</b></sup> The wicked flee when no man pursues, / But the righteous are as bold as a lion.<br><br>
+     <sup><b>2</b></sup> When a land revolts, it has many rulers; / But by him who has understanding <i>and</i> knowledge it endures.<br><br>
+     <sup><b>3</b></sup> A destitute man who oppresses the poor / Is <i>like</i> a driving rain which leaves no food.<br><br>
+     <sup><b>4</b></sup> Those who forsake the law praise the wicked, / But those who keep the law contend with them.<br><br>
+     <sup><b>5</b></sup> Evil men do not understand justice, / But those who seek Jehovah understand all things.<br><br>
+     <sup><b>6</b></sup> Better is a poor man who walks in his integrity / Than he who is perverse in <i>his</i> ways though he is rich.<br><br>
+     <sup><b>7</b></sup> Whoever keeps the law is an understanding son, / But he who is a companion of gluttons shames his father.<br><br>
+     <sup><b>8</b></sup> He who increases his substance by interest and usury / Gathers it for him who is gracious to the poor.<br><br>
+     <sup><b>9</b></sup> He who turns away his ear from hearing the law, / Even his prayer is an abomination.<br><br>
+     <sup><b>10</b></sup> Whoever causes the upright to go astray in an evil way / Will himself fall into his own pit, / But the perfect will inherit good.<br><br>
+     <sup><b>11</b></sup> The rich man is wise in his own conceit, / But the poor man who has understanding searches him out.<br><br>
+     <sup><b>12</b></sup> When the righteous triumph, there is great glory; / But when the wicked rise, men hide themselves.<br><br>
+     <sup><b>13</b></sup> He who covers his transgressions will not prosper, / But whoever confesses and forsakes <i>them</i> will obtain mercy.<br><br>
+     <sup><b>14</b></sup> Blessed is the man who always fears, / But he who hardens his heart will fall into calamity.<br><br>
+     <sup><b>15</b></sup> <i>Like</i> a roaring lion and a roving bear / Is a wicked ruler over a poor people.<br><br>
+     <sup><b>16</b></sup> The ruler who lacks understanding is also a great oppressor, / <i>But</i> he who hates unjust gain will prolong <i>his</i> days.<br><br>
+     <sup><b>17</b></sup> A man who is burdened with a person’s blood / Will be a fugitive until death; / Let no man support him.<br><br>
+     <sup><b>18</b></sup> Whoever walks uprightly will be delivered, / But he who is perverse in <i>his</i> ways will fall all at once.<br><br>
+     <sup><b>19</b></sup> He who tills his land will have plenty of bread, / But he who pursues worthless <i>things</i> will have plenty of poverty.<br><br>
+     <sup><b>20</b></sup> A faithful man will abound with blessings, / But he who makes haste to be rich will not go unpunished.<br><br>
+     <sup><b>21</b></sup> To have respect of persons is not good, / Because for a piece of bread a man will transgress.<br><br>
+     <sup><b>22</b></sup> A man who is envious hastens after wealth, / And does not know that want will come upon him.<br><br>
+     <sup><b>23</b></sup> He who rebukes a man will afterward find <i>more</i> favor / Than he who flatters with the tongue.<br><br>
+     <sup><b>24</b></sup> Whoever robs his father or his mother and says, / It is no transgression, / Is the companion of a man who destroys.<br><br>
+     <sup><b>25</b></sup> A greedy person stirs up contention, / But he who trusts in Jehovah will prosper.<br><br>
+     <sup><b>26</b></sup> He who trusts in his own heart is a fool, / But he who walks wisely will be delivered.<br><br>
+     <sup><b>27</b></sup> He who gives to the poor man will not lack, / But he who shuts his eyes will have many curses.<br><br>
+     <sup><b>28</b></sup> When the wicked rise, men hide themselves; / But when they perish, the righteous increase.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

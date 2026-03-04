@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="proverbs-26"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 26</a></h4>
+  <p><sup><b>1</b></sup> Like snow in summer and like rain in harvest, / So honor is not fitting for a fool.<br><br>
+     <sup><b>2</b></sup> Like the sparrow in <i>its</i> fluttering, like the swallow in <i>its</i> flying, / So a curse without cause does not alight.<br><br>
+     <sup><b>3</b></sup> A whip for the horse! A bridle for the donkey! / And a rod for the back of fools!<br><br>
+     <sup><b>4</b></sup> Do not answer a fool according to his folly, / Lest you also be like him.<br><br>
+     <sup><b>5</b></sup> Answer a fool according to his folly, / Lest he be wise in his own eyes.<br><br>
+     <sup><b>6</b></sup> He who sends a message by the hand of a fool / Cuts off <i>his own</i> feet <i>and</i> drinks violence.<br><br>
+     <sup><b>7</b></sup> <i>Like</i> the legs of the lame which hang down, / So is a proverb in the mouth of fools.<br><br>
+     <sup><b>8</b></sup> Like one who binds a stone in a sling, / So is he who gives honor to a fool.<br><br>
+     <sup><b>9</b></sup> <i>Like</i> a thorn that goes up into the hand of a drunkard, / So is a proverb in the mouth of fools.<br><br>
+     <sup><b>10</b></sup> <i>Like</i> an archer who wounds everyone, / So is he who hires a fool or who hires those who pass by.<br><br>
+     <sup><b>11</b></sup> Like a dog that returns to its vomit / Is a fool who repeats his folly.<br><br>
+     <sup><b>12</b></sup> Do you see a man who is wise in his own eyes? / There is more hope for a fool than for him.<br><br>
+     <sup><b>13</b></sup> The sluggard says, There is a roaring lion on the way; / A lion is in the streets!<br><br>
+     <sup><b>14</b></sup> <i>As</i> the door turns upon its hinges, / So does the sluggard upon his bed.<br><br>
+     <sup><b>15</b></sup> The sluggard buries his hand in the dish; / He gets weary by bringing it to his mouth again.<br><br>
+     <sup><b>16</b></sup> The sluggard is wiser in his own eyes / Than seven men who can answer discreetly.<br><br>
+     <sup><b>17</b></sup> He who passes by <i>and</i> meddles with strife that does not belong to him, / Is <i>like</i> one who takes a dog by the ears.<br><br>
+     <sup><b>18</b></sup> Like a madman who shoots firebrands, arrows, and death,<br><br>
+     <sup><b>19</b></sup> So is the man who deceives his neighbor, / And says, Was I not joking?<br><br>
+     <sup><b>20</b></sup> For lack of wood the fire goes out, / And where there is no whisperer, contention quiets down.<br><br>
+     <sup><b>21</b></sup> <i>As</i> charcoal to hot embers and wood to fire, / So is a contentious man to kindle strife.<br><br>
+     <sup><b>22</b></sup> The words of a whisperer are like dainty morsels, / And they go down into the innermost parts of one’s being.<br><br>
+     <sup><b>23</b></sup> Burning lips and a wicked heart / Are <i>like</i> an earthen vessel overlaid with silver dross.<br><br>
+     <sup><b>24</b></sup> He who hates disguises <i>it</i> with his lips, / But he lays up deceit within him;<br><br>
+     <sup><b>25</b></sup> When he speaks graciously, do not believe him; / For there are seven abominations in his heart;<br><br>
+     <sup><b>26</b></sup> Though <i>his</i> hatred covers itself with guile, / His wickedness will be revealed before the assembly.<br><br>
+     <sup><b>27</b></sup> Whoever digs a pit will fall into it, / And he who rolls a stone, it will come back on him.<br><br>
+     <sup><b>28</b></sup> A lying tongue hates those it crushes, / And a flattering mouth works ruin.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

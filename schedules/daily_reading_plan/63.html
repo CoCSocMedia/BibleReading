@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="proverbs-22"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 22</a></h4>
+  <p><sup><b>1</b></sup> A <i>good</i> name is to be chosen rather than great riches, / <i>And</i> favor is better than silver and gold.<br><br>
+     <sup><b>2</b></sup> The rich and the poor have this in common: / Jehovah is the maker of them all.<br><br>
+     <sup><b>3</b></sup> A prudent man sees evil and hides himself, / But the simple pass on and suffer punishment <i>for it.</i><br><br>
+     <sup><b>4</b></sup> The reward of humility <i>and</i> the fear of Jehovah / Are riches and honor and life.<br><br>
+     <sup><b>5</b></sup> Thorns <i>and</i> snares are in the way of the perverse; / He who guards his soul will keep far from them.<br><br>
+     <sup><b>6</b></sup> Train up a child according to the way he should go; / Even when he is old, he will not depart from it.<br><br>
+     <sup><b>7</b></sup> The rich man rules over the poor, / And the borrower is servant to the lender.<br><br>
+     <sup><b>8</b></sup> He who sows injustice will reap iniquity, / And the rod of his wrath will fail.<br><br>
+     <sup><b>9</b></sup> He who is generous will be blessed, / For he gives some of his bread to the poor.<br><br>
+     <sup><b>10</b></sup> Cast out the scorner, and contention will go out; / Indeed, strife and dishonor will cease.<br><br>
+     <sup><b>11</b></sup> He who loves pureness of heart / And whose speech is gracious will have the king as his friend.<br><br>
+     <sup><b>12</b></sup> The eyes of Jehovah preserve knowledge, / But He overthrows the words of the treacherous man.<br><br>
+     <sup><b>13</b></sup> The sluggard says, There is a lion outside! / I will be slain in the streets!<br><br>
+     <sup><b>14</b></sup> The mouth of strange women is a deep pit; / He with whom Jehovah is indignant will fall in there.<br><br>
+     <sup><b>15</b></sup> Foolishness is bound up in the heart of a child; / <i>But</i> the rod of correction will drive it far from him.<br><br>
+     <sup><b>16</b></sup> He who oppresses the poor to multiply his <i>gain,</i> / <i>And</i> he who gives to the rich <i>will</i> only <i>come</i> to want.<br><br>
+     <sup><b>17</b></sup> Incline your ear, and hear the words of the wise, / And apply your heart to my knowledge;<br><br>
+     <sup><b>18</b></sup> For it is a pleasant thing if you keep them within you; / Let them be ready on your lips.<br><br>
+     <sup><b>19</b></sup> So that your trust may be in Jehovah, / I have made <i>them</i> known to you today, even to you.<br><br>
+     <sup><b>20</b></sup> Have not I written to you excellent things / Of counsels and knowledge,<br><br>
+     <sup><b>21</b></sup> To make you know the certainty of the words of truth, / That you may answer back words of truth to those who send you?<br><br>
+     <sup><b>22</b></sup> Do not rob the poor, because he is poor; / Nor oppress the afflicted in the gate;<br><br>
+     <sup><b>23</b></sup> For Jehovah will plead their cause, / And rob the life of those who rob them.<br><br>
+     <sup><b>24</b></sup> Make no friendship with a man <i>who is given to</i> anger, / And with a wrathful man do not go;<br><br>
+     <sup><b>25</b></sup> Lest you learn his ways / And get a snare for your soul.<br><br>
+     <sup><b>26</b></sup> Do not be one of those who give <i>their</i> hand as a pledge / <i>Or</i> one of those who are a surety for debts.<br><br>
+     <sup><b>27</b></sup> If you have nothing with which to pay, / Why should your bed be taken away from under you?<br><br>
+     <sup><b>28</b></sup> Do not remove the ancient boundary marker, / Which your fathers have set up.<br><br>
+     <sup><b>29</b></sup> Do you see a man skilled in his work? / He will stand before kings; / He will not stand before obscure men.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

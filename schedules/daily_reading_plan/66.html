@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/7-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Proverbs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="proverbs-25"><a onclick="open_chapter('top', '20-proverbs.html')">Proverbs 25</a></h4>
+  <p><sup><b>1</b></sup> These also are proverbs of Solomon, which the men of Hezekiah the king of Judah copied.<br><br>
+     <sup><b>2</b></sup> It is the glory of God to conceal a matter, / But the glory of kings is to search a matter out.<br><br>
+     <sup><b>3</b></sup> <i>As</i> the heavens for height, and the earth for depth, / So the heart of kings is unsearchable.<br><br>
+     <sup><b>4</b></sup> Take away the dross from the silver, / And a vessel comes out for the smith;<br><br>
+     <sup><b>5</b></sup> Take away the wicked man <i>from</i> before the king, / And his throne will be established in righteousness.<br><br>
+     <sup><b>6</b></sup> Do not claim honor for yourself in the presence of the king, / And do not stand in the place of great men;<br><br>
+     <sup><b>7</b></sup> For it is better that it is said to you, Come up here, / Than that you should be put lower in the presence of the noble, / Whom your eyes have seen.<br><br>
+     <sup><b>8</b></sup> Do not go out hastily to strive; / Otherwise what will you do in the end, / When your neighbor puts you to shame?<br><br>
+     <sup><b>9</b></sup> Argue your case with your neighbor <i>himself,</i> / And do not reveal the secret of another;<br><br>
+     <sup><b>10</b></sup> Lest he who hears it revile you, / And the evil report of you does not go away.<br><br>
+     <sup><b>11</b></sup> A word fitly spoken / Is <i>like</i> apples of gold in settings of silver.<br><br>
+     <sup><b>12</b></sup> <i>Like</i> an earring of gold and an ornament of fine gold / Is a wise reprover to a listening ear.<br><br>
+     <sup><b>13</b></sup> <i>Like</i> the cold of snow in the time of harvest / Is a faithful messenger to those who send him, / For he refreshes the soul of his masters.<br><br>
+     <sup><b>14</b></sup> <i>Like</i> clouds and wind without rain / Is one who boasts of <i>his</i> gifts falsely.<br><br>
+     <sup><b>15</b></sup> By forbearance a ruler may be persuaded, / And a soft tongue can break the bone.<br><br>
+     <sup><b>16</b></sup> Have you found honey? Eat <i>only</i> what you need, / Lest you become filled up with it and vomit it.<br><br>
+     <sup><b>17</b></sup> Let your foot be seldom in your neighbor’s house, / Otherwise he will become weary of you and hate you.<br><br>
+     <sup><b>18</b></sup> A man who bears false witness against his neighbor / Is <i>like</i> a club and a sword and a sharp arrow.<br><br>
+     <sup><b>19</b></sup> Confidence in a treacherous man in time of trouble / Is <i>like</i> a bad tooth and a foot out of joint.<br><br>
+     <sup><b>20</b></sup> He who sings songs to a troubled heart / Is <i>like</i> one who takes off a garment on a cold day, / Or <i>like</i> vinegar on soda.<br><br>
+     <sup><b>21</b></sup> If your enemy is hungry, give him bread to eat; / And if he is thirsty, give him water to drink;<br><br>
+     <sup><b>22</b></sup> For you will heap coals of fire upon his head, / And Jehovah will reward you.<br><br>
+     <sup><b>23</b></sup> The north wind brings forth rain; / And a backbiting tongue, an angry countenance.<br><br>
+     <sup><b>24</b></sup> It is better to dwell in a corner of the housetop / Than in a house shared with a contentious woman.<br><br>
+     <sup><b>25</b></sup> <i>Like</i> cold water to a thirsty soul, / So is good news from a far country.<br><br>
+     <sup><b>26</b></sup> <i>Like</i> a muddied fountain and a polluted spring / Is a righteous man who gives way before the wicked man.<br><br>
+     <sup><b>27</b></sup> It is not good to eat much honey, / Nor is it glory <i>for men</i> to search out their own glory.<br><br>
+     <sup><b>28</b></sup> <i>Like</i> a city that is broken down, without walls, / Is a man whose spirit is without restraint.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('proverbs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
