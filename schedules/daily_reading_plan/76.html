@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/17-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ecclesiastes</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ecclesiastes-3"><a onclick="open_chapter('top', '21-ecclesiastes.html')">Ecclesiastes 3</a></h4>
+  <p><sup><b>1</b></sup> For everything there is a season, / And a time for every purpose under heaven:<br><br>
+     <sup><b>2</b></sup> A time to be born, and a time to die; / A time to plant, and a time to pluck up what is planted;<br><br>
+     <sup><b>3</b></sup> A time to kill, and a time to heal; / A time to tear down, and a time to build up;<br><br>
+     <sup><b>4</b></sup> A time to weep, and a time to laugh; / A time to mourn, and a time to dance;<br><br>
+     <sup><b>5</b></sup> A time to cast away stones, and a time to gather stones together; / A time to embrace, and a time to refrain from embracing;<br><br>
+     <sup><b>6</b></sup> A time to seek, and a time to lose; / A time to keep, and a time to throw away;<br><br>
+     <sup><b>7</b></sup> A time to tear, and a time to sew; / A time to be silent, and a time to speak;<br><br>
+     <sup><b>8</b></sup> A time to love, and a time to hate; / A time for war, and a time for peace.<br><br>
+     <sup><b>9</b></sup> What profit does the worker have in all that he labors?<br><br>
+     <sup><b>10</b></sup> I have seen the travail that God has given the children of men to travail in.<br><br>
+     <sup><b>11</b></sup> He has made everything beautiful in its own time; also He has put eternity in their heart, yet so that man does not find out what God has done from the beginning to the end.<br><br>
+     <sup><b>12</b></sup> I know that there is nothing better for them than to rejoice and do good in their lifetime;<br><br>
+     <sup><b>13</b></sup> Moreover, that every man should eat and drink and taste enjoyment in all his labor; it is the gift of God.<br><br>
+     <sup><b>14</b></sup> I know that whatever God does, it will be forever; nothing can be added to it, nor can anything be taken from it. God has <i>so</i> done, that <i>all</i> would fear Him.<br><br>
+     <sup><b>15</b></sup> That which is has already been, and that which will be has already been; and God seeks what has passed.<br><br>
+     <sup><b>16</b></sup> Moreover I saw under the sun <i>that</i> in the place of judgment, wickedness is there; and in the place of righteousness, wickedness is there.<br><br>
+     <sup><b>17</b></sup> I said in my heart, God will judge the righteous and the wicked; for there is a time there for every purpose and every work.<br><br>
+     <sup><b>18</b></sup> I said in my heart, <i>This is so</i> for the sake of the children of men, that God may prove them and that they may see for themselves that they are but beasts.<br><br>
+     <sup><b>19</b></sup> For what happens to the children of men happens also to beasts; even the same thing happens to them <i>both:</i> As the one dies, so dies the other; and they all have one breath; and man has no advantage over the beast; for all is vanity.<br><br>
+     <sup><b>20</b></sup> All go to one place: all are of dust, and all return to dust.<br><br>
+     <sup><b>21</b></sup> Who knows the breath of the children of men, that it goes upward; or the breath of the beasts, that it goes downward to the earth?<br><br>
+     <sup><b>22</b></sup> Therefore I saw that there is nothing better than that <i>a man</i> should rejoice in his works, for that is his portion. For who will bring him to see what will be after him?<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ecclesiastes-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

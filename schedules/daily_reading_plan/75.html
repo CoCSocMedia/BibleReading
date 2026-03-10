@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/16-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ecclesiastes</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ecclesiastes-2"><a onclick="open_chapter('top', '21-ecclesiastes.html')">Ecclesiastes 2</a></h4>
+  <p><sup><b>1</b></sup> I said in my heart, Come now, I will test out pleasure; so taste enjoyment. But indeed, this also is vanity.<br><br>
+     <sup><b>2</b></sup> I said of laughter, Madness! and of pleasure, What does it accomplish?<br><br>
+     <sup><b>3</b></sup> I searched with my heart how to cheer my flesh with wine while my heart guided me with wisdom, and how to take hold of folly, until I could see what good there is for the children of men to do under the heavens the few days of their lives.<br><br>
+     <sup><b>4</b></sup> I enlarged my works: I built houses for myself; I planted vineyards for myself;<br><br>
+     <sup><b>5</b></sup> I made gardens and parks for myself, and planted in them trees of every kind of fruit.<br><br>
+     <sup><b>6</b></sup> I made water ponds for myself from which to water a forest of growing trees.<br><br>
+     <sup><b>7</b></sup> I bought male and female servants, and had servants born in my house; also I had great possessions of herds and flocks, more than all that had been before me in Jerusalem.<br><br>
+     <sup><b>8</b></sup> I gathered also silver and gold for myself and the treasures of kings and provinces; I got for myself male singers and female singers and the delights of the children of men, concubine after concubine.<br><br>
+     <sup><b>9</b></sup> And I became great and increased more than all who had been before me in Jerusalem; also my wisdom remained with me.<br><br>
+     <sup><b>10</b></sup> And whatever my eyes desired I did not keep from them; I did not keep my heart from any pleasure, for my heart found pleasure in all my labor, and this was my portion from all my labor.<br><br>
+     <sup><b>11</b></sup> Then I turned to all the works that my hands had done and the labor by which I had labored in doing <i>them,</i> and indeed, all was vanity and a chasing after wind; and there was no advantage under the sun.<br><br>
+     <sup><b>12</b></sup> And I turned to consider wisdom and madness and folly, for what will the man do who comes after the king? <i>Only</i> that which has been done already.<br><br>
+     <sup><b>13</b></sup> And I saw that wisdom excels folly as light excels darkness.<br><br>
+     <sup><b>14</b></sup> The wise man’s eyes are in his head, and the fool walks in darkness; yet I also perceived that one fate happens to them all.<br><br>
+     <sup><b>15</b></sup> And I said in my heart, As it happens to the fool, so also will it happen to me. Why then have I been so wise? And I said in my heart, This also is vanity.<br><br>
+     <sup><b>16</b></sup> For of the wise man, even as of the fool, there is no remembrance forever, seeing that in the days to come all will be forgotten. And how the wise man dies just like the fool!<br><br>
+     <sup><b>17</b></sup> So I hated life, for the work that is done under the sun was grievous to me, because everything is vanity and a chasing after wind.<br><br>
+     <sup><b>18</b></sup> And I hated all my labor for which I had labored under the sun, because I will leave it to the man who comes after me.<br><br>
+     <sup><b>19</b></sup> And who knows whether he will be a wise man or a fool? Yet he will be master over all my labor for which I have labored and in which I exercised wisdom under the sun. This also is vanity.<br><br>
+     <sup><b>20</b></sup> Therefore I turned and gave my heart up to despair of all the labor for which I had labored under the sun;<br><br>
+     <sup><b>21</b></sup> For there is a man whose labor has been with wisdom and with knowledge and with skill, and to a man who has not labored on it he gives it as his portion. This also is vanity and a great evil.<br><br>
+     <sup><b>22</b></sup> For what will a man have with all his labor and with the striving of his heart by which he labors under the sun?<br><br>
+     <sup><b>23</b></sup> For all his days are sorrow, and his travail is vexation; even at night his heart does not rest. This also is vanity.<br><br>
+     <sup><b>24</b></sup> There is nothing better for man than to eat and to drink and to make his soul taste enjoyment in his labor. This also I saw, that it is from the hand of God.<br><br>
+     <sup><b>25</b></sup> For who can eat or who can enjoy without Him?<br><br>
+     <sup><b>26</b></sup> For to the man who is good in His sight He gives wisdom and knowledge and joy, but to the sinner He gives the travail of gathering and heaping up that it may be given to him who is good in God’s sight. This also is vanity and a chasing after wind.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ecclesiastes-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
