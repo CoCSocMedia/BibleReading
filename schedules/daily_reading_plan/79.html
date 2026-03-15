@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/20-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ecclesiastes</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ecclesiastes-6"><a onclick="open_chapter('top', '21-ecclesiastes.html')">Ecclesiastes 6</a></h4>
+  <p><sup><b>1</b></sup> There is an evil that I have seen under the sun, and it is heavy upon man:<br><br>
+     <sup><b>2</b></sup> A man to whom God gives riches, wealth, and honor, so that nothing is lacking to his soul of all that he desires, and yet God does not empower him to eat of it, but a stranger eats it. This is vanity and an evil plague.<br><br>
+     <sup><b>3</b></sup> If a man begets a hundred children and lives many years, so that the days of his years are many, but his soul is not filled with good and even does not get a proper burial, I say that the stillborn is better off than he;<br><br>
+     <sup><b>4</b></sup> For it comes in vanity and goes off in darkness, and in darkness its name is covered;<br><br>
+     <sup><b>5</b></sup> Moreover it has not seen the sun and does not know <i>anything;</i> this one has rest rather than that one.<br><br>
+     <sup><b>6</b></sup> Indeed, even if he lives a thousand years twice and does not taste enjoyment, do not all go to one place?<br><br>
+     <sup><b>7</b></sup> All a man’s labor is for his mouth, and yet his appetite is not filled.<br><br>
+     <sup><b>8</b></sup> For what advantage does the wise man have over the fool? What <i>advantage</i> does the poor man have in knowing how to walk before the living?<br><br>
+     <sup><b>9</b></sup> Better is seeing with the eyes than wandering with the soul. This also is vanity and a chasing after wind.<br><br>
+     <sup><b>10</b></sup> That which is has already been determined, and it is known what man is and that he cannot contend with him who is stronger than he.<br><br>
+     <sup><b>11</b></sup> For there are many things which will increase vanity. What is the advantage to man?<br><br>
+     <sup><b>12</b></sup> For who knows what is good for a man in life during the few days of his vain life, which he will spend as a shadow? For who can tell a man what will be after him under the sun?<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ecclesiastes-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

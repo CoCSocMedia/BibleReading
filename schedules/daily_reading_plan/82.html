@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/23-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ecclesiastes</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ecclesiastes-9"><a onclick="open_chapter('top', '21-ecclesiastes.html')">Ecclesiastes 9</a></h4>
+  <p><sup><b>1</b></sup> For all this I laid on my heart, so that I might explain all this, that the righteous and the wise and their works are in the hand of God; man knows neither love nor hate; all is before them.<br><br>
+     <sup><b>2</b></sup> All things are alike to all: One thing happens to the righteous man and to the wicked man, to the good and to the clean and to the unclean, to him who sacrifices and to him who does not sacrifice; as the good man is, so is the sinner; he who swears is like him who fears an oath.<br><br>
+     <sup><b>3</b></sup> This is an evil among all that is done under the sun, that one thing happens to all; moreover the heart of the children of men is full of evil, and madness is in their heart while they live; and after that, <i>they go</i> to the dead.<br><br>
+     <sup><b>4</b></sup> For there is hope for whoever is joined to all the living — surely a living dog is better than a dead lion —<br><br>
+     <sup><b>5</b></sup> For the living know that they will die; but the dead know nothing, and they have no more reward, for the memory of them is forgotten.<br><br>
+     <sup><b>6</b></sup> Their love, their hate, and their envy have already perished, nor do they have some portion yet in all that is done under the sun forever.<br><br>
+     <sup><b>7</b></sup> Go; eat your bread with joy, and drink your wine with a merry heart; for God has already accepted your works.<br><br>
+     <sup><b>8</b></sup> Let your garments always be white, and do not let oil be lacking on your head.<br><br>
+     <sup><b>9</b></sup> Enjoy life with the wife whom you have loved all the days of your life of vanity which He has given you under the sun, all the days of your vanity; for this is your portion in life and in your labor by which you have labored under the sun.<br><br>
+     <sup><b>10</b></sup> Whatever your hand finds to do, do with <i>all</i> your might; for there is no work or thought or knowledge or wisdom in Sheol, where you are going.<br><br>
+     <sup><b>11</b></sup> Again I saw under the sun that the race is not to the swift, nor is the battle to the mighty, nor is even the bread to the wise, nor are riches to those who have understanding, nor is favor to those who have knowledge; but time and chance happen to them all.<br><br>
+     <sup><b>12</b></sup> For also man does not know his time: Like fish that are caught in a deadly net and like birds that are caught in a snare, so the children of men are ensnared in an evil time when it falls suddenly on them.<br><br>
+     <sup><b>13</b></sup> This also I have seen as wisdom under the sun, and it seemed great to me.<br><br>
+     <sup><b>14</b></sup> There was a small city with a few men in it; and a great king came against it and surrounded it and built great siegeworks against it.<br><br>
+     <sup><b>15</b></sup> And in it there was found a poor wise man, and he delivered the city by his wisdom; yet no one remembered that poor man.<br><br>
+     <sup><b>16</b></sup> So I said, Wisdom is better than strength; but the wisdom of the poor man is despised, and his words are not heard.<br><br>
+     <sup><b>17</b></sup> The words of the wise man <i>spoken</i> quietly are heeded more than the shouting of a ruler among fools.<br><br>
+     <sup><b>18</b></sup> Wisdom is better than weapons of war, but one sinner destroys much good.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ecclesiastes-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

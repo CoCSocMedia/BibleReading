@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/24-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ecclesiastes</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ecclesiastes-10"><a onclick="open_chapter('top', '21-ecclesiastes.html')">Ecclesiastes 10</a></h4>
+  <p><sup><b>1</b></sup> Dead flies cause the perfumer’s ointment to stink, to ferment; <i>so</i> a little folly outweighs wisdom <i>and</i> honor.<br><br>
+     <sup><b>2</b></sup> A wise man’s heart <i>inclines</i> to his right, but a fool’s heart <i>inclines</i> to his left.<br><br>
+     <sup><b>3</b></sup> And also, when the fool walks on the way, his sense fails <i>him,</i> and he tells everyone that he is a fool.<br><br>
+     <sup><b>4</b></sup> If the ruler’s spirit rises up against you, do not leave your place; for composure allays great offenses.<br><br>
+     <sup><b>5</b></sup> There is an evil that I have seen under the sun, like an error that proceeds from the ruler:<br><br>
+     <sup><b>6</b></sup> Folly is set in many high places, and rich men sit in a low place.<br><br>
+     <sup><b>7</b></sup> I have seen servants on horses and princes walking on the earth like servants.<br><br>
+     <sup><b>8</b></sup> He who digs a pit will fall into it, and he who breaks through a wall will be bitten by a serpent;<br><br>
+     <sup><b>9</b></sup> Whoever quarries stones will be hurt by them, and whoever splits logs will be endangered by them.<br><br>
+     <sup><b>10</b></sup> If the iron is blunt, and one does not whet the edge, then he must apply more strength; but wisdom has the advantage of giving success.<br><br>
+     <sup><b>11</b></sup> If the serpent bites before it is charmed, then there is no advantage in a charmer.<br><br>
+     <sup><b>12</b></sup> The words of a wise man’s mouth are gracious, but the lips of a fool swallow him up.<br><br>
+     <sup><b>13</b></sup> The beginning of the words of his mouth is folly, and the end of his talk is wicked madness.<br><br>
+     <sup><b>14</b></sup> Yet the fool multiplies words. No man knows what will be; and what will be after him, who can tell him?<br><br>
+     <sup><b>15</b></sup> The labor of fools wears them out, because they do not know <i>even</i> how to get to town.<br><br>
+     <sup><b>16</b></sup> Woe to you, O land whose king is a young boy and whose princes feast in the morning!<br><br>
+     <sup><b>17</b></sup> Happy are you, O land whose king is the son of nobles and whose princes feast at the <i>proper</i> time, for strength and not for drunkenness!<br><br>
+     <sup><b>18</b></sup> Through slothfulness the rafters sag, and through idleness of hands the house leaks.<br><br>
+     <sup><b>19</b></sup> They make a feast for laughter, and wine makes life merry, and money is the answer to everything.<br><br>
+     <sup><b>20</b></sup> Do not curse the king even in your thought, and do not curse a rich man in your bedroom; for a bird of heaven will carry the sound, or <i>something</i> with wings will tell the matter.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ecclesiastes-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
