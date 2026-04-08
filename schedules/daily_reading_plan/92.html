@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/2-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Song of Songs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="songofsongs-7"><a onclick="open_chapter('top', '22-song_of_songs.html')">Song of Songs 7</a></h4>
+  <p><sup><b>1</b></sup> How beautiful are your footsteps in sandals, / O prince’s daughter! / Your rounded thighs are like jewels, / The work of the hands of a skilled artist.<br><br>
+     <sup><b>2</b></sup> Your navel is a round goblet / That never lacks mixed wine; / Your belly is a heap of wheat, / Fenced in by lilies.<br><br>
+     <sup><b>3</b></sup> Your two breasts are like two fawns, / Twins of a gazelle.<br><br>
+     <sup><b>4</b></sup> Your neck is like a tower of ivory; / Your eyes, <i>like</i> the pools in Heshbon / By the gate of Bath-rabbim; / Your nose is like the tower of Lebanon, / Which faces Damascus.<br><br>
+     <sup><b>5</b></sup> Your head upon you is like Carmel, / And the locks of your head like purple. / The king is fettered by <i>your</i> tresses.<br><br>
+     <sup><b>6</b></sup> How beautiful and how pleasant in delights / You are, O love!<br><br>
+     <sup><b>7</b></sup> This your stature is like a palm tree, / And your breasts are <i>like</i> the clusters.<br><br>
+     <sup><b>8</b></sup> I said, I will climb the palm tree; / I will take hold of its branches; / And let your breasts be like clusters of the vine, / And the fragrance of your nose like apples,<br><br>
+     <sup><b>9</b></sup> And the roof of your mouth like the best wine — Going down smoothly for my beloved, / Gliding through the lips of those who sleep.<br><br>
+     <sup><b>10</b></sup> I am my beloved’s, / And his desire is for me.<br><br>
+     <sup><b>11</b></sup> Come, my beloved, let us go forth into the fields; / Let us lodge in the villages.<br><br>
+     <sup><b>12</b></sup> Let us rise up early for the vineyards; / Let us see if the vine has budded, / <i>If</i> the blossom is open, / <i>If</i> the pomegranates are in bloom; / There I will give you my love.<br><br>
+     <sup><b>13</b></sup> The mandrakes give forth fragrance, / And over our doors are all choice fruits, / New as well as old. / <i>These,</i> my beloved, I have stored up for you.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('song_of_songs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

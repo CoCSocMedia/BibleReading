@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Song of Songs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="songofsongs-8"><a onclick="open_chapter('top', '22-song_of_songs.html')">Song of Songs 8</a></h4>
+  <p><sup><b>1</b></sup> Oh that you were like a brother to me, / Who nursed at my mother’s breasts! / If I found you outside, I would kiss you, / And none would despise me.<br><br>
+     <sup><b>2</b></sup> I would lead you <i>and</i> bring you / Into my mother’s house, / Who has instructed me; / I would make you drink spiced wine / From the juice of my pomegranate.<br><br>
+     <sup><b>3</b></sup> His left hand would be under my head, / And his right hand would embrace me.<br><br>
+     <sup><b>4</b></sup> I adjure you, O daughters of Jerusalem, / Do not rouse up or awaken <i>my</i> love / Until she pleases.<br><br>
+     <sup><b>5</b></sup> Who is this who comes up from the wilderness, / Leaning on her beloved? / I awakened you under the apple tree: / There your mother was in labor with you; / There she was in labor <i>and</i> brought you forth.<br><br>
+     <sup><b>6</b></sup> Set me as a seal on your heart, / As a seal on your arm; / For love is as strong as death, / Jealousy is as cruel as Sheol; / Its flashes are the flashes of fire, / A flame of Jehovah.<br><br>
+     <sup><b>7</b></sup> Many waters cannot quench love, / Nor do floods drown it. / If a man gave all the substance of his house for love, / It would be utterly despised.<br><br>
+     <sup><b>8</b></sup> We have a little sister, / And she has no breasts: / What shall we do for our sister / On the day when she is spoken for?<br><br>
+     <sup><b>9</b></sup> If she is a wall, / We will build on her a battlement of silver; / And if she is a door, / We will enclose her with boards of cedar.<br><br>
+     <sup><b>10</b></sup> I am a wall, and my breasts are like towers; / Then I was in his eyes like one who has found peace.<br><br>
+     <sup><b>11</b></sup> Solomon had a vineyard at Baal-hamon: / He let out the vineyard to keepers; / Each was to bring a thousand <i>shekels</i> of silver for its fruit.<br><br>
+     <sup><b>12</b></sup> My vineyard, which is mine, is before me. / You will have the thousand, O Solomon; / And those who keep its fruit, two hundred.<br><br>
+     <sup><b>13</b></sup> O you who dwell in the gardens, / <i>My</i> companions listen for your voice; / Let me hear <i>it.</i><br><br>
+     <sup><b>14</b></sup> Make haste, my beloved, / And be like a gazelle or a young hart / Upon the mountains of spices.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('song_of_songs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

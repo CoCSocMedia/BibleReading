@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Song of Songs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="songofsongs-5"><a onclick="open_chapter('top', '22-song_of_songs.html')">Song of Songs 5</a></h4>
+  <p><sup><b>1</b></sup> I have come into my garden, my sister, <i>my</i> bride; / I have gathered my myrrh with my spice;I have eaten my honeycomb with my honey; / I have drunk my wine with my milk. / Eat, O friends; / Drink, and drink deeply, O beloved ones!<br><br>
+     <sup><b>2</b></sup> I sleep, but my heart is awake. / A sound! My beloved is knocking. / Open to me, my sister, my love, / My dove, my perfect one; / For my head is drenched with dew, / My locks with the drops of night.<br><br>
+     <sup><b>3</b></sup> I have put off my garment; / How can I put it on <i>again?</i> / I have washed my feet; / How can I dirty them <i>again?</i><br><br>
+     <sup><b>4</b></sup> My beloved put his hand into the opening <i>of the door,</i> / And my inner parts yearned for him.<br><br>
+     <sup><b>5</b></sup> I rose up to open to my beloved; / And my hands dripped with myrrh, / My fingers with liquid myrrh, / Upon the handles of the bolt.<br><br>
+     <sup><b>6</b></sup> I opened to my beloved, / But my beloved had withdrawn; he was gone. / My soul failed when he spoke; / I sought him, but found him not; / I called him — he answered me not.<br><br>
+     <sup><b>7</b></sup> The watchmen who go about the city found me. / They struck me; they wounded me; / The keepers of the walls took my veil from me.<br><br>
+     <sup><b>8</b></sup> I adjure you, O daughters of Jerusalem, / If you find my beloved, / What shall you tell him? / That I am sick with love.<br><br>
+     <sup><b>9</b></sup> What is your beloved more than <i>some other’s</i> beloved, / O you most beautiful among women? / What is your beloved more than <i>some other’s</i> beloved, / That you adjure us so?<br><br>
+     <sup><b>10</b></sup> My beloved is dazzling white yet ruddy, / Distinguished among ten thousand.<br><br>
+     <sup><b>11</b></sup> His head is the finest gold; / His locks are wavy, / As black as a raven.<br><br>
+     <sup><b>12</b></sup> His eyes are like doves / Beside the streams of water, / Bathed in milk, / Fitly set.<br><br>
+     <sup><b>13</b></sup> His cheeks are like a bed of spices, / Mounds of sweetly fragrant herbs; / His lips are lilies, / Dripping with liquid myrrh.<br><br>
+     <sup><b>14</b></sup> His hands are tubes of gold, / Set with beryl; / His belly is an ivory work, / Overlaid with sapphires.<br><br>
+     <sup><b>15</b></sup> His legs are pillars of white marble, / Set upon bases of gold; / His appearance is like Lebanon, / As excellent as the cedars.<br><br>
+     <sup><b>16</b></sup> His mouth is sweetness itself, / And he is altogether desirable. / This is my beloved, and this is my friend, / O daughters of Jerusalem.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('song_of_songs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

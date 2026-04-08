@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/5-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-2"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 2</a></h4>
+  <p><sup><b>1</b></sup> The word which Isaiah the son of Amoz saw concerning Judah and Jerusalem:<br><br>
+     <sup><b>2</b></sup> But in the last days / The mountain of the house of Jehovah will be established / On the top of the mountains; / And it will be lifted up above the hills; / And all the nations will stream to it,<br><br>
+     <sup><b>3</b></sup> And many peoples will come and say, / Come and let us go up to the mountain of Jehovah, / To the house of the God of Jacob, / That He may instruct us in His ways, / And that we may walk in His paths. / For from Zion will go forth instruction, / And the word of Jehovah from Jerusalem;<br><br>
+     <sup><b>4</b></sup> And He will judge between the nations, / And will decide <i>matters</i> for many peoples. / And they will beat their swords into plowshares, / And their spears into pruning knives; / Nation will not lift up sword against nation, / Nor will they learn war anymore.<br><br>
+     <sup><b>5</b></sup> House of Jacob, come and let us walk in the light of Jehovah.<br><br>
+     <sup><b>6</b></sup> For You have abandoned Your people, / The house of Jacob; / Because they are full of <i>customs from</i> the east, / And they are soothsayers like the Philistines, / And they clasp hands with the children of foreigners.<br><br>
+     <sup><b>7</b></sup> Their land is full of silver and gold, / And their treasures are limitless; / Their land is also full of horses, / And their chariots are limitless.<br><br>
+     <sup><b>8</b></sup> And their land is full of idols; / They bow down to the work of their hands, / To that which their fingers have made.<br><br>
+     <sup><b>9</b></sup> Thus the ordinary man is humbled, and the man of distinction is abased — / But do not forgive them.<br><br>
+     <sup><b>10</b></sup> Enter into the rock, / And hide in the dust, / From the dread of Jehovah, / And from the splendor of His majesty.<br><br>
+     <sup><b>11</b></sup> Man’s haughty look will be abased, / And the loftiness of men will be humbled; / But Jehovah alone will be exalted / In that day.<br><br>
+     <sup><b>12</b></sup> For Jehovah of hosts will have a day / Over everything proud and lofty, / And over everything lifted up that it may be abased;<br><br>
+     <sup><b>13</b></sup> Over all the cedars of Lebanon, / Which are lofty and lifted up, / And over all the oaks of Bashan;<br><br>
+     <sup><b>14</b></sup> Over all the lofty mountains, / And over all the hills that are lifted up;<br><br>
+     <sup><b>15</b></sup> Over every high tower, / And over every fortified wall;<br><br>
+     <sup><b>16</b></sup> Over all the ships of Tarshish, / And over all their pleasant artifacts.<br><br>
+     <sup><b>17</b></sup> And the haughtiness of the ordinary man will be humbled, / And the loftiness of the men of distinction will be abased; / But Jehovah alone will be exalted / In that day.<br><br>
+     <sup><b>18</b></sup> And the idols will vanish completely.<br><br>
+     <sup><b>19</b></sup> And <i>men</i> will go into caves in the rocks / And into holes in the dust, / From the dread of Jehovah, / And from the splendor of His majesty, / When He arises to make the earth tremble.<br><br>
+     <sup><b>20</b></sup> In that day a man will cast / His idols of silver and his idols of gold, / Which they made for themselves to bow down to, / To the moles and to the bats,<br><br>
+     <sup><b>21</b></sup> So that they may go into the crevices of the rocks / And into the clefts of the cliffs, / From the dread of Jehovah, / And from the splendor of His majesty, / When He arises to make the earth tremble.<br><br>
+     <sup><b>22</b></sup> Stop regarding man, / Whose <i>life</i> breath is in his nostrils. / For of what <i>value</i> is he considered to be?<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

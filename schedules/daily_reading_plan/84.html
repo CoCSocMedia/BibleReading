@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/25-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ecclesiastes</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ecclesiastes-11"><a onclick="open_chapter('top', '21-ecclesiastes.html')">Ecclesiastes 11</a></h4>
+  <p><sup><b>1</b></sup> Cast your bread upon the surface of the waters, for you will find it in many days.<br><br>
+     <sup><b>2</b></sup> Give a portion to seven, and even to eight, for you do not know what calamity will happen on the earth.<br><br>
+     <sup><b>3</b></sup> If the clouds are full, they pour forth rain on the earth; and whether a tree falls toward the south or toward the north, in the place where it falls, there will it be.<br><br>
+     <sup><b>4</b></sup> He who watches the wind will not sow, and he who looks at the clouds will not reap.<br><br>
+     <sup><b>5</b></sup> Just as you do not know what the path of the wind is <i>or</i> how the bones <i>are</i> <i>formed</i> in the mother’s womb, so you do not know the work of God, who makes everything.<br><br>
+     <sup><b>6</b></sup> In the morning sow your seed, and in the evening do not hold back your hands; for you do not know which will prosper, this one or that, or whether both alike will be good.<br><br>
+     <sup><b>7</b></sup> The light is sweet, and it is pleasant for the eyes to see the sun.<br><br>
+     <sup><b>8</b></sup> Indeed if a man should live many years, let him rejoice in all of them; but let him remember the days of darkness, for they will be many. All that comes is vanity.<br><br>
+     <sup><b>9</b></sup> Rejoice, young man, in your childhood, and let your heart be merry in the days of your youth; and walk in the ways of your heart and in the sight of your eyes. But know that for all these things God will bring you to judgment.<br><br>
+     <sup><b>10</b></sup> So remove vexation from your heart, and put away evil from your flesh; for childhood and the dawn of life are vanity.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ecclesiastes-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

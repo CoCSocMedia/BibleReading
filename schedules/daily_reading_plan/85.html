@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/26-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ecclesiastes</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ecclesiastes-12"><a onclick="open_chapter('top', '21-ecclesiastes.html')">Ecclesiastes 12</a></h4>
+  <p><sup><b>1</b></sup> Remember also your Creator in the days of your youth, before the evil days come and the years draw near when you will say, I have no pleasure in them;<br><br>
+     <sup><b>2</b></sup> Before the sun and the light and the moon and the stars are darkened, and the clouds return after the rain;<br><br>
+     <sup><b>3</b></sup> In the day when the keepers of the house tremble and the men of strength bow themselves and the women who grind cease because they are few, and those who look out of the windows see dimly;<br><br>
+     <sup><b>4</b></sup> And <i>when</i> the doors are shut on the street; when the sound of the grinding is low, and one arises at the sound of a bird, and all the daughters of song are brought low;<br><br>
+     <sup><b>5</b></sup> <i>When</i> also <i>men</i> are afraid of what is high, and terrors are on the way; and the almond tree blossoms, and the grasshopper is a burden, and the caperberry is ineffective (for man will go to his everlasting home while mourners go around in the street);<br><br>
+     <sup><b>6</b></sup> Before the silver cord is undone, and the golden bowl is broken, and the pitcher is shattered at the fountain, and the wheel is broken at the cistern,<br><br>
+     <sup><b>7</b></sup> And the dust returns to the earth as it was, and the breath returns to God who gave it.<br><br>
+     <sup><b>8</b></sup> Vanity of vanities, says the Preacher; all is vanity.<br><br>
+     <sup><b>9</b></sup> And in addition to being wise, the Preacher also taught the people knowledge; and he pondered and studied and arranged many proverbs.<br><br>
+     <sup><b>10</b></sup> The Preacher sought to find pleasing words, and he wrote words of truth rightly.<br><br>
+     <sup><b>11</b></sup> The words of the wise are like goads, and like well-driven nails are the collections <i>of them;</i> they are given by one Shepherd.<br><br>
+     <sup><b>12</b></sup> And of what is beyond these, my son, beware: Of the making of many books there is no end, and much study is a weariness of the flesh.<br><br>
+     <sup><b>13</b></sup> The end of the matter, when all has been heard, <i>is this:</i> Fear God and keep His commandments, for this is the whole of man.<br><br>
+     <sup><b>14</b></sup> For God will bring every deed to judgment, with every secret thing, whether good or evil.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ecclesiastes-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

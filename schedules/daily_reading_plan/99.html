@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/9-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-6"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 6</a></h4>
+  <p><sup><b>1</b></sup> In the year that King Uzziah died I saw the Lord sitting on a high and lofty throne, and the train of His robe filled the temple.<br><br>
+     <sup><b>2</b></sup> Seraphim hovered over Him, each having six wings: With two he covered his face, and with two he covered his feet, and with two he flew.<br><br>
+     <sup><b>3</b></sup> And one called to the other, saying:Holy, holy, holy, Jehovah of hosts; / The whole earth is filled with His glory.<br><br>
+     <sup><b>4</b></sup> And the foundations of the threshold shook at the voice of him who called, and the house was filled with smoke.<br><br>
+     <sup><b>5</b></sup> Then I said,Woe is me, for I am finished! / For I am a man of unclean lips, / And in the midst of a people of unclean lips I dwell; / Yet my eyes have seen the King, Jehovah of hosts.<br><br>
+     <sup><b>6</b></sup> Then one of the seraphim flew to me with an ember in his hand, <i>which</i> he had taken from the altar with a pair of tongs.<br><br>
+     <sup><b>7</b></sup> And he touched my mouth <i>with it</i> and said,Now that this has touched your lips, / Your iniquity is taken away, and your sin is purged.<br><br>
+     <sup><b>8</b></sup> Then I heard the voice of the Lord, saying, Whom shall I send? Who will go for Us? And I said, Here am I; send me.<br><br>
+     <sup><b>9</b></sup> And He said, Go and say to this people,Hear indeed, but do not perceive; / And see indeed, but do not understand.<br><br>
+     <sup><b>10</b></sup> Make the heart of this people numb; / Dull their ears, / And seal their eyes; / Lest they see with their eyes and hear with their ears, / And their heart perceive and return, and they are healed.<br><br>
+     <sup><b>11</b></sup> And I said, For how long, Lord? And He said, / Until cities lie devastated, / Without inhabitants, / And houses are without people, / And the land is devastated <i>and</i> a waste;<br><br>
+     <sup><b>12</b></sup> And Jehovah has sent men far away <i>from it,</i> / And desolate places abound in the midst of the land.<br><br>
+     <sup><b>13</b></sup> But there will still be a tenth part in it; / And it in turn is to be burned / Like a terebinth or an oak, / Whose stump remains after its felling; / Its stump will be a holy seed.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

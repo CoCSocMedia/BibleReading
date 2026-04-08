@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Song of Songs</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="songofsongs-2"><a onclick="open_chapter('top', '22-song_of_songs.html')">Song of Songs 2</a></h4>
+  <p><sup><b>1</b></sup> I am a rose of Sharon, / A lily of the valleys.<br><br>
+     <sup><b>2</b></sup> As a lily among thorns, / So is my love among the daughters.<br><br>
+     <sup><b>3</b></sup> As the apple tree among the trees of the wood, / So is my beloved among the sons: In his shade I delighted and sat down, / And his fruit was sweet to my taste.<br><br>
+     <sup><b>4</b></sup> He brought me into the banqueting house, / And his banner over me was love.<br><br>
+     <sup><b>5</b></sup> Sustain me with raisin cakes, / Refresh me with apples, / For I am sick with love.<br><br>
+     <sup><b>6</b></sup> His left hand is under my head, / And his right hand embraces me.<br><br>
+     <sup><b>7</b></sup> I adjure you, O daughters of Jerusalem, / By the gazelles or by the hinds of the fields, / Not to rouse up or awaken <i>my</i> love / Until she pleases.<br><br>
+     <sup><b>8</b></sup> The voice of my beloved! Now he comes, / Leaping upon the mountains, / Skipping upon the hills.<br><br>
+     <sup><b>9</b></sup> My beloved is like a gazelle or a young hart. / Now he stands behind our wall; / He is looking through the windows, / He is glancing through the lattice.<br><br>
+     <sup><b>10</b></sup> My beloved responds and says to me, / Rise up, my love, / My beauty, and come <i>away;</i><br><br>
+     <sup><b>11</b></sup> For now the winter is past; / The rain is over <i>and</i> gone.<br><br>
+     <sup><b>12</b></sup> Flowers appear on the earth; / The time of singing has come, / And the voice of the turtledove is heard in our land.<br><br>
+     <sup><b>13</b></sup> The fig tree has ripened its figs, / And the vines are in blossom — they give forth their fragrance. / Rise up, my love, / My beauty, and come <i>away.</i><br><br>
+     <sup><b>14</b></sup> My dove, in the clefts of the rock, / In the covert of the precipice,Let me see your countenance, / Let me hear your voice; / For your voice is sweet, / And your countenance is lovely.<br><br>
+     <sup><b>15</b></sup> Catch the foxes for us, / The little foxes, / That ruin the vineyards / While our vineyards are in blossom.<br><br>
+     <sup><b>16</b></sup> My beloved is mine, and I am his; / He pastures <i>his flock</i> among the lilies.<br><br>
+     <sup><b>17</b></sup> Until the day dawns and the shadows flee away, / Turn, my beloved, <i>and</i> be like a gazelle or a young hart / On the mountains of Bether.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('song_of_songs-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

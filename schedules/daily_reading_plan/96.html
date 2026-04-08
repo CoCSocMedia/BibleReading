@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-3"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 3</a></h4>
+  <p><sup><b>1</b></sup> For now the Lord Jehovah of hosts / Is taking away from Jerusalem and from Judah / Every kind of support — / All the support of bread / And all the support of water;<br><br>
+     <sup><b>2</b></sup> The mighty man and the man of war, / The judge and the prophet, / And the diviner and the elder;<br><br>
+     <sup><b>3</b></sup> The captain of fifty and the highly regarded; / And the counselor, the wise magician, and the knowledgeable enchanter.<br><br>
+     <sup><b>4</b></sup> And I will make youths their rulers, / And capriciousness will rule over them.<br><br>
+     <sup><b>5</b></sup> And the people will be oppressed, each by the other, / And each by his neighbor. / The youth will be arrogant to the elder, / And the contemned one to the one who is honored.<br><br>
+     <sup><b>6</b></sup> When a man takes hold of his brother / In his father’s house <i>and says,</i> / You have clothing, you be our ruler, / And these ruins will be under your hand;<br><br>
+     <sup><b>7</b></sup> He will solemnly say, / I will not be the one who binds <i>your wounds,</i> / For in my house there is no food or clothing; / Do not appoint me as ruler of the people.<br><br>
+     <sup><b>8</b></sup> For Jerusalem stumbles, / And Judah falls, / Because their speech and their actions are against Jehovah, / To rebel against the eyes of His glory.<br><br>
+     <sup><b>9</b></sup> The countenance of their faces witnesses against them, / And they declare their sin like Sodom; / They do not hide it. / Woe to their soul! / For they have brought evil upon themselves.<br><br>
+     <sup><b>10</b></sup> Say to the righteous that <i>it will go</i> well <i>with them,</i> / For they will eat the fruit of their actions.<br><br>
+     <sup><b>11</b></sup> Woe to the wicked man! <i>It will go</i> badly <i>with him;</i> / For the result of his deeds will be done to him.<br><br>
+     <sup><b>12</b></sup> My people — their oppressors are children, / And women rule over them. / O My people, those who lead you are leading you astray; / And the path for your ways they have hidden.<br><br>
+     <sup><b>13</b></sup> Jehovah stands firm to contend, / And He stands to judge the people.<br><br>
+     <sup><b>14</b></sup> Jehovah will enter into judgment / With the elders of His people and their rulers. / <i>It is</i> you <i>who</i> have consumed the vineyard; / The spoil of the poor is in your houses.<br><br>
+     <sup><b>15</b></sup> What do you mean by crushing My people / And grinding the faces of the poor? / Declares the Lord Jehovah of hosts.<br><br>
+     <sup><b>16</b></sup> Moreover Jehovah said, / Because the daughters of Zion are haughty, / And walk around with outstretched necks / And lusting eyes, / And trip along with quick, little steps, / And rattle the anklets on their feet;<br><br>
+     <sup><b>17</b></sup> The Lord will strike the scalp of the daughters of Zion with scabs, / And Jehovah will expose their secret parts.<br><br>
+     <sup><b>18</b></sup> In that day the Lord will remove the beauty of <i>their</i> anklets, headbands, and crescents;<br><br>
+     <sup><b>19</b></sup> The ear pendants, the bracelets, and the costly veils;<br><br>
+     <sup><b>20</b></sup> The headdresses, the ankle chains, the sashes, the bottles of aromas, and the amulets;<br><br>
+     <sup><b>21</b></sup> The <i>finger</i> rings and the nose rings;<br><br>
+     <sup><b>22</b></sup> The formal gowns, the frocks, the wraps, and the purses;<br><br>
+     <sup><b>23</b></sup> The mirrors, the fine linen garments, the turbans, and the veils.<br><br>
+     <sup><b>24</b></sup> And instead of a sweet smell there will be rottenness; / And instead of a belt, an encircling rope; / Instead of well-set hair, baldness; / And instead of fine garments, the girding of oneself with sackcloth; / A brand instead of beauty.<br><br>
+     <sup><b>25</b></sup> Your men will fall by the sword, / And your mighty, in battle;<br><br>
+     <sup><b>26</b></sup> Then her gates will mourn and lament, / And she, being desolated, will sit on the ground.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
