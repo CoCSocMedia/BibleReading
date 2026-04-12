@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/12-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-9"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 9</a></h4>
+  <p><sup><b>1</b></sup> But gloom <i>does</i> not <i>remain in the place</i> where there was anguish: formerly He treated the land of Zebulun and the land of Naphtali contemptibly, but afterward He treats the way of the sea, across the Jordan, with glory, Galilee of the nations.<br><br>
+     <sup><b>2</b></sup> The people who walked in the darkness / Have seen a great light; / Upon those who dwell in the land of the shadow of death / Light has shined.<br><br>
+     <sup><b>3</b></sup> You have multiplied the nation; / You have increased their gladness; / They are glad before You as with the gladness of harvest, / As <i>men</i> rejoice when they divide the spoil.<br><br>
+     <sup><b>4</b></sup> For You break the yoke of their burden / And the staff on their shoulder, / The rod of their oppressor, / As in the day of Midian.<br><br>
+     <sup><b>5</b></sup> For all the boots / Of those who in boots trample in the battle-quake / And the garments / Rolled in blood / Are for burning; / <i>They are</i> fuel for fire.<br><br>
+     <sup><b>6</b></sup> For a child is born to us, / A Son is given to us; / And the government / Is upon His shoulder; / And His name will be called / Wonderful Counselor, / Mighty God, / Eternal Father, / Prince of Peace.<br><br>
+     <sup><b>7</b></sup> To the increase of <i>His</i> government / And to <i>His</i> peace there is no end, / Upon the throne of David / And over His kingdom, / To establish it / And to uphold it / In justice and righteousness / From now to eternity. / The zeal of Jehovah of hosts / Will accomplish this.<br><br>
+     <sup><b>8</b></sup> The Lord sends out a word against Jacob, / And it descends upon Israel.<br><br>
+     <sup><b>9</b></sup> And all the people know <i>it,</i> / Ephraim and the inhabitants of Samaria, / Saying in pride and haughtiness of heart,<br><br>
+     <sup><b>10</b></sup> The bricks have fallen, but we will build with cut stone; / The sycamores have been felled, but we will put cedars in their place.<br><br>
+     <sup><b>11</b></sup> Then Jehovah exalts the adversaries of Rezin against them / And goads their enemies on.<br><br>
+     <sup><b>12</b></sup> Aram from the east and the Philistines from the west: / They devour Israel with an open mouth. / By all this His anger is not turned; / His hand is still outstretched.<br><br>
+     <sup><b>13</b></sup> Yet the people do not turn to Him who strikes them, / Nor do they seek Jehovah of hosts.<br><br>
+     <sup><b>14</b></sup> Then Jehovah cuts off from Israel head and tail, / Palm branch and marsh reed in one day.<br><br>
+     <sup><b>15</b></sup> The elder and the highly regarded — he is the head; / The prophet <i>and</i> the teacher of falsehood — he is the tail.<br><br>
+     <sup><b>16</b></sup> And those who lead this people are those who mislead <i>them;</i> / And those who are led are those who are confused.<br><br>
+     <sup><b>17</b></sup> Because of this the Lord will not rejoice in their young men, / And He will not have compassion on their orphans and widows; / For all of them are profane and evildoers, / And every mouth speaks foolishness. / By all this His anger is not turned; / His hand is still outstretched.<br><br>
+     <sup><b>18</b></sup> For wickedness burns like a fire; / It devours thorn and thistle, / And burns in the forest thickets; / And they roll up <i>into</i> a column of smoke.<br><br>
+     <sup><b>19</b></sup> At the overflowing wrath of Jehovah of hosts a land is burned up, / And the people are like fuel for fire; / No one spares <i>even</i> his brother.<br><br>
+     <sup><b>20</b></sup> One carves on the right side, but is hungry; / And <i>another</i> eats on the left side, but is not satisfied. / Each eats the flesh of his own arm:<br><br>
+     <sup><b>21</b></sup> Manasseh, Ephraim, and Ephraim, Manasseh; / These together against Judah. / By all this His anger is not turned; / His hand is still outstretched.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/14-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-11"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 11</a></h4>
+  <p><sup><b>1</b></sup> Then a sprout will come forth from the stump of Jesse, / And a branch from his roots will bear fruit.<br><br>
+     <sup><b>2</b></sup> And the Spirit of Jehovah will rest upon Him, / The Spirit of wisdom and understanding, / The Spirit of counsel and might, / The Spirit of the knowledge and fear of Jehovah.<br><br>
+     <sup><b>3</b></sup> He will delight in the fear of Jehovah: / He will neither judge by what His eyes see, / Nor decide by what His ears hear.<br><br>
+     <sup><b>4</b></sup> But He will judge the poor in righteousness, / And decide with equity for the afflicted of the land. / And He will strike the land with the rod of His mouth, / And with the breath of His lips He will slay the wicked.<br><br>
+     <sup><b>5</b></sup> Righteousness will be that which girds His loins, / And faithfulness will be that which girds His hips.<br><br>
+     <sup><b>6</b></sup> And the wolf will dwell with the lamb; / And the leopard will lie down with the kid, / And the calf and the young lion and the fatling together; / And a young boy will lead them about.<br><br>
+     <sup><b>7</b></sup> The cow and the bear will graze; / Their young will lie down together; / And the lion will eat straw like the ox.<br><br>
+     <sup><b>8</b></sup> The nursing child will play by the cobra’s hole, / And upon the viper’s den / The weaned child will stretch his hand.<br><br>
+     <sup><b>9</b></sup> They will not harm nor destroy / In all My holy mountain, / For the earth will be filled with the knowledge of Jehovah, / As water covers the sea.<br><br>
+     <sup><b>10</b></sup> And in that day the root of Jesse, / Who stands as a banner to the peoples — / Him will the nations seek, / And His resting place will be the glory.<br><br>
+     <sup><b>11</b></sup> And in that day the Lord, / By His hand for the second time again, / Will recover the remnant of His people / Who remain, from Assyria and from Egypt, / From Pathros, Cush, and Elam, / From Shinar, Hamath, and the islands of the sea.<br><br>
+     <sup><b>12</b></sup> He will lift up a standard to the nations, / And will gather the outcasts of Israel; / And the dispersed of Judah He will assemble / From the four corners of the earth.<br><br>
+     <sup><b>13</b></sup> And Ephraim’s jealousy will depart, / And the adversaries in Judah will be cut off; / Ephraim will not be jealous of Judah, / Nor will Judah be hostile to Ephraim.<br><br>
+     <sup><b>14</b></sup> And they will fly down upon the shoulders of the Philistines on the west; / Together they will plunder the children of the east. / Edom and Moab will come into the grasp of their hand, / And the children of Ammon will submit to them.<br><br>
+     <sup><b>15</b></sup> And Jehovah will utterly destroy the tongue of the sea of Egypt; / And will wave His hand over the River with the scorching of His wind, / And He will strike it into seven streams, / And march <i>men</i> through it dryshod.<br><br>
+     <sup><b>16</b></sup> And there will be a highway from Assyria / For the remnant of His people which remain, / As there was for Israel / In the day that they came up from the land of Egypt.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
