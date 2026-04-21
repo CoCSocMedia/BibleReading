@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-12"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 12</a></h4>
+  <p><sup><b>1</b></sup> And you will say in that day, / I will praise You, O Jehovah. You were angry with me, / <i>But</i> Your anger has turned and You have consoled me.<br><br>
+     <sup><b>2</b></sup> God is now my salvation; / I will trust and not dread; / For Jah Jehovah is my strength and song, / And He has become my salvation.<br><br>
+     <sup><b>3</b></sup> Therefore you will draw water with rejoicing / From the springs of salvation,<br><br>
+     <sup><b>4</b></sup> And you will say in that day, / Give thanks to Jehovah; call upon His name! / Make His deeds known among the peoples; / Remind <i>them</i> that His name is exalted.<br><br>
+     <sup><b>5</b></sup> Sing psalms to Jehovah, for He has done something majestic! / Let it be made known in all the earth!<br><br>
+     <sup><b>6</b></sup> Cry out and give a ringing shout, O inhabitant of Zion, / For great in your midst is the Holy One of Israel.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

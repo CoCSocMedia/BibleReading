@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/19-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-16"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 16</a></h4>
+  <p><sup><b>1</b></sup> Send a lamb <i>of tribute</i> / To the ruler of the land, / From Sela across the wilderness / To the mountain of the daughter of Zion.<br><br>
+     <sup><b>2</b></sup> Like wandering birds, / <i>Like</i> a scattered nest, / Will the daughters of Moab be / At the fords of the Arnon.<br><br>
+     <sup><b>3</b></sup> Give <i>us</i> counsel, / Make a judgment <i>concerning us.</i> / Make your shadow at high noon / Like night <i>to us.</i> / Hide the outcasts; / Do not expose him who wanders.<br><br>
+     <sup><b>4</b></sup> Let the outcasts of Moab / Dwell with you; / Be a hiding place to them / From the destroyer. / When the extortioner finishes / <i>And</i> destruction ends, / <i>When</i> the oppressor is completely <i>gone</i> from the land,<br><br>
+     <sup><b>5</b></sup> Then will a throne be established in lovingkindness, / And upon it One will sit in truth / In the tent of David, / Judging and pursuing justice / And hastening righteousness.<br><br>
+     <sup><b>6</b></sup> We have heard of the pride of Moab — / He is extremely proud — / Of his haughtiness and pride and insolence; / His boastings are <i>all</i> untrue.<br><br>
+     <sup><b>7</b></sup> Therefore Moab will howl for Moab; / They all will howl. / For the raisin cakes of Kir-hareseth / You will mourn, utterly stricken.<br><br>
+     <sup><b>8</b></sup> Because the fields of Heshbon have withered, / <i>And</i> the vine of Sibmah, <i>too.</i> / The lords of the nations / Have trampled under its choicest vines, / Which reached as far as Jazer, / Which meandered into the desert. / Its shoots spread abroad; / They crossed over <i>to</i> the sea.<br><br>
+     <sup><b>9</b></sup> Therefore I will weep bitterly for Jazer, / For the vine of Sibmah; / I will soak you with my tears, / Heshbon and Elealeh. / For the harvest shout is hushed / Over your summer fruit and over your reapings.<br><br>
+     <sup><b>10</b></sup> Rejoicing is taken away, and exultation from the fruited field; / In the vineyards there will be no singing for joy; no shouts will be uttered. / The treader will not tread out wine in the presses — / I have made the harvest shout stop.<br><br>
+     <sup><b>11</b></sup> Therefore for Moab my bowels will moan like a lyre, / And my inward parts for Kir-heres.<br><br>
+     <sup><b>12</b></sup> And when Moab appears, / When they weary themselves at their high place, / And come to their sanctuary to pray, / It will not avail.<br><br>
+     <sup><b>13</b></sup> This is the word which Jehovah spoke concerning Moab long ago.<br><br>
+     <sup><b>14</b></sup> And now Jehovah has spoken, saying, Within three years, like the years of a hired man, the glory of Moab will be disgraced, with all its great multitude, and <i>its</i> remnant will be small — a mere trifle, nothing great.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

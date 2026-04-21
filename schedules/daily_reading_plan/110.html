@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/20-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-17"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 17</a></h4>
+  <p><sup><b>1</b></sup> The burden concerning Damascus: See, Damascus — turned from <i>being</i> a city, / It will become a heap of ruin.<br><br>
+     <sup><b>2</b></sup> The cities of Aroer will be forsaken; / They will be for flocks / That lie down with no one to frighten them.<br><br>
+     <sup><b>3</b></sup> And fortified cities will cease to be in Ephraim, / As well as the kingdom in Damascus; / And the remnant of Syria / Will be like the glory of the children of Israel, / Declares Jehovah of hosts.<br><br>
+     <sup><b>4</b></sup> In that day the glory of Jacob will fade, / And the fat of his flesh will become lean.<br><br>
+     <sup><b>5</b></sup> And it will be as when the reaper gathers the standing grain, / And his arms reap the ears; / And it will be as when one gleans the ears / In the valley of Rephaim.<br><br>
+     <sup><b>6</b></sup> Yet gleanings will be left in it, / Like at the shaking of an olive tree — / Two or three fruit at the very top, / Four or five in the boughs of the fruiting <i>tree</i> — / Declares Jehovah the God of Israel.<br><br>
+     <sup><b>7</b></sup> In that day man will look to his Maker, / And his eyes will behold the Holy One of Israel.<br><br>
+     <sup><b>8</b></sup> And he will not look to the altars, the works of his hands; / And what his fingers have made he will not regard, / That is, the Asherahs and the images to the sun.<br><br>
+     <sup><b>9</b></sup> In that day his cities of protection will be / Like abandoned places of the forest and <i>like</i> the mountaintop / Which was abandoned before the children of Israel; / And there will be desolation.<br><br>
+     <sup><b>10</b></sup> For you have forgotten the God of your salvation, / And the Rock of your stronghold you have not remembered. / Therefore you plant plants of delight / And set them with plant cuttings to a strange <i>god.</i><br><br>
+     <sup><b>11</b></sup> On the day that you plant <i>them</i> you fence <i>them</i> in carefully, / And in the morning you bring your seed to blossom; / <i>But</i> the harvest is a heap on a day of sickness / And incurable pain.<br><br>
+     <sup><b>12</b></sup> Woe! The roar of many peoples, / Who roar like the roaring of the seas; / The din of nations, / Who crash like the crashing of mighty waters!<br><br>
+     <sup><b>13</b></sup> The nations crash like the crashing of many waters. / But He will rebuke them; / And they will flee far away, / And will be chased like mountain chaff before the wind / And like a whirlwind of dust before storm wind.<br><br>
+     <sup><b>14</b></sup> At evening time, indeed, there is calamity; / Before the morning they are no more. / This is the portion of those who plunder us, / And the allotment of those who take us as spoil.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

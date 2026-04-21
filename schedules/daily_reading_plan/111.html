@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/21-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-18"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 18</a></h4>
+  <p><sup><b>1</b></sup> Woe to the land of the whirring of wings, / Which is beyond the rivers of Cush,<br><br>
+     <sup><b>2</b></sup> <i>The land</i> that sends envoys on the sea, / Even in papyrus vessels upon the surface of the water. / Go, swift messengers, / To a nation tall and smooth <i>of skin,</i> / To a people feared from there and beyond, / A nation of command upon command and of treading down <i>others,</i> / Whose land the rivers cut through.<br><br>
+     <sup><b>3</b></sup> All you inhabitants of the world and dwellers on the earth, / When the standard is raised on the mountains, you will see <i>it;</i> / And when the horn is blown, you will hear <i>it.</i><br><br>
+     <sup><b>4</b></sup> For thus has Jehovah spoken to me, / I will be quiet and observe in My lodging place, / Like glowing heat in the sunshine, / Like a cloud of dew in the heat of harvest.<br><br>
+     <sup><b>5</b></sup> For before the harvest, when the bud is full / And the flower becomes the ripening grape, / He will cut off the sprigs with pruning knives, / And the tendrils He will remove <i>and</i> cut away.<br><br>
+     <sup><b>6</b></sup> They will be left together for the mountain birds / And for the beasts of the earth. / And the birds will spend summer on them, / And all the beasts of the earth will spend harvest time on them.<br><br>
+     <sup><b>7</b></sup> At that time a gift will be brought to Jehovah of hosts from a people tall and smooth <i>of skin,</i> even from a people feared from there and beyond, a nation of command upon command and of treading down <i>others,</i> whose land the rivers cut through, unto the place of the name of Jehovah of hosts, Mount Zion.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

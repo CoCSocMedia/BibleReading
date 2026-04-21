@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/16-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-13"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 13</a></h4>
+  <p><sup><b>1</b></sup> The burden concerning Babylon, which Isaiah the son of Amoz saw:<br><br>
+     <sup><b>2</b></sup> Upon a bare mountain raise up a standard; / Lift up <i>your</i> voice to them. / Wave <i>your</i> hand that they may enter / The gates of the nobles.<br><br>
+     <sup><b>3</b></sup> I Myself have commanded My sanctified ones; / I have also called My mighty ones to My wrath, / Those who exult in My majesty.<br><br>
+     <sup><b>4</b></sup> The sound of a tumult in the mountains, / Like that of many peoples! / The sound of an uproar of the kingdoms, / Of nations gathered together! / Jehovah of hosts is mustering / An army for battle.<br><br>
+     <sup><b>5</b></sup> They are coming from a distant land, / From the ends of heaven — / Jehovah and the instruments of His indignation — / To ruin all the land.<br><br>
+     <sup><b>6</b></sup> Howl, for the day of Jehovah has drawn near! / As destruction from the Almighty, it will come.<br><br>
+     <sup><b>7</b></sup> Because of this all the hands will drop, / And every human heart will melt;<br><br>
+     <sup><b>8</b></sup> And <i>people</i> will be dismayed. / Pangs and anguish will seize them; / Like a woman giving birth, they will writhe. / Each man will look toward his neighbor dumbfounded; / Their faces are inflamed.<br><br>
+     <sup><b>9</b></sup> Now the day of Jehovah is coming — / Cruel and <i>with</i> overflowing wrath and burning anger — / To make the land a desolation; / And He will destroy its sinners off of it.<br><br>
+     <sup><b>10</b></sup> For the stars of heaven and their constellations / Will not shine forth their light; / The sun will be dark at its rising, / And the moon will not let its light shine.<br><br>
+     <sup><b>11</b></sup> And I will punish the world for <i>its</i> evil, / And the wicked for their iniquity; / I will stop the arrogance of the proud, / And the haughtiness of the terrible I will abase.<br><br>
+     <sup><b>12</b></sup> I will make mortal man rarer than pure gold, / And mankind <i>rarer</i> than the gold of Ophir.<br><br>
+     <sup><b>13</b></sup> Hence, I will make the heavens shake, / And the earth will quake out of its place, / At the overflowing wrath of Jehovah of hosts, / In the day of His burning anger.<br><br>
+     <sup><b>14</b></sup> And like the hunted gazelle / And sheep without someone to gather <i>them,</i> / Each man will turn to his own people, / And each will flee to his own land.<br><br>
+     <sup><b>15</b></sup> Everyone found will be pierced through, / And everyone caught will fall by the sword.<br><br>
+     <sup><b>16</b></sup> And their little ones will be dashed to pieces / Before their eyes; / Their houses will be plundered, / And their wives will be attacked.<br><br>
+     <sup><b>17</b></sup> Now I rouse up the Medes against them, / Who will not esteem silver highly, / Nor take delight in gold.<br><br>
+     <sup><b>18</b></sup> <i>Their</i> bows will shatter the young men; / And they will not have compassion on the fruit of the womb: / Their eyes will have no pity on children.<br><br>
+     <sup><b>19</b></sup> And Babylon, the beauty of kingdoms, / The glory of the Chaldeans’ majesty, / Will be as when God overthrew / Sodom and Gomorrah:<br><br>
+     <sup><b>20</b></sup> It will not be inhabited forever; / It will not be dwelt in from generation to generation. / And the Arab will not set up his tent there, / Nor will the shepherds make <i>their flocks</i> lie down there.<br><br>
+     <sup><b>21</b></sup> But desert animals will lie down there, / And their houses will be full of wild dogs; / There ostriches will dwell, / And wild goats will prance there;<br><br>
+     <sup><b>22</b></sup> Hyenas will respond in their citadels, / And jackals in <i>their</i> exquisite palaces. / Her time is about to come, / And her days will not be prolonged.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
