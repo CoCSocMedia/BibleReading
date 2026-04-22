@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/23-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-20"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 20</a></h4>
+  <p><sup><b>1</b></sup> In the year that the Tartan came to Ashdod, when Sargon the king of Assyria sent him, and he fought against Ashdod and took it,<br><br>
+     <sup><b>2</b></sup> At that time Jehovah spoke through Isaiah the son of Amoz, saying, Go and loosen the sackcloth from your loins and take your sandals off your feet. And he did so, going about stripped and barefooted.<br><br>
+     <sup><b>3</b></sup> And Jehovah said, Just as My servant Isaiah has gone about stripped and barefoot for three years as a sign and a wonder against Egypt and Cush,<br><br>
+     <sup><b>4</b></sup> So shall the king of Assyria lead away the captives of Egypt and the exiles of Cush, young men and old men, stripped and barefoot, with their buttocks uncovered, to Egypt’s shame.<br><br>
+     <sup><b>5</b></sup> And they will be dismayed and ashamed of Cush, their expectation, and of Egypt, their boast.<br><br>
+     <sup><b>6</b></sup> And the inhabitant of this coastland will say in that day, Such is now our expectation, to whom we fled for help to be delivered from the king of Assyria! And how shall we escape?<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
