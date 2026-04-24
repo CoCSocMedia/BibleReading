@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/24-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-21"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 21</a></h4>
+  <p><sup><b>1</b></sup> The burden concerning the wilderness of the sea: / Like storm winds / In the Negev passing through, / It comes from the wilderness / From an awesome land.<br><br>
+     <sup><b>2</b></sup> A harsh vision / Has been announced to me; / The unfaithful one deals unfaithfully, / And the destroyer destroys. / Go up, Elam; / Lay siege, Media; / I have put an end / To all her groaning.<br><br>
+     <sup><b>3</b></sup> Therefore my loins / Are full of anguish; / Pangs have taken hold of me / Like the pangs of a woman in labor. / I am bent over at the hearing <i>of it;</i> / I am terrified at the seeing <i>of it.</i><br><br>
+     <sup><b>4</b></sup> My heart reels; / Shuddering overwhelms me. / The twilight that I love / Has become a <i>source of</i> trembling to me.<br><br>
+     <sup><b>5</b></sup> Setting the table! / Spreading out the rug! / Eating! Drinking! / Rise, princes; / Oil the shields.<br><br>
+     <sup><b>6</b></sup> For thus says / The Lord to me, / Go, set a watchman; / Let him report what he sees.<br><br>
+     <sup><b>7</b></sup> And he saw riders, / A team of horsemen; / Riders of donkeys, / Riders of camels; / And he attends with attention, / With much attention.<br><br>
+     <sup><b>8</b></sup> And he calls out <i>like</i> a lion: / On the watchtower, Lord, / I stand continually by day; / At my guardpost / I am stationed / Every night.<br><br>
+     <sup><b>9</b></sup> And now there come / Riding men, / A team of horsemen. / And one answers and says, / Fallen, fallen is Babylon! / And all the idols of her gods / Has He shattered to the ground.<br><br>
+     <sup><b>10</b></sup> My threshed ones, / And the son of the threshing floor! / What I have heard / From Jehovah of hosts, / The God of Israel, / I have declared to you.<br><br>
+     <sup><b>11</b></sup> The burden concerning Dumah: / Someone is calling to me from Seir: / Guard, what <i>remains</i> of the night? / Guard, what <i>remains</i> of the night?<br><br>
+     <sup><b>12</b></sup> The guard says, / Morning is coming, / But so also is night; / If you will ask, ask; / Return, come.<br><br>
+     <sup><b>13</b></sup> The burden against Arabia: / In the thicket of Arabia you must spend the night, / You nomad clans of the Dedanim.<br><br>
+     <sup><b>14</b></sup> They bring water / To meet the thirsty; / The inhabitants of the land of Tema / Meet with bread those who flee;<br><br>
+     <sup><b>15</b></sup> For they flee from swords — / From the drawn sword, / From the bent bow, / And from the harshness of battle.<br><br>
+     <sup><b>16</b></sup> For thus has the Lord said to me, Within a year, like a wage worker’s year, all the glory of Kedar will end,<br><br>
+     <sup><b>17</b></sup> And the remainder of the number of the archers, the mighty men of the sons of Kedar, will be few; for Jehovah the God of Israel has spoken.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
