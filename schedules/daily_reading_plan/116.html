@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/26-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-23"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 23</a></h4>
+  <p><sup><b>1</b></sup> The burden concerning Tyre: / Howl, O ships of Tarshish, / For it is destroyed — lacking house, / Lacking entrance. From <i>as far away as</i> the land of Kittim / It is told to them.<br><br>
+     <sup><b>2</b></sup> Hush, you inhabitants of the coastland, / You, whom the merchants of Sidon, / Who cross the sea, have replenished.<br><br>
+     <sup><b>3</b></sup> And by <i>way of</i> many waters / The grain of Shihor, the harvest of the Nile, was her revenue; / And she was profit to the nations.<br><br>
+     <sup><b>4</b></sup> Be ashamed, O Sidon, for the sea has spoken, / The stronghold of the sea, saying, / I have not been in labor nor given birth; / Neither have I brought up young men, / <i>Nor</i> have I raised virgins.<br><br>
+     <sup><b>5</b></sup> When the report <i>reaches</i> Egypt, / They will writhe in pain at the report concerning Tyre.<br><br>
+     <sup><b>6</b></sup> Cross over to Tarshish; / Howl, you inhabitants of the coastland.<br><br>
+     <sup><b>7</b></sup> Is this your jubilant <i>city,</i> / Whose antiquity is from the days of antiquity, / Whose feet carried her off afar to sojourn?<br><br>
+     <sup><b>8</b></sup> Who has purposed this / Against Tyre, the giver of crowns, / Whose merchants were princes, / Whose traders were the honorable of the earth?<br><br>
+     <sup><b>9</b></sup> Jehovah of hosts has purposed it, / To defile the pride of all beauty, / To bring into contempt all the honorable of the earth.<br><br>
+     <sup><b>10</b></sup> Overflow your land like a river, O daughter of Tarshish; / There is no more restraint.<br><br>
+     <sup><b>11</b></sup> He has stretched out His hand over the sea; / He has shaken kingdoms. / Jehovah has given commandment concerning Canaan / To destroy its strongholds.<br><br>
+     <sup><b>12</b></sup> And He has said, You shall not continue to exult any longer, / O crushed virgin daughter of Sidon. / Arise; cross over to Kittim — / There also you will have no rest.<br><br>
+     <sup><b>13</b></sup> See the land of the Chaldeans, this people! They were not — the Assyrians assigned it to desert animals; they raised their siege towers; they stripped their citadels; they brought it to ruin.<br><br>
+     <sup><b>14</b></sup> Howl, O ships of Tarshish, / For your stronghold is destroyed.<br><br>
+     <sup><b>15</b></sup> In that day Tyre will be forgotten for seventy years, like the days of one king. At the end of the seventy years Tyre will be like <i>her in</i> the harlot’s song:<br><br>
+     <sup><b>16</b></sup> Take a harp; / Compass the city, / Forgotten harlot. / Play well; / Abound in song, / That you may be remembered.<br><br>
+     <sup><b>17</b></sup> And at the end of the seventy years Jehovah will visit Tyre. And she will return to the wages of her harlotry and will be a harlot to all the kingdoms of the earth on land’s surface.<br><br>
+     <sup><b>18</b></sup> And her profit and the wages of her harlotry will be dedicated to Jehovah; it will not be stored up, nor will it be hoarded, for her profit will be for those who dwell before Jehovah, as <i>their</i> sufficient food and <i>their</i> choice clothing.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
