@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-24"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 24</a></h4>
+  <p><sup><b>1</b></sup> Jehovah now makes the earth desolate and lays it waste; He distorts its surface and scatters its inhabitants:<br><br>
+     <sup><b>2</b></sup> As it is with the people, so will it be with the priest; / As it is with the servant, so will it be with the master; / As it is with the maid, so will it be with the mistress; / As it is with the buyer, so will it be with the seller; / As it is with the lender, so will it be with the borrower; / As it is with the creditor, so will it be with him to whom he gives credit.<br><br>
+     <sup><b>3</b></sup> The earth will be utterly desolated / And utterly spoiled, / For Jehovah has spoken this word.<br><br>
+     <sup><b>4</b></sup> The earth dries up and fades away; / The world languishes and fades away; / The exalted of the people of the earth languish.<br><br>
+     <sup><b>5</b></sup> And the earth is polluted under <i>the weight</i> of its inhabitants; / For they have transgressed laws, they have violated statutes, / They have broken an eternal covenant.<br><br>
+     <sup><b>6</b></sup> Therefore a curse devours the earth / And the inhabitants of it are held guilty; / Therefore the inhabitants of the earth are burned, / And few men are left.<br><br>
+     <sup><b>7</b></sup> The new wine mourns; the vine languishes; / All the merryhearted sigh.<br><br>
+     <sup><b>8</b></sup> The mirth of the tambourines ceases; / The noise of those who exult stops; / The mirth of the lyre ceases.<br><br>
+     <sup><b>9</b></sup> <i>Men</i> do not drink wine in song; / Liquor is bitter to those who drink it.<br><br>
+     <sup><b>10</b></sup> The city of chaos is broken down; / Every house is shut up that none may enter.<br><br>
+     <sup><b>11</b></sup> A cry for wine is in the streets; / All joy is darkened; / The mirth of the land is departed.<br><br>
+     <sup><b>12</b></sup> In the city desolation remains, / And the gate is crushed to ruins.<br><br>
+     <sup><b>13</b></sup> For thus will it be in the midst of the earth, / Among the peoples: / Like the shaking of an olive tree, / Like the gleanings when the grape harvest is completed.<br><br>
+     <sup><b>14</b></sup> They will lift up their voice; they will give a ringing shout; / Because of the majesty of Jehovah they will cry out from the west.<br><br>
+     <sup><b>15</b></sup> Therefore in the east glorify Jehovah, / Even the name of Jehovah the God of Israel in the coastlands of the sea.<br><br>
+     <sup><b>16</b></sup> From the ends of the earth we hear songs: / Glory to the righteous One! / But I say, Leanness to me! Leanness to me! Woe to me! / The unfaithful deal unfaithfully! / Indeed the unfaithful deal most unfaithfully!<br><br>
+     <sup><b>17</b></sup> Dread, pit, and snare / Are upon you, O inhabitant of the earth.<br><br>
+     <sup><b>18</b></sup> And he who flees from the sound of dread / Will fall into the pit, / And he who comes up out of the pit / Will be taken in the snare; / For the windows from on high are open, / And the foundations of the earth shake.<br><br>
+     <sup><b>19</b></sup> The earth is broken asunder; / The earth is split through and through; / The earth is shaken violently.<br><br>
+     <sup><b>20</b></sup> The earth staggers back and forth like a drunkard / And sways about like a field hut. / And its transgression weighs heavily upon it; / It will fall and will not rise again.<br><br>
+     <sup><b>21</b></sup> And in that day Jehovah will punish / On high the host on high, / And the kings of the earth on the earth.<br><br>
+     <sup><b>22</b></sup> And they will be gathered together, / <i>Like</i> prisoners gathered in a dungeon; / And will be shut up in prison, / And after many days they will be punished.<br><br>
+     <sup><b>23</b></sup> Then the moon will be abashed, and the sun will be ashamed; / For Jehovah of hosts will reign / In Mount Zion and in Jerusalem, / And <i>His</i> glory will be before His elders.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

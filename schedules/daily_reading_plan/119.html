@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/29-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-26"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 26</a></h4>
+  <p><sup><b>1</b></sup> In that day this song will be sung in the land of Judah: / We have a strong city; / He will set up salvation as walls and a rampart.<br><br>
+     <sup><b>2</b></sup> Open the gates / So that the righteous nation may enter, / They who maintain faithfulness.<br><br>
+     <sup><b>3</b></sup> You will keep the steadfast of mind / In perfect peace / Because he trusts in You.<br><br>
+     <sup><b>4</b></sup> Trust in Jehovah forever and ever, / For in Jah Jehovah <i>we have</i> an eternal rock.<br><br>
+     <sup><b>5</b></sup> For He has brought down those who dwell on high, / The lofty city; / He lays it low, He lays it low to the ground; / He casts it into the dust.<br><br>
+     <sup><b>6</b></sup> The foot will trample it, the foot of the poor, / The steps of the weak.<br><br>
+     <sup><b>7</b></sup> The path of the righteous is smoothness; / O You who are upright, You make the path of the righteous level.<br><br>
+     <sup><b>8</b></sup> Indeed in the path of Your judgments, / O Jehovah, we have waited for You. / Your name, that is, Your memorial, / Is the desire of <i>our</i> soul.<br><br>
+     <sup><b>9</b></sup> My soul desires You in the night; / Indeed my spirit within me seeks You at the dawn; / For when Your judgments are in the earth, / The inhabitants of the world learn righteousness.<br><br>
+     <sup><b>10</b></sup> <i>Though</i> the wicked is shown grace, / He does not learn righteousness; / In the land of straightforwardness he deals unjustly / And does not perceive the majesty of Jehovah.<br><br>
+     <sup><b>11</b></sup> O Jehovah, Your hand is lifted up, / <i>But</i> they do not see it. / They will see <i>Your</i> zeal for the people and will be put to shame; / Indeed fire will devour Your adversaries.<br><br>
+     <sup><b>12</b></sup> O Jehovah, You will ordain peace for us, / For You have also performed all our works for us.<br><br>
+     <sup><b>13</b></sup> O Jehovah our God, other lords besides You have been master to us, / <i>But</i> through You alone do we mention Your name.<br><br>
+     <sup><b>14</b></sup> The dead will not live, / The deceased will not rise; / Therefore You have visited and destroyed them, / And You have caused all memory of them to perish.<br><br>
+     <sup><b>15</b></sup> You have increased the nation, O Jehovah; / You have increased the nation — You are glorified; / You have far extended all the edges of the land.<br><br>
+     <sup><b>16</b></sup> O Jehovah, in distress they sought You; / They whispered out a prayer, <i>for</i> Your chastening was upon them.<br><br>
+     <sup><b>17</b></sup> As a pregnant woman draws near to giving birth, / She writhes <i>and</i> cries out in her pain; / So we have been before You, O Jehovah.<br><br>
+     <sup><b>18</b></sup> We were pregnant; we writhed; we gave birth, as it were, to wind. / We have not accomplished deliverance for the earth, / Nor have the inhabitants of the world been born.<br><br>
+     <sup><b>19</b></sup> Your dead will live; my corpses will rise. / Awake and give a ringing shout, you who dwell in dust, / For your dew is like the dew of the dawn, / And the earth will bring forth the deceased.<br><br>
+     <sup><b>20</b></sup> Come, my people, enter your rooms, / And shut your doors behind you; / Hide for a short moment / Until the indignation has passed;<br><br>
+     <sup><b>21</b></sup> For Jehovah is now coming forth from His place / To punish the inhabitants of the earth for their iniquity; / And the earth will reveal her bloodshed / And will no longer conceal her slain.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-25"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 25</a></h4>
+  <p><sup><b>1</b></sup> O Jehovah, You are my God; / I will exalt You, I will give thanks to Your name, / For You have done wonderful <i>things</i> — / Counsels of old, in faithfulness, <i>perfect</i> faithfulness.<br><br>
+     <sup><b>2</b></sup> For You have made of a city a heap, / Of a fortified town a ruin. / A palace of strangers <i>becomes</i> no city <i>at all;</i> / It will never be rebuilt.<br><br>
+     <sup><b>3</b></sup> Therefore a strong people will glorify You; / The cities of terrifying nations will fear You.<br><br>
+     <sup><b>4</b></sup> For You have been a stronghold to the weak, / A stronghold to the needy in his distress, / A refuge from the storm, a shade from the heat; / For the breath of those who terrify is like a tempest against a wall.<br><br>
+     <sup><b>5</b></sup> Like the heat in a drought, / You will subdue the uproar of strangers; / <i>Like</i> the heat through the shadow of a cloud, / The song of those who terrify will be brought low.<br><br>
+     <sup><b>6</b></sup> And Jehovah of hosts will make on this mountain / For all the peoples / A feast of fat things, / A feast of wine <i>matured</i> on the lees, / Of fat things full of marrow, / <i>And</i> of filtered wine <i>matured</i> on the lees.<br><br>
+     <sup><b>7</b></sup> And on this mountain He will swallow up / The covering that covers up all the peoples, / Even the veil that veils all the nations.<br><br>
+     <sup><b>8</b></sup> He will swallow up death forever; / And the Lord Jehovah will wipe away the tears from all faces; / And the reproach of His people He will remove from all the earth; / For Jehovah has spoken.<br><br>
+     <sup><b>9</b></sup> And it will be said in that day, / Here, this is our God, / For whom we have waited that He may save us. / This is Jehovah, for whom we have waited; / Let us be glad and rejoice in His salvation.<br><br>
+     <sup><b>10</b></sup> For the hand of Jehovah will rest on this mountain, / And Moab will be threshed in his place, / Even as straw is threshed in the water of a dung heap.<br><br>
+     <sup><b>11</b></sup> And he will spread out his hands in the middle of it, / As a swimmer spreads out <i>his hands</i> to swim; / But <i>Jehovah</i> will abase his pride together with the trickery of his hands.<br><br>
+     <sup><b>12</b></sup> And the lofty fortification of your walls He will bring down, / Lay low, <i>and</i> cast to the ground, <i>even</i> to the dust.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
