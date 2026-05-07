@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-34"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 34</a></h4>
+  <p><sup><b>1</b></sup> Draw near, O nations, to hear; / And listen, O peoples! / Let the earth and all that fills it hear, / The world and all that springs forth from it.<br><br>
+     <sup><b>2</b></sup> For Jehovah’s indignation is upon all the nations, / And <i>His</i> wrath is upon all their armies; / He has utterly destroyed them; / He has delivered them unto the slaughter.<br><br>
+     <sup><b>3</b></sup> Thus their slain are cast away, / And <i>from</i> their corpses their stench will come up; / And the mountains will be melted with their blood.<br><br>
+     <sup><b>4</b></sup> And all the armies of heaven will be dissolved, / And the heavens will be rolled up like a scroll, / And all their host will wither away, / As the leaf withers from the vine, / Or like a <i>leaf</i> withering from the fig tree.<br><br>
+     <sup><b>5</b></sup> For My sword has drunk its fill in heaven. / Now it will descend in judgment upon Edom / And upon the people whom I have devoted to judgment.<br><br>
+     <sup><b>6</b></sup> Jehovah’s sword is full of blood; / It has fattened itself with fat, / With the blood of lambs and goats, / With the fat of the kidneys of rams; / For Jehovah has a sacrifice in Bozrah / And a great slaughter in the land of Edom.<br><br>
+     <sup><b>7</b></sup> Wild oxen will also go down with them, / The young bulls with the bulls; / And their land will drink its fill of <i>their</i> blood, / And their dust will become fat with <i>their</i> fat.<br><br>
+     <sup><b>8</b></sup> For Jehovah has a day of vengeance, / A year of recompense for Zion’s contention.<br><br>
+     <sup><b>9</b></sup> And its streams will be turned into pitch, / And its dust into brimstone; / And its land will become burning pitch.<br><br>
+     <sup><b>10</b></sup> It will not be quenched by night or by day; / Its smoke will go up forever; / It will be desolate from generation to generation; / No one will pass through it forever and ever.<br><br>
+     <sup><b>11</b></sup> But the pelican and the porcupine will inherit it, / And the owl and the raven will dwell in it; / And He will stretch over it / The line of nothingness and the plummet weights of emptiness.<br><br>
+     <sup><b>12</b></sup> As for its nobles, there is no one there whom they may call to <i>assume</i> the kingdom, / And all its princes will be nothing.<br><br>
+     <sup><b>13</b></sup> And thorns will come up in its citadels, / Nettles and thistles in its fortified cities; / And it will be a habitation for jackals, / And an abode for ostriches.<br><br>
+     <sup><b>14</b></sup> Desert animals will meet with hyenas; / And the demon will call to his kind, / Indeed there Lilith will settle / And find a resting place for herself.<br><br>
+     <sup><b>15</b></sup> There the owl will make its nest and lay eggs, / And hatch <i>them</i> and gather <i>them</i> under its protection; / Indeed there the vultures will be gathered together, / Each with its kind.<br><br>
+     <sup><b>16</b></sup> Seek from the book of Jehovah and read. / Not one of these will be missing; / Not one will lack her mate; / For His mouth has commanded <i>it,</i> / And it is His Spirit who has gathered them.<br><br>
+     <sup><b>17</b></sup> And He has cast the lot for them, / And His hand has divided it by line unto them; / They will inherit it forever; / From generation to generation they will dwell in it.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

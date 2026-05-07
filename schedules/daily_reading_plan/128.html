@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/7-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-35"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 35</a></h4>
+  <p><sup><b>1</b></sup> The wilderness and the desert will be glad; / And the desert will exult and blossom / Like the rose.<br><br>
+     <sup><b>2</b></sup> It will blossom and blossom, / And even exult with exultation and a ringing shout. / The glory of Lebanon will be given to it, / The splendor of Carmel and Sharon; / They will see the glory of Jehovah, / The splendor of our God.<br><br>
+     <sup><b>3</b></sup> Strengthen the weak hands, / And confirm the shaking knees.<br><br>
+     <sup><b>4</b></sup> Say to those who are of anxious heart, / Be strong; fear not; / Indeed your God / Will come with vengeance, / With the recompense of God; / He will come and save you.<br><br>
+     <sup><b>5</b></sup> Then the eyes of the blind will be opened, / And the ears of the deaf will be unstopped;<br><br>
+     <sup><b>6</b></sup> Then the lame will leap like a hart, / And the tongue of the dumb will give a ringing shout; / For water will break forth in the wilderness, / And streams in the desert.<br><br>
+     <sup><b>7</b></sup> And the desert mirage will become a pool, / And the thirsty ground, springs of water; / In the habitation of jackals, their resting place, / There will be grass with reeds and rushes.<br><br>
+     <sup><b>8</b></sup> And a highway will be there, and a way, / And it will be called, The Way of Holiness. / The unclean will not pass on it, / But it will be for him who walks on the way; / No fools will err <i>in it.</i><br><br>
+     <sup><b>9</b></sup> There will be no lion there, / Nor will any ravenous animal go up on it; / They will not be found there; / But the redeemed will walk <i>on it.</i><br><br>
+     <sup><b>10</b></sup> And the ransomed of Jehovah will return / And will come to Zion with a ringing shout, / And eternal joy will be upon their heads. / They will lay hold on gladness and joy, / And sorrow and sighing will flee away.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-32"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 32</a></h4>
+  <p><sup><b>1</b></sup> Indeed a King will reign according to righteousness, / And the rulers will rule according to justice.<br><br>
+     <sup><b>2</b></sup> And a man will be like a refuge from the wind / And a covering from the tempest, / Like streams of water in a dry place, / Like the shadow of a massive rock in a wasted land.<br><br>
+     <sup><b>3</b></sup> And the eyes of those who see will not be dim, / And the ears of those who hear will attend.<br><br>
+     <sup><b>4</b></sup> And the heart of the hasty will understand knowledge, / And the tongue of those who stammer will hasten to speak elegantly.<br><br>
+     <sup><b>5</b></sup> The fool will no longer be called noble, / Nor will the cheat be said to be generous;<br><br>
+     <sup><b>6</b></sup> For the fool will speak foolishness, / And his heart will commit iniquity / By committing profaneness / And by speaking error against Jehovah, / By leaving the soul of the hungry empty / And by causing drink for the thirsty to fail.<br><br>
+     <sup><b>7</b></sup> And as for the cheat, his tools are evil; / He devises wicked schemes / To destroy the poor with false words / Even when the needy speaks rightly.<br><br>
+     <sup><b>8</b></sup> But the noble man devises noble things, / And upon noble things he stands.<br><br>
+     <sup><b>9</b></sup> Rise up, O women who are at ease, / And hear my voice; / O daughters of complacency, / Hearken to my words.<br><br>
+     <sup><b>10</b></sup> In a year and some days / You will be troubled, O complacent ones; / For the vintage is at its end; / The ingathering will not come.<br><br>
+     <sup><b>11</b></sup> Tremble, O women at ease; / Be troubled, O complacent ones. / Strip yourselves and be bare, / And gird your loins <i>with sackcloth.</i><br><br>
+     <sup><b>12</b></sup> They beat their breasts / For the pleasant fields, / For the fruitful vine.<br><br>
+     <sup><b>13</b></sup> Upon the land of my people / Will come up thorns <i>and</i> briers, / Indeed upon all the jubilant houses / In the exultant city.<br><br>
+     <sup><b>14</b></sup> Because the palace will be abandoned; / The multitude of the city will be forsaken; / The Hill and the watchtower / Will become caves forever, / A joy for wild asses, / A pasture for flocks;<br><br>
+     <sup><b>15</b></sup> Until the Spirit is poured upon us from on high, / And the wilderness becomes a fruitful field, / And the fruitful field is considered to be a forest.<br><br>
+     <sup><b>16</b></sup> Then justice will dwell in the wilderness, / And righteousness will remain in the fruitful field;<br><br>
+     <sup><b>17</b></sup> And the work of righteousness will be peace, / And the result of righteousness, quietness and assurance forever.<br><br>
+     <sup><b>18</b></sup> And my people will live in a peaceful habitation / And in secure dwellings and carefree resting places.<br><br>
+     <sup><b>19</b></sup> And it will hail when the forest comes down, / And the city will be utterly laid low.<br><br>
+     <sup><b>20</b></sup> Blessed are you who sow beside all the water, / Who send <i>there</i> the feet of the ox and the donkey.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
