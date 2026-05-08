@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/10-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-38"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 38</a></h4>
+  <p><sup><b>1</b></sup> In those days Hezekiah became mortally ill; and Isaiah the son of Amoz, the prophet, came to him and said to him, Thus says Jehovah, Put your house in order, for you are about to die and will not live.<br><br>
+     <sup><b>2</b></sup> And Hezekiah turned his face to the wall and prayed to Jehovah,<br><br>
+     <sup><b>3</b></sup> And said, Now, O Jehovah, please remember how I have walked before You in truth and with a perfect heart and have done that which is good in Your sight. And Hezekiah wept many tears.<br><br>
+     <sup><b>4</b></sup> Then the word of Jehovah came to Isaiah, saying,<br><br>
+     <sup><b>5</b></sup> Go and speak to Hezekiah, Thus says Jehovah, the God of David your father, I have heard your prayer, I have seen your tears; I will now add to your life fifteen years.<br><br>
+     <sup><b>6</b></sup> And I will deliver you and this city from the hand of the king of Assyria, and I will put an enclosure around this city.<br><br>
+     <sup><b>7</b></sup> And this will be the sign from Jehovah to you, that Jehovah will do this thing which He has spoken.<br><br>
+     <sup><b>8</b></sup> Behold, I will cause the shadow on the steps, which has gone down with the sun on the steps of Ahaz, to go back ten steps. So the sun’s <i>shadow</i> went back ten steps on the steps on which it had gone down.<br><br>
+     <sup><b>9</b></sup> The writing of Hezekiah the king of Judah when he had been sick and had recovered from his sickness:<br><br>
+     <sup><b>10</b></sup> I said, In the middle of my days, / I will go into the gates of Sheol; / I have been deprived of the rest of my years.<br><br>
+     <sup><b>11</b></sup> I said, I will not see Jah, / Jah in the land of the living; / I will not look on man any longer, / <i>While I am</i> with those who dwell where everything has ceased.<br><br>
+     <sup><b>12</b></sup> Like a shepherd’s tent, / My dwelling has been pulled up and removed from me. / Like a weaver, I have rolled up my life. / He will cut me off from the loom; / From day until night You make an end of me.<br><br>
+     <sup><b>13</b></sup> I have stilled myself until the morning; / Like a lion, so He breaks all my bones; / From day until night You make an end of me.<br><br>
+     <sup><b>14</b></sup> Like a swallow <i>and</i> a crane, so I twitter; / Like a dove, I mourn; / My eyes look languishingly above; / O Lord, I am oppressed; be my surety.<br><br>
+     <sup><b>15</b></sup> What shall I say? He has both spoken to me, / And He Himself has done it; / I will walk deliberately all my years, / Because of the bitterness of my soul.<br><br>
+     <sup><b>16</b></sup> O Lord, upon these things <i>men</i> live; / And in all of these things is the life of my spirit; / Therefore may You restore my strength / And make me live.<br><br>
+     <sup><b>17</b></sup> Indeed for peace I had bitterness, yes, bitterness; / But You have lovingly delivered my soul from the pit of destruction, / Because You have cast behind Your back / All my sins.<br><br>
+     <sup><b>18</b></sup> For Sheol cannot thank You, / And Death cannot praise You; / They that go down to the pit / Cannot hope in Your truth.<br><br>
+     <sup><b>19</b></sup> The living, the living, he will praise You, / As I do today; / A father shall make known / Your truth to <i>his</i> children.<br><br>
+     <sup><b>20</b></sup> Jehovah <i>is ready</i> to save me; / Therefore we will sing my songs, / With stringed instruments, / All the days of our life, / In the house of Jehovah.<br><br>
+     <sup><b>21</b></sup> Then Isaiah said, Let them take a cake of figs and rub it upon the boil, and he will live.<br><br>
+     <sup><b>22</b></sup> Hezekiah had also said, What is the sign that I shall go up to the house of Jehovah?<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

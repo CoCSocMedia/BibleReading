@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-39"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 39</a></h4>
+  <p><sup><b>1</b></sup> At that time Merodach-baladan the son of Baladan, the king of Babylon, sent letters and a gift to Hezekiah because he had heard that he had been sick and had recovered.<br><br>
+     <sup><b>2</b></sup> And Hezekiah was glad for them and showed them his treasury, the silver and the gold, and the spices and the fine oil, and his whole armory and everything which was found among his treasures; there was nothing in his house or in all his dominion that Hezekiah did not show them.<br><br>
+     <sup><b>3</b></sup> Then Isaiah the prophet came to King Hezekiah and said to him, What did these men say? And from where have they come to you? And Hezekiah said, They have come to me from a distant land, from Babylon.<br><br>
+     <sup><b>4</b></sup> And he said, What have they seen in your house? And Hezekiah said, They have seen everything that is in my house; there is nothing among my treasures that I have not shown them.<br><br>
+     <sup><b>5</b></sup> Then Isaiah said to Hezekiah, Hear the word of Jehovah of hosts:<br><br>
+     <sup><b>6</b></sup> The days are now coming when everything that is in your house and that your fathers have laid up as a treasure unto this day will be carried away to Babylon; nothing will be left, says Jehovah.<br><br>
+     <sup><b>7</b></sup> And they will take away some of your sons who will issue from you, whom you will beget, and they will become eunuchs in the palace of the king of Babylon.<br><br>
+     <sup><b>8</b></sup> And Hezekiah said to Isaiah, The word of Jehovah which you have spoken is good. He said moreover, Indeed there will be peace and truth in my days.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
