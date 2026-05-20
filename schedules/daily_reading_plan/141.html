@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/21-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-48"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 48</a></h4>
+  <p><sup><b>1</b></sup> Hear this, O house of Jacob, / Who are called by the name of Israel; / And who came out from the waters of Judah, / Who swear by the name of Jehovah / And make mention of the God of Israel, / <i>But</i> not in truth nor in righteousness.<br><br>
+     <sup><b>2</b></sup> For they call themselves after the holy city / And lean upon the God of Israel; / Jehovah of hosts is His name.<br><br>
+     <sup><b>3</b></sup> I have declared the former things from the beginning; / And they went out from My mouth, and I let <i>them</i> hear them; / I did <i>them</i> suddenly, and they came to pass.<br><br>
+     <sup><b>4</b></sup> Because I knew that you are obstinate, / And your neck is an iron sinew, / And your forehead bronze;<br><br>
+     <sup><b>5</b></sup> Therefore I declared <i>them</i> to you long ago; / Before things came to pass I let you hear; / Lest you should say, My idol has done them, / And my graven image and my molten image commanded them.<br><br>
+     <sup><b>6</b></sup> You have heard; look at all this. And will you not declare it? / From this time I will let you hear new things / And hidden things which you have not known.<br><br>
+     <sup><b>7</b></sup> They have been created now, and not long ago; / And before <i>this</i> day you have not even heard them; / Lest you should say, Indeed, I knew them.<br><br>
+     <sup><b>8</b></sup> You also have not heard and have not known; / Your ears were not even open from that time; / For I knew that you would deal very treacherously / And would be called a transgressor from the womb.<br><br>
+     <sup><b>9</b></sup> For My name’s sake I will defer My anger, / And <i>for the sake of</i> My praise I will restrain <i>it</i> for you, / In order not to cut you off.<br><br>
+     <sup><b>10</b></sup> Indeed, I have refined you but not like silver; / I have tried you in the furnace of affliction.<br><br>
+     <sup><b>11</b></sup> For My own sake, <i>yes,</i> for My own sake, I will do <i>it,</i> / For how can <i>My name</i> be profaned? / And I will not give My glory to another.<br><br>
+     <sup><b>12</b></sup> Listen to Me, O Jacob, / And Israel, whom I called; / I am He; I am the First, / I am also the Last.<br><br>
+     <sup><b>13</b></sup> Indeed, My hand laid the foundations of the earth, / And My right hand spread out the heavens; / When I call to them, / They stand together.<br><br>
+     <sup><b>14</b></sup> Assemble yourselves, all of you, and hear! / Who among them has declared these things? / Jehovah loves him; he will do His pleasure / On Babylon, and His arm <i>will be upon</i> the Chaldeans.<br><br>
+     <sup><b>15</b></sup> I, <i>even</i> I, have spoken; indeed, I have called him; / I have brought him, and his way will prosper.<br><br>
+     <sup><b>16</b></sup> Draw near to Me and listen to this: / From the beginning I have not spoken in secret; / From the time it took place, I was there. / And now the Lord Jehovah / Has sent me and His Spirit.<br><br>
+     <sup><b>17</b></sup> Thus says Jehovah, your Redeemer, / The Holy One of Israel, / I am Jehovah your God, / Who teaches you to do that which is profitable, / Who leads you in the way that you should go.<br><br>
+     <sup><b>18</b></sup> If only you had hearkened to My commandments! / Then your peace would have been like a river, / And your righteousness like the waves of the sea,<br><br>
+     <sup><b>19</b></sup> And your seed would have been like the sand, / And the offspring of your bowels like the gravel; / His name would not have been cut off / Or destroyed before Me.<br><br>
+     <sup><b>20</b></sup> Come out from Babylon; / Flee from the Chaldeans; / With a voice of shouting declare; / Let them hear this, / Send it out unto the end of the earth; / Say, Jehovah has redeemed / His servant Jacob.<br><br>
+     <sup><b>21</b></sup> And they did not thirst / When He led them through the dry places; / He caused water to flow / From the rock for them; / And He split the rock, / And the waters gushed out.<br><br>
+     <sup><b>22</b></sup> There is no peace, says Jehovah, for the wicked.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

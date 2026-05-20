@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/18-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-46"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 46</a></h4>
+  <p><sup><b>1</b></sup> Bel has bowed down; Nebo stoops; / Their idols are on beasts and cattle; / The things which you carry are a burden, / A load for a weary <i>beast.</i><br><br>
+     <sup><b>2</b></sup> They stoop and have bowed down together; / They are not able to escape the burden; / But they themselves have gone into captivity.<br><br>
+     <sup><b>3</b></sup> Listen to Me, O house of Jacob, / And all the remnant of the house of Israel, / <i>You</i> who have been borne from birth, / Who have been carried from the womb,<br><br>
+     <sup><b>4</b></sup> Even unto old age, I am He; / Even unto <i>your</i> gray-haired <i>years,</i> I will bear <i>you.</i> / I have made and I will carry, / And I will bear and deliver.<br><br>
+     <sup><b>5</b></sup> To whom will you liken Me, / And <i>with whom</i> will you make <i>Me</i> equal / And compare Me, that we should be <i>considered</i> alike?<br><br>
+     <sup><b>6</b></sup> Those who lavish gold from the purse / And weigh silver in scales / And hire a goldsmith, and he makes a god — / They bow down <i>and</i> even worship <i>it;</i><br><br>
+     <sup><b>7</b></sup> They lift it up on their shoulder; they carry it / And set it in its place, and it stands. / It will not move from its place; / <i>Someone</i> even cries out to it, and it does not answer, / Nor save <i>him</i> from his distress.<br><br>
+     <sup><b>8</b></sup> Remember this and stand fast; / Put this in your heart, O transgressors.<br><br>
+     <sup><b>9</b></sup> Remember the former things of old, / That I am God and there is no one else; / I am God and there is no one like Me,<br><br>
+     <sup><b>10</b></sup> Who declares the end from the beginning / And things which have not been done from ancient times, / Saying, My counsel will stand, / And all My desire I will accomplish;<br><br>
+     <sup><b>11</b></sup> Who calls <i>for</i> a bird of prey from the east, / And from a distant land a man <i>to be</i> My counselor. / Indeed, I have spoken; surely I will bring it to pass. / I have purposed; surely I will do it.<br><br>
+     <sup><b>12</b></sup> Listen to Me, O hardhearted ones, / <i>Who are</i> far from righteousness.<br><br>
+     <sup><b>13</b></sup> I will bring My righteousness near — it is not far off; / And My salvation will not delay; / And I will give salvation in Zion, / <i>And</i> to Israel My glory.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

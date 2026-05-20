@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/20-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-47"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 47</a></h4>
+  <p><sup><b>1</b></sup> Come down and sit in the dust, / O virgin daughter of Babylon; / Sit on the ground <i>where</i> there is no throne, / O daughter of the Chaldeans; / For you will no longer be called / Tender and delicate.<br><br>
+     <sup><b>2</b></sup> Take millstones and grind meal; / Remove your veil; / Strip off <i>your</i> flowing skirt; uncover <i>your</i> thigh; / Cross over the rivers.<br><br>
+     <sup><b>3</b></sup> Your nakedness will be uncovered; / Your shame will also be seen; / I will take vengeance and will not spare any man.<br><br>
+     <sup><b>4</b></sup> Our Redeemer, Jehovah of hosts is His name, / The Holy One of Israel.<br><br>
+     <sup><b>5</b></sup> Sit in silence and go in darkness, / O daughter of the Chaldeans; / For you will no longer be called / The queen of kingdoms.<br><br>
+     <sup><b>6</b></sup> I was angry with My people; / I profaned My inheritance, / And I have delivered them up into your hand. / You have not shown any mercy to them; / You have made your yoke / Very heavy upon the elderly.<br><br>
+     <sup><b>7</b></sup> You have said, I will be / A queen forever; / You did not put these things into your heart; / You did not remember the end of them.<br><br>
+     <sup><b>8</b></sup> And now hear this, O lover of pleasure, / Who dwells securely / And says in your heart, / I am, and there is none besides me; / I will not dwell as a widow, / And I will not know loss of children.<br><br>
+     <sup><b>9</b></sup> But these two things will come upon you / Suddenly, in one day: / Loss of children and widowhood; / In full measure they will come upon you / In spite of the multitude of your sorceries; / In spite of the great power of your spells.<br><br>
+     <sup><b>10</b></sup> And you felt secure in your wickedness; / You said, No one sees me. / Your wisdom and your knowledge / Have seduced you, / And you said in your heart, / I am, and there is none besides me.<br><br>
+     <sup><b>11</b></sup> But evil will come upon you, / And you will not know its origin; / Disaster will fall upon you / Which you cannot expiate for; / Desolation will come upon you suddenly, / <i>About which</i> you do not know.<br><br>
+     <sup><b>12</b></sup> Stand now with your enchantments / And the multitude of your sorceries, / With which you have labored from your youth; / Perhaps you can profit; / Perhaps you will inspire terror.<br><br>
+     <sup><b>13</b></sup> You are wearied with the multitude of your counsels. / Let the astrologers, who gaze at the stars, / Who predict according to the new moons, / Stand up and save you from what is coming upon you.<br><br>
+     <sup><b>14</b></sup> Indeed, they are like stubble; / Fire consumes them; / They cannot deliver themselves / From the power of the flame; / There is no coal for warming themselves, / <i>Nor</i> the light <i>of a fire</i> to sit before.<br><br>
+     <sup><b>15</b></sup> So will those with whom you have labored be to you, / Those who have traded with you from your youth; / Each one will wander off in his own direction; / There will be no one to save you.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
