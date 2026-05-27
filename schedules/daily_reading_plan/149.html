@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/29-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-56"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 56</a></h4>
+  <p><sup><b>1</b></sup> Thus says Jehovah, / Preserve justice and do righteousness, / For My salvation is about to come / And My righteousness <i>is about</i> to be revealed.<br><br>
+     <sup><b>2</b></sup> Blessed is the man who does this, / And the son of man who takes hold of it, / Who keeps the Sabbath so as not to profane it / And keeps his hand from doing any evil.<br><br>
+     <sup><b>3</b></sup> And let not the son of a foreigner / Who has joined himself to Jehovah speak, saying, / Jehovah will surely separate me from His people; / Nor let the eunuch say, / Now I am a dry tree.<br><br>
+     <sup><b>4</b></sup> For thus says Jehovah, / To the eunuchs who keep My Sabbaths / And choose what pleases Me, / And hold fast My covenant,<br><br>
+     <sup><b>5</b></sup> To them I will give in My house and within My walls a memorial and a name / Better than that of sons and daughters; / I will give them an eternal name / Which will not be cut off.<br><br>
+     <sup><b>6</b></sup> Also the children of the foreigner who join themselves to Jehovah, / To minister to Him and to love the name of Jehovah, / To be servants to Him, / Everyone who keeps the Sabbath so as not to profane it / And holds fast My covenant,<br><br>
+     <sup><b>7</b></sup> Even these will I cause to come to My holy mountain / And to rejoice in My house of prayer; / Their burnt offerings and their sacrifices will be acceptable upon My altar; / For My house will be called a house of prayer for all the peoples.<br><br>
+     <sup><b>8</b></sup> The Lord Jehovah, who gathers the outcasts of Israel, declares: / Yet will I gather <i>others</i> to Him besides those gathered to Him <i>already.</i><br><br>
+     <sup><b>9</b></sup> All you animals of the field, come to eat, / All you animals of the forest.<br><br>
+     <sup><b>10</b></sup> His watchmen are blind; / All of them know nothing; / All of them are dumb dogs, / They cannot bark; / Dreamers who lie down / <i>And</i> love to slumber.<br><br>
+     <sup><b>11</b></sup> And these dogs are greedy; / They know no satisfaction. / And they are shepherds / <i>Who</i> lack understanding. / All of them have turned to their own way, / Each to his own gain, to the last of them.<br><br>
+     <sup><b>12</b></sup> Come, <i>they say,</i> let me get some wine, / And let us drink down some liquor; / And tomorrow will be like today, / <i>Only</i> much more abundant.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

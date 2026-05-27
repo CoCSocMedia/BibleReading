@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-54"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 54</a></h4>
+  <p><sup><b>1</b></sup> Give a ringing shout, O barren one, you who have not borne; / Break forth into joyful shouting and cry out, you who have not been in labor; / For more numerous are the children of the desolate one / Than the children of the married woman, says Jehovah.<br><br>
+     <sup><b>2</b></sup> Enlarge your tent site, / Let them stretch out the curtains of your habitations; / Spare not; / Lengthen your cords, / And strengthen your pegs;<br><br>
+     <sup><b>3</b></sup> For on the right and on the left you will break open, / And your seed will possess the nations / And will cause the desolate cities to be inhabited.<br><br>
+     <sup><b>4</b></sup> Fear not, for you will not be put to shame; / Neither be humiliated, for you will not be ashamed; / But you will forget the shame of your youth, / And the reproach of your widowhood you will no longer remember.<br><br>
+     <sup><b>5</b></sup> For your Maker is your Husband; / Jehovah of hosts is His name. / And the Holy One of Israel is your Redeemer; / He is called the God of all the earth.<br><br>
+     <sup><b>6</b></sup> For Jehovah has called you, / Like a wife who has been forsaken and is grieved in spirit, / Even like a wife of <i>one’s</i> youth when she has been rejected, / Says your God.<br><br>
+     <sup><b>7</b></sup> For a short moment I forsook you, / But with great compassion I will gather you.<br><br>
+     <sup><b>8</b></sup> In a flood of wrath I hid / My face from you for a moment, / But with eternal lovingkindness I will have mercy on you, / Says Jehovah your Redeemer.<br><br>
+     <sup><b>9</b></sup> For this is <i>like</i> the waters of Noah to Me, / When I swore that the waters of Noah / Would not overflow the earth ever again; / So I have sworn that I will not be angry with you, / Nor will I rebuke you.<br><br>
+     <sup><b>10</b></sup> For the mountains may depart, / And the hills may shake, / But My lovingkindness will not depart from you, / And My covenant of peace will not shake, / Says Jehovah who has compassion on you.<br><br>
+     <sup><b>11</b></sup> O afflicted one, storm-tossed <i>and</i> not comforted, / Indeed, I Myself will lay down your stones in dark mortar, / And will lay your foundations with sapphires.<br><br>
+     <sup><b>12</b></sup> And I will make your battlements of rubies, / And your gates of carbuncles, / And all your borders will be precious stones.<br><br>
+     <sup><b>13</b></sup> And all your children will be taught of Jehovah, / And the peace of your children will be great.<br><br>
+     <sup><b>14</b></sup> In righteousness you will be established; / You will be far from oppression, for you will not fear, / And far from terror, for it will not come near you.<br><br>
+     <sup><b>15</b></sup> Indeed, they may fiercely attack you, but it is not of Me; / Whoever attacks you will fall because of you.<br><br>
+     <sup><b>16</b></sup> Indeed, it is I who have created the blacksmith / Who blows the fire of the coals, / And brings out a weapon for its work; / And it is I who have created the destroyer to ruin.<br><br>
+     <sup><b>17</b></sup> No weapon that is formed against you will prosper, / And every tongue that rises up to judge you, you will condemn. / This is the heritage of the servants of Jehovah, / And their righteousness which is of Me, declares Jehovah.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

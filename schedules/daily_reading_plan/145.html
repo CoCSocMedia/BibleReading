@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/25-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-52"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 52</a></h4>
+  <p><sup><b>1</b></sup> Awake! Awake! Put on / Your strength, O Zion; / Put on your beautiful garments, / O Jerusalem, O holy city; / For the uncircumcised and the unclean / Will no longer come into you.<br><br>
+     <sup><b>2</b></sup> Shake yourself from the dust; arise, / Sit down, O Jerusalem; / Loose yourself from the bonds on your neck, / O captive daughter of Zion.<br><br>
+     <sup><b>3</b></sup> For thus says Jehovah, You are those who have been sold for nothing, and you will be redeemed without money.<br><br>
+     <sup><b>4</b></sup> For thus says the Lord Jehovah, At first My people went down to Egypt to sojourn there; then the Assyrian oppressed them without cause.<br><br>
+     <sup><b>5</b></sup> Now then what do I have here, declares Jehovah, since My people have been taken away for nothing? Those who rule over them howl, declares Jehovah, and My name is continually blasphemed all day long.<br><br>
+     <sup><b>6</b></sup> Therefore My people will know My name; therefore in that day <i>they will know</i> that I am He who speaks; here I am.<br><br>
+     <sup><b>7</b></sup> How beautiful on the mountains / Are the feet of him who brings good news, / Of him who announces peace, who brings news of good things, / Who announces salvation; / Of him who says to Zion, Your God reigns!<br><br>
+     <sup><b>8</b></sup> The voice of your watchmen! They lift up their voice; / They give a ringing shout together; / For they will see with their very own eyes / When Jehovah restores Zion.<br><br>
+     <sup><b>9</b></sup> Break forth, give a ringing shout together, / You wasted places of Jerusalem, / For Jehovah has comforted His people, / He has redeemed Jerusalem.<br><br>
+     <sup><b>10</b></sup> Jehovah has bared His holy arm / In the sight of all the nations, / And all the ends of the earth will see / The salvation of our God.<br><br>
+     <sup><b>11</b></sup> Depart! Depart! Go out from there! / Do not touch any unclean thing! / Go out from the midst of her! Cleanse yourselves, / You who bear the vessels of Jehovah!<br><br>
+     <sup><b>12</b></sup> For you will not go out in haste, / And you will not go in flight; / For Jehovah will go before you, / And the God of Israel will be your rear guard.<br><br>
+     <sup><b>13</b></sup> Indeed, My Servant will act wisely and will prosper; / He will be exalted and lifted up and very high.<br><br>
+     <sup><b>14</b></sup> Even as many were astonished at Him — / His visage was marred more than that of any man, / And His form more than that of the sons of men —<br><br>
+     <sup><b>15</b></sup> So will He surprise many nations; / Kings will shut their mouths because of Him; / For what had not been recounted to them they will see, / And what they had not heard of they will contemplate.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

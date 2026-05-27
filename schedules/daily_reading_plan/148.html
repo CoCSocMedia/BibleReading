@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-55"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 55</a></h4>
+  <p><sup><b>1</b></sup> Ho! Everyone who thirsts, come to the waters, / And you who have no money; / Come, buy and eat; / Yes, come, buy wine and milk / Without money and without price.<br><br>
+     <sup><b>2</b></sup> Why do you spend money for what is not bread, / And the result of your labor for what does not satisfy? / Hear Me attentively, and eat what is good, / And let your soul delight itself in fatness.<br><br>
+     <sup><b>3</b></sup> Incline your ear and come to Me; / Hear, so that your soul may live; / And I will make an eternal covenant with you, / Even the sure mercies <i>shown</i> to David.<br><br>
+     <sup><b>4</b></sup> Indeed, I have given Him as a Witness to the peoples, / A Leader and a Commander to the peoples.<br><br>
+     <sup><b>5</b></sup> Indeed, you will call a nation that you do not know, / And a nation that does not know you will run to you, / Because of Jehovah your God, even the Holy One of Israel, / For He has glorified you.<br><br>
+     <sup><b>6</b></sup> Seek Jehovah while He may be found; / Call upon Him while He is near.<br><br>
+     <sup><b>7</b></sup> Let the wicked forsake his way, / And the evildoer, his thoughts; / And let him return to Jehovah, and He will have compassion on him; / And to our God, for He will pardon abundantly.<br><br>
+     <sup><b>8</b></sup> For My thoughts are not your thoughts, / And your ways are not My ways, declares Jehovah.<br><br>
+     <sup><b>9</b></sup> For <i>as</i> the heavens are higher than the earth, / So My ways are higher than your ways, / And My thoughts <i>higher</i> than your thoughts.<br><br>
+     <sup><b>10</b></sup> For just as the rain comes down / And the snow from heaven, / And does not return there, / Until it waters the earth / And makes it bear and sprout forth, / That it may give seed to the sower and bread to the eater;<br><br>
+     <sup><b>11</b></sup> So will My word be which goes forth from My mouth; / It will not return to Me vainly, / But it will accomplish what I delight in, / And it will prosper in the matter to which I have sent it.<br><br>
+     <sup><b>12</b></sup> For you will go out with rejoicing, / And you will be led forth in peace; / The mountains and the hills / Will break forth before you with a ringing shout, / And all the trees of the field will clap <i>their</i> hands.<br><br>
+     <sup><b>13</b></sup> In place of the thornbush, the fir tree will come up; / In place of the brier, the myrtle will come up; / And it will be to Jehovah as a name, / As an eternal sign that will not be cut off.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
