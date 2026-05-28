@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/30-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-57"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 57</a></h4>
+  <p><sup><b>1</b></sup> The righteous man perishes, / And no one takes it to heart; / And godly men are being swept away, / While no one considers / That the righteous man is being swept away from evil.<br><br>
+     <sup><b>2</b></sup> He enters into peace; / They rest in their beds, / <i>Each</i> who walks uprightly.<br><br>
+     <sup><b>3</b></sup> But draw near here, / You children of a sorceress, / You seed of an adulterer and of her who prostitutes herself.<br><br>
+     <sup><b>4</b></sup> Whom are you mocking, / And against whom are you opening your mouth wide / And sticking out your tongue? / Are you not children of transgression, / A seed of falsehood,<br><br>
+     <sup><b>5</b></sup> Who inflame yourselves among the terebinths, / Under every flourishing tree, / Who slaughter the children in the valleys / Under the clefts of the rocks?<br><br>
+     <sup><b>6</b></sup> Among the smooth <i>stones</i> of the valley is your portion, / They, <i>yes,</i> they are your lot. / Indeed, to them you have poured out a drink offering, / You have offered a meal offering. / Shall I ease Myself of these?<br><br>
+     <sup><b>7</b></sup> Upon a high and lofty mountain / You have set your bed. / Indeed, you went up there / To offer sacrifice.<br><br>
+     <sup><b>8</b></sup> And behind the door and doorpost / You have put your reminder. / For apart from Me, you have uncovered yourself and gone up; / You have extended your bed; / And you have made an agreement for yourself with them; / You loved their bed; you saw <i>their</i> nakedness.<br><br>
+     <sup><b>9</b></sup> And you went to the king with oil, / And you increased your perfumes; / You sent your envoys far away / And debased yourself even as far as Sheol.<br><br>
+     <sup><b>10</b></sup> You were wearied with the length of your way, / <i>Yet</i> you did not say, It is hopeless; / You found the renewing of your strength, / Therefore you did not weaken.<br><br>
+     <sup><b>11</b></sup> And whom have you been worried about and feared, / That you have lied and not remembered Me, / Nor taken it to heart? / Was I not silent, and that for a long time, / Yet you did not fear Me?<br><br>
+     <sup><b>12</b></sup> I will declare your righteousness / And your works, / Yet they will not profit you.<br><br>
+     <sup><b>13</b></sup> When you cry out, let your heaps <i>of idols</i> deliver you. / But the wind will carry them all away; / A breath will take <i>them</i> away. But he who takes refuge in Me will inherit the land / And possess My holy mountain.<br><br>
+     <sup><b>14</b></sup> And it will be said, / Cast up, cast up; prepare the way; / Take up the obstacle out of the way of My people.<br><br>
+     <sup><b>15</b></sup> For thus says the high and exalted One, / Who inhabits eternity, whose name is Holy: / I will dwell in the high and holy place, / And with the contrite and lowly of spirit, / To revive the spirit of the lowly / And to revive the heart of the contrite.<br><br>
+     <sup><b>16</b></sup> For I will not contend forever, / Nor will I always be angry; / For the spirit would faint before Me, / And the souls which I have made.<br><br>
+     <sup><b>17</b></sup> Because of the iniquity of his unjust gain I was angry, / And I struck him; I hid Myself and was angry; / And he went on, turning away in the way of his heart.<br><br>
+     <sup><b>18</b></sup> I have seen his ways / And will heal him; / And I will lead him and restore comfort to him / <i>And</i> to his mourning ones,<br><br>
+     <sup><b>19</b></sup> Creating the fruit of the lips: / Peace, peace to him who is far off and to him who is near, / Says Jehovah; and I will heal him.<br><br>
+     <sup><b>20</b></sup> But the wicked are like the tossed sea, / For it cannot be calm, / And its waters toss up mire and mud.<br><br>
+     <sup><b>21</b></sup> There is no peace, says my God, for the wicked.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

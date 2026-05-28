@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-58"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 58</a></h4>
+  <p><sup><b>1</b></sup> Cry loudly; do not hold back; / Raise your voice like a trumpet, / And declare to My people their transgression / And to the house of Jacob their sins.<br><br>
+     <sup><b>2</b></sup> Yet they seek Me day by day / And take delight in knowing My ways, / Like a nation that has done righteousness / And has not forsaken the ordinance of their God. / They ask Me for righteous judgments; / They take delight in approaching God.<br><br>
+     <sup><b>3</b></sup> Why have we fasted, and yet You do not see? / <i>Why</i> have we afflicted our soul, and yet You do not acknowledge? / Indeed, on the day of your fast you find delight, / And oppress all your laborers.<br><br>
+     <sup><b>4</b></sup> Indeed, you fast for contention and strife, / And to strike with a fist of wickedness; / You do not fast, in the way <i>you do</i> today, / To make your voice heard on high.<br><br>
+     <sup><b>5</b></sup> Is such the fast that I choose, / The day when a man afflicts his soul? / Is it for bowing his head like a rush / And for spreading out sackcloth and ashes as his bed? / Will you call this a fast, / And an acceptable day to Jehovah?<br><br>
+     <sup><b>6</b></sup> Is this not the fast that I choose, / To loosen the bonds of wickedness, / To undo the bands of the yoke, / And to let the oppressed go free, / And to break every yoke?<br><br>
+     <sup><b>7</b></sup> Is it not to divide your bread to the hungry, / And to bring the wandering poor home; / When you see the naked, to cover him, / And not to hide yourself from your own flesh?<br><br>
+     <sup><b>8</b></sup> Then your light will break forth like the dawn, / And your recovery will speedily spring forth. / And your righteousness will go before you; / The glory of Jehovah will guard you from behind.<br><br>
+     <sup><b>9</b></sup> Then you will call, and Jehovah will answer; / You will cry out, and He will say, Here I am. If you remove the yoke from your midst, / The pointing of the finger and the speaking of wickedness,<br><br>
+     <sup><b>10</b></sup> And if you draw out your soul to the hungry / And satisfy the desires of the afflicted; / Then your light will rise in the darkness, / And your gloom will be like midday;<br><br>
+     <sup><b>11</b></sup> And Jehovah will guide you continually, / And satisfy your soul in the dry times, / And strengthen your bones; / And you will be like a watered garden, / And like a spring of water, / Whose waters do not deceive.<br><br>
+     <sup><b>12</b></sup> And those who are of you will rebuild the ancient ruins; / You will raise up the foundations of generation upon generation; / And you will be called the repairer of the breach, / The restorer of the paths in which to dwell.<br><br>
+     <sup><b>13</b></sup> If you turn back your foot from the Sabbath, / From doing whatever you please on My holy day, / And call the Sabbath a delight, / That which is holy to Jehovah honorable, / And honor it, not doing your own ways, / Nor finding your own pleasure and speaking <i>idle</i> words;<br><br>
+     <sup><b>14</b></sup> Then you will have delight in Jehovah; / And I will cause you to ride upon the heights of the earth, / And I will feed you <i>with</i> the inheritance of Jacob your father; / For the mouth of Jehovah has spoken.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

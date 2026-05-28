@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-59"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 59</a></h4>
+  <p><sup><b>1</b></sup> No, Jehovah’s hand is not so short that it cannot save; / Nor is His ear so heavy that it cannot hear.<br><br>
+     <sup><b>2</b></sup> But your iniquities have become a separation / Between you and your God, / And your sins have hidden <i>His</i> face / From you so that He does not hear.<br><br>
+     <sup><b>3</b></sup> For your hands are defiled with blood, / And your fingers with iniquity; / Your lips have spoken falsehood, / Your tongue has muttered injustice.<br><br>
+     <sup><b>4</b></sup> No one sues righteously, / And no one pleads in truth; / They trust in vanity and speak lies; / They conceive mischief and bring forth iniquity.<br><br>
+     <sup><b>5</b></sup> They hatch adders’ eggs / And weave the spider’s web; / He who eats of their eggs dies, / And that which is crushed breaks forth into a viper.<br><br>
+     <sup><b>6</b></sup> Their webs will not become garments, / Nor will they cover themselves with their works; / Their works are works of iniquity, / And an act of violence is in their palms.<br><br>
+     <sup><b>7</b></sup> Their feet run toward evil, / And they hasten to shed innocent blood; / Their thoughts are thoughts of iniquity; / Desolation and destruction are in their highways.<br><br>
+     <sup><b>8</b></sup> The way of peace they do not know, / And there is no justice in their course; / They have made their paths crooked; / Whoever goes on it does not know peace.<br><br>
+     <sup><b>9</b></sup> Therefore justice is far from us, / And righteousness does not overtake us; / We look eagerly for light, but, ah, darkness, / For brightness, <i>but</i> we walk in gloom.<br><br>
+     <sup><b>10</b></sup> We grope like blind men at the wall; / We grope like those without eyes; / We stumble at midday as <i>we would</i> at dusk; / Among the prospering we are like dead men.<br><br>
+     <sup><b>11</b></sup> All of us roar like bears / And moan incessantly like doves; / We look eagerly for justice, but there is none, / For salvation, <i>but</i> it is far from us.<br><br>
+     <sup><b>12</b></sup> For our transgressions are multiplied before You, / And our sins respond <i>to You</i> against us; / For our transgressions are with us, / And as for our iniquities, we know <i>what</i> they <i>are:</i><br><br>
+     <sup><b>13</b></sup> Transgressing and denying Jehovah, / And turning away from our God; / Speaking oppression and revolt, / Conceiving and uttering from the heart words of falsehood.<br><br>
+     <sup><b>14</b></sup> And justice is turned back, / And righteousness stands far off; / For truth has stumbled in the street, / And uprightness cannot come in.<br><br>
+     <sup><b>15</b></sup> And truth is lacking, / And he who turns from evil becomes plunder. And Jehovah saw <i>it,</i> and it was evil in His sight / That there was no justice.<br><br>
+     <sup><b>16</b></sup> And He saw that there was no man, / And He was appalled that there was no intercessor. / Therefore His arm accomplished salvation for Him, / And His righteousness sustained Him.<br><br>
+     <sup><b>17</b></sup> Thus He put on righteousness as a breastplate, / And a helmet of salvation upon His head; / And He put on the garments of vengeance for clothing / And wrapped Himself with zeal as a mantle.<br><br>
+     <sup><b>18</b></sup> According to <i>their</i> dealings, so will He repay: / Wrath to His adversaries, recompense to His enemies; / To the coastlands He will repay with recompense.<br><br>
+     <sup><b>19</b></sup> So they will fear the name of Jehovah from the west, / And His glory from the rising of the sun; / When the adversary comes like a flood, / The Spirit of Jehovah will lift up a standard against him.<br><br>
+     <sup><b>20</b></sup> And a Redeemer will come to Zion, / And unto those who turn from transgression in Jacob, / Declares Jehovah.<br><br>
+     <sup><b>21</b></sup> And as for Me, this is My covenant with them, says Jehovah: My Spirit which is upon you and My words which I have put in your mouth shall not depart from your mouth, nor from the mouth of your seed, nor from the mouth of your seed’s seed, says Jehovah, from now and forever.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
