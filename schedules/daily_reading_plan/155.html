@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-62"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 62</a></h4>
+  <p><sup><b>1</b></sup> For Zion’s sake I will not keep silent, / And for Jerusalem’s sake I will not be quiet, / Until her righteousness goes forth like brightness, / And her salvation like a burning torch.<br><br>
+     <sup><b>2</b></sup> And the nations will see your righteousness, / And all the kings, your glory; / And you will be called by a new name, / Which the mouth of Jehovah will designate.<br><br>
+     <sup><b>3</b></sup> You will also be a crown of beauty in the hand of Jehovah, / And a royal turban in the palm of your God.<br><br>
+     <sup><b>4</b></sup> And it will no longer be said to you, Forsaken! / Nor to your land will it be said any longer, Desolate! / But you will be called, My delight is in her, / And your land, Married; / For Jehovah delights in you, / And your land will be married.<br><br>
+     <sup><b>5</b></sup> For <i>as</i> a young man marries a virgin, / Your sons will marry you; / And with the joy of the bridegroom over the bride / Your God will rejoice over you.<br><br>
+     <sup><b>6</b></sup> Upon your walls, O Jerusalem, / I have appointed watchmen; / All day and all night / They will never keep silent. / You who remind Jehovah, / Do not be dumb;<br><br>
+     <sup><b>7</b></sup> And do not give Him quiet / Until He establishes / And until He makes Jerusalem / A praise in the earth.<br><br>
+     <sup><b>8</b></sup> Jehovah has sworn by His right hand / And by His strong arm: / Surely I will never again give your grain / As food for your enemies, / And surely the children of the foreigner will not drink your new wine / For which you have labored;<br><br>
+     <sup><b>9</b></sup> But they who have gathered it will eat it, / And they will praise Jehovah, / And they who have collected it will drink it / In the courts of My holiness.<br><br>
+     <sup><b>10</b></sup> Go through, go through the gates; / Prepare the way for the people; / Cast up, cast up the highway; / Free <i>it</i> of stones; / Raise up a standard for the peoples.<br><br>
+     <sup><b>11</b></sup> See, Jehovah has announced / To the end of the earth: / Say to the daughter of Zion, / Your salvation is now coming; / Now His reward is with Him / And His recompense before Him.<br><br>
+     <sup><b>12</b></sup> And they will call them, The holy people, / The redeemed of Jehovah; / And you will be called, Sought after! / A city not forsaken!<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
