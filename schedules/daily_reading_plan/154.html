@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-61"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 61</a></h4>
+  <p><sup><b>1</b></sup> The Spirit of the Lord Jehovah is upon Me, / Because Jehovah has anointed Me / To bring good news to the afflicted; / He has sent Me to bind up <i>the wounds</i> of the brokenhearted, / To proclaim liberty to the captives, / And the opening <i>of the eyes</i> to those who are bound;<br><br>
+     <sup><b>2</b></sup> To proclaim the acceptable year of Jehovah / And the day of vengeance of our God; / To comfort all who mourn;<br><br>
+     <sup><b>3</b></sup> To grant to those who mourn in Zion, / To give to them a headdress instead of ashes, / The oil of gladness instead of mourning, / The mantle of praise instead of a spirit of heaviness; / That they may be called the terebinths of righteousness, / The planting of Jehovah, that He may be glorified.<br><br>
+     <sup><b>4</b></sup> And they will rebuild the ancient ruins; / They will raise up the former desolations; / And they will repair the cities of waste, / The desolations of generation upon generation.<br><br>
+     <sup><b>5</b></sup> And strangers will stand and feed your flocks, / And the sons of the foreigner will be your plowmen and vinedressers.<br><br>
+     <sup><b>6</b></sup> But you will be called the priests of Jehovah; / <i>People</i> will speak of you as the ministers of our God. / You will eat the wealth of nations, / And you will boast in their glory.<br><br>
+     <sup><b>7</b></sup> Instead of your shame <i>there will be</i> a double <i>portion,</i> / And <i>instead</i> of humiliation they will give a ringing shout for their portion. / Therefore in their land they will possess double; / Eternal joy will be theirs.<br><br>
+     <sup><b>8</b></sup> For I, Jehovah, love justice; / I hate robbery with wrong; / And I will faithfully give <i>them</i> their recompense, / And I will make an eternal covenant with them.<br><br>
+     <sup><b>9</b></sup> Then their seed will be known among the nations, / And their offspring in the midst of the peoples; / All who see them will acknowledge them, / That they are the seed whom Jehovah has blessed.<br><br>
+     <sup><b>10</b></sup> I will rejoice greatly in Jehovah, / My soul will exult in my God; / For He has clothed me with the garments of salvation, / He has wrapped me with the robe of righteousness; / <i>I am</i> like a bridegroom who wears the headdress of the priest, / And like a bride who adorns herself with her jewels.<br><br>
+     <sup><b>11</b></sup> For as the earth brings forth its sprout, / And as the garden causes the things sown in it to spring up, / So will the Lord Jehovah cause righteousness and praise / To spring up before all the nations.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
