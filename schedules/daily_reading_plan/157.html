@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Isaiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="isaiah-64"><a onclick="open_chapter('top', '23-isaiah.html')">Isaiah 64</a></h4>
+  <p><sup><b>1</b></sup> Oh that You would rend the heavens, that You would come down — / That the mountains would shake at Your presence —<br><br>
+     <sup><b>2</b></sup> Like fire that kindles brushwood, / <i>Like</i> fire that causes water to boil, / To make Your name known to Your adversaries, / <i>That</i> the nations may tremble at Your presence!<br><br>
+     <sup><b>3</b></sup> When You did awesome things that we did not expect, / You came down, the mountains shook at Your presence.<br><br>
+     <sup><b>4</b></sup> For from of old, <i>men</i> have not heard, / Nor perceived with the ear, / Neither has eye seen a God besides You, / Who acts for him who waits for Him.<br><br>
+     <sup><b>5</b></sup> You meet him who rejoices and does righteousness, / Those who remember You in Your ways. / Yes, You were angry, for we sinned; / <i>We have been</i> in them for a long time, and shall we be saved?<br><br>
+     <sup><b>6</b></sup> For all of us became like him who is unclean, / And all our righteousnesses are like a soiled garment; / And we all wither like a leaf, / And our iniquities, like the wind, carry us away.<br><br>
+     <sup><b>7</b></sup> And there is no one who calls upon Your name, / Who stirs himself up to lay hold of You; / For You have hidden Your face from us / And have consumed us by our iniquities.<br><br>
+     <sup><b>8</b></sup> But now, Jehovah, You are our Father; / We are the clay; and You, our Potter; / And all of us are the work of Your hand.<br><br>
+     <sup><b>9</b></sup> Do not be angry to an extreme, O Jehovah, / Neither remember iniquity forever; / Look now, we pray: We all are Your people.<br><br>
+     <sup><b>10</b></sup> Your holy cities have become a wilderness; / Zion is a wilderness, / Jerusalem a desolation.<br><br>
+     <sup><b>11</b></sup> Our holy and beautiful house, / Where our fathers praised You, / Is burned with fire; / And all the things that we delighted in have become a ruin.<br><br>
+     <sup><b>12</b></sup> Will You restrain Yourself from these, O Jehovah? / Will You keep silent and afflict us to an extreme?<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('isaiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
