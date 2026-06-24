@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/20-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Jeremiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="jeremiah-12"><a onclick="open_chapter('top', '24-jeremiah.html')">Jeremiah 12</a></h4>
+  <p><sup><b>1</b></sup> You are righteous, O Jehovah, / When I plead <i>my</i> cause with You; / Yet I will speak with You of <i>Your</i> judgments: / Why does the way of the wicked prosper? / <i>Why</i> are all those who deal treacherously at ease?<br><br>
+     <sup><b>2</b></sup> You have planted them; they have also taken root; / They go on and bring forth fruit. / You are near, in their mouth, / But far from their inward parts.<br><br>
+     <sup><b>3</b></sup> And You, O Jehovah, know me; You see me / And try my heart toward You. / Pull them out like sheep for the slaying, / And set them apart for the day of slaughter.<br><br>
+     <sup><b>4</b></sup> How long will the land mourn / And the grass of every field dry up? / Because of the wickedness of those who dwell in it, / Beasts and birds are swept away, / Because they said, He will not see our end.<br><br>
+     <sup><b>5</b></sup> If you have run with footmen and they have wearied you, / How then will you compete with horses? / <i>If</i> you are secure in a land of peace, / How then will you do in the majesty of the Jordan?<br><br>
+     <sup><b>6</b></sup> For even your brothers and the house of your father, / Even they have dealt treacherously with you; / Even they have cried aloud after you. / Do not believe them, although they speak good things to you.<br><br>
+     <sup><b>7</b></sup> I have forsaken My house; / I have abandoned My inheritance; / I have given the beloved of My soul / Into the hand of her enemies.<br><br>
+     <sup><b>8</b></sup> My inheritance has become to Me / Like a lion in the forest; / She lifted up her voice against Me, / Therefore I hated her.<br><br>
+     <sup><b>9</b></sup> Is My inheritance a speckled bird of prey to Me? / Are the birds of prey against her all around? / Go, gather all the beasts of the field; / Bring them to devour.<br><br>
+     <sup><b>10</b></sup> Many shepherds have destroyed My vineyard; / They have trampled down My portion; / They have made My pleasant portion / A desolate wilderness.<br><br>
+     <sup><b>11</b></sup> They have made it a desolation; / Desolate, it mourns to Me; / The whole land has been desolated / Because no one lays it to heart.<br><br>
+     <sup><b>12</b></sup> Upon all the bare heights in the wilderness / Destroyers have come, For the sword of Jehovah devours / From one end of the land to the other end of the land; / No flesh has peace.<br><br>
+     <sup><b>13</b></sup> They have sown wheat, and they reap thorns; / They have worn themselves out, but they profit nothing; / Therefore be ashamed of your produce / Because of the burning anger of Jehovah.<br><br>
+     <sup><b>14</b></sup> Thus says Jehovah concerning all My evil neighbors, who have touched the inheritance which I caused My people Israel to inherit, I am about to pluck them up out of their land, and I will pluck up the house of Judah out from their midst.<br><br>
+     <sup><b>15</b></sup> And after I have plucked them up, I will return and have compassion on them and bring them again, each one to his inheritance and each one to his land.<br><br>
+     <sup><b>16</b></sup> And if they will diligently learn the ways of My people, to swear by My name, <i>saying,</i> As Jehovah lives, even as they taught My people to swear by Baal, they will be built up in the midst of My people.<br><br>
+     <sup><b>17</b></sup> But if they do not listen, I will pluck up that nation, plucking <i>it</i> up and destroying <i>it,</i> declares Jehovah.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('jeremiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

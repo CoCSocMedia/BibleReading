@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/24-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Jeremiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="jeremiah-16"><a onclick="open_chapter('top', '24-jeremiah.html')">Jeremiah 16</a></h4>
+  <p><sup><b>1</b></sup> The word of Jehovah also came to me, saying,<br><br>
+     <sup><b>2</b></sup> You shall not take a wife for yourself nor have sons or daughters in this place.<br><br>
+     <sup><b>3</b></sup> For thus says Jehovah concerning the sons and daughters who are born in this place and concerning their mothers who bear them and concerning their fathers who beget them in this land:<br><br>
+     <sup><b>4</b></sup> They will die grievous deaths and will not be mourned or buried; they will be as dung on the surface of the ground and will be consumed by sword and by famine, and their corpses will become food for the birds of the sky and the beasts of the earth.<br><br>
+     <sup><b>5</b></sup> For thus says Jehovah, Do not enter the house of mourning, and do not go to mourn, and do not lament for them, for I have taken away My peace from this people, declares Jehovah, <i>My</i> lovingkindness and compassions.<br><br>
+     <sup><b>6</b></sup> Both the great and the small will die in this land; they will not be buried, nor will they be mourned; and no one will cut himself or make himself bald for them.<br><br>
+     <sup><b>7</b></sup> Nor will they break <i>bread</i> for them in mourning to comfort anyone for the dead or give them a cup of consolation to drink for his father or for his mother.<br><br>
+     <sup><b>8</b></sup> And you shall not enter the house of feasting to sit with them and eat and drink.<br><br>
+     <sup><b>9</b></sup> For thus says Jehovah of hosts, the God of Israel, I will cause to cease from this place, before your eyes and in your days, the voice of gladness and the voice of joy, the voice of the bridegroom and the voice of the bride.<br><br>
+     <sup><b>10</b></sup> And when you tell this people all these words and they say to you, Why has Jehovah pronounced all this great evil against us? And what is our iniquity? And what is our sin which we have sinned against Jehovah our God?<br><br>
+     <sup><b>11</b></sup> Then you shall say to them, Because your fathers have forsaken Me, declares Jehovah, and they have gone after other gods to serve them and to worship them; but Me they have forsaken, and My law they have not kept.<br><br>
+     <sup><b>12</b></sup> And you have done more evil than your fathers; for indeed, you go about, each one after the stubbornness of his evil heart, without listening to Me.<br><br>
+     <sup><b>13</b></sup> And I will cast you far away from this land into a land which you have not known, <i>neither</i> you nor your fathers; and there you will serve other gods day and night, for I will not show favor to you.<br><br>
+     <sup><b>14</b></sup> Therefore indeed, days are coming, declares Jehovah, when it will no longer be said, As Jehovah lives, who brought up the children of Israel out of the land of Egypt,<br><br>
+     <sup><b>15</b></sup> But, As Jehovah lives, who brought up the children of Israel out of the land of the north and out of all the lands where He had driven them; for I will bring them back to their own land, which I gave to their fathers.<br><br>
+     <sup><b>16</b></sup> I am soon sending many fishermen, declares Jehovah, and they will catch them; and afterward I will send many hunters, and they will hunt for them from every mountain and from every hill and from the clefts of the rocks.<br><br>
+     <sup><b>17</b></sup> For My eyes are upon all their ways; they are not concealed from My face, neither is their iniquity hidden from My eyes.<br><br>
+     <sup><b>18</b></sup> But first I will recompense double for their iniquity and their sin, because they have profaned My land with the corpses of their detestable things, and their abominations have filled My inheritance.<br><br>
+     <sup><b>19</b></sup> O Jehovah, my strength and my stronghold, / My refuge in the day of distress; / To You the nations come / From the ends of the earth and say, / Surely our fathers inherited falsehood / <i>And</i> vanity, in which there is no profit.<br><br>
+     <sup><b>20</b></sup> Shall a man make gods for himself, / Though they are no gods?<br><br>
+     <sup><b>21</b></sup> Therefore now, I am causing them to know; / At this time I will cause them to know / My hand and My might, / And they will know that My name is Jehovah.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('jeremiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
