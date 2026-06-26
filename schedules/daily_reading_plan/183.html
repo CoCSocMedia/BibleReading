@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/2-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Jeremiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="jeremiah-24"><a onclick="open_chapter('top', '24-jeremiah.html')">Jeremiah 24</a></h4>
+  <p><sup><b>1</b></sup> Jehovah showed me, and there were two baskets of figs placed before the temple of Jehovah, after Nebuchadrezzar the king of Babylon had exiled Jeconiah the son of Jehoiakim, the king of Judah, and the princes of Judah and the craftsmen and the smiths from Jerusalem and had brought them to Babylon.<br><br>
+     <sup><b>2</b></sup> One basket had very good figs, like first ripe figs, but the other basket had very bad figs, which could not be eaten because of <i>their</i> rottenness.<br><br>
+     <sup><b>3</b></sup> And Jehovah said to me, What do you see, Jeremiah? And I said, Figs. The good figs are very good; the bad <i>figs</i> are very bad, which cannot be eaten because of <i>their</i> rottenness.<br><br>
+     <sup><b>4</b></sup> Then the word of Jehovah came to me, saying,<br><br>
+     <sup><b>5</b></sup> Thus says Jehovah the God of Israel, Like these good figs, so I will regard those who are exiled of Judah, whom I have sent from this place to the land of the Chaldeans, for good.<br><br>
+     <sup><b>6</b></sup> And I will set My eyes upon them for good and will bring them back to this land and build them up and not tear them down, and I will plant them and not uproot them.<br><br>
+     <sup><b>7</b></sup> And I will give them a heart to know Me, that I am Jehovah; and they will be My people, and I will be their God; for they will return to Me with their whole heart.<br><br>
+     <sup><b>8</b></sup> And like the bad figs that cannot be eaten because of <i>their</i> rottenness, thus says Jehovah, so I will make Zedekiah, the king of Judah, and his princes and the remnant of Jerusalem who remain in this land and those who dwell in the land of Egypt —<br><br>
+     <sup><b>9</b></sup> I will even make them a terror to all the kingdoms of the earth for evil, to be a reproach and a proverb and a byword and a curse in all the places where I will drive them.<br><br>
+     <sup><b>10</b></sup> And I will send sword and famine and pestilence upon them until they are consumed from the land which I gave to them and to their fathers.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('jeremiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
