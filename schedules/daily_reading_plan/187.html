@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Jeremiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="jeremiah-28"><a onclick="open_chapter('top', '24-jeremiah.html')">Jeremiah 28</a></h4>
+  <p><sup><b>1</b></sup> And in that same year, at the beginning of the reign of Zedekiah the king of Judah, in the fourth year, in the fifth month, Hananiah the son of Azzur, the prophet, who was from Gibeon, spoke to me in the house of Jehovah in the presence of the priests and all the people, saying,<br><br>
+     <sup><b>2</b></sup> Thus says Jehovah of hosts, the God of Israel, saying, I have broken the yoke of the king of Babylon.<br><br>
+     <sup><b>3</b></sup> Within two full years I will bring back to this place all the vessels of the house of Jehovah, which Nebuchadnezzar the king of Babylon took from this place and carried to Babylon.<br><br>
+     <sup><b>4</b></sup> And Jeconiah the son of Jehoiakim, the king of Judah, and all the exiles from Judah who went to Babylon, I will bring back to this place, declares Jehovah; for I will break the yoke of the king of Babylon.<br><br>
+     <sup><b>5</b></sup> Then the prophet Jeremiah spoke to the prophet Hananiah in the presence of the priests and in the presence of all the people who were standing in the house of Jehovah.<br><br>
+     <sup><b>6</b></sup> And the prophet Jeremiah said, Amen! May Jehovah do so. May Jehovah establish your words which you have prophesied and bring back the vessels of the house of Jehovah and all the exiles from Babylon to this place.<br><br>
+     <sup><b>7</b></sup> Nevertheless hear now this word which I am about to speak in your ears and in the ears of all the people.<br><br>
+     <sup><b>8</b></sup> The prophets who were before me and before you since long ago prophesied against many lands and against great kingdoms, of war and of evil and of pestilence.<br><br>
+     <sup><b>9</b></sup> The prophet who prophesies of peace, when the word of that prophet comes to pass, then the prophet will be known <i>as</i> one whom Jehovah has truly sent.<br><br>
+     <sup><b>10</b></sup> Then the prophet Hananiah took the yoke bar from the neck of the prophet Jeremiah and broke it.<br><br>
+     <sup><b>11</b></sup> And Hananiah spoke in the presence of all the people, saying, Thus says Jehovah, Even so I will break the yoke of Nebuchadnezzar the king of Babylon from the neck of all the nations within two full years. Then the prophet Jeremiah went his way.<br><br>
+     <sup><b>12</b></sup> And the word of Jehovah came to Jeremiah after the prophet Hananiah had broken the yoke bar from the neck of the prophet Jeremiah, saying,<br><br>
+     <sup><b>13</b></sup> Go and speak to Hananiah, saying, Thus says Jehovah, You have broken the wooden yoke bars, but you have made in their place iron yoke bars.<br><br>
+     <sup><b>14</b></sup> For thus says Jehovah of hosts, the God of Israel, I have put an iron yoke upon the neck of all these nations that they may serve Nebuchadnezzar the king of Babylon; and they will serve him. And I have also given the beasts of the field to him.<br><br>
+     <sup><b>15</b></sup> And the prophet Jeremiah said to the prophet Hananiah, Listen now, O Hananiah, Jehovah has not sent you, and you have made this people trust in falsehood.<br><br>
+     <sup><b>16</b></sup> Therefore thus says Jehovah, I will send you from the face of the earth. This year you will die because you have spoken rebellion against Jehovah.<br><br>
+     <sup><b>17</b></sup> And the prophet Hananiah died in that very year in the seventh month.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('jeremiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
