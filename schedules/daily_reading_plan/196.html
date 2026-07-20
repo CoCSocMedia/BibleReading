@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Jeremiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="jeremiah-37"><a onclick="open_chapter('top', '24-jeremiah.html')">Jeremiah 37</a></h4>
+  <p><sup><b>1</b></sup> And Zedekiah the son of Josiah, whom Nebuchadrezzar the king of Babylon made king in the land of Judah, reigned as king instead of Coniah the son of Jehoiakim.<br><br>
+     <sup><b>2</b></sup> But he did not listen, neither he nor his servants nor the people of the land, to the words of Jehovah, which He spoke through Jeremiah the prophet.<br><br>
+     <sup><b>3</b></sup> And Zedekiah the king sent Jehucal the son of Shelemiah and Zephaniah the son of Maaseiah, the priest, to Jeremiah the prophet, saying, Pray to Jehovah our God for us.<br><br>
+     <sup><b>4</b></sup> Now Jeremiah came in and went out among the people, for they had not <i>yet</i> put him in prison.<br><br>
+     <sup><b>5</b></sup> And the army of Pharaoh had come out of Egypt; and when the Chaldeans who were besieging Jerusalem heard news of them, they withdrew from Jerusalem.<br><br>
+     <sup><b>6</b></sup> Then the word of Jehovah came to Jeremiah the prophet, saying,<br><br>
+     <sup><b>7</b></sup> Thus says Jehovah the God of Israel, Thus you shall say to the king of Judah, who sent you to Me to inquire of Me: Pharaoh’s army, which came out to you to help, is now returning to its own land of Egypt.<br><br>
+     <sup><b>8</b></sup> The Chaldeans will again return and fight against this city, and they will capture it and burn it with fire.<br><br>
+     <sup><b>9</b></sup> Thus says Jehovah, Do not deceive yourselves, saying, The Chaldeans will surely go away from us; for they will not go away.<br><br>
+     <sup><b>10</b></sup> For even if you had struck down the whole army of the Chaldeans who are fighting against you, and <i>only</i> wounded men remained among them, they would rise up each one in his tent and burn this city with fire.<br><br>
+     <sup><b>11</b></sup> And when the army of the Chaldeans had withdrawn from Jerusalem at the presence of the army of Pharaoh,<br><br>
+     <sup><b>12</b></sup> Jeremiah tried to go out from Jerusalem to go to the land of Benjamin to receive a portion there among the people.<br><br>
+     <sup><b>13</b></sup> When he was at the Gate of Benjamin, there was a captain of the guard there whose name was Irijah, the son of Shelemiah, the son of Hananiah, and he seized Jeremiah the prophet, saying, You are deserting to the Chaldeans!<br><br>
+     <sup><b>14</b></sup> And Jeremiah said, It is false! I am not deserting to the Chaldeans. But he did not listen to him. And Irijah seized Jeremiah and brought him to the princes.<br><br>
+     <sup><b>15</b></sup> And the princes were angry with Jeremiah and struck him and put him in prison, in the house of Jonathan the scribe; for they had made it into a prison.<br><br>
+     <sup><b>16</b></sup> When Jeremiah came to the dungeon and to the cells, Jeremiah remained there many days.<br><br>
+     <sup><b>17</b></sup> And Zedekiah the king sent and took him out; and the king questioned him in his house secretly and said, Is there any word from Jehovah? And Jeremiah said, There is. And he said, You will be delivered into the hand of the king of Babylon.<br><br>
+     <sup><b>18</b></sup> And Jeremiah also said to Zedekiah the king, In what have I sinned against you or against your servants or against this people, that you have put me in prison?<br><br>
+     <sup><b>19</b></sup> And where are your prophets who prophesied to you, saying, The king of Babylon will not come against you or against this land?<br><br>
+     <sup><b>20</b></sup> And now hear, O my lord the king; let my supplication come before you, and do not send me back to the house of Jonathan the scribe, lest I die there.<br><br>
+     <sup><b>21</b></sup> So Zedekiah the king commanded, and they placed Jeremiah in the court of the guard, and gave him a loaf of bread daily from the bakers’ street, until all the bread was gone from the city. So Jeremiah remained in the court of the guard.<br><br>
+  </p>
+</div>
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('jeremiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

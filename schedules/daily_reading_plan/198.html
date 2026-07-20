@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/17-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Jeremiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="jeremiah-39"><a onclick="open_chapter('top', '24-jeremiah.html')">Jeremiah 39</a></h4>
+  <p><sup><b>1</b></sup> And when Jerusalem was captured (in the ninth year of Zedekiah the king of Judah, in the tenth month, Nebuchadrezzar the king of Babylon and his whole army came to Jerusalem and besieged it;<br><br>
+     <sup><b>2</b></sup> In the eleventh year of Zedekiah, in the fourth month, the ninth day of the month, a breach was made in the city),<br><br>
+     <sup><b>3</b></sup> All the princes of the king of Babylon came and sat down in the middle gate: Nergal-sharezer, Samgar-nebu, Sar-sechim the Rab-saris, Nergal-sharezer the Rab-mag, and all the rest of the princes of the king of Babylon.<br><br>
+     <sup><b>4</b></sup> And when Zedekiah the king of Judah and all the men of war saw them, they fled and went out from the city by night by way of the king’s garden through the gate between the two walls; and he went out by the way toward the Arabah.<br><br>
+     <sup><b>5</b></sup> And the army of the Chaldeans pursued after them, and they overtook Zedekiah in the plains of Jericho; and when they had taken him, they brought him up to Nebuchadrezzar the king of Babylon at Riblah in the land of Hamath, and he pronounced judgments on him.<br><br>
+     <sup><b>6</b></sup> Then the king of Babylon slaughtered the sons of Zedekiah before his eyes at Riblah; the king of Babylon also slaughtered all the nobles of Judah.<br><br>
+     <sup><b>7</b></sup> And he put out Zedekiah’s eyes and bound him with bronze fetters to bring him to Babylon.<br><br>
+     <sup><b>8</b></sup> And the Chaldeans burned the king’s house and the houses of the people with fire and broke down the walls of Jerusalem.<br><br>
+     <sup><b>9</b></sup> And the rest of the people who remained in the city, both the deserters who deserted to him and the rest of the people who remained, Nebuzaradan the captain of the bodyguard carried away into exile to Babylon.<br><br>
+     <sup><b>10</b></sup> But some of the poorest people who had nothing, Nebuzaradan the captain of the bodyguard left in the land of Judah and gave them vineyards and fields at that time.<br><br>
+     <sup><b>11</b></sup> And Nebuchadrezzar the king of Babylon commanded concerning Jeremiah through Nebuzaradan the captain of the bodyguard, saying,<br><br>
+     <sup><b>12</b></sup> Take him and look after him, and do no evil to him, but deal with him just as he tells you.<br><br>
+     <sup><b>13</b></sup> So Nebuzaradan the captain of the bodyguard sent <i>men,</i> and Nebushazban the Rab-saris and Nergal-sharezer the Rab-mag and all the chief officers of the king of Babylon<br><br>
+     <sup><b>14</b></sup> Also sent <i>men</i> and took Jeremiah from the court of the guard and gave him to Gedaliah the son of Ahikam, the son of Shaphan, to take him home. And he dwelt among the people.<br><br>
+     <sup><b>15</b></sup> Now the word of Jehovah had come to Jeremiah when he was shut up in the court of the guard, saying,<br><br>
+     <sup><b>16</b></sup> Go and speak to Ebed-melech the Cushite, saying, Thus says Jehovah of hosts, the God of Israel, I am about to bring My words against this city for evil and not for good; and they will come to pass before you on that day.<br><br>
+     <sup><b>17</b></sup> But I will deliver you on that day, declares Jehovah, and you will not be given into the hand of the men of whom you are afraid.<br><br>
+     <sup><b>18</b></sup> For I will surely save you, and you will not fall by the sword, but you will have your own life as spoil, because you have put your trust in Me, declares Jehovah.<br><br>
+  </p>
+</div>
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('jeremiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

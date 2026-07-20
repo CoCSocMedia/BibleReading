@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/19-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Jeremiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="jeremiah-41"><a onclick="open_chapter('top', '24-jeremiah.html')">Jeremiah 41</a></h4>
+  <p><sup><b>1</b></sup> And in the seventh month Ishmael the son of Nethaniah, the son of Elishama, of the royal family and <i>one</i> of the chief officers of the king, and ten men with him came to Gedaliah the son of Ahikam at Mizpah. And there they ate bread together in Mizpah.<br><br>
+     <sup><b>2</b></sup> Then Ishmael the son of Nethaniah and the ten men who were with him rose up and struck down Gedaliah the son of Ahikam, the son of Shaphan, with the sword and put him to death, whom the king of Babylon had appointed <i>governor</i> in the land.<br><br>
+     <sup><b>3</b></sup> And Ishmael also struck down all the Jews who were with him, <i>that is,</i> with Gedaliah in Mizpah, as well as the Chaldeans who were found there, the men of war.<br><br>
+     <sup><b>4</b></sup> And on the next day after <i>he</i> had put Gedaliah to death, and no one knew about <i>it,</i><br><br>
+     <sup><b>5</b></sup> Men came from Shechem, from Shiloh, and from Samaria, eighty men, with shaved beards and torn garments, having cut themselves and having meal offerings and incense in their hand to bring to the house of Jehovah.<br><br>
+     <sup><b>6</b></sup> And Ishmael the son of Nethaniah went out from Mizpah to meet them, weeping all along as he went; and as he met them he said to them, Come to Gedaliah the son of Ahikam.<br><br>
+     <sup><b>7</b></sup> And when they came into the midst of the city, Ishmael the son of Nethaniah, he and the men who were with him, slaughtered them <i>and cast them</i> into the pit.<br><br>
+     <sup><b>8</b></sup> But ten men were found among them who said to Ishmael, Do not kill us, for we have hidden stores of wheat and barley and oil and honey in the field. So he refrained and did not put them to death along with their brothers.<br><br>
+     <sup><b>9</b></sup> And the pit into which Ishmael cast all the corpses of the men whom he had slain because of Gedaliah (it was the one which Asa the king had made on account of Baasha the king of Israel), Ishmael the son of Nethaniah filled with the slain.<br><br>
+     <sup><b>10</b></sup> Then Ishmael took captive all the remnant of the people who were in Mizpah: the king’s daughters and all the people who were left in Mizpah, whom Nebuzaradan the captain of the bodyguard had committed to Gedaliah the son of Ahikam; so Ishmael the son of Nethaniah took them captive and went out to cross over to the children of Ammon.<br><br>
+     <sup><b>11</b></sup> But when Johanan the son of Kareah and all the leaders of the forces who were with him heard of all the evil which Ishmael the son of Nethaniah had done,<br><br>
+     <sup><b>12</b></sup> They took all the men and went to fight with Ishmael the son of Nethaniah, and they found him by the great pool which was in Gibeon.<br><br>
+     <sup><b>13</b></sup> And when all the people who were with Ishmael saw Johanan the son of Kareah and all the captains of the forces who were with him, they rejoiced.<br><br>
+     <sup><b>14</b></sup> And so all the people whom Ishmael had taken captive from Mizpah turned around and came back and went to Johanan the son of Kareah.<br><br>
+     <sup><b>15</b></sup> But Ishmael the son of Nethaniah escaped from Johanan with eight men and went to the children of Ammon.<br><br>
+     <sup><b>16</b></sup> Then Johanan the son of Kareah and all the captains of the forces with him took all the remnant of the people whom he brought back from Ishmael the son of Nethaniah, from Mizpah, after he had struck down Gedaliah the son of Ahikam: mighty men, men of war, and women and little children and eunuchs whom he brought back from Gibeon.<br><br>
+     <sup><b>17</b></sup> And they went and stayed in Geruth Chimham, which is near Bethlehem, in order to go and enter into Egypt<br><br>
+     <sup><b>18</b></sup> Because of the Chaldeans; for they were afraid of them since Ishmael the son of Nethaniah had struck down Gedaliah the son of Ahikam, whom the king of Babylon had appointed over the land.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('jeremiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

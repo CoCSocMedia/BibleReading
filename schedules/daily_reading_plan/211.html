@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/21-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Jeremiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="jeremiah-43"><a onclick="open_chapter('top', '24-jeremiah.html')">Jeremiah 43</a></h4>
+  <p><sup><b>1</b></sup> And when Jeremiah finished speaking to all the people all the words of Jehovah their God, with which Jehovah their God had sent him to them, all these words,<br><br>
+     <sup><b>2</b></sup> Azariah the son of Hoshaiah and Johanan the son of Kareah and all the proud men spoke to Jeremiah, saying, You are speaking falsehood; Jehovah our God has not sent you to say, You shall not go to Egypt to sojourn there.<br><br>
+     <sup><b>3</b></sup> But Baruch the son of Neriah is inciting you against us so as to give us into the hand of the Chaldeans that they may put us to death or take us into exile to Babylon.<br><br>
+     <sup><b>4</b></sup> So Johanan the son of Kareah and all the captains of the forces and all the people did not listen to the voice of Jehovah to remain in the land of Judah.<br><br>
+     <sup><b>5</b></sup> But Johanan the son of Kareah and all the captains of the forces took all the remnant of Judah, who had returned from all the nations where they had been driven in order to sojourn in the land of Judah,<br><br>
+     <sup><b>6</b></sup> The men and the women and the little children and the king’s daughters and every person whom Nebuzaradan the captain of the bodyguard had left with Gedaliah the son of Ahikam, the son of Shaphan, as well as Jeremiah the prophet and Baruch the son of Neriah;<br><br>
+     <sup><b>7</b></sup> And they came to the land of Egypt (for they did not listen to the voice of Jehovah) and came as far as Tahpanhes.<br><br>
+     <sup><b>8</b></sup> Then the word of Jehovah came to Jeremiah in Tahpanhes, saying,<br><br>
+     <sup><b>9</b></sup> Take large stones in your hand, and hide them in the mortar in the brickwork which is at the entrance of Pharaoh’s house in Tahpanhes in the sight of the Jews.<br><br>
+     <sup><b>10</b></sup> And say to them, Thus says Jehovah of hosts, the God of Israel, I am going to send and take Nebuchadrezzar the king of Babylon, My servant, and I will set his throne above these stones which I have hidden; and he will spread his canopy over them.<br><br>
+     <sup><b>11</b></sup> And he will come and strike the land of Egypt: those who are for death to death, and those who are for captivity to captivity, and those who are for the sword to the sword.<br><br>
+     <sup><b>12</b></sup> And I will kindle a fire in the houses of the gods of Egypt, and he will burn them and carry them away captive; and he will wrap himself with the land of Egypt, as a shepherd wraps himself with his garment; and he will go out from there in peace.<br><br>
+     <sup><b>13</b></sup> And he will smash the pillars of Beth-shemesh, which is in the land of Egypt, and he will burn the houses of the gods of Egypt with fire.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('jeremiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
