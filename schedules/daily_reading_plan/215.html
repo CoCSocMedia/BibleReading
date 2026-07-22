@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/25-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Jeremiah</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="jeremiah-47"><a onclick="open_chapter('top', '24-jeremiah.html')">Jeremiah 47</a></h4>
+  <p><sup><b>1</b></sup> The word of Jehovah that came to Jeremiah the prophet concerning the Philistines before Pharaoh struck Gaza.<br><br>
+     <sup><b>2</b></sup> Thus says Jehovah, / See, waters are rising up from the north / And will become an overflowing stream; / And they will overflow the land and all that fills it, / The city and those who dwell in it; / And men will cry out, / And every inhabitant of the land will howl.<br><br>
+     <sup><b>3</b></sup> At the sound of the stamping of the hooves of his stallions, / At the rushing of his chariots, at the rumbling of his wheels, / The fathers will not turn back for <i>their</i> children, / Because of the feebleness of their hands,<br><br>
+     <sup><b>4</b></sup> Because of the day which is coming, / To destroy all the Philistines, / To cut off from Tyre and Sidon / Every helper who survives; / For Jehovah will destroy the Philistines, / The remnant of the coastland of Caphtor.<br><br>
+     <sup><b>5</b></sup> Baldness has come upon Gaza; / Ashkelon has been cut off. / O remnant of their valley, / How long will you cut yourself?<br><br>
+     <sup><b>6</b></sup> Alas, O sword of Jehovah, / How long until you are quiet? Put yourself into your sheath; / Rest and be still.<br><br>
+     <sup><b>7</b></sup> How can it be quiet, / When Jehovah has commanded it? / Against Ashkelon and against the seacoast — / There He has appointed it.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('jeremiah-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
