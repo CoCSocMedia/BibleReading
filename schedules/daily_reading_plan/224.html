@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Lamentations</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="lamentations-4"><a onclick="open_chapter('top', '25-lamentations.html')">Lamentations 4</a></h4>
+  <p><sup><b>1</b></sup> How the gold has become dim! / <i>How</i> the most pure gold has changed! / The stones of the sanctuary lie poured out / At the head of every street.<br><br>
+     <sup><b>2</b></sup> The precious sons of Zion, / Comparable to fine gold, / How they are esteemed as earthen pitchers, / The work of the hands of a potter.<br><br>
+     <sup><b>3</b></sup> Even the jackals present the breast; / They nurse their young ones; / <i>But</i> the daughter of my people has become cruel, / Like the ostriches in the wilderness.<br><br>
+     <sup><b>4</b></sup> The tongue of the sucking child cleaves / To the roof of his mouth for thirst; / The little ones ask for bread, / <i>But</i> no one breaks <i>it</i> for them.<br><br>
+     <sup><b>5</b></sup> Those who fed on delicacies / Are desolate in the streets; / Those who were brought up in scarlet / Embrace dung heaps.<br><br>
+     <sup><b>6</b></sup> And the iniquity of the daughter of my people is greater / Than the sin of Sodom, / Which was overthrown as in a moment; / And no hands were laid on her.<br><br>
+     <sup><b>7</b></sup> Her nobles were purer than snow; / They were whiter than milk; / They were redder in body than corals; / Their figure was like sapphire.<br><br>
+     <sup><b>8</b></sup> Their visage is darker than black <i>coal;</i> / They are not recognized in the streets. / Their skin has shriveled up on their bones; / It has dried up; it has become like wood.<br><br>
+     <sup><b>9</b></sup> Those who were slain by the sword are better / Than those slain by famine; / For these pine away stricken through, / Because of the lack of the produce of the field.<br><br>
+     <sup><b>10</b></sup> The hands of compassionate women / Have boiled their own children; / They have become their food / In the destruction of the daughter of my people.<br><br>
+     <sup><b>11</b></sup> Jehovah has accomplished His wrath; / He has poured out His burning anger. / And He has kindled a fire in Zion, / And it has consumed its foundations.<br><br>
+     <sup><b>12</b></sup> The kings of the earth did not believe, / Neither did any of the inhabitants of the world, / That the adversary and the enemy would enter / Into the gates of Jerusalem.<br><br>
+     <sup><b>13</b></sup> It is because of the sins of her prophets, / <i>And</i> the iniquities of her priests, / Who have shed the blood of the righteous / In her midst.<br><br>
+     <sup><b>14</b></sup> They have wandered about blind in the streets; / They are polluted with blood; / So that men cannot touch / Their garments.<br><br>
+     <sup><b>15</b></sup> They cried out to them, Depart! Unclean! / Depart, depart; do not touch! / When they fled away and wandered about, men said among the nations, / They will no longer sojourn <i>there.</i><br><br>
+     <sup><b>16</b></sup> The anger of Jehovah has scattered them; / He will no longer regard them. / They did not honor the priests, / Nor did they favor the elders.<br><br>
+     <sup><b>17</b></sup> Our eyes do yet fail, / <i>Looking</i> in vain for our help; / In our watching we watched / For a nation that could not save.<br><br>
+     <sup><b>18</b></sup> They hunted our steps, / So that we cannot walk in our streets; / Our end drew near; our days were fulfilled; / For our end had come.<br><br>
+     <sup><b>19</b></sup> Our pursuers were swifter / Than the eagles of heaven; / They hotly pursued us on the mountains; / They lay in wait for us in the wilderness.<br><br>
+     <sup><b>20</b></sup> The breath of our nostrils, the anointed of Jehovah, / Has been captured in their pits, / Of whom we said, Under his shadow / We will live among the nations.<br><br>
+     <sup><b>21</b></sup> Rejoice and be glad, O daughter of Edom, / Who dwells in the land of Uz. / <i>Yet</i> the cup will pass through to you also; / You will become drunk and make yourself naked.<br><br>
+     <sup><b>22</b></sup> <i>The punishment for</i> your iniquity has been accomplished, O daughter of Zion; / He will no longer take you into exile. / <i>But</i> He will punish your iniquity, O daughter of Edom; / He will uncover your sins.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('lamentations-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
