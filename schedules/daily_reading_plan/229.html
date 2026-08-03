@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ezekiel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ezekiel-4"><a onclick="open_chapter('top', '26-ezekiel.html')">Ezekiel 4</a></h4>
+  <p><sup><b>1</b></sup> Now you, son of man, take a tile and set it before you; and inscribe on it a city, Jerusalem;<br><br>
+     <sup><b>2</b></sup> And lay a siege against it, and build a siege wall against it, and cast up a mound against it, and set up camps against it, and set battering rams all around it.<br><br>
+     <sup><b>3</b></sup> And take an iron plate and set it as an iron wall between you and the city, and set your face against it; and it will be under siege, and you shall lay siege against it. This will be a sign to the house of Israel.<br><br>
+     <sup><b>4</b></sup> Moreover lie down on your left side and lay the iniquity of the house of Israel on it; you shall bear their iniquity for the number of days that you lie on it.<br><br>
+     <sup><b>5</b></sup> And I have appointed to you the years of their iniquity, according to the number of the days, three hundred and ninety days; and you will bear the iniquity of the house of Israel.<br><br>
+     <sup><b>6</b></sup> And when you have completed them, lie down again, on your right side; and you shall bear the iniquity of the house of Judah for forty days; I have appointed to you a day for each year.<br><br>
+     <sup><b>7</b></sup> Then toward the siege of Jerusalem you shall set your face with your arm bared, and you shall prophesy against it.<br><br>
+     <sup><b>8</b></sup> And I will then put ropes on you so that you cannot turn from one side to the other, until you have completed the days of your siege.<br><br>
+     <sup><b>9</b></sup> And take wheat, barley, beans, lentils, millet, and spelt, and put them in one vessel, and make them into bread for yourself. For the number of days that you lie on your side, for three-hundred ninety days, you shall eat it.<br><br>
+     <sup><b>10</b></sup> And your food which you eat shall be twenty shekels a day by weight; at fixed times you shall eat it.<br><br>
+     <sup><b>11</b></sup> And the water that you drink shall be a sixth of a hin by measure; at fixed times you shall drink <i>it.</i><br><br>
+     <sup><b>12</b></sup> And as a barley cake you shall eat it; on human excrement you shall bake it in their sight.<br><br>
+     <sup><b>13</b></sup> And Jehovah said, Thus shall the children of Israel eat their bread unclean among the nations to which I will drive them.<br><br>
+     <sup><b>14</b></sup> Then I said, Ah, Lord Jehovah. Indeed my soul has never been defiled; for from my youth until now I have not eaten anything that has died of itself or has been torn to pieces, nor has any abominable flesh entered into my mouth.<br><br>
+     <sup><b>15</b></sup> And He said to me, See, I give you cow’s dung instead of human excrement, and you will make your bread over it.<br><br>
+     <sup><b>16</b></sup> Then He said to me, Son of man, I am now breaking the staff of bread in Jerusalem; and they will eat bread by weight and in anxiety, and they will drink water by measure and in horror;<br><br>
+     <sup><b>17</b></sup> Because they will lack bread and water, and they will be horrified at each other and will rot in their iniquity.<br><br>
+  </p>
+</div>
+
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ezekiel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
