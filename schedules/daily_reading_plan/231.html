@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/10-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ezekiel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ezekiel-6"><a onclick="open_chapter('top', '26-ezekiel.html')">Ezekiel 6</a></h4>
+  <p><sup><b>1</b></sup> And the word of Jehovah came to me, saying,<br><br>
+     <sup><b>2</b></sup> Son of man, set your face toward the mountains of Israel, and prophesy against them,<br><br>
+     <sup><b>3</b></sup> And say, Mountains of Israel, hear the word of the Lord Jehovah. Thus says the Lord Jehovah to the mountains and the hills, to the ravines and the valleys, I am now bringing a sword upon you, and I will destroy your high places.<br><br>
+     <sup><b>4</b></sup> And your altars will be desolated, and your sun images will be broken; and I will make your slain fall before your idols.<br><br>
+     <sup><b>5</b></sup> And I will lay the corpses of the children of Israel before their idols, and I will scatter your bones around your altars.<br><br>
+     <sup><b>6</b></sup> In all the places that you dwell the cities will be laid waste and the high places will be desolated, so that your altars may be laid waste and desolated, and your idols may be broken and brought to an end, and your sun images may be cut down, and your works may be blotted out.<br><br>
+     <sup><b>7</b></sup> And the slain will fall in your midst, and you will know that I am Jehovah.<br><br>
+     <sup><b>8</b></sup> But I will leave a remnant, in that you will have those who have escaped the sword among the nations, when you are scattered among the countries.<br><br>
+     <sup><b>9</b></sup> And those of you who escape will remember Me among the nations to which they are carried away, how I am broken with their heart of harlotry, which turned away from Me, and with their eyes that go as harlots after their idols; and they will loathe themselves in their own sight for the evils that they have done, for all their abominations.<br><br>
+     <sup><b>10</b></sup> And they will know that I am Jehovah; I have not said in vain that I would do this ill to them.<br><br>
+     <sup><b>11</b></sup> Thus says the Lord Jehovah, Clap your hands and stamp your foot and say, Alas for all the evil abominations of the house of Israel! For they will fall by sword, famine, and pestilence.<br><br>
+     <sup><b>12</b></sup> He who is far off will die by the pestilence, and he who is near will fall by the sword, and he who is left remaining and is besieged will die by the famine; thus I will spend My wrath on them.<br><br>
+     <sup><b>13</b></sup> Then you will know that I am Jehovah, when their slain are among their idols around their altars, on every high hill, on all the mountaintops, under every green tree, and under every leafy terebinth, the places where they offered a sweet savor to all their idols.<br><br>
+     <sup><b>14</b></sup> So I will stretch out My hand against them and will make the land desolate, indeed, more desolate than the wilderness of Diblath, in all the places that they dwell; and they will know that I am Jehovah.<br><br>
+  </p>
+</div>
+
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ezekiel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
