@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/12-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ezekiel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ezekiel-8"><a onclick="open_chapter('top', '26-ezekiel.html')">Ezekiel 8</a></h4>
+  <p><sup><b>1</b></sup> And in the sixth year, in the sixth month, on the fifth of the month, as I sat in my house and the elders of Judah sat before me, the hand of the Lord Jehovah fell upon me there.<br><br>
+     <sup><b>2</b></sup> Then I looked, and there was a likeness like the appearance of fire: from His loins and downward, the appearance of fire; and from His loins and upward something like the appearance of brightness, like the sight of electrum.<br><br>
+     <sup><b>3</b></sup> And He stretched out the form of a hand and took me by a lock of my head; and the Spirit lifted me up between the earth and heaven and brought me to Jerusalem in the visions of God, to the entrance of the gate of the inner court that faces north, where the seat of the idol of jealousy was, which provokes to jealousy.<br><br>
+     <sup><b>4</b></sup> And the glory of the God of Israel was there, like the appearance that I saw in the plain.<br><br>
+     <sup><b>5</b></sup> Then He said to me, Son of man, Lift up your eyes now toward the north. Thus I lifted up my eyes toward the north, and there, toward the north at the altar gate, was this idol of jealousy at the entry.<br><br>
+     <sup><b>6</b></sup> And He said to me, Son of man, do you see what they are doing, the great abominations that the house of Israel is committing here, that I should be far from My sanctuary? But you will yet see greater abominations.<br><br>
+     <sup><b>7</b></sup> Then He brought me to the entrance of the court; and I looked, and there was a hole in the wall.<br><br>
+     <sup><b>8</b></sup> And He said to me, Son of man, dig now through the wall. So I dug through the wall, and there was <i>now</i> an entrance.<br><br>
+     <sup><b>9</b></sup> And He said to me, Go and see the wicked abominations that they are committing here.<br><br>
+     <sup><b>10</b></sup> Thus I entered and looked, and there were every form of creeping thing and detestable beast and all the idols of the house of Israel, engraved on the wall all around.<br><br>
+     <sup><b>11</b></sup> And standing before them were seventy men of the elders of the house of Israel, with Jaazaniah the son of Shaphan standing among them, each with his censer in his hand and the smell of the incense cloud went up.<br><br>
+     <sup><b>12</b></sup> And He said to me, Do you see, son of man, what the elders of the house of Israel do in the dark, each in the room of his engraved images? For they say, Jehovah does not see us; Jehovah has forsaken the land.<br><br>
+     <sup><b>13</b></sup> And He said to me, You will yet again see greater abominations that they are committing.<br><br>
+     <sup><b>14</b></sup> Then He brought me to the entrance of the gate of the house of Jehovah that was toward the north; and women weeping for Tammuz were sitting there.<br><br>
+     <sup><b>15</b></sup> And He said to me, Do you see, son of man? You will yet again see greater abominations than these.<br><br>
+     <sup><b>16</b></sup> Then He brought me into the inner court of the house of Jehovah; and there, at the entrance of the temple of Jehovah, between the porch and the altar, were about twenty-five men, with their backs toward the temple of Jehovah and their faces toward the east; and they were worshipping the sun toward the east.<br><br>
+     <sup><b>17</b></sup> And He said to me, Do you see <i>this,</i> son of man? Is it too light a thing for the house of Judah to commit the abominations that they commit here, that they <i>also</i> fill the land with violence and again and again provoke Me to anger? And now they are putting the branch to their nose.<br><br>
+     <sup><b>18</b></sup> Therefore I will also deal <i>with them</i> in wrath. My eye will not pity, nor will I spare; and though they cry in My ears with a loud voice, I will not listen to them.<br><br>
+  </p>
+</div>
+
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ezekiel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
