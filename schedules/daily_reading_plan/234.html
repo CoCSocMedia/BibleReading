@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/13-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ezekiel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ezekiel-9"><a onclick="open_chapter('top', '26-ezekiel.html')">Ezekiel 9</a></h4>
+  <p><sup><b>1</b></sup> Then He cried out in my ears with a loud voice, saying, Draw near, you who oversee the city, each with his destroying weapon in his hand.<br><br>
+     <sup><b>2</b></sup> And then six men came from the direction of the upper gate, which faces north, each with his shattering weapon in his hand; and there was one man among them, clothed in linen, with a scribe’s inkhorn by his side. And they went and stood beside the bronze altar.<br><br>
+     <sup><b>3</b></sup> And the glory of the God of Israel went up from the cherub on which it had been to the threshold of the house. And He called out to the man clothed in linen, who <i>had</i> the scribe’s inkhorn by his side.<br><br>
+     <sup><b>4</b></sup> And Jehovah said to him, Pass through the midst of the city, through the midst of Jerusalem, and put a mark on the foreheads of the men who sigh and groan because of all the abominations that are committed in its midst.<br><br>
+     <sup><b>5</b></sup> And to the others He said in my hearing, Pass through the city behind him and strike; do not let your eye pity, and do not spare.<br><br>
+     <sup><b>6</b></sup> Utterly slay the old man <i>and</i> the young man, and the maiden, the little child, and the women; but do not come near anyone on whom is the mark. And you shall begin at My sanctuary. Thus they began with the elders who were before the house.<br><br>
+     <sup><b>7</b></sup> And He said to them, Defile the house and fill the courts with the slain; go forth. And they went forth and struck <i>the people</i> in the city.<br><br>
+     <sup><b>8</b></sup> And as they were striking them and I was left alone, I fell on my face, and I cried out and said, Ah, Lord Jehovah! Are You destroying the whole remnant of Israel in Your pouring out of Your wrath upon Jerusalem?<br><br>
+     <sup><b>9</b></sup> And He said to me, The iniquity of the house of Israel and Judah is very, very great; and the land is full of blood, and the city, full of perverted justice; for they say, Jehovah has forsaken the land, and Jehovah does not see.<br><br>
+     <sup><b>10</b></sup> But as for Me, My eye will not pity, nor will I spare; I will bring their ways upon their head.<br><br>
+     <sup><b>11</b></sup> And the man clothed in linen, who <i>had</i> the inkhorn by his side, brought back a report, saying, I have done as You have commanded me.<br><br>
+  </p>
+</div>
+
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ezekiel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

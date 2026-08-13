@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/14-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ezekiel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ezekiel-10"><a onclick="open_chapter('top', '26-ezekiel.html')">Ezekiel 10</a></h4>
+  <p><sup><b>1</b></sup> Then I looked, and there, in the expanse that was over the heads of the cherubim, appeared the likeness of a throne over them, like the appearance of a sapphire stone.<br><br>
+     <sup><b>2</b></sup> And He spoke to the man clothed in linen and said, Go in between the whirling wheels, under the cherub, and fill the hollow of your hands with coals of fire from between the cherubim, and scatter <i>them</i> over the city. And he went in, in my sight.<br><br>
+     <sup><b>3</b></sup> And the cherubim were standing on the right side of the house when the man went in, and the cloud filled the inner court.<br><br>
+     <sup><b>4</b></sup> And the glory of Jehovah rose up from the cherub to <i>a place</i> above the threshold of the house; and the house was filled with the cloud, and the court was filled with the brightness of the glory of Jehovah.<br><br>
+     <sup><b>5</b></sup> And the sound of the wings of the cherubim was heard as far as the outer court, like the voice of the Almighty God when He speaks.<br><br>
+     <sup><b>6</b></sup> And when He had commanded the man clothed in linen, saying, Take fire from between the whirling wheels, from between the cherubim, the man went and stood beside the wheel.<br><br>
+     <sup><b>7</b></sup> And the cherub stretched out his hand from between the cherubim toward the fire that was between the cherubim, and he took some up and put <i>it</i> into the hands of the man clothed in linen; and the man took <i>it</i> and went forth.<br><br>
+     <sup><b>8</b></sup> And with the cherubim appeared the form of a man’s hand under their wings.<br><br>
+     <sup><b>9</b></sup> And I looked, and there were four wheels beside the cherubim, one wheel beside one cherub and another wheel beside another cherub; and the appearance of the wheels was like the sight of beryl.<br><br>
+     <sup><b>10</b></sup> And as for their appearance, the four of them had one likeness, as it were a wheel within a wheel.<br><br>
+     <sup><b>11</b></sup> As they went, they went in their four directions; they did not turn as they went, but to the place that the head faced they followed; they did not turn as they went.<br><br>
+     <sup><b>12</b></sup> And their whole body, their backs, their hands, and their wings, and the wheels were full of eyes all around, their wheels <i>belonging</i> to the four of them.<br><br>
+     <sup><b>13</b></sup> The wheels were called in my hearing the whirling wheels.<br><br>
+     <sup><b>14</b></sup> And every one had four faces. The first face was the face of a cherub; the second face was the face of a man; the third, the face of a lion; and the fourth, the face of an eagle.<br><br>
+     <sup><b>15</b></sup> Then the cherubim rose up. This was the living creature that I had seen by the river Chebar.<br><br>
+     <sup><b>16</b></sup> And whenever the cherubim went, the wheels went beside them; and whenever the cherubim lifted their wings to rise up from the earth, the wheels also did not turn from beside them.<br><br>
+     <sup><b>17</b></sup> When those stood still, these stood still; and when those rose up, these rose up with them; for the Spirit of the living creature was in them.<br><br>
+     <sup><b>18</b></sup> And the glory of Jehovah went forth from over the threshold of the house and stood over the cherubim.<br><br>
+     <sup><b>19</b></sup> And the cherubim lifted their wings and rose up from the earth in my sight when they went forth, and the wheels were next to them. And they stood at the entrance of the east gate of the house of Jehovah, and the glory of the God of Israel was over them above.<br><br>
+     <sup><b>20</b></sup> This was the living creature that I had seen beneath the God of Israel by the river Chebar, and I knew that they were cherubim.<br><br>
+     <sup><b>21</b></sup> Each one had four faces, and each one had four wings; and the likeness of a man’s hands was under their wings.<br><br>
+     <sup><b>22</b></sup> And as for the likeness of their faces, they were the faces that I had seen by the river Chebar, both their appearance and themselves. Each went straight forward.<br><br>
+  </p>
+</div>
+
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ezekiel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
