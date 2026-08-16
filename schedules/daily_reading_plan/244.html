@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/23-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ezekiel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ezekiel-19"><a onclick="open_chapter('top', '26-ezekiel.html')">Ezekiel 19</a></h4>
+  <p><sup><b>1</b></sup> But you, take up a lamentation for the princes of Israel,<br><br>
+     <sup><b>2</b></sup> And say,What was your mother? / A lioness among lions. / She lay in the midst of young lions; / She brought up her whelps.<br><br>
+     <sup><b>3</b></sup> When she raised up one of her whelps, / He became a young lion; / And he learned to take prey; / He devoured men.<br><br>
+     <sup><b>4</b></sup> Then the nations heard of him; / He was captured in their pit, / And they brought him with hooks / To the land of Egypt.<br><br>
+     <sup><b>5</b></sup> When she saw that she had waited, / That her hope was lost, / She took another one of her whelps; / She made him a young lion.<br><br>
+     <sup><b>6</b></sup> And he went about among the lions; / He became a young lion. / And he learned to take prey; / He devoured men.<br><br>
+     <sup><b>7</b></sup> And he destroyed their citadels / And laid waste their cities; / And the land and its fullness were horrified / At the sound of his roaring.<br><br>
+     <sup><b>8</b></sup> Then the nations set against him / All around from the provinces / And spread their net over him; / He was captured in their pit.<br><br>
+     <sup><b>9</b></sup> And they put him in a cage with hooks / And brought him to the king of Babylon — / They brought him into strongholds — / That his voice would no longer be heard / Upon the mountains of Israel.<br><br>
+     <sup><b>10</b></sup> Your mother was like a vine in your vineyard, / Transplanted beside the waters; / It was fruitful and full of branches / Because of abundant waters.<br><br>
+     <sup><b>11</b></sup> And it had strong branches / For scepters of those who rule; / And its height was exalted among the leafy boughs, / And it was visible in its height because of the multitude of its branches.<br><br>
+     <sup><b>12</b></sup> But it was plucked up in wrath; / It was cast down to the ground; / And the east wind dried up its fruit; / Its strong branch was broken off and it withered; / The fire consumed it.<br><br>
+     <sup><b>13</b></sup> And now it is transplanted in the wilderness, / In a dry and thirsty land.<br><br>
+     <sup><b>14</b></sup> And fire has gone forth from <i>its</i> branch; / It has consumed its offshoots <i>and</i> its fruit, / So that there is no strong branch in it, / A scepter to rule.This is a lamentation and it has become a lamentation.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ezekiel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/19-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ezekiel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ezekiel-15"><a onclick="open_chapter('top', '26-ezekiel.html')">Ezekiel 15</a></h4>
+  <p><sup><b>1</b></sup> Then the word of Jehovah came to me, saying,<br><br>
+     <sup><b>2</b></sup> Son of man, what becomes of the wood of the vine in comparison to every <i>other kind of</i> wood, of the pruned branch <i>in comparison</i> to that which was on the trees of the forest?<br><br>
+     <sup><b>3</b></sup> Will wood from it be taken to make anything? Or will <i>men</i> take a peg from it to hang any vessel on?<br><br>
+     <sup><b>4</b></sup> Indeed it is put into the fire as fuel; the fire consumes its two ends, and its middle is scorched. Is it good for anything?<br><br>
+     <sup><b>5</b></sup> Indeed when it was whole, it was not made into anything. How much less, when fire has consumed it and it has been scorched, can it still be made into anything!<br><br>
+     <sup><b>6</b></sup> Therefore thus says the Lord Jehovah, Like the wood of the vine among the trees of the forest, which I have given to the fire as fuel, so will I give the inhabitants of Jerusalem.<br><br>
+     <sup><b>7</b></sup> And I will set My face against them: They have gone forth from the fire, yet the fire will consume them; and you will know that I am Jehovah when I set My face against them.<br><br>
+     <sup><b>8</b></sup> And I will make the land desolate because they have acted unfaithfully, declares the Lord Jehovah.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ezekiel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
