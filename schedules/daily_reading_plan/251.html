@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/30-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ezekiel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ezekiel-26"><a onclick="open_chapter('top', '26-ezekiel.html')">Ezekiel 26</a></h4>
+  <p><sup><b>1</b></sup> And in the eleventh year, on the first of the month, the word of Jehovah came to me, saying,<br><br>
+     <sup><b>2</b></sup> Son of man, because Tyre has spoken against Jerusalem, <i>saying,</i> Aha! She is broken, the gateway of the peoples! She has been turned over to me; I will be filled; <i>now</i> she has been desolated.<br><br>
+     <sup><b>3</b></sup> Therefore thus says the Lord Jehovah, I am now against you, O Tyre, and I will stir up many nations against you, just as the sea stirs up its waves.<br><br>
+     <sup><b>4</b></sup> And they will destroy the walls of Tyre and break down her towers. I will also scrape her dust from her and make her bare rock.<br><br>
+     <sup><b>5</b></sup> She will be a place in the midst of the sea where nets are spread, for I have spoken, declares the Lord Jehovah; and she will become spoil to the nations.<br><br>
+     <sup><b>6</b></sup> And her daughters who are in the field will be slain by the sword that they might know that I am Jehovah.<br><br>
+     <sup><b>7</b></sup> For thus says the Lord Jehovah, I am about to bring against Tyre from the north Nebuchadrezzar the king of Babylon, the king of kings, with horses, chariots, horsemen, a company, and many people.<br><br>
+     <sup><b>8</b></sup> He will slay your daughters in the field by the sword, and he will lay a siege wall against you and cast up a mound against you and raise up a shield against you.<br><br>
+     <sup><b>9</b></sup> And he will set his battering rams against your walls, and with his axes he will break down your towers.<br><br>
+     <sup><b>10</b></sup> Because of the abundance of his horses, their dust will cover you; your walls will shake at the noise of the horsemen and wagons and chariots when he enters through your gates like those who enter a breached city.<br><br>
+     <sup><b>11</b></sup> With the hooves of his horses he will trample down all your streets; he will slay your people by the sword, and the pillars of your strength will topple to the ground.<br><br>
+     <sup><b>12</b></sup> And they will plunder your wealth and take your merchandise as spoil, and they will break down your walls and tear down your pleasant houses, and they will put your stones and your timber and your dust into the water.<br><br>
+     <sup><b>13</b></sup> And I will cause the noise of your songs to cease, and the sound of your harps will no longer be heard.<br><br>
+     <sup><b>14</b></sup> And I will make you bare rock. You will be a place where nets are spread; you shall no longer be built; for I, Jehovah, have spoken, declares the Lord Jehovah.<br><br>
+     <sup><b>15</b></sup> Thus says the Lord Jehovah to Tyre: How the coastlands will shake at the sound of your fall, when the wounded groan, when slaughter occurs in your midst!<br><br>
+     <sup><b>16</b></sup> Then all the princes of the sea will come down from their thrones and lay aside their robes and strip off their embroidered garments. They will clothe themselves with trembling; they will sit on the ground and tremble every moment and be astonished at you.<br><br>
+     <sup><b>17</b></sup> And they will take up a lamentation over you and say to you,How you have perished, O inhabited one, / From the sea, O praised city, / Which was strong by the sea, / She and her inhabitants, / Who imposed their terror on all her inhabitants!<br><br>
+     <sup><b>18</b></sup> Now the coastlands will tremble / On the day of your fall; / The coastlands which are by the sea / Will indeed be troubled because of your departure.<br><br>
+     <sup><b>19</b></sup> For thus says the Lord Jehovah, When I make you a desolate city, like cities which are not inhabited, when I bring up the deep over you and the mighty waters cover you,<br><br>
+     <sup><b>20</b></sup> I will bring you down with those who descend into the pit, to the people of old, and I will make you dwell in the lower parts of the earth, like the ancient waste places, with those who go down to the pit, so you will not be inhabited, nor shine out glory in the land of the living.<br><br>
+     <sup><b>21</b></sup> I will make you a terror, and you will not exist. Although you will be sought after, you will never again be found, declares the Lord Jehovah.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ezekiel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
