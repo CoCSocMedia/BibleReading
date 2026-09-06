@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ezekiel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ezekiel-31"><a onclick="open_chapter('top', '26-ezekiel.html')">Ezekiel 31</a></h4>
+  <p><sup><b>1</b></sup> And in the eleventh year, in the third <i>month,</i> on the first <i>day</i> of the month, the word of Jehovah came to me, saying,<br><br>
+     <sup><b>2</b></sup> Son of man, say to Pharaoh, the king of Egypt, and to his multitude:Whom are you like in your greatness?<br><br>
+     <sup><b>3</b></sup> Indeed Assyria was a cedar in Lebanon / With beautiful branches and forest shade / And great height, / And its top shoots were among the thick boughs.<br><br>
+     <sup><b>4</b></sup> Waters nourished it, / The deep <i>springs</i> made it grow; / Its rivers flowed around / The place it was planted; / And it flowed out its channels / To all the trees of the field.<br><br>
+     <sup><b>5</b></sup> Therefore its height was exalted / Above all the trees of the field, / And its boughs were multiplied, / And its branches lengthened, / Because of abundant waters, as it spread.<br><br>
+     <sup><b>6</b></sup> All the birds of the sky / Made their nests in its boughs, / And all the beasts of the field / Bore their young under its branches, / And in its shade / All great nations dwelt.<br><br>
+     <sup><b>7</b></sup> Thus it was beautiful in its greatness, / In the length of its branches; / For its roots were beside abundant waters.<br><br>
+     <sup><b>8</b></sup> Cedars in the garden of God could not hide it; / Cypresses could not compare to its boughs, / And plane trees could not equal its branches; / No tree in the garden of God could compare to it in its beauty.<br><br>
+     <sup><b>9</b></sup> I made it beautiful / By the multitude of its branches, / So that all the trees of Eden, / Which were in the garden of God, envied it.<br><br>
+     <sup><b>10</b></sup> Therefore thus says the Lord Jehovah, Because you are exalted in height — it set its top shoots among the thick boughs, and its heart is lifted up in its height —<br><br>
+     <sup><b>11</b></sup> Therefore I will deliver it into the hands of the mighty one of the nations; he will surely deal with it. I have driven it out according to its wickedness.<br><br>
+     <sup><b>12</b></sup> And strangers, the most ruthless of the nations, have cut it down and left it on the mountains, and its branches have fallen into all the valleys, and its boughs <i>lie</i> broken by all the ravines of the land; and all the peoples of the earth have abandoned its shade and left it.<br><br>
+     <sup><b>13</b></sup> Upon its fallen trunk / All the birds of the sky will dwell, / And upon its branches / All the beasts of the field will be.<br><br>
+     <sup><b>14</b></sup> <i>This is</i> so that none of the <i>well-watered</i> trees will exalt themselves in their height by setting their top shoots among the thick boughs, and none of the well-watered trees <i>will</i> stand next to them in their height; for all of them have been delivered to death, to the lowest parts of the earth among the children of men who descend into the pit.<br><br>
+     <sup><b>15</b></sup> Thus says the Lord Jehovah, On the day it descended to Sheol I caused a mourning; I covered the deep <i>springs</i> for it, and I restrained its rivers, and the great waters were shut up. I also made Lebanon mourn for it, and all the trees of the field wilted on account of it.<br><br>
+     <sup><b>16</b></sup> I made the nations quake at the sound of its fall when I cast it down to Sheol with those who descend into the pit. And all the trees of Eden, the choice and best of Lebanon, all who drink water, were comforted in the lowest parts of the earth.<br><br>
+     <sup><b>17</b></sup> They also descended with it into Sheol to those who were slain by the sword; indeed to those who were its arm, <i>who</i> dwelt under its shade among the nations.<br><br>
+     <sup><b>18</b></sup> Which among the trees of Eden then are you like in glory and in greatness? Yet you will be brought down with the trees of Eden to the lowest parts of the earth; you will lie among the uncircumcised, with those who were slain by the sword. This is Pharaoh and all his multitude, declares the Lord Jehovah.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ezekiel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
