@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Ezekiel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="ezekiel-42"><a onclick="open_chapter('top', '26-ezekiel.html')">Ezekiel 42</a></h4>
+  <p><sup><b>1</b></sup> Then He brought me out into the outer court, the way toward the north, and He brought me into the chamber that was adjacent to the separate place and which was adjacent to the building toward the north.<br><br>
+     <sup><b>2</b></sup> The length of the side of the northern entrance was a hundred cubits, and the width was fifty cubits.<br><br>
+     <sup><b>3</b></sup> Adjacent to the twenty-<i>cubit space</i> of the inner court and adjacent to the pavement of the outer court was gallery facing gallery on the third <i>story.</i><br><br>
+     <sup><b>4</b></sup> And before the chambers on the inside was a walkway of ten cubits’ width, a way of one <i>hundred</i> cubits; and their entrances were toward the north.<br><br>
+     <sup><b>5</b></sup> Now the upper chambers were narrower, for the galleries took more <i>space</i> away from these than from the lower and the middle <i>stories</i> in the building.<br><br>
+     <sup><b>6</b></sup> For they were arranged in three <i>stories,</i> and they did not have pillars like the pillars of the courts; therefore <i>the upper story</i> was set back from the ground more than the lower and middle <i>stories.</i><br><br>
+     <sup><b>7</b></sup> There was also an outside wall beside the chambers, toward the outer court in front of the chambers; its length was fifty cubits.<br><br>
+     <sup><b>8</b></sup> For the length of the chambers that were in the outer court was fifty cubits, while those facing the temple were a hundred cubits.<br><br>
+     <sup><b>9</b></sup> And at the foot of these chambers was an entrance on the east side to enter them from the outer court;<br><br>
+     <sup><b>10</b></sup> By the breadth of the wall of the court to the south, beside the separate place and beside the building, there were chambers,<br><br>
+     <sup><b>11</b></sup> With a way before them. <i>Their appearance</i> was like the appearance of the chambers which were toward the north; just as their length, so <i>also was</i> their width; and all their exits were according to both their arrangements and their entrances.<br><br>
+     <sup><b>12</b></sup> So the entrances of the chambers that were toward the south were entered <i>through</i> an entrance toward the east at the head of the corresponding way, directly beside the wall.<br><br>
+     <sup><b>13</b></sup> Then He said to me, The north chambers and the south chambers which are beside the separate place are holy chambers, where the priests who are near to Jehovah shall eat the most holy things. There they shall lay the most holy things, the meal offering, the sin offering, and the trespass offering, for the place is holy.<br><br>
+     <sup><b>14</b></sup> When the priests enter, they shall not go out of the holy place into the outer court, but there they shall lay their garments in which they have ministered, because they are holy. And they shall put on other garments and approach the area <i>designated</i> for the people.<br><br>
+     <sup><b>15</b></sup> Now when He had finished measuring the inner house, He brought me out through the gate which faces toward the east and measured it all around.<br><br>
+     <sup><b>16</b></sup> He measured on the east side with the measuring reed five hundred reeds, with the measuring reed all around.<br><br>
+     <sup><b>17</b></sup> He measured on the north side five hundred reeds with the measuring reed all around.<br><br>
+     <sup><b>18</b></sup> He measured on the south side five hundred reeds with the measuring reed.<br><br>
+     <sup><b>19</b></sup> He turned to the west side and measured five hundred reeds with the measuring reed.<br><br>
+     <sup><b>20</b></sup> He measured it on four sides. It had a wall all around, the length five hundred <i>reeds</i> and the width five hundred <i>reeds,</i> to make a separation between what was holy and what was common.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('ezekiel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
