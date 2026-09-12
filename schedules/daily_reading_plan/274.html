@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/22-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Daniel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+
+  <h4 id="daniel-1"><a onclick="open_chapter('top', '27-daniel.html')">Daniel 1</a></h4>
+  <p><sup><b>1</b></sup> In the third year of the reign of Jehoiakim the king of Judah Nebuchadnezzar the king of Babylon came to Jerusalem and besieged it.<br><br>
+     <sup><b>2</b></sup> And the Lord gave Jehoiakim the king of Judah into his hand with some of the vessels of the house of God; and he brought them into the land of Shinar to the house of his god, and he brought the vessels into the treasury of his god.<br><br>
+     <sup><b>3</b></sup> Then the king told Ashpenaz, the chief of his eunuchs, to bring some of the sons of Israel, including some from the royal seed and from the nobility,<br><br>
+     <sup><b>4</b></sup> Children in whom was no defect, <i>who were</i> good in appearance, who showed insight in all wisdom, understanding in knowledge, and apprehension in thought, and in whom was the ability to stand in the king’s palace. And <i>he told him</i> to teach them the learning and language of the Chaldeans.<br><br>
+     <sup><b>5</b></sup> And the king appointed to them a daily portion from the king’s choice provision and from the wine that he drank, and <i>appointed</i> that they should be brought up for three years so that at the end of the time they might stand before the king.<br><br>
+     <sup><b>6</b></sup> Now among these from the sons of Judah were Daniel, Hananiah, Mishael, and Azariah.<br><br>
+     <sup><b>7</b></sup> And the leader of the eunuchs gave them names: he gave Daniel <i>the name</i> Belteshazzar; Hananiah, <i>the name</i> Shadrach; Mishael, <i>the name</i> Meshach; and Azariah, <i>the name</i> Abed-nego.<br><br>
+     <sup><b>8</b></sup> But Daniel set his heart not to defile himself with the king’s choice provision and with the wine that the king drank, so he requested of the leader of the eunuchs that he might not defile himself.<br><br>
+     <sup><b>9</b></sup> And God granted Daniel favor and compassion in the sight of the leader of the eunuchs;<br><br>
+     <sup><b>10</b></sup> And the leader of the eunuchs said to Daniel, I fear my lord the king, who has appointed your food and drink; for why should he see your faces being more morose than <i>those of</i> the children who are of your own age? Then you would bring guilt upon my head before the king.<br><br>
+     <sup><b>11</b></sup> Then Daniel said to the steward whom the leader of the eunuchs had appointed over Daniel, Hananiah, Mishael, and Azariah,<br><br>
+     <sup><b>12</b></sup> Please test your servants for ten days, and let vegetables be given to us to eat and water to drink.<br><br>
+     <sup><b>13</b></sup> Then let our countenances be watched in your presence, as well as the countenances of the children who eat the king’s choice provision; and do with your servants according to what you see.<br><br>
+     <sup><b>14</b></sup> So he listened to them in this matter and tested them for ten days.<br><br>
+     <sup><b>15</b></sup> And at the end of ten days their countenances appeared better, and they were more fully fleshed than all the children who ate the king’s choice provision.<br><br>
+     <sup><b>16</b></sup> Therefore the steward withheld their <i>portion of</i> the choice provision and the wine that they were to drink and gave them vegetables.<br><br>
+     <sup><b>17</b></sup> Now as for these four children, God gave them knowledge and insight in all learning and wisdom; and Daniel had understanding in all visions and dreams.<br><br>
+     <sup><b>18</b></sup> Then at the end of the days when the king had said that <i>the children</i> should be brought in, the leader of the eunuchs brought them in before Nebuchadnezzar;<br><br>
+     <sup><b>19</b></sup> And the king spoke with them. And among them all none were found like Daniel, Hananiah, Mishael, and Azariah; therefore they stood in the presence of the king.<br><br>
+     <sup><b>20</b></sup> And in every matter of wisdom and understanding that the king inquired of them, he found them ten times better than all the magicians and conjurers who were in all his realm.<br><br>
+     <sup><b>21</b></sup> And Daniel continued until the first year of Cyrus the king.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('daniel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
