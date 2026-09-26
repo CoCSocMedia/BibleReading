@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Daniel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="daniel-10"><a onclick="open_chapter('top', '27-daniel.html')">Daniel 10</a></h4>
+  <p><sup><b>1</b></sup> In the third year of Cyrus the king of Persia a word was revealed to Daniel, who was named Belteshazzar; and the word was true and <i>concerning</i> a great distress. And he understood the word and had an understanding of the vision.<br><br>
+     <sup><b>2</b></sup> In those days I, Daniel, had been mourning for three full weeks.<br><br>
+     <sup><b>3</b></sup> I ate no desirable food, nor did meat or wine enter my mouth, nor did I anoint myself at all, until the three full weeks were completed.<br><br>
+     <sup><b>4</b></sup> And on the twenty-fourth day of the first month, while I was by the great river, that is, the Hiddekel,<br><br>
+     <sup><b>5</b></sup> I lifted up my eyes and I looked, and there was a certain man, clothed in linen, whose loins were girded with the fine gold of Uphaz.<br><br>
+     <sup><b>6</b></sup> His body also was like beryl, His face like the appearance of lightning, His eyes like torches of fire, His arms and His feet like the gleam of polished bronze, and the sound of His words like the sound of a multitude.<br><br>
+     <sup><b>7</b></sup> And I, Daniel, alone saw the vision, for the men who were with me did not see the vision; instead, a great dread fell on them, and they fled to hide themselves.<br><br>
+     <sup><b>8</b></sup> Thus I was left alone and I saw this great vision; and no strength was left in me, but my color turned deathly pale; and I retained no strength.<br><br>
+     <sup><b>9</b></sup> Yet I heard the sound of His words; and when I heard the sound of His words, I fell into a deep sleep on my face, with my face to the ground.<br><br>
+     <sup><b>10</b></sup> And at that moment a hand touched me and sent me trembling on my knees and the palms of my hands.<br><br>
+     <sup><b>11</b></sup> And he said to me, Daniel, man of preciousness, understand the words that I am about to tell you and stand in your place, for I have now been sent to you. And when he had spoken this word to me, I stood up trembling.<br><br>
+     <sup><b>12</b></sup> And he said to me, Do not be afraid, Daniel, for from the first day that you set your heart to understand <i>this matter</i> and to afflict yourself before your God, your words were heard; and I have come because of your words.<br><br>
+     <sup><b>13</b></sup> But the prince of the kingdom of Persia withstood me for twenty-one days; but now Michael, one of the chief princes, came to help me, for I remained there <i>alone</i> with the kings of Persia.<br><br>
+     <sup><b>14</b></sup> Thus I have come to make you understand what will happen to your people in the last days, yet the vision pertains to <i>something many</i> days <i>from now.</i><br><br>
+     <sup><b>15</b></sup> And when he had spoken to me according to these words, I turned my face to the ground and was dumb.<br><br>
+     <sup><b>16</b></sup> And at that moment one who resembled the sons of men touched my lips; and I opened my mouth and spoke, and I said to him who stood before me, Sir, because of the vision my anguish has turned upon me, and I have retained no strength.<br><br>
+     <sup><b>17</b></sup> For how can such a servant of my lord speak with such as my lord? For as for me, just now there is no strength in me, nor has there been breath left in me.<br><br>
+     <sup><b>18</b></sup> Then the one who was in appearance like a man touched me again and strengthened me;<br><br>
+     <sup><b>19</b></sup> And he said, Do not be afraid, man of preciousness. Peace to you. Be strong, yes, be strong. And when he spoke to me, I received strength and said, Speak, sir, for you have strengthened me.<br><br>
+     <sup><b>20</b></sup> Then he said, Do you know why I have come to you? And now I will return to fight with the prince of Persia; so I go forth, and the prince of Javan is now about to come.<br><br>
+     <sup><b>21</b></sup> However I will tell you what is inscribed in the writing of truth. Yet there is no one who holds strongly with me against these ones except Michael your prince.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('daniel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
