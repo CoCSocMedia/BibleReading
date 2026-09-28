@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Daniel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="daniel-12"><a onclick="open_chapter('top', '27-daniel.html')">Daniel 12</a></h4>
+  <p><sup><b>1</b></sup> And at that time Michael, the great prince who stands for the children of your people, will arise; and there will be a time of distress, such as never occurred since there came to be a nation until that time; and at that time your people, every one found written in the book, will be delivered.<br><br>
+     <sup><b>2</b></sup> And many of those who are sleeping in the dust of the ground will awake, some to life eternal and some to reproach, to eternal contempt.<br><br>
+     <sup><b>3</b></sup> And those who have insight will shine like the shining of the heavenly expanse, and those who turn many to righteousness, like the stars, forever and ever.<br><br>
+     <sup><b>4</b></sup> But you, Daniel, shut up the words and seal the book until the time of the end; many will go here and there, and knowledge will be increased.<br><br>
+     <sup><b>5</b></sup> Then I, Daniel, looked, and there were two others standing, one on this bank of the river and the other on that bank of the river.<br><br>
+     <sup><b>6</b></sup> And one said to the man clothed in linen, who was above the water of the river, How long <i>will it be</i> until the end of these wonders?<br><br>
+     <sup><b>7</b></sup> And I heard the man clothed in linen, who was above the water of the river, as He lifted up His right hand and His left hand to heaven and swore by Him who lives forever that there would be a time and times and half <i>a time;</i> and when the shattering of the power of the holy people is completed, all these things will be completed.<br><br>
+     <sup><b>8</b></sup> And I heard, but I did not understand. Then I said, My Lord, what will the latter end of these things be?<br><br>
+     <sup><b>9</b></sup> And He said, Go <i>your way,</i> Daniel, for the words are shut up and sealed until the time of the end.<br><br>
+     <sup><b>10</b></sup> Many will be purified, cleansed, and refined, but the wicked will act wickedly; and none of the wicked will understand, but those who have insight will understand.<br><br>
+     <sup><b>11</b></sup> And from the time that the daily sacrifice is removed and the abomination that desolates is set up, <i>there will be</i> a thousand two hundred and ninety days.<br><br>
+     <sup><b>12</b></sup> Blessed is he who waits and reaches the thousand three hundred and thirty-five days!<br><br>
+     <sup><b>13</b></sup> But you, go <i>your way</i> until the end, and you will rest and rise <i>again</i> in your lot at the end of the days.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('daniel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

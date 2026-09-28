@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Hosea</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="hosea-1"><a onclick="open_chapter('top', '28-hosea.html')">Hosea 1</a></h4>
+  <p><sup><b>1</b></sup> The word of Jehovah which came to Hosea the son of Beeri in the days of Uzziah, Jotham, Ahaz, <i>and</i> Hezekiah, kings of Judah, and in the days of Jeroboam the son of Joash the king of Israel.<br><br>
+     <sup><b>2</b></sup> At the beginning of Jehovah’s speaking to Hosea, Jehovah said to Hosea, / Go, take to yourself a wife of harlotries / And children of harlotries, / For the land is entirely given over to harlotry, / <i>And thus departs</i> from Jehovah.<br><br>
+     <sup><b>3</b></sup> So he went and took Gomer the daughter of Diblaim. And she conceived and bore him a son.<br><br>
+     <sup><b>4</b></sup> And Jehovah said to him,Call his name Jezreel, / For yet a little while / And I will avenge the bloodshed of Jezreel / Upon the house of Jehu / And will bring an end to the kingdom of the house of Israel.<br><br>
+     <sup><b>5</b></sup> And in that day / I will break the bow of Israel / In the valley of Jezreel.<br><br>
+     <sup><b>6</b></sup> And she conceived again and bore a daughter. And He said to him,Call her name Lo-ruhamah, / For I will no longer have compassion / On the house of Israel, / That I should forgive them at all.<br><br>
+     <sup><b>7</b></sup> But on the house of Judah I will have compassion and will save them by Jehovah their God, and I will not save them by bow or by sword or by battle, by horses or by horsemen.<br><br>
+     <sup><b>8</b></sup> When she had weaned Lo-ruhamah, she conceived and bore a son.<br><br>
+     <sup><b>9</b></sup> And He said,Call his name Lo-ammi, / For you are not My people, / And I will not belong to you.<br><br>
+     <sup><b>10</b></sup> But the number of the children of Israel will be like the sand of the sea, / Which cannot be measured or numbered; / And in the place where it will be said to them, You are not My people, / It will be said to them, <i>You are</i> the sons of the living God.<br><br>
+     <sup><b>11</b></sup> And the children of Judah and the children of Israel will be gathered together, / And they will appoint for themselves one head, and they will go up from the land, / For great will be the day of Jezreel.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('hosea-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
