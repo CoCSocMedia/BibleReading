@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/7-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Hosea</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="hosea-4"><a onclick="open_chapter('top', '28-hosea.html')">Hosea 4</a></h4>
+  <p><sup><b>1</b></sup> Hear the word of Jehovah, / O children of Israel; / For Jehovah has a controversy / With the inhabitants of the land. / For there is no faithfulness or kindness / And no knowledge of God in the land.<br><br>
+     <sup><b>2</b></sup> <i>Rather</i> there are swearing and deceiving and murder / And stealing and adultery; / They are violent, / And bloodshed follows bloodshed.<br><br>
+     <sup><b>3</b></sup> Because of this the land mourns, / And all the inhabitants languish within it, / With the beasts of the field / And with the birds of heaven; / Indeed, even the fish of the sea will be taken away.<br><br>
+     <sup><b>4</b></sup> Yet let no man contend, / And let no man reprove; / For your people are like those who contend with the priest.<br><br>
+     <sup><b>5</b></sup> And you will stumble in the day, / And the prophet also will stumble / With you in the night; / And I will destroy your mother.<br><br>
+     <sup><b>6</b></sup> My people are destroyed / Because of a lack of that knowledge. / For you have rejected that knowledge, / And I will reject you, so that you will not be a priest to Me; / Since you have forgotten the law of your God, / I also will forget your children.<br><br>
+     <sup><b>7</b></sup> The more they were multiplied, the more they sinned against Me; / I will change their glory into shame.<br><br>
+     <sup><b>8</b></sup> They feed on the sin of My people, / And their soul desires their iniquity.<br><br>
+     <sup><b>9</b></sup> And it will be that as it is with the people, so it will be with the priest; / Thus I will visit their ways upon them, / And I will recompense their doings to them.<br><br>
+     <sup><b>10</b></sup> And they will eat but will not be filled; / And they will commit fornication but will not increase; / For they have ceased giving heed to Jehovah.<br><br>
+     <sup><b>11</b></sup> Fornication and wine / And new wine take away <i>their</i> heart.<br><br>
+     <sup><b>12</b></sup> My people inquire at their wooden post, / And their rod informs them of <i>things;</i> / For a spirit of harlotries makes <i>them</i> err, / And they have gone about as harlots away from their God.<br><br>
+     <sup><b>13</b></sup> Upon the tops of the mountains they offer sacrifices, / And upon the hills they burn incense, / Under oak, poplar, and terebinth, / Because its shade is good. / Therefore your daughters go about as harlots, / And your brides commit adultery.<br><br>
+     <sup><b>14</b></sup> I will not punish your daughters when they go about as harlots / Nor your brides when they commit adultery; / For <i>the men</i> themselves go off with harlots, / And they offer sacrifices with the prostitutes; / And the people who have no understanding will be cast down.<br><br>
+     <sup><b>15</b></sup> Though you, Israel, go about as a harlot, / Let not Judah trespass; / And do not come to Gilgal, / Nor go up to Beth-aven, / Nor swear, As Jehovah lives.<br><br>
+     <sup><b>16</b></sup> For Israel is stubborn, / Like a stubborn heifer; / Will Jehovah now pasture them / Like a lamb in a spacious place?<br><br>
+     <sup><b>17</b></sup> Ephraim is joined to idols; / Leave him alone.<br><br>
+     <sup><b>18</b></sup> Their liquor has ended; / They have given themselves up to harlotry; / Her rulers dearly love shame.<br><br>
+     <sup><b>19</b></sup> The wind has wrapped her up in its wings, / And they will be ashamed because of their sacrifices.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('hosea-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

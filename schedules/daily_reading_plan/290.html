@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Hosea</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="hosea-5"><a onclick="open_chapter('top', '28-hosea.html')">Hosea 5</a></h4>
+  <p><sup><b>1</b></sup> Hear this, O priests; / And listen, O house of Israel; / And, O house of the king, give ear. / For to you belongs the judgment, / For you have been a snare at Mizpah / And a net spread over Tabor.<br><br>
+     <sup><b>2</b></sup> And the revolters have gone deep into slaughtering, / Though I am a chastisement to them all.<br><br>
+     <sup><b>3</b></sup> I know Ephraim, / And Israel is not hidden from Me; / For now, Ephraim, you have gone about as a harlot; / Israel is defiled.<br><br>
+     <sup><b>4</b></sup> Their doings do not permit them / To turn to their God; / For a spirit of harlotries is within them, / And they do not know Jehovah.<br><br>
+     <sup><b>5</b></sup> And the pride of Israel testifies to his face, / And Israel and Ephraim will stumble in their iniquity; / Judah also will stumble with them.<br><br>
+     <sup><b>6</b></sup> With their flocks and with their herds they will go / To seek Jehovah, / But they will not find <i>Him;</i> / He has withdrawn Himself from them.<br><br>
+     <sup><b>7</b></sup> They have acted treacherously against Jehovah, / For they have begotten strange children. / Now the new moon will devour them / With their apportionments.<br><br>
+     <sup><b>8</b></sup> Blow the horn in Gibeah, / The trumpet in Ramah; / Sound an alarm at Beth-aven: / Behind you, O Benjamin!<br><br>
+     <sup><b>9</b></sup> Ephraim will be a desolation / In the day of correction; / Among the tribes of Israel / I have made known what is sure.<br><br>
+     <sup><b>10</b></sup> The princes of Judah have become / Like those who move a boundary mark. / I will pour out upon them / My overflowing wrath like water.<br><br>
+     <sup><b>11</b></sup> Ephraim is oppressed, / Crushed by judgment, / For he was determined to walk / After <i>man’s</i> command.<br><br>
+     <sup><b>12</b></sup> Therefore I am like a moth to Ephraim / And like rottenness to the house of Judah.<br><br>
+     <sup><b>13</b></sup> When Ephraim saw his sickness, / And Judah his wound, / Ephraim went to Assyria / And sent <i>word</i> to the warrior king; / But he cannot heal you, / And the wound will not depart from you.<br><br>
+     <sup><b>14</b></sup> For I will be like a lion to Ephraim / And like a young lion to the house of Judah. / I, I will tear <i>them</i> and go away; / I will carry <i>them</i> off, and there will be no one to deliver <i>them.</i><br><br>
+     <sup><b>15</b></sup> I will go away, I will return to My place, / Until they acknowledge their offense / And seek My face; / In their affliction they will seek Me earnestly.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('hosea-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

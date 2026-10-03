@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Hosea</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="hosea-3"><a onclick="open_chapter('top', '28-hosea.html')">Hosea 3</a></h4>
+  <p><sup><b>1</b></sup> Then Jehovah said to me, Go again, love a woman who is loved by her companion yet who is an adulteress, even as Jehovah has loved the children of Israel, though they turn to other gods and love raisin cakes.<br><br>
+     <sup><b>2</b></sup> So I bought her for myself for fifteen pieces of silver and a homer of barley and a half-homer of barley.<br><br>
+     <sup><b>3</b></sup> And I said to her, You will abide for me for many days; you shall not go about as a harlot nor be <i>another</i> man’s; and I will be the same toward you.<br><br>
+     <sup><b>4</b></sup> For the children of Israel will abide for many days without king and without prince and without sacrifice and without pillar and without ephod and teraphim.<br><br>
+     <sup><b>5</b></sup> Afterward the children of Israel will return and seek Jehovah their God and David their King, and they will come with fear to Jehovah and to His goodness in the last days.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('hosea-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
