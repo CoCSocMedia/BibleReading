@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/10-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Hosea</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="hosea-7"><a onclick="open_chapter('top', '28-hosea.html')">Hosea 7</a></h4>
+  <p><sup><b>1</b></sup> When I would heal Israel, / Then the iniquity of Ephraim is discovered / As well as the evil deeds of Samaria; / For they practice falsehood. / And the thief comes inside; / The band of robbers makes raids outside.<br><br>
+     <sup><b>2</b></sup> And they do not say in their hearts / That I remember all their evil. / Now their doings are all around them; / They are before My face.<br><br>
+     <sup><b>3</b></sup> They make the king glad with their evil, / And the princes, with their lies.<br><br>
+     <sup><b>4</b></sup> All of them practice adultery; / They are like an oven heated by the baker: / He ceases from stirring <i>the fire,</i> / After kneading the dough, until it is leavened.<br><br>
+     <sup><b>5</b></sup> On the <i>feast</i> day of our king / The princes made themselves sick with the heat of wine; / He stretched out his hand with scorners.<br><br>
+     <sup><b>6</b></sup> For they have made their heart ready / Like an oven while they lie in wait: / All night long / Their baker sleeps, / <i>But</i> in the morning the oven burns / Like a flaming fire.<br><br>
+     <sup><b>7</b></sup> All of them are hot like an oven, / And they devour their judges; / All their kings fall; / There is no one among them who calls on Me.<br><br>
+     <sup><b>8</b></sup> Ephraim — among the peoples / He mixes himself; / Ephraim is a cake / Not turned.<br><br>
+     <sup><b>9</b></sup> Strangers have devoured his strength, / And he himself does not know <i>it;</i> / Indeed gray hairs are all over him, / And he himself does not know <i>it.</i><br><br>
+     <sup><b>10</b></sup> And the pride of Israel testifies to his face; / Yet they have not returned to Jehovah their God, / And they have not sought <i>Him,</i> because of all this.<br><br>
+     <sup><b>11</b></sup> And Ephraim has become like a silly dove / Without understanding: / They call to Egypt; / They go to Assyria.<br><br>
+     <sup><b>12</b></sup> When they go, / I will spread My net over them; / I will bring them down like the birds of heaven; / I will chasten them according to the report <i>given</i> to their assembly.<br><br>
+     <sup><b>13</b></sup> Woe to them! For they have wandered from Me. / Devastation to them! For they have transgressed against Me. / And I would have redeemed them, / But they have spoken lies against Me.<br><br>
+     <sup><b>14</b></sup> And they did not cry unto Me in their heart / When they howled in their beds. / For grain and new wine they assemble themselves; / They rebel against Me.<br><br>
+     <sup><b>15</b></sup> Though I trained <i>them and</i> strengthened their arms, / They devise evil against Me.<br><br>
+     <sup><b>16</b></sup> They return, <i>but</i> not to <i>Him who is</i> on high; / They are like a deceitful bow. / Their princes will fall by the sword / Because of the rage of their tongue. / This will be their derision / In the land of Egypt.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('hosea-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
