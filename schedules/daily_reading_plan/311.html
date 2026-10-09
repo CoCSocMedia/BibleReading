@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/19-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Joel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="joel-3"><a onclick="open_chapter('top', '29-joel.html')">Joel 3</a></h4>
+  <p><sup><b>1</b></sup> For indeed, in those days and at that time / When I turn the captivity of Judah and Jerusalem,<br><br>
+     <sup><b>2</b></sup> I will gather all the nations / And will bring them down to the valley of Jehoshaphat; / And I will enter into judgment with them there / Because of My people and My inheritance Israel, / Whom they have scattered among the nations. / And they have divided My land<br><br>
+     <sup><b>3</b></sup> And have cast lots for My people; / And they have given a boy for a prostitute / And sold a girl for wine to drink.<br><br>
+     <sup><b>4</b></sup> Indeed then, what are you to Me, Tyre and Sidon / And all the regions of Philistia? / Will you repay Me with a recompense? / But if you recompense Me, / Swiftly, speedily, / I will return your recompense upon your own head.<br><br>
+     <sup><b>5</b></sup> In that you have taken My silver and My gold, / And have brought My fine precious things into your temples,<br><br>
+     <sup><b>6</b></sup> And have sold to the children of the Javanim / The children of Judah and the children of Jerusalem, / In order to remove them / Far from their borders;<br><br>
+     <sup><b>7</b></sup> I will rouse them out of the place / To which you have sold them, / And will return your recompense upon your own head.<br><br>
+     <sup><b>8</b></sup> And I will sell your sons and your daughters / Into the hand of the children of Judah, / And they will sell them to the Sabeans, / To a nation that is far off, / For Jehovah has spoken.<br><br>
+     <sup><b>9</b></sup> Proclaim this among the nations: / Prepare the battle; / Rouse the mighty men; / Let all the men of battle / Draw near; let them go up.<br><br>
+     <sup><b>10</b></sup> Beat your plowshares into swords, / And your pruning knives into spears; / Let the weak say, / I am mighty.<br><br>
+     <sup><b>11</b></sup> Hurry and come, / All you surrounding nations, / And be gathered. / There cause Your mighty ones to descend, O Jehovah!<br><br>
+     <sup><b>12</b></sup> Let the nations rouse themselves and come up / To the valley of Jehoshaphat. / For there I will sit to judge / All the surrounding nations.<br><br>
+     <sup><b>13</b></sup> Send forth the sickle, / For the harvest is ripe; / Come, tread, / For the winepress is full; / The wine vats overflow, / For their evil is great.<br><br>
+     <sup><b>14</b></sup> Multitudes, multitudes, / In the valley of decision; / For the day of Jehovah has drawn near / In the valley of decision.<br><br>
+     <sup><b>15</b></sup> The sun and the moon grow dark, / And the stars withdraw their shining.<br><br>
+     <sup><b>16</b></sup> And Jehovah will roar from Zion, / And from Jerusalem He will utter His voice, / And the heavens and the earth will shake. / But Jehovah will be a shelter to His people / And a stronghold to the children of Israel.<br><br>
+     <sup><b>17</b></sup> Thus you will know that I am Jehovah your God, / Dwelling in Zion, My holy mountain. / And Jerusalem will be holy, / And strangers will pass through her no longer.<br><br>
+     <sup><b>18</b></sup> And in that day / The mountains will drop down fresh wine, / And the hills will flow with milk; / And all the waterways of Judah / Will flow with water, / And a fountain will go forth from the house of Jehovah, / And it will water the valley of Shittim.<br><br>
+     <sup><b>19</b></sup> Egypt will be a desolation, / And Edom will be a desolate wilderness, / Because of the violence against the children of Judah, / In that they have shed innocent blood in their land.<br><br>
+     <sup><b>20</b></sup> But Judah will abide forever, / And Jerusalem, from generation to generation;<br><br>
+     <sup><b>21</b></sup> And I will acquit <i>them</i> of their bloodshed that I had not acquitted them of, / For Jehovah dwells in Zion.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('joel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

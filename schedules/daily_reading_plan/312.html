@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/20-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Amos</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="amos-1"><a onclick="open_chapter('top', '30-amos.html')">Amos 1</a></h4>
+  <p><sup><b>1</b></sup> The words of Amos, who was among the sheep tenders from Tekoa, which he saw concerning Israel in the days of Uzziah the king of Judah and in the days of Jeroboam the son of Joash, the king of Israel, two years before the earthquake.<br><br>
+     <sup><b>2</b></sup> And he said,Jehovah will roar from Zion, / And from Jerusalem He will utter His voice; / And the pastures of the shepherds will mourn, / And the top of Carmel will dry up.<br><br>
+     <sup><b>3</b></sup> Thus says Jehovah,Because of three transgressions of Damascus, / Indeed, because of four, I will not turn away the punishment; / Because they have threshed Gilead / With sharp threshing tools of iron.<br><br>
+     <sup><b>4</b></sup> And I will send fire into the house of Hazael, / And it will devour the palaces of Ben-hadad.<br><br>
+     <sup><b>5</b></sup> And I will break the bar of Damascus, / And I will cut off the inhabitant of the valley of Aven And him who holds the scepter from Beth-eden; / And the people of Aram will go into captivity unto Kir, / Says Jehovah.<br><br>
+     <sup><b>6</b></sup> Thus says Jehovah,Because of three transgressions of Gaza, / Indeed, because of four, I will not turn away the punishment; / Because they carried away captive the entire captivity / In order to deliver them up to Edom.<br><br>
+     <sup><b>7</b></sup> And I will send fire to the wall of Gaza, / And it will devour its palaces.<br><br>
+     <sup><b>8</b></sup> And I will cut off the inhabitant from Ashdod / And him who holds the scepter from Ashkelon, / And I will turn My hand against Ekron; / And the remnant of the Philistines will perish, / Says the Lord Jehovah.<br><br>
+     <sup><b>9</b></sup> Thus says Jehovah,Because of three transgressions of Tyre, / Indeed, because of four, I will not turn away the punishment; / Because they delivered up the entire captivity to Edom / And did not remember a covenant among brothers.<br><br>
+     <sup><b>10</b></sup> And I will send fire to the wall of Tyre, / And it will devour its palaces.<br><br>
+     <sup><b>11</b></sup> Thus says Jehovah,Because of three transgressions of Edom, / Indeed, because of four, I will not turn away the punishment; / Because he pursued his brother with the sword / And stifled his compassions; / And his anger raged continually, / And he kept his overflowing wrath perpetually.<br><br>
+     <sup><b>12</b></sup> And I will send fire upon Teman, / And it will devour the palaces of Bozrah.<br><br>
+     <sup><b>13</b></sup> Thus says Jehovah,Because of three transgressions of the children of Ammon, / Indeed, because of four, I will not turn away the punishment;Because they ripped up the pregnant women of Gilead / In order to enlarge their border.<br><br>
+     <sup><b>14</b></sup> And I will kindle a fire in the walls of Rabbah, / And it will devour its palaces / With shouting in the day of battle, / With a tempest in the day of the storm wind.<br><br>
+     <sup><b>15</b></sup> And their king will go into captivity, / He and his princes together, / Says Jehovah.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('amos-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

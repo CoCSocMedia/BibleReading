@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/17-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Joel</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="joel-1"><a onclick="open_chapter('top', '29-joel.html')">Joel 1</a></h4>
+  <p><sup><b>1</b></sup> The word of Jehovah which came to Joel the son of Pethuel.<br><br>
+     <sup><b>2</b></sup> Hear this, you elders, / And give heed, all you inhabitants of the land. / Has this <i>ever</i> happened in your days, / Or even in the days of your fathers?<br><br>
+     <sup><b>3</b></sup> Tell your children about it, / And <i>let</i> your children <i>tell</i> their children, / And <i>let</i> their children <i>tell</i> the next generation.<br><br>
+     <sup><b>4</b></sup> What the cutting locust has left, the swarming locust has eaten; / And what the swarming locust has left, the licking locust has eaten; / And what the licking locust has left, the consuming locust has eaten.<br><br>
+     <sup><b>5</b></sup> Awake, drunkards, and weep; / Howl, all you who drink wine, / Because of the fresh wine; / For it has been cut off from your mouth.<br><br>
+     <sup><b>6</b></sup> For a nation has come up against My land, / Mighty and without number; / Its teeth are the teeth of a lion, / And it has the cutting teeth of a lioness.<br><br>
+     <sup><b>7</b></sup> It has made My vine a desolation, / And My fig tree a heap of splinters. / It has stripped it bare and cast <i>it</i> away; / Its branches are white.<br><br>
+     <sup><b>8</b></sup> Wail like a virgin girded with sackcloth / Over the husband of her youth.<br><br>
+     <sup><b>9</b></sup> The meal offering and the drink offering are cut off / From the house of Jehovah; / The priests, the ministers of Jehovah, mourn.<br><br>
+     <sup><b>10</b></sup> The field is a waste; / The land mourns, / For the grain is a waste; / The new wine is dried up; / The fresh oil languishes.<br><br>
+     <sup><b>11</b></sup> Be ashamed, O farmers; / Howl, O vinedressers, / For the wheat and for the barley, / Because the harvest of the field has perished.<br><br>
+     <sup><b>12</b></sup> The vine is dried up, / And the fig tree languishes, / The pomegranate and the palm and the apple tree — / All the trees of the field are dried up; / Indeed gladness has withered away / From the children of men.<br><br>
+     <sup><b>13</b></sup> Gird yourselves and lament, O priests; / Howl, O ministers of the altar. / Come, pass the night in sackcloth, / O ministers of my God. / For the meal offering and the drink offering / Are held back from the house of your God.<br><br>
+     <sup><b>14</b></sup> Sanctify a fast; / Call a solemn assembly; / Gather the elders / <i>And</i> all the inhabitants of the land / To the house of Jehovah your God; / And cry unto Jehovah.<br><br>
+     <sup><b>15</b></sup> Alas for the day! / For the day of Jehovah has drawn near, / And as the destruction from the Almighty it will come.<br><br>
+     <sup><b>16</b></sup> Is not <i>our</i> food / Cut off before our eyes, / Joy and exultation / From the house of our God?<br><br>
+     <sup><b>17</b></sup> The seeds have shriveled / Under their clods; / The storehouses have been desolated; / The barns have been torn down; / For the grain is dried up.<br><br>
+     <sup><b>18</b></sup> How the beasts groan! / The herds of cattle are confused, / For they have no pasture; / The flocks of sheep also suffer punishment.<br><br>
+     <sup><b>19</b></sup> To You, O Jehovah, I cry out; / For fire has devoured / The pastures of the wilderness, / And the flame has set ablaze / All the trees of the field.<br><br>
+     <sup><b>20</b></sup> The beasts of the field also / Cry to You, / For the waterways / Are dried up, / And fire has devoured / The pastures of the wilderness.<br><br>
+  </p>
+</div>
+
+<!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('joel-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
