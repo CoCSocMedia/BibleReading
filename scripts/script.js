@@ -117,8 +117,15 @@ function is_leap_year(curr_year) {
 }
 
 function open_chapter(n, book_name) {
-    sessionStorage.setItem('chapter_number', n);
-    window.location = book_name;
+    //sessionStorage.setItem('chapter_number', n);
+    if(window.location.href.split("/").includes("daily_reading_plan")){
+      window.location = "../../bible/"+book_name;
+    }
+    else {
+      window.location = book_name;
+    }
+
+    //window.location = "../../bible/"+book_name;
 }
 
 function navbar_scroll_offset() {
